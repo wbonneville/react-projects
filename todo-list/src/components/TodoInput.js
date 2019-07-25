@@ -4,7 +4,7 @@ export default class TodoInput extends Component {
     render() {
         return (
             <div>
-                AaaaaaYYYYYYŸ
+                ddd
             </div>
         )
     }
