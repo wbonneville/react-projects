@@ -45,6 +45,13 @@ class App extends React.Component {
     });
   };
 
+  handleDelete = id => {
+    const filteredItems = this.state.items.filter(item => item.id !== id);
+    this.setState({
+      items: filteredItems
+    });
+  };
+
   render() {
     return (
       <div className="container">
@@ -58,7 +65,11 @@ class App extends React.Component {
             />
           </div>
         </div>
-        <TodoList items={this.state.items} clearList={this.clearList} />
+        <TodoList
+          items={this.state.items}
+          clearList={this.clearList}
+          handleDelete={this.handleDelete}
+        />
       </div>
     );
   }
