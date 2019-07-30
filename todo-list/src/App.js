@@ -52,6 +52,20 @@ class App extends React.Component {
     });
   };
 
+  handleEdit = id => {
+    if (!this.state.editItem === true) {
+      const filteredItems = this.state.items.filter(item => item.id !== id);
+      const selectedItem = this.state.items.find(item => item.id === id);
+
+      this.setState({
+        items: filteredItems,
+        item: selectedItem.title,
+        editItem: true,
+        id: id
+      });
+    }
+  };
+
   render() {
     return (
       <div className="container">
@@ -62,6 +76,7 @@ class App extends React.Component {
               item={this.state.item}
               handleChange={this.handleChange}
               handleSubmit={this.handleSubmit}
+              editItem={this.state.editItem}
             />
           </div>
         </div>
@@ -69,6 +84,7 @@ class App extends React.Component {
           items={this.state.items}
           clearList={this.clearList}
           handleDelete={this.handleDelete}
+          handleEdit={this.handleEdit}
         />
       </div>
     );
