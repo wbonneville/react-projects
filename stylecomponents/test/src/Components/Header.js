@@ -1,4 +1,29 @@
 import React, { Component } from "react";
+import styled from "styled-components";
+
+import Anchor from "./Anchor";
+
+const Navbar = styled.div`
+  text-transform: uppercase;
+
+  & li {
+    display: inline;
+    padding-right: 20px;
+    list-style: none;
+  }
+
+  & a {
+    text-decoration: none;
+    color: #888;
+  }
+
+  & li.current a,
+  & a:hover {
+    color: #56a79a;
+    border-bottom: 3px solid #3d8d62;
+    padding-bottom: 3px;
+  }
+`;
 
 export default class Header extends Component {
   render() {
@@ -12,10 +37,10 @@ export default class Header extends Component {
               </h1>
             </div>
             <div className="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-              <div id="navbar">
+              <Navbar>
                 <ul>
                   <li className="current">
-                    <a href="index.html">Home</a>
+                    <Anchor href="index.html">Home</Anchor>
                   </li>
                   <li>
                     <a href="about.html">About</a>
@@ -27,7 +52,7 @@ export default class Header extends Component {
                     <a href="contact.html">Contact</a>
                   </li>
                 </ul>
-              </div>
+              </Navbar>
             </div>
           </div>
         </div>

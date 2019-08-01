@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-// import clipart2 from "./src/images/clipart2.png";
+import clipart2 from "../images/clipart2.png";
 
 export default class Infosection extends Component {
   render() {
@@ -9,7 +9,7 @@ export default class Infosection extends Component {
         <div className="container">
           <div className="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-              <img className="clipart" alt="" />
+              <img className="clipart" src={clipart2} alt="" />
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
               <h2>Core Features</h2>
