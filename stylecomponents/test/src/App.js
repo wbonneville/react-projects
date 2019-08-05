@@ -14,7 +14,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
   body {
     font-family:'San Francisco', sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.5em;
     margin: 0;
     padding: 0;
