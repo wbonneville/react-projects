@@ -1,18 +1,53 @@
 import React, { Component } from "react";
+import styled from "styled-components";
+
+const FeaturesStyle = styled.div`
+  & h2 {
+    font-size: 35px;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  & p {
+    color: #888;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  & fa {
+    font-size: 60px;
+    color: #3d8d62;
+  }
+
+  & fas {
+    font-size: 60px;
+    color: #3d8d62;
+  }
+
+  & fab {
+    font-size: 60px;
+    color: #3d8d62;
+  }
+
+  & far {
+    font-size: 60px;
+    color: #3d8d62;
+  }
+`;
 
 export default class Features extends Component {
   render() {
     return (
-      <section id="features">
-        <div class="container">
-          <div class="row center-xs center-sm center-md center-lg">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <FeaturesStyle>
+        <div className="container">
+          <div className="row center-xs center-sm center-md center-lg">
+            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <h2>Core Features</h2>
               <p>What's Included</p>
 
-              <div class="row center-xs center-sm center-md center-lg">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                  <i class="fab fa-500px" />
+              <div className="row center-xs center-sm center-md center-lg">
+                <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <i className="fab fa-500px" />
                   <br />
                   <h4>Fully Optimized</h4>
                   <p>
@@ -20,8 +55,8 @@ export default class Features extends Component {
                     Kudzu fiber has long been used for fiber art and basketry.{" "}
                   </p>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                  <i class="fas fa-chess-bishop" />
+                <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <i className="fas fa-chess-bishop" />
                   <br />
                   <h4>Free Support</h4>
                   <p>
@@ -30,8 +65,8 @@ export default class Features extends Component {
                     as a food ingredient in East Asia.{" "}
                   </p>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                  <i class="fas fa-barcode" />
+                <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <i className="fas fa-barcode" />
                   <br />
                   <h4>Free Upgrades</h4>
                   <p>
@@ -42,9 +77,9 @@ export default class Features extends Component {
                 </div>
               </div>
 
-              <div class="row center-xs center-sm center-md center-lg">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                  <i class="fas fa-cloud-sun-rain" />
+              <div className="row center-xs center-sm center-md center-lg">
+                <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <i className="fas fa-cloud-sun-rain" />
                   <br />
                   <h4>Uptime Guarantee</h4>
                   <p>
@@ -52,8 +87,8 @@ export default class Features extends Component {
                     enhance the soil.{" "}
                   </p>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                  <i class="fa fa-users" />
+                <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <i className="fa fa-users" />
                   <br />
                   <h4>Multi-User</h4>
                   <p>
@@ -61,8 +96,8 @@ export default class Features extends Component {
                     symbiotic relationship with nitrogen-fixing bacteria.{" "}
                   </p>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                  <i class="fa fa-plug" />
+                <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <i className="fa fa-plug" />
                   <br />
                   <h4>Plug and Play</h4>
                   <p>
@@ -75,7 +110,7 @@ export default class Features extends Component {
             </div>
           </div>
         </div>
-      </section>
+      </FeaturesStyle>
     );
   }
 }

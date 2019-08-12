@@ -4,23 +4,23 @@ export default class Company extends Component {
   render() {
     return (
       <section id="company">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <div className="container">
+          <div className="row">
+            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <h4>Contact Us</h4>
               <ul>
                 <li>
-                  <i class="fa fa-chess-bishop" /> (123)-456-7654
+                  <i className="fa fa-chess-bishop" /> (123)-456-7654
                 </li>
                 <li>
-                  <i class="fa fa-chess-bishop" /> kudzu@plantdesign.com
+                  <i className="fa fa-chess-bishop" /> kudzu@plantdesign.com
                 </li>
                 <li>
-                  <i class="fa fa-chess-bishop" /> 5000 Plant Street{" "}
+                  <i className="fa fa-chess-bishop" /> 5000 Plant Street{" "}
                 </li>
               </ul>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <h4>About us</h4>
               <p>
                 Kudzu (/ˈkʊdzuː/; also called Japanese arrowroot)[1][2] is a
@@ -32,7 +32,7 @@ export default class Company extends Component {
                 (Pueraria montana var. lobata), クズ or 葛 (kuzu).{" "}
               </p>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <h4>Newsletter</h4>
               <p>
                 Kudzu spreads by vegetative reproduction via stolons (runners)

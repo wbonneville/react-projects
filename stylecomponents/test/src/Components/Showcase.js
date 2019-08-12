@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import unsplash6 from "../images/unsplash6.jpg";
 
 const ShowcaseStyle = styled.div`
   border-bottom: 1px solid #3d8d62;
   margin-bottom: 30px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
-    url("../images/unsplash6.jpg") no-repeat center center;
+    (${unsplash6}) no-repeat center center;
   background-position: top;
 
   & row {

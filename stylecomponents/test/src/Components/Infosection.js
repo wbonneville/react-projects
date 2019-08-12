@@ -12,26 +12,26 @@ export default class Infosection extends Component {
             <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
               <img className="clipart" src={clipart2} alt="" />
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
               <h2>Core Features</h2>
               <ul>
                 <li>
-                  <i class="fas fa-check" /> Fully Optimized
+                  <i className="fas fa-check" /> Fully Optimized
                 </li>
                 <li>
-                  <i class="fas fa-check" /> Extreme Growth
+                  <i className="fas fa-check" /> Extreme Growth
                 </li>
                 <li>
-                  <i class="fas fa-check" /> Improves Neighbours View
+                  <i className="fas fa-check" /> Improves Neighbours View
                 </li>
                 <li>
-                  <i class="fas fa-check" /> Provides Overall Healthiness
+                  <i className="fas fa-check" /> Provides Overall Healthiness
                 </li>
                 <li>
-                  <i class="fas fa-check" /> Grows Herbs
+                  <i className="fas fa-check" /> Grows Herbs
                 </li>
                 <li>
-                  <i class="fas fa-check" /> Grows Vegetables
+                  <i className="fas fa-check" /> Grows Vegetables
                 </li>
               </ul>
             </div>
