@@ -10,6 +10,11 @@ import Infosection from "./Components/Infosection.js";
 import Company from "./Components/Company.js";
 import Footer from "./Components/Footer.js";
 import { createGlobalStyle } from "styled-components";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
+
+library.add(fab, faCheckSquare);
 
 const GlobalStyle = createGlobalStyle`
   body {

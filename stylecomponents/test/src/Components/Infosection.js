@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import clipart2 from "../images/clipart2.png";
 import unsplash1 from "../images/unsplash1.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const InfoSectionStyle = styled.section`
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -44,7 +45,7 @@ export default class Infosection extends Component {
               <h2>Core Features</h2>
               <ul>
                 <li>
-                  <i className="fas fa-check" /> Fully Optimized
+                  <FontAwesomeIcon icon="check-square" /> Fully Optimized
                 </li>
                 <li>
                   <i className="fas fa-check" /> Extreme Growth
