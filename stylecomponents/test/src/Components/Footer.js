@@ -1,9 +1,15 @@
 import React, { Component } from "react";
+import styled from "styled-components";
+
+const FooterStyle = styled.div`
+  background: #3d8d62;
+  color: #fff;
+`;
 
 export default class Footer extends Component {
   render() {
     return (
-      <footer id="main-footer">
+      <FooterStyle>
         <div className="container">
           <div className="row center-xs center-sm center-md center-lg">
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -11,7 +17,7 @@ export default class Footer extends Component {
             </div>
           </div>
         </div>
-      </footer>
+      </FooterStyle>
     );
   }
 }
