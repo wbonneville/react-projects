@@ -11,6 +11,24 @@ const Info = styled.div`
   & clipart {
     width: 350px;
   }
+
+  & h2 {
+    font-size: 30px;
+    margin: 5;
+    padding-bottom: 10px;
+    color: white;
+  }
+
+  & ul {
+    list-style: none;
+    padding: 0px;
+  }
+
+  & li {
+    line-height: 2em;
+    font-size: 18px;
+    color: white;
+  }
 `;
 
 export default Info;

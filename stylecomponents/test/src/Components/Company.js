@@ -1,9 +1,38 @@
 import React, { Component } from "react";
+import styled from "styled-components";
+
+const CompanyStyle = styled.div`
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+
+  & h4 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  & ul {
+    padding: 0;
+    list-style: none;
+    line-height: 2em;
+  }
+
+  & input[type="text"] {
+    padding: 7px;
+  }
+
+  & button {
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    border: 0;
+  }
+`;
 
 export default class Company extends Component {
   render() {
     return (
-      <section id="company">
+      <CompanyStyle>
         <div className="container">
           <div className="row">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -47,7 +76,7 @@ export default class Company extends Component {
             </div>
           </div>
         </div>
-      </section>
+      </CompanyStyle>
     );
   }
 }
