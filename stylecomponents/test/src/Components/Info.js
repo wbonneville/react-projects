@@ -3,12 +3,12 @@ import styled from "styled-components";
 import unsplash1 from "../images/unsplash1.jpg";
 
 const Info = styled.div`
-  info {
-    background-img: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      (${unsplash1}) no-repeat center;
+  .info {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(${unsplash1}) no-repeat center;
   }
 
-  & clipart {
+  & .clipart {
     width: 350px;
   }
 

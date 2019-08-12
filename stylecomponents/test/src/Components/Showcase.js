@@ -6,10 +6,10 @@ const ShowcaseStyle = styled.div`
   border-bottom: 1px solid #3d8d62;
   margin-bottom: 30px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
-    (${unsplash6}) no-repeat center center;
+    url(${unsplash6}) no-repeat center center;
   background-position: top;
 
-  & row {
+  & .row {
     height: 600px;
   }
 
@@ -18,6 +18,11 @@ const ShowcaseStyle = styled.div`
     margin: zero;
     margin-bottom: 20px;
     color: white;
+  }
+
+  & p {
+    color: #ccc;
+    margin: 0;
   }
 `;
 

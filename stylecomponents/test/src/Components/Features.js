@@ -14,22 +14,22 @@ const FeaturesStyle = styled.div`
     margin-bottom: 40px;
   }
 
-  & fa {
+  & .fa {
     font-size: 60px;
     color: #3d8d62;
   }
 
-  & fas {
+  & .fas {
     font-size: 60px;
     color: #3d8d62;
   }
 
-  & fab {
+  & .fab {
     font-size: 60px;
     color: #3d8d62;
   }
 
-  & far {
+  & .far {
     font-size: 60px;
     color: #3d8d62;
   }
