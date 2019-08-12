@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const CompanyStyle = styled.div`
+const CompanyStyle = styled.section`
   background: #333;
   color: #fff;
   padding: 10px 0;

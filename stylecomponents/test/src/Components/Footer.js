@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const FooterStyle = styled.div`
+const FooterStyle = styled.section`
   background: #3d8d62;
   color: #fff;
 `;

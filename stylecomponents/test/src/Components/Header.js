@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Anchor from "./Anchor";
 
-const Navbar = styled.div`
+const Navbar = styled.section`
   text-transform: uppercase;
 
   & li {

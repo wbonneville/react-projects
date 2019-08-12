@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import unsplash6 from "../images/unsplash6.jpg";
 
-const ShowcaseStyle = styled.div`
+const ShowcaseStyle = styled.section`
   border-bottom: 1px solid #3d8d62;
   margin-bottom: 30px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),

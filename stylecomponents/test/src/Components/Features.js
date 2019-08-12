@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const FeaturesStyle = styled.div`
+const FeaturesStyle = styled.section`
   & h2 {
     font-size: 35px;
     margin: 0;

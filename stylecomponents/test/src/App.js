@@ -13,7 +13,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   body {
-    font-family:'Futura', sans-serif;
+    font-family: "San Francisco", sans-serif;
     font-size: 18px;
     line-height: 1.5em;
     margin: 0;
