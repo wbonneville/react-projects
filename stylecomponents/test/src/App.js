@@ -12,9 +12,9 @@ import Footer from "./Components/Footer.js";
 import { createGlobalStyle } from "styled-components";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
+import { faCheckSquare, faCheck } from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, faCheckSquare);
+library.add(fab, faCheckSquare, faCheck);
 
 const GlobalStyle = createGlobalStyle`
   body {

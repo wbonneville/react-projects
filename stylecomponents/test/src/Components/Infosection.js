@@ -45,22 +45,22 @@ export default class Infosection extends Component {
               <h2>Core Features</h2>
               <ul>
                 <li>
-                  <FontAwesomeIcon icon="check-square" /> Fully Optimized
+                  <FontAwesomeIcon icon="check" /> Fully Optimized
                 </li>
                 <li>
-                  <i className="fas fa-check" /> Extreme Growth
+                  <FontAwesomeIcon icon="check" /> Extreme Growth
                 </li>
                 <li>
-                  <i className="fas fa-check" /> Improves Neighbours View
+                  <FontAwesomeIcon icon="check" /> Improves Neighbours View
                 </li>
                 <li>
-                  <i className="fas fa-check" /> Provides Overall Healthiness
+                  <FontAwesomeIcon icon="check" /> Provides Overall Healthiness
                 </li>
                 <li>
-                  <i className="fas fa-check" /> Grows Herbs
+                  <FontAwesomeIcon icon="check" /> Grows Herbs
                 </li>
                 <li>
-                  <i className="fas fa-check" /> Grows Vegetables
+                  <FontAwesomeIcon icon="check" /> Grows Vegetables
                 </li>
               </ul>
             </div>
