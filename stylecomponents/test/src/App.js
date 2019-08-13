@@ -11,10 +11,30 @@ import Company from "./Components/Company.js";
 import Footer from "./Components/Footer.js";
 import { createGlobalStyle } from "styled-components";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faCheckSquare, faCheck } from "@fortawesome/free-solid-svg-icons";
+import { fab, fa500px } from "@fortawesome/free-brands-svg-icons";
+import {
+  faCheckSquare,
+  faCheck,
+  faAppleAlt,
+  faAtom,
+  faBatteryHalf,
+  faBong,
+  faBookReader,
+  faBusinessTime
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, faCheckSquare, faCheck);
+library.add(
+  fab,
+  faCheckSquare,
+  faCheck,
+  fa500px,
+  faAppleAlt,
+  faAtom,
+  faBatteryHalf,
+  faBong,
+  faBookReader,
+  faBusinessTime
+);
 
 const GlobalStyle = createGlobalStyle`
   body {

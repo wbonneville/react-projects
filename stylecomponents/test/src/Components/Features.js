@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const FeaturesStyle = styled.section`
   & h2 {
@@ -47,7 +48,7 @@ export default class Features extends Component {
 
               <div className="row center-xs center-sm center-md center-lg">
                 <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                  <i className="fab fa-500px" />
+                  <FontAwesomeIcon icon="apple-alt" />
                   <br />
                   <h4>Fully Optimized</h4>
                   <p>
@@ -56,7 +57,7 @@ export default class Features extends Component {
                   </p>
                 </div>
                 <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                  <i className="fas fa-chess-bishop" />
+                  <FontAwesomeIcon icon="atom" />
                   <br />
                   <h4>Free Support</h4>
                   <p>
@@ -66,7 +67,7 @@ export default class Features extends Component {
                   </p>
                 </div>
                 <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                  <i className="fas fa-barcode" />
+                  <FontAwesomeIcon icon="battery-half" />
                   <br />
                   <h4>Free Upgrades</h4>
                   <p>
@@ -79,7 +80,7 @@ export default class Features extends Component {
 
               <div className="row center-xs center-sm center-md center-lg">
                 <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                  <i className="fas fa-cloud-sun-rain" />
+                  <FontAwesomeIcon icon="bong" />
                   <br />
                   <h4>Uptime Guarantee</h4>
                   <p>
@@ -88,7 +89,7 @@ export default class Features extends Component {
                   </p>
                 </div>
                 <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                  <i className="fa fa-users" />
+                  <FontAwesomeIcon icon="book-reader" />
                   <br />
                   <h4>Multi-User</h4>
                   <p>
@@ -97,7 +98,7 @@ export default class Features extends Component {
                   </p>
                 </div>
                 <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                  <i className="fa fa-plug" />
+                  <FontAwesomeIcon icon="business-time" />
                   <br />
                   <h4>Plug and Play</h4>
                   <p>
