@@ -20,7 +20,8 @@ import {
   faBatteryHalf,
   faBong,
   faBookReader,
-  faBusinessTime
+  faBusinessTime,
+  faStar
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -33,7 +34,8 @@ library.add(
   faBatteryHalf,
   faBong,
   faBookReader,
-  faBusinessTime
+  faBusinessTime,
+  faStar
 );
 
 const GlobalStyle = createGlobalStyle`
