@@ -21,7 +21,8 @@ import {
   faBong,
   faBookReader,
   faBusinessTime,
-  faStar
+  faStar,
+  faArrowAltCircleDown
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -35,7 +36,8 @@ library.add(
   faBong,
   faBookReader,
   faBusinessTime,
-  faStar
+  faStar,
+  faArrowAltCircleDown
 );
 
 const GlobalStyle = createGlobalStyle`
