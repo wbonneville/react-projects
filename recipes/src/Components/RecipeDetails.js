@@ -37,6 +37,17 @@ export default class RecipeDetails extends Component {
             {/* details */}
             <div className="col-10 mx-auto col-md-6 my-3">
               <h6 className="text-uppercase">{title}</h6>
+              <h6 className="text-warning text-capitalize text-slanted">
+                provided by {publisher}
+              </h6>
+              <a
+                href={publisher_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary mt-2 text-capitalize"
+              >
+                publisher webpage
+              </a>
             </div>
           </div>
         </div>
