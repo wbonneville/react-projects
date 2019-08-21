@@ -5,7 +5,7 @@ export default class RecipeDetails extends Component {
     super(props);
 
     this.state = {
-      recipe: {},
+      recipe: recipe,
       url: `https://www.food2fork.com/api/get?key=0f888992f670fc1649857c6c2490cac6&q&rId=${
         this.props.id
       }
@@ -13,6 +13,14 @@ export default class RecipeDetails extends Component {
     };
   }
   render() {
+    const {
+      image_url,
+      publisher,
+      publisher_url,
+      source_url,
+      title,
+      ingredients
+    } = this.state.recipe;
     return (
       <React.Fragment>
         <h1>Hello from Details</h1>
