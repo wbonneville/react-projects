@@ -12,6 +12,19 @@ export default class RecipeDetails extends Component {
         `
     };
   }
+
+  async componentDidMount() {
+    try {
+      const data = await fetch(this.state.url);
+      const jsonData = await data.json();
+      this.setState({
+        recipes: jsonData.recipes
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   render() {
     const {
       image_url,
