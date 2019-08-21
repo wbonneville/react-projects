@@ -37,7 +37,7 @@ class App extends Component {
 
     return (
       <React.Fragment>
-        <RecipeList recipes={this.state.recipes} />
+        {/* <RecipeList recipes={this.state.recipes} /> */}
         <RecipeDetails id={this.state.details_id} />
       </React.Fragment>
     );
