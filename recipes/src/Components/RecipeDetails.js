@@ -60,7 +60,9 @@ export default class RecipeDetails extends Component {
                 <h2 className="mt-3 mb-4">Ingredients</h2>
                 {ingredients.map((item, index) => {
                   return (
-                    <li className="list-group-item text-slanted">{item}</li>
+                    <li key={index} className="list-group-item text-slanted">
+                      {item}
+                    </li>
                   );
                 })}
               </ul>
