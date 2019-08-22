@@ -26,7 +26,11 @@ export default class Recipe extends Component {
               </h6>
             </div>
             <div className="card-footer">
-              <button type="button" className="btn btn-primary text-capitalize">
+              <button
+                type="button"
+                className="btn btn-primary text-capitalize"
+                onClick={this.displayPage((this.state.pageIndex = 0))}
+              >
                 Details
               </button>
               <a
