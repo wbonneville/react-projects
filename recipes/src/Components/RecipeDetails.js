@@ -1,28 +1,36 @@
 import React, { Component } from "react";
 import { recipe } from "../tempDetails";
 export default class RecipeDetails extends Component {
-  constructor(props) {
-    super(props);
+  //   constructor(props) {
+  //     super(props);
 
-    this.state = {
-      recipe: recipe,
-      url: `https://www.food2fork.com/api/get?key=0f888992f670fc1649857c6c2490cac6&q&rId=${
-        this.props.id
-      }
-        `
-    };
-  }
+  //     this.state = {
+  //       recipe: recipe,
+  //       url: `https://www.food2fork.com/api/get?key=0f888992f670fc1649857c6c2490cac6&q&rId=${
+  //         this.props.id
+  //       }
+  //         `
+  //     };
+  //   }
+
+  //   async componentDidMount() {
+  //     try {
+  //       const data = await fetch(this.state.url);
+  //       const jsonData = await data.json();
+  //       this.setState({
+  //         recipe: jsonData.recipe
+  //       });
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   }
+
+  state = {
+    recipe: recipe
+  };
 
   async componentDidMount() {
-    try {
-      const data = await fetch(this.state.url);
-      const jsonData = await data.json();
-      this.setState({
-        recipes: jsonData.recipes
-      });
-    } catch (error) {
-      console.log(error);
-    }
+    console.log(this.props.id);
   }
 
   render() {
