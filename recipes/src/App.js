@@ -31,15 +31,20 @@ class App extends Component {
     this.getRecipes();
   }
 
+  displayPage = () => {
+    switch (index) {
+      default:
+      case 1:
+        return <RecipeList recipes={this.state.recipes} />;
+      case 0:
+        return <RecipeDetails id={this.state.details_id} />;
+    }
+  };
+
   render() {
     // console.log(this.state.recipes);
 
-    return (
-      <React.Fragment>
-        <RecipeList recipes={this.state.recipes} />
-        <RecipeDetails id={this.state.details_id} />
-      </React.Fragment>
-    );
+    return <React.Fragment> {this.displayPage()}</React.Fragment>;
   }
 }
 
