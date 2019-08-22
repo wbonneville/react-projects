@@ -12,31 +12,31 @@ class App extends Component {
     details_id: 35380
   };
 
-  // async getRecipes() {
-  //   // Function to get recipes from API
-  //   try {
-  //     // Try this function
-  //     const data = await fetch(this.state.url); // Data is equal to the current state of the data from the URL
-  //     const jsonData = await data.json(); // jsonData is equal to data
-  //     this.setState({
-  //       // Set recipe state of jsonData.recipes
-  //       recipes: jsonData.recipes
-  //     });
-  //   } catch (error) {
-  //     // Report back with any erors
-  //     console.log(error);
-  //   }
-  // }
-  // componentDidMount() {
-  //   this.getRecipes();
-  // }
+  async getRecipes() {
+    // Function to get recipes from API
+    try {
+      // Try this function
+      const data = await fetch(this.state.url); // Data is equal to the current state of the data from the URL
+      const jsonData = await data.json(); // jsonData is equal to data
+      this.setState({
+        // Set recipe state of jsonData.recipes
+        recipes: jsonData.recipes
+      });
+    } catch (error) {
+      // Report back with any erors
+      console.log(error);
+    }
+  }
+  componentDidMount() {
+    this.getRecipes();
+  }
 
   render() {
     // console.log(this.state.recipes);
 
     return (
       <React.Fragment>
-        {/* <RecipeList recipes={this.state.recipes} /> */}
+        <RecipeList recipes={this.state.recipes} />
         <RecipeDetails id={this.state.details_id} />
       </React.Fragment>
     );
