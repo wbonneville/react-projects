@@ -20,7 +20,16 @@ export default class RecipeSearch extends Component {
                     type="text"
                     name="search"
                     placeholder="chicken, onions, carrots"
+                    className="form-control"
                   />
+                  <div className="input-group-append">
+                    <button
+                      type="submit"
+                      className="input-group-text bg-primary text-white"
+                    >
+                      <i className="fas fa-search" />
+                    </button>
+                  </div>
                 </div>
               </form>
             </div>
