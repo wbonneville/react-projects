@@ -9,9 +9,12 @@ class App extends Component {
     recipes: recipes,
     url:
       "https://www.food2fork.com/api/search?key=0f888992f670fc1649857c6c2490cac6&q",
+    base_url:
+      "https://www.food2fork.com/api/search?key=0f888992f670fc1649857c6c2490cac6&q",
     details_id: 35380,
     pageIndex: 1,
-    search: ""
+    search: "",
+    query: "&q="
   };
 
   async getRecipes() {
@@ -79,6 +82,12 @@ class App extends Component {
   handleSubmit = e => {
     e.preventDefault();
     console.log("hello from SUBMIT");
+    const { base_url, query, search } = this.state;
+    this.setState(() => {
+      return {
+        url: `${base_url}, ${query}, ${search}`
+      };
+    });
   };
 
   render() {
