@@ -28,6 +28,7 @@ class App extends Component {
       console.log(error);
     }
   }
+
   componentDidMount() {
     this.getRecipes();
   }
@@ -36,7 +37,12 @@ class App extends Component {
     switch (index) {
       default:
       case 1:
-        return <RecipeList recipes={this.state.recipes} />;
+        return (
+          <RecipeList
+            recipes={this.state.recipes}
+            handleDetails={this.handleDetails}
+          />
+        );
       case 0:
         return (
           <RecipeDetails

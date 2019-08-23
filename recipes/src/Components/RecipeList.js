@@ -15,14 +15,16 @@ export default class RecipeList extends Component {
               <h1 className="text-slanted">recipe list</h1>
             </div>
           </div>
+
           {/* end of title */}
+
           <div className="row">
             {recipes.map(recipe => {
               return (
                 <Recipe
                   key={recipe.recipe_id}
                   recipe={recipe}
-                  handleDetails={() => handleDetails(recipe.recipe_id)}
+                  handleDetails={handleDetails}
                 />
               );
             })}

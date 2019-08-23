@@ -30,7 +30,7 @@ export default class Recipe extends Component {
               <button
                 type="button"
                 className="btn btn-primary text-capitalize"
-                onClick={() => this.handleIndex(1)}
+                onClick={() => handleDetails(0, recipe_id)}
               >
                 Details
               </button>
