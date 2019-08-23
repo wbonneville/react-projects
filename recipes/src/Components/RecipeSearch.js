@@ -11,6 +11,18 @@ export default class RecipeSearch extends Component {
                 search for recipe with{" "}
                 <strong className="text-danger">Food2Fork</strong>
               </h1>
+              <form className="mt-4">
+                <label htmlFor="search" className="text-capitalize">
+                  type recipes seperated by comma
+                </label>
+                <div className="input-group">
+                  <input
+                    type="text"
+                    name="search"
+                    placeholder="chicken, onions, carrots"
+                  />
+                </div>
+              </form>
             </div>
           </div>
         </div>
