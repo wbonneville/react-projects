@@ -67,6 +67,15 @@ class App extends Component {
     });
   };
 
+  handleChange = e => {
+    console.log("HELLO FROM CHANGE");
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+    console.log("hello from SUBMIT");
+  };
+
   render() {
     console.log(this.state.recipes);
 
