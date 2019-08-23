@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 export default class RecipeSearch extends Component {
   render() {
+    const { value, handleSubmit, handleChange } = this.props;
     return (
       <React.Fragment>
         <div className="container">
