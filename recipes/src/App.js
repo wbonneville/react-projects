@@ -25,6 +25,11 @@ class App extends Component {
       const data = await fetch(this.state.url); // Data is equal to the current state of the data from the URL
       const jsonData = await data.json(); // jsonData is equal to data
       if (jsonData.recipes.length === 0) {
+        this.setState(() => {
+          return { error: "sorry but this search is invalid" };
+        });
+      } else {
+        this.setState(() => {});
       }
       this.setState({
         // Set recipe state of jsonData.recipes
