@@ -39,7 +39,6 @@ export default class RecipeList extends Component {
                     key={recipe.recipe_id}
                     recipe={recipe}
                     handleDetails={handleDetails}
-                    error={this.state.error}
                   />
                 );
               })
