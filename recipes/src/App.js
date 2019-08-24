@@ -14,7 +14,8 @@ class App extends Component {
     details_id: 35380,
     pageIndex: 1,
     search: "",
-    query: "&q="
+    query: "&q=",
+    error: ""
   };
 
   async getRecipes() {
@@ -23,6 +24,8 @@ class App extends Component {
       // Try this function
       const data = await fetch(this.state.url); // Data is equal to the current state of the data from the URL
       const jsonData = await data.json(); // jsonData is equal to data
+      if (jsonData.recipes.length === 0) {
+      }
       this.setState({
         // Set recipe state of jsonData.recipes
         recipes: jsonData.recipes
