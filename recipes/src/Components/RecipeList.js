@@ -18,7 +18,6 @@ export default class RecipeList extends Component {
           value={value}
           handleChange={handleChange}
           handleSubmit={handleSubmit}
-          error={this.state.error}
         />
         <div className="container my-5">
           {/* title */}
@@ -31,16 +30,20 @@ export default class RecipeList extends Component {
           {/* end of title */}
 
           <div className="row">
-            {recipes.map(recipe => {
-              return (
-                <Recipe
-                  key={recipe.recipe_id}
-                  recipe={recipe}
-                  handleDetails={handleDetails}
-                  error={this.state.error}
-                />
-              );
-            })}
+            {error ? (
+              <h1 className="text-danger text-center"> {error}</h1>
+            ) : (
+              ecipes.map(recipe => {
+                return (
+                  <Recipe
+                    key={recipe.recipe_id}
+                    recipe={recipe}
+                    handleDetails={handleDetails}
+                    error={this.state.error}
+                  />
+                );
+              })
+            )}
           </div>
         </div>
       </React.Fragment>
