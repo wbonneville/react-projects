@@ -33,7 +33,7 @@ export default class RecipeList extends Component {
             {error ? (
               <h1 className="text-danger text-center"> {error}</h1>
             ) : (
-              ecipes.map(recipe => {
+              recipes.map(recipe => {
                 return (
                   <Recipe
                     key={recipe.recipe_id}
