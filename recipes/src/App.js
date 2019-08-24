@@ -17,21 +17,21 @@ class App extends Component {
     query: "&q="
   };
 
-  // async getRecipes() {
-  //   // Function to get recipes from API
-  //   try {
-  //     // Try this function
-  //     const data = await fetch(this.state.url); // Data is equal to the current state of the data from the URL
-  //     const jsonData = await data.json(); // jsonData is equal to data
-  //     this.setState({
-  //       // Set recipe state of jsonData.recipes
-  //       recipes: jsonData.recipes
-  //     });
-  //   } catch (error) {
-  //     // Report back with any erors
-  //     console.log(error);
-  //   }
-  // }
+  async getRecipes() {
+    // Function to get recipes from API
+    try {
+      // Try this function
+      const data = await fetch(this.state.url); // Data is equal to the current state of the data from the URL
+      const jsonData = await data.json(); // jsonData is equal to data
+      this.setState({
+        // Set recipe state of jsonData.recipes
+        recipes: jsonData.recipes
+      });
+    } catch (error) {
+      // Report back with any erors
+      console.log(error);
+    }
+  }
 
   // componentDidMount() {
   //   this.getRecipes();
@@ -85,8 +85,10 @@ class App extends Component {
     const { base_url, query, search } = this.state;
     this.setState(() => {
       return {
-        url: `${base_url}, ${query}, ${search}`
-      };
+        url: `${base_url}, ${query}, ${search}`,search=""
+      }, ()=>{
+        this.getRecipes();
+      }
     });
   };
 
