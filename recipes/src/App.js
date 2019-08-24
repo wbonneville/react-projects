@@ -54,6 +54,7 @@ class App extends Component {
             value={this.state.search}
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
+            error={this.state.error}
           />
         );
       case 0:

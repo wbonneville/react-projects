@@ -9,7 +9,8 @@ export default class RecipeList extends Component {
       handleDetails,
       value,
       handleSubmit,
-      handleChange
+      handleChange,
+      error
     } = this.props;
     return (
       <React.Fragment>
@@ -17,6 +18,7 @@ export default class RecipeList extends Component {
           value={value}
           handleChange={handleChange}
           handleSubmit={handleSubmit}
+          error={this.state.error}
         />
         <div className="container my-5">
           {/* title */}
@@ -35,6 +37,7 @@ export default class RecipeList extends Component {
                   key={recipe.recipe_id}
                   recipe={recipe}
                   handleDetails={handleDetails}
+                  error={this.state.error}
                 />
               );
             })}
