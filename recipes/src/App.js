@@ -83,17 +83,14 @@ class App extends Component {
     e.preventDefault();
     console.log("hello from SUBMIT");
     const { base_url, query, search } = this.state;
-    this.setState(() => {
-      return (
-        {
-          url: `${base_url}, ${query}, ${search}`,
-          search: ""
-        },
-        () => {
-          this.getRecipes();
-        }
-      );
-    });
+    this.setState(
+      () => {
+        return { url: `${base_url}, ${query}, ${search}`, search: "" };
+      },
+      () => {
+        this.getRecipes();
+      }
+    );
   };
 
   render() {
