@@ -29,12 +29,10 @@ class App extends Component {
           return { error: "sorry but this search is invalid" };
         });
       } else {
-        this.setState(() => {});
+        this.setState(() => {
+          return { recipes: jsonData.recipes };
+        });
       }
-      this.setState({
-        // Set recipe state of jsonData.recipes
-        recipes: jsonData.recipes
-      });
     } catch (error) {
       // Report back with any erors
       console.log(error);
