@@ -8,24 +8,20 @@ const StyledWrap = styled(Navbar)`
   max-height: 40px;
 `;
 
-const StyledBrand = styled(Navbar.Brand)`
-  && {
-    color: white;
-    :hover {
-      color: white;
-    }
-  }
+const StyledLinks = styled(Nav)`
+  text-align: center;
 `;
 
 function SecondaryNavigationBar() {
   return (
     <StyledWrap>
       <Navbar>
-        <Nav className="mr-auto">
-          <Nav.Link href="#city17">City 17</Nav.Link>
-          <Nav.Link href="#features">Apartments and Jobs</Nav.Link>
+        <StyledLinks className="mr-auto">
+          <Nav.Link href="#city17">Test</Nav.Link>
+          <Nav.Link href="#features">Test</Nav.Link>
           <Nav.Link href="#pricing">Pricing</Nav.Link>
-        </Nav>
+          <Nav.Link href="#pricing">Pricing</Nav.Link>
+        </StyledLinks>
       </Navbar>
     </StyledWrap>
   );
