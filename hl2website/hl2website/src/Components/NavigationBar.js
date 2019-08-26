@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import styled from "styled-components";
 
+// Navbar Style
 const StyledWrap = styled(Navbar)`
   background: rgb(46, 58, 80);
   opacity: 0.99;
@@ -16,6 +17,7 @@ const StyledBrand = styled(Navbar.Brand)`
   }
 `;
 
+// Secondary Navbar Style
 function NavigationBar() {
   return (
     <StyledWrap>
