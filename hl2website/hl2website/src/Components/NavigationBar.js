@@ -6,6 +6,7 @@ import styled from "styled-components";
 const StyledWrap = styled(Navbar)`
   background: rgb(46, 58, 80);
   opacity: 0.99;
+  font-family: "Roboto";
 `;
 
 const StyledBrand = styled(Navbar.Brand)`

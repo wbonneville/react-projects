@@ -7,6 +7,7 @@ const StyledWrap = styled(Navbar)`
   opacity: 0.99;
   max-height: 40px;
   font-size: 12px;
+  font-family: "Roboto";
 `;
 
 const StyledLinks = styled(Nav.Link)`
