@@ -1,17 +1,39 @@
 import React, { Component } from "react";
 import pic1 from "../images/pic1.jpg";
+import styled from "styled-components";
+
+const PicStyle = styled.img`
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  height: 650px;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(${pic1});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+`;
+
+const Wrapper = styled.div`
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  padding: 0 0px;
+`;
+
+const HeaderStyle = styled.div`
+  position: relative;
+  padding: 20px;
+`;
 
 export default class Header extends Component {
   render() {
     return (
-      <div class="wrapper">
+      <Wrapper>
         <div class="slide">
-          <div class="header">
-            <img
-              class="logo"
-              src={pic1}
-              //   style="max-width:100%;height:auto;"
-            />
+          <HeaderStyle>
+            <PicStyle class="logo" />
             <div class="menu">
               <ul>
                 <li>
@@ -34,7 +56,7 @@ export default class Header extends Component {
                 </li>
               </ul>
             </div>
-          </div>
+          </HeaderStyle>
           <div class="slideTitle">
             <h1>Half-Life 2 </h1>
             <p>
@@ -43,7 +65,7 @@ export default class Header extends Component {
             </p>
           </div>
         </div>
-      </div>
+      </Wrapper>
     );
   }
 }
