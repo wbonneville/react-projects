@@ -3,25 +3,30 @@ import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import styled from "styled-components";
 
 const StyledWrap = styled(Navbar)`
-  background: white;
+  background: #f5f5f5;
   opacity: 0.99;
   max-height: 40px;
+  font-size: 12px;
 `;
 
-const StyledLinks = styled(Nav)`
-  text-align: center;
+const StyledLinks = styled(Nav.Link)`
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  &&&:hover {
+    color: black;
+  }
 `;
 
 function SecondaryNavigationBar() {
   return (
     <StyledWrap>
       <Navbar>
-        <StyledLinks className="mr-auto">
-          <Nav.Link href="#city17">Test</Nav.Link>
-          <Nav.Link href="#features">Test</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
-        </StyledLinks>
+        <Nav className="mr-auto">
+          <StyledLinks href="#city17">Jobs</StyledLinks>
+          <StyledLinks href="#features">Apartments</StyledLinks>
+          <StyledLinks href="#pricing">Rationing</StyledLinks>
+          <StyledLinks href="#pricing">Immigration</StyledLinks>
+        </Nav>
       </Navbar>
     </StyledWrap>
   );
