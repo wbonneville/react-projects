@@ -1,11 +1,15 @@
 import React, { Component } from "react";
+import dog from "../images/dog.jpg";
+import lamarr from "../images/lamarr.jpg";
+import breen from "../images/breen.jpg";
+import alyx from "../images/alyx.jpg";
 
 export default class Info extends Component {
   render() {
     return (
       <div class="skill-section">
         <div class="skill-img">
-          <img src="images/dog.jpg" height="auto" width="450"></img>
+          <img src={dog} height="auto" width="450"></img>
         </div>
         <div class="skill-content">
           <h3 class="skill-title">
@@ -89,9 +93,9 @@ export default class Info extends Component {
             ></img>
           </div>
           <div class="team-img">
-            <img src="images/lamarr.jpg"></img>
-            <img class="breenimg" src="images/breen.jpg"></img>
-            <img src="images/alyx.jpg"></img>
+            <img src={lamarr}></img>
+            <img class="breenimg" src={breen}></img>
+            <img src={alyx}></img>
           </div>
         </div>
       </div>
