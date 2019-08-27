@@ -7,7 +7,15 @@ const ImgWrap = styled.div`
   background-size: contain;
   & .row {
     width: 100%;
-    height: 600px;
+    height: 700px;
+
+    & h1 {
+      font-size: 115px;
+      color: white;
+      padding-top: 50px;
+      width: 60%;
+      margin-left: 50px;
+    }
   }
 `;
 
@@ -16,7 +24,11 @@ export default class Index extends Component {
     return (
       <ImgWrap>
         <div className="container">
-          <div className="row"></div>
+          <div className="row">
+            <h1>
+              <strong>It's great to be part of the greater good.</strong>
+            </h1>
+          </div>
         </div>
       </ImgWrap>
     );
