@@ -26,6 +26,10 @@ function SecondaryNavigationBar() {
           <StyledLinks href="#city17">Jobs</StyledLinks>
           <StyledLinks href="#features">Apartments</StyledLinks>
           <StyledLinks href="#pricing">Rationing</StyledLinks>
+          <StyledLinks href="#pricing">Administration</StyledLinks>
+          <StyledLinks href="#pricing">Benefactors</StyledLinks>
+          <StyledLinks href="#pricing">Civil Protection</StyledLinks>
+          <StyledLinks href="#pricing">Immigration</StyledLinks>
           <StyledLinks href="#pricing">Immigration</StyledLinks>
         </Nav>
       </Navbar>
