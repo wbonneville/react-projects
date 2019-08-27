@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import HeadNavigationBar from "./Components/NavigationBar";
+import Official from "./Components/Official";
 import NavigationBar from "./Components/NavigationBar";
 import SecondaryNavagationBar from "./Components/SecondaryNavigationBar";
 import Slide from "./Components/Slide";
@@ -9,7 +9,7 @@ import Slogan from "./Components/Slogan";
 function App() {
   return (
     <React.Fragment>
-      <HeadNavigationBar />
+      <Official></Official>
       <NavigationBar />
       <SecondaryNavagationBar />
       <Slide> </Slide>

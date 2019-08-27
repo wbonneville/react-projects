@@ -2,26 +2,21 @@ import React from "react";
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import styled from "styled-components";
 
-// Navbar Style
+// Official Navbar Style
 const StyledWrap = styled(Navbar)`
-  background: rgb(46, 58, 80);
+  background: gray;
   opacity: 0.99;
   font-family: "Roboto";
+  max-height: 8px;
 `;
 
 const StyledBrand = styled(Navbar.Brand)`
   && {
     color: white;
-    font-size: 22px;
+    font-size: 8px;
     :hover {
       color: white;
     }
-  }
-`;
-
-const StyledLink = styled(Nav.Link)`
-  &&& {
-    color: white;
   }
 `;
 
@@ -30,11 +25,8 @@ function NavigationBar() {
     <StyledWrap>
       <Navbar>
         <StyledBrand href="#home">
-          <strong>City 17 Information Desk</strong>
+          <strong>Official Government Site</strong>
         </StyledBrand>
-        <Nav className="mr-auto">
-          <StyledLink href="#city17">Civil Protection | Metropolice</StyledLink>
-        </Nav>
       </Navbar>
     </StyledWrap>
   );
