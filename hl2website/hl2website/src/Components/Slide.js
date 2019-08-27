@@ -2,20 +2,15 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import image from "../images/slide.jpg";
 
-const ImgWrap = styled.div`
-  background-image: url(${image}) no-repeat center center;
-  & .row {
-    width: auto;
-    height: 800px;
-  }
+const ImgWrap = styled.img`
+  height: 100%;
+  width: 100%;
 `;
 
 export default class Index extends Component {
   render() {
     return (
-      <ImgWrap>
-        <div className="row"></div>
-      </ImgWrap>
+      <ImgWrap src="https://wallup.net/wp-content/uploads/2017/03/27/381707-minimalism-selective_coloring-Half-Life_2-The_Citadel-Combine-video_games-artwork.jpg"></ImgWrap>
     );
   }
 }
