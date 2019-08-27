@@ -25,7 +25,9 @@ function NavigationBar() {
     <StyledWrap>
       <Navbar>
         <StyledBrand href="#home">
-          <strong>Official Government Site</strong>
+          <strong>
+            <i class="fas fa-globe-americas fa-xs"></i> Official Government Site
+          </strong>
         </StyledBrand>
       </Navbar>
     </StyledWrap>
