@@ -5,7 +5,7 @@ import slide from "../images/slide.jpg";
 const ImgWrap = styled.div`
   background: url(${slide}) no-repeat center center;
   & .row {
-    width: 100%;
+    width: auto;
     height: 800px;
   }
 `;
@@ -13,7 +13,7 @@ const ImgWrap = styled.div`
 export default class Slide extends Component {
   render() {
     return (
-      <ImgWrap className="row">
+      <ImgWrap>
         <div className="row"></div>
       </ImgWrap>
     );
