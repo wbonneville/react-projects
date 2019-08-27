@@ -10,10 +10,10 @@ const ImgWrap = styled.div`
     width: 100%;
     height: 700px;
 
-    & h1 {
+    & .divRow {
       font-size: 130px;
       color: white;
-      padding-top: 85px;
+      padding-top: 40px;
       width: 100%;
       margin-left: 50px;
       text-align: left;
@@ -24,15 +24,16 @@ const ImgWrap = styled.div`
   }
 `;
 
-const CombineWrap = styled.div`
-  background-image: url(${combine});
-  &&& .combineImg {
-    width: 100%;
-    height: 100px;
-    z-index: 2;
-    padding-bottom: 500px;
-  }
-`;
+// const CombineWrap = styled.div`
+//   background-image: url(${combine});
+//   background-size: 50% auto;
+//   &&& .combineImg {
+//     width: 100%;
+//     height: 50px;
+//     z-index: 2;
+//     padding-bottom: 500px;
+//   }
+// `;
 
 export default class Index extends Component {
   render() {
@@ -40,15 +41,12 @@ export default class Index extends Component {
       <ImgWrap>
         <div className="container">
           <div className="row">
-            <h1>
+            <div className="divRow">
               <strong>
                 <span>It's great </span> to be part of the greater good.
               </strong>
-            </h1>
+            </div>
           </div>
-          <CombineWrap>
-            <div className="combineImg"></div>
-          </CombineWrap>
         </div>
       </ImgWrap>
     );
