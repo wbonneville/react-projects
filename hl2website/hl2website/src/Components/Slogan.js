@@ -10,9 +10,9 @@ const SloganWrap = styled.h1`
   && {
     font-size: 40px;
     color: black;
-    margin-top: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     text-align: center;
-    margin-bottom: 50px;
   }
 `;
 

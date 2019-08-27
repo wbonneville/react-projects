@@ -16,8 +16,7 @@ const ImgWrap = styled.div`
       padding-top: 40px;
       width: 100%;
       margin-left: 50px;
-      text-align: left;
-
+      text-align: center;
       & span {
       }
     }
