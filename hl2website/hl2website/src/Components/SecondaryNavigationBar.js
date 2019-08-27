@@ -23,14 +23,14 @@ function SecondaryNavigationBar() {
     <StyledWrap>
       <Navbar>
         <Nav className="mr-auto">
-          <StyledLinks href="#city17">Jobs</StyledLinks>
-          <StyledLinks href="#features">Apartments</StyledLinks>
-          <StyledLinks href="#pricing">Rationing</StyledLinks>
+          <StyledLinks href="#city17">Jobs and Positions</StyledLinks>
+          <StyledLinks href="#features">Apartments and Housing</StyledLinks>
+          <StyledLinks href="#pricing">Rationing and Credits</StyledLinks>
           <StyledLinks href="#pricing">Administration</StyledLinks>
           <StyledLinks href="#pricing">Benefactors</StyledLinks>
           <StyledLinks href="#pricing">Civil Protection</StyledLinks>
-          <StyledLinks href="#pricing">Immigration</StyledLinks>
-          <StyledLinks href="#pricing">Immigration</StyledLinks>
+          <StyledLinks href="#pricing">Transportation</StyledLinks>
+          <StyledLinks href="#pricing">Report Suspicious Activity</StyledLinks>
         </Nav>
       </Navbar>
     </StyledWrap>
