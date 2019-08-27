@@ -8,7 +8,7 @@ const DivWrap = styled.div`
 
 const SloganWrap = styled.h1`
   && {
-    font-size: 50px;
+    font-size: 40px;
     color: black;
     margin-top: 50px;
     text-align: center;
