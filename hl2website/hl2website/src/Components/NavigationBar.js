@@ -12,9 +12,16 @@ const StyledWrap = styled(Navbar)`
 const StyledBrand = styled(Navbar.Brand)`
   && {
     color: white;
+    font-size: 22px;
     :hover {
       color: white;
     }
+  }
+`;
+
+const StyledLink = styled(Nav.Link)`
+  &&& {
+    color: white;
   }
 `;
 
@@ -22,11 +29,11 @@ function NavigationBar() {
   return (
     <StyledWrap>
       <Navbar>
-        <StyledBrand href="#home">City 17 Information Desk</StyledBrand>
+        <StyledBrand href="#home">
+          <strong>City 17 Information Desk</strong>
+        </StyledBrand>
         <Nav className="mr-auto">
-          <Nav.Link href="#city17">Nova Prospekt</Nav.Link>
-          <Nav.Link href="#features">Citadel</Nav.Link>
-          <Nav.Link href="#pricing">City 17</Nav.Link>
+          <StyledLink href="#city17">Civil Protection | Metropolice</StyledLink>
         </Nav>
       </Navbar>
     </StyledWrap>
