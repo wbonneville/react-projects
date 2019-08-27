@@ -5,6 +5,7 @@ import image from "../images/slide.jpg";
 const ImgWrap = styled.img`
   height: 100%;
   width: 100%;
+  opacity: 0.8;
 `;
 
 export default class Index extends Component {

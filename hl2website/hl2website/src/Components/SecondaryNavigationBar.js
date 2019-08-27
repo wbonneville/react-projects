@@ -23,6 +23,7 @@ function SecondaryNavigationBar() {
     <StyledWrap>
       <Navbar>
         <Nav className="mr-auto">
+          <StyledLinks href="#city17">City 17</StyledLinks>
           <StyledLinks href="#city17">Jobs and Positions</StyledLinks>
           <StyledLinks href="#features">Apartments and Housing</StyledLinks>
           <StyledLinks href="#pricing">Rationing and Credits</StyledLinks>
