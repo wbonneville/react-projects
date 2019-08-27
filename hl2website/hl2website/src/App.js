@@ -9,7 +9,7 @@ function App() {
     <React.Fragment>
       <NavigationBar />
       <SecondaryNavagationBar />
-      <Slide />
+      <Slide> </Slide>
     </React.Fragment>
   );
 }
