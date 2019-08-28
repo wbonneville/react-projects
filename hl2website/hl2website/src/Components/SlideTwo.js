@@ -7,6 +7,7 @@ const ImgWrap = styled.div`
     url(${teamwork});
   background-size: contain;
   background-repeat: no-repeat;
+  overflow: hidden;
 
   &&& .row {
     height: 900px;
@@ -33,7 +34,7 @@ export default class SlideTwo extends Component {
       <ImgWrap>
         <div className="row">
           <div className="slogan">
-            <strong>Teamwork Builds Towers</strong>
+            <strong></strong>
           </div>
         </div>
       </ImgWrap>
