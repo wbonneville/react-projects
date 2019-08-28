@@ -21,6 +21,12 @@ const ImgWrap = styled.div`
       margin-left: 50px;
       text-align: center;
     }
+    & .goldHr {
+      width: 16%;
+      margin-left: auto;
+      margin-right: auto;
+      border-color: #b96835;
+    }
   }
 `;
 
@@ -59,7 +65,7 @@ const Block = styled.div`
     }
 
     & a {
-      font-size: 20px;
+      font-size: 18px;
       font-family: "Roboto";
       color: black;
     }
@@ -97,6 +103,7 @@ export default class Index extends Component {
                           <p class="m-4 text-pink text-uppercase">
                             August 28th, 2019
                           </p>
+                          <hr className="goldHr"></hr>
                         </div>
                       </div>
                     </div>
