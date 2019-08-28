@@ -16,8 +16,8 @@ function App() {
       <SecondaryNavagationBar />
       <Slide> </Slide>
       <Slogan></Slogan>
-      <SlideTwo></SlideTwo>
       <News></News>
+      <SlideTwo></SlideTwo>
     </React.Fragment>
   );
 }

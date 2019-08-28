@@ -11,8 +11,8 @@ const SloganWrap = styled.h1`
   && {
     font-size: 40px;
     color: black;
-    margin-top: 250px;
-    margin-bottom: 200px;
+    margin-top: 180px;
+    margin-bottom: 110px;
     text-align: center;
   }
 `;

@@ -15,9 +15,14 @@ export default class News extends Component {
       <NewsSection class="blog-cat mt-5 pb-5">
         <div class="container mb-5">
           <div class="text-center container-less resources-feed-heading">
-            <h1 class="in-news h3 text-red">Solodev In The News</h1>
+            <h1>Breencast</h1>
+            <br />
             <h2 class="news-feed-heading h1 lead">
-              Solodev CDO on Key Marketing Considerations in Choosing a CMS
+              A Breencast is a regular broadcast made by Dr. Wallace Breen,
+              delivered to the populace of City 17 (and possibly other Combine
+              controlled towns and cities) via private televisions and, more
+              commonly, large video monitors mounted on walls in public places
+              such as town squares and railway stations.
             </h2>
           </div>
         </div>
@@ -30,8 +35,8 @@ export default class News extends Component {
               <div class="col-md-10">
                 <h3 class="feed-item-heading m-0 font-weight-800">
                   <a class="text-black" href="#">
-                    Solodev Ranked as High Performer on G2 Crowd’s Spring 2018
-                    Web Content Management Grid
+                    "Dear Dr. Breen. Why has the Combine seen fit to suppress
+                    our reproductive cycle? Sincerely, A Concerned Citizen."
                   </a>
                 </h3>
               </div>
@@ -50,8 +55,10 @@ export default class News extends Component {
               <div class="col-md-10">
                 <h3 class="feed-item-heading  m-0 font-weight-800">
                   <a class="text-black" href="#">
-                    Solodev Earns “Highest Ranking Software Tool” for State of
-                    Florida in Nationwide G2 Crowd Study
+                    We now have direct confirmation of a disruptor in our midst,
+                    one who has acquired an almost messianic reputation in the
+                    minds of certain citizens. His figure is synonymous with the
+                    darkest urges of instinct, ignorance and decay.
                   </a>
                 </h3>
               </div>
@@ -70,8 +77,9 @@ export default class News extends Component {
               <div class="col-md-10">
                 <h3 class="feed-item-heading  m-0 font-weight-800">
                   <a class="text-black" href="#">
-                    City of Miami Beach Launches Enticing Website to Match
-                    Vibrant City
+                    I have been asked to say a few words to the transhuman arm
+                    of Sector Seventeen Overwatch, concerning recent successes
+                    in containing members of the resistance Science Team.
                   </a>
                 </h3>
               </div>
@@ -90,8 +98,11 @@ export default class News extends Component {
               <div class="col-md-10">
                 <h3 class="feed-item-heading  m-0 font-weight-800">
                   <a class="text-black" href="#">
-                    Solodev Earns National Recognition as Marketing and Commerce
-                    CMS Leader
+                    In order to be true to our nature, and our destiny, we must
+                    aspire to greater things. We have outgrown our cradle. It is
+                    futile to cry for mother's milk, when our true sustenance
+                    awaits us among the stars. And only the universal union that
+                    small minds call 'The Combine' can carry us there.
                   </a>
                 </h3>
               </div>
@@ -110,8 +121,9 @@ export default class News extends Component {
               <div class="col-md-10">
                 <h3 class="feed-item-heading  m-0 font-weight-800">
                   <a class="text-black" href="#">
-                    Solodev Helps Power American Dairy Association North East's
-                    Online Passions
+                    Adrian Shephard returns thanks to the Vortigaunts, in a
+                    gambit to use him to buy Gordon Freeman time to find Wallace
+                    Breen and keep his Overwatch pursuers at bay.
                   </a>
                 </h3>
               </div>
