@@ -7,24 +7,18 @@ const ImgWrap = styled.div`
     url(${teamwork});
   background-size: contain;
   background-repeat: no-repeat;
-  overflow: hidden;
 
   &&& .row {
-    height: 900px;
+    height: 716px;
     text-align: center;
     margin: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
+    margin-bottom: 0;
   }
 
-  & .slogan {
-    font-size: 100px;
-    color: white;
-    width: 100%;
-    text-transform: uppercase;
-    vertical-align: middle;
-    padding-top: 220px;
   }
 `;
 
@@ -32,11 +26,7 @@ export default class SlideTwo extends Component {
   render() {
     return (
       <ImgWrap>
-        <div className="row">
-          <div className="slogan">
-            <strong></strong>
-          </div>
-        </div>
+        <div className="row"></div>
       </ImgWrap>
     );
   }
