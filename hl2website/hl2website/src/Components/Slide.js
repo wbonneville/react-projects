@@ -44,7 +44,7 @@ const Block = styled.div`
 
   & .text-block {
     position: absolute;
-    bottom: -290px;
+    bottom: -260px;
     right: 500px;
     background-color: white;
     color: black;
