@@ -4,6 +4,7 @@ import styled from "styled-components";
 const NewsSection = styled.section`
   font-family: "Roboto";
   margin-top: 40px;
+  margin-bottom: 40px;
 
   & h2 {
     font-size: 16px;

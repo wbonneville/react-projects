@@ -3,7 +3,7 @@ import styled from "styled-components";
 import teamwork from "../images/teamwork.png";
 
 const ImgWrap = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
     url(${teamwork});
   background-size: contain;
   background-repeat: no-repeat;
@@ -23,6 +23,7 @@ const ImgWrap = styled.div`
     width: 100%;
     text-transform: uppercase;
     vertical-align: middle;
+    padding-top: 220px;
   }
 `;
 
