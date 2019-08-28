@@ -30,11 +30,11 @@ export default class RecruitSlide extends Component {
         </Circle>
         <Circle className="dot">
           {" "}
-          <i class="fas fa-city fa-3x"></i>
+          <i class="fas fa-charging-station fa-3x"></i>
         </Circle>
         <Circle className="dot">
           {" "}
-          <i class="fas fa-city fa-3x"></i>
+          <i class="fas fa-chalkboard-teacher fa-3x"></i>
         </Circle>
       </div>
     );
