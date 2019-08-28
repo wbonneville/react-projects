@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
+const CircleWrapper = styled.div``;
+
 const Circle = styled.div`
   height: 85px;
   width: 85px;
@@ -14,8 +16,8 @@ const Circle = styled.div`
 export default class RecruitSlide extends Component {
   render() {
     return (
-      <div>
-        <h1>Join us</h1>
+      <CircleWrapper>
+        <h1>Join us today</h1>
         <Circle className="dot">
           {" "}
           <i class="fas fa-city fa-3x"></i>
@@ -36,7 +38,7 @@ export default class RecruitSlide extends Component {
           {" "}
           <i class="fas fa-chalkboard-teacher fa-3x"></i>
         </Circle>
-      </div>
+      </CircleWrapper>
     );
   }
 }
