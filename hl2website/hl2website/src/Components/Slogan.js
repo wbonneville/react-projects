@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const DivWrap = styled.div`
   &&& {
+    background-color: ;
   }
 `;
 
@@ -10,7 +11,7 @@ const SloganWrap = styled.h1`
   && {
     font-size: 40px;
     color: black;
-    margin-top: 80px;
+    margin-top: 130px;
     margin-bottom: 80px;
     text-align: center;
   }

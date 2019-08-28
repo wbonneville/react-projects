@@ -8,14 +8,15 @@ const ImgWrap = styled.div`
     url(${image});
   background-size: contain;
   opacity: 0.9;
+
   & .row {
     width: 100%;
     height: 700px;
 
     & .divRow {
-      font-size: 130px;
+      font-size: 120px;
       color: white;
-      padding-top: 40px;
+      padding-top: 10px;
       width: 100%;
       margin-left: 50px;
       text-align: center;
@@ -43,7 +44,7 @@ const Block = styled.div`
 
   & .text-block {
     position: absolute;
-    bottom: -400px;
+    bottom: -290px;
     right: 500px;
     background-color: white;
     color: black;
@@ -55,11 +56,14 @@ const Block = styled.div`
     }
 
     & p {
-      font-size: 20px;
+      font-size: 14px;
+      font-family: "Roboto";
     }
 
     & a {
       font-size: 20px;
+      font-family: "Roboto";
+      color: black;
     }
   }
 `;
@@ -81,18 +85,19 @@ export default class Index extends Component {
                     onclick="location.href='#'"
                   >
                     <div class="container">
-                      <div class="align-items-center border-top">
+                      <div>
                         <div class="col-md-10">
                           <h3 class="feed-item-heading m-0 font-weight-800">
+                            <br></br>
                             <a class="text-black" href="#">
-                              Solodev Ranked as High Performer on G2 Crowd’s
-                              Spring 2018 Web Content Management Grid
+                              Genuine honesty with yourself can aid you in your
+                              journey of integrating with the shadow.
                             </a>
                           </h3>
                         </div>
                         <div class="col-md-10">
-                          <p class="m-0 text-pink text-uppercase">
-                            April 02, 2018
+                          <p class="m-4 text-pink text-uppercase">
+                            August 28th, 2019
                           </p>
                         </div>
                       </div>
