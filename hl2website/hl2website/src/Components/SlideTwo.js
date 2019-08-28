@@ -16,13 +16,27 @@ const ImgWrap = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
+
+  & .slogan {
+    font-size: 100px;
+    color: white;
+    padding-top: 150px;
+    width: 100%;
+    margin-left: auto;
+    text-align: center;
+    text-transform: uppercase;
+  }
 `;
 
 export default class SlideTwo extends Component {
   render() {
     return (
       <ImgWrap>
-        <div className="row"></div>
+        <div className="row">
+          <div className="slogan">
+            <strong>Teamwork Builds Towers</strong>
+          </div>
+        </div>
       </ImgWrap>
     );
   }
