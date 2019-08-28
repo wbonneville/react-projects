@@ -2,16 +2,18 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const CircleWrapper = styled.div`
-  text-align: center;
+  width: 1000px;
+  margin-left: 500px;
 `;
 
 const Circle = styled.div`
-  height: 85px;
-  width: 85px;
+  height: 80px;
+  width: 80px;
   background-color: #fff;
   border-radius: 50%;
-  display: inline-block;
+  display: table-cell;
   vertical-align: middle;
+  text-align: center;
 `;
 
 export default class RecruitSlide extends Component {
