@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import styled from "styled-components";
 
 // Navbar Style
@@ -7,6 +7,7 @@ const StyledWrap = styled(Navbar)`
   background: rgb(46, 58, 80);
   opacity: 0.99;
   font-family: "Roboto";
+  min-height: 80px;
 `;
 
 const StyledBrand = styled(Navbar.Brand)`

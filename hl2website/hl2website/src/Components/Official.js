@@ -7,13 +7,13 @@ const StyledWrap = styled(Navbar)`
   background: gray;
   opacity: 0.99;
   font-family: "Roboto";
-  max-height: 8px;
+  max-height: 6px;
 `;
 
 const StyledBrand = styled(Navbar.Brand)`
   && {
     color: white;
-    font-size: 8px;
+    font-size: 6px;
     :hover {
       color: white;
     }

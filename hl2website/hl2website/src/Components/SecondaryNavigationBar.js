@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import styled from "styled-components";
 
 const StyledWrap = styled(Navbar)`
@@ -23,7 +23,7 @@ function SecondaryNavigationBar() {
     <StyledWrap>
       <Navbar>
         <Nav className="mr-auto">
-          <StyledLinks href="#city17">City 17</StyledLinks>
+          <StyledLinks href="#city17">Citadel</StyledLinks>
           <StyledLinks href="#city17">Jobs and Positions</StyledLinks>
           <StyledLinks href="#features">Apartments and Housing</StyledLinks>
           <StyledLinks href="#pricing">Rationing and Credits</StyledLinks>
