@@ -36,6 +36,26 @@ const ImgWrap = styled.div`
 //   }
 // `;
 
+const Block = styled.div`
+  & .containerBlock {
+    position: relative;
+  }
+
+  & .text-block {
+    position: absolute;
+    bottom: -400px;
+    right: 500px;
+    background-color: white;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    & h4 {
+      font-size: 100px;
+    }
+  }
+`;
+
 export default class Index extends Component {
   render() {
     return (
@@ -46,6 +66,11 @@ export default class Index extends Component {
               <strong>
                 <span>It's great </span> to be part of the greater good.
               </strong>
+              <Block className="containerBlock">
+                <div className="text-block">
+                  <h4>Ahh, what a day.</h4>
+                </div>
+              </Block>
             </div>
           </div>
         </div>
