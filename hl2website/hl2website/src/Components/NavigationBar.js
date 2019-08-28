@@ -14,7 +14,7 @@ const StyledBrand = styled(Navbar.Brand)`
   && {
     color: white;
     font-size: 22px;
-    text-align: center;
+
     :hover {
       color: white;
     }
@@ -24,9 +24,12 @@ const StyledBrand = styled(Navbar.Brand)`
 const StyledLink = styled(Nav.Link)`
   &&& {
     color: white;
-    text-align: center;
     font-size: 12px;
   }
+`;
+
+const StyledNav = styled(Nav)`
+  float: right;
 `;
 
 function NavigationBar() {
@@ -36,9 +39,11 @@ function NavigationBar() {
         <StyledBrand href="#home">
           <strong>City 17 Information Desk</strong>
         </StyledBrand>
-        <Nav className="mr-auto">
-          <StyledLink href="#city17">Civil Protection | Metropolice</StyledLink>
-        </Nav>
+        <StyledNav className="ml-md-auto">
+          <StyledLink className="ml-md-auto" href="#city17">
+            Civil Protection | Metropolice
+          </StyledLink>
+        </StyledNav>
       </Navbar>
     </StyledWrap>
   );

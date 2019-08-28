@@ -6,6 +6,7 @@ import SecondaryNavagationBar from "./Components/SecondaryNavigationBar";
 import Slide from "./Components/Slide";
 import Slogan from "./Components/Slogan";
 import News from "./Components/News";
+import SlideTwo from "./Components/SlideTwo";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <SecondaryNavagationBar />
       <Slide> </Slide>
       <Slogan></Slogan>
+      <SlideTwo></SlideTwo>
       <News></News>
     </React.Fragment>
   );
