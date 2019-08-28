@@ -20,8 +20,6 @@ const ImgWrap = styled.div`
       width: 100%;
       margin-left: 50px;
       text-align: center;
-      & span {
-      }
     }
   }
 `;

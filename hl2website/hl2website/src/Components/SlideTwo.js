@@ -3,10 +3,10 @@ import styled from "styled-components";
 import teamwork from "../images/teamwork.png";
 
 const ImgWrap = styled.div`
-  background-image: url(${teamwork});
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
+    url(${teamwork});
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.9;
 
   &&& .row {
     height: 900px;
@@ -20,11 +20,9 @@ const ImgWrap = styled.div`
   & .slogan {
     font-size: 100px;
     color: white;
-    padding-top: 150px;
     width: 100%;
-    margin-left: auto;
-    text-align: center;
     text-transform: uppercase;
+    vertical-align: middle;
   }
 `;
 
