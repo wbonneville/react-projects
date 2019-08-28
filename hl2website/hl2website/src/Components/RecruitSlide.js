@@ -20,6 +20,22 @@ export default class RecruitSlide extends Component {
           {" "}
           <i class="fas fa-city fa-3x"></i>
         </Circle>
+        <Circle className="dot">
+          {" "}
+          <i class="fas fa-clinic-medical fa-3x"></i>
+        </Circle>
+        <Circle className="dot">
+          {" "}
+          <i class="far fa-address-card fa-3x"></i>
+        </Circle>
+        <Circle className="dot">
+          {" "}
+          <i class="fas fa-city fa-3x"></i>
+        </Circle>
+        <Circle className="dot">
+          {" "}
+          <i class="fas fa-city fa-3x"></i>
+        </Circle>
       </div>
     );
   }
