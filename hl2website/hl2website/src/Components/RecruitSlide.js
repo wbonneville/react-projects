@@ -5,7 +5,8 @@ const CircleWrapper = styled.div`
   text-align: center;
   padding-bottom: 80px;
   width: 100%;
-  font-family: "Futura";
+  font-family: "Roboto";
+
   & h2 {
     padding-top: 40px;
     font-size: 12px;
@@ -24,17 +25,19 @@ const Circle = styled.div`
   & i {
     margin-right: 60px;
   }
-
   & .fa-city {
     color: black;
   }
-  & .fa-city {
+  & .fa-clinic-medical {
     color: black;
   }
-  & .fa-city {
+  & .fa-address-card {
     color: black;
   }
-  & .fa-city {
+  & .fa-charging-station {
+    color: black;
+  }
+  & .fa-chalkboard-teacher {
     color: black;
   }
 `;

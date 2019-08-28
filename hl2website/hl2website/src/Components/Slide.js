@@ -42,7 +42,7 @@ const Block = styled.div`
 
   & .text-block {
     position: absolute;
-    bottom: -260px;
+    bottom: -270px;
     right: 500px;
     background-color: white;
     color: black;
@@ -86,8 +86,10 @@ export default class Index extends Component {
                           <h3 class="feed-item-heading m-0 font-weight-800">
                             <br></br>
                             <a class="text-black" href="#">
-                              Genuine honesty with yourself can aid you in your
-                              journey of integrating with the shadow.
+                              Know what your situation is, hasten your
+                              reformation, study with diligence, work with
+                              enthusiasm, reform yourself from the inside out,
+                              your future will indeed be bright.
                             </a>
                           </h3>
                         </div>
