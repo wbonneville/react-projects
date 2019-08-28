@@ -15,7 +15,7 @@ const NewsSection = styled.section`
     font-size: 22px;
   }
 
-  & hr {
+  & .goldHr {
     width: 15%;
     margin-left: auto;
     margin-right: auto;
@@ -31,7 +31,7 @@ export default class News extends Component {
           <div class="text-center container-less resources-feed-heading">
             <h2 class="row py-3 py-md-5 align-items-center border-top"></h2>
             <h1>Breencast</h1>
-            <hr></hr>
+            <hr className="goldHr"></hr>
             <br />
             <h2 class="news-feed-heading h1 lead">
               Regular broadcast made by Dr. Wallace Breen, delivered to the
