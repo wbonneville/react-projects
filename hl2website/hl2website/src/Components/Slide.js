@@ -51,7 +51,15 @@ const Block = styled.div`
     padding-right: 20px;
 
     & h4 {
-      font-size: 100px;
+      font-size: 50px;
+    }
+
+    & p {
+      font-size: 20px;
+    }
+
+    & a {
+      font-size: 20px;
     }
   }
 `;
@@ -68,7 +76,28 @@ export default class Index extends Component {
               </strong>
               <Block className="containerBlock">
                 <div className="text-block">
-                  <h4>Ahh, what a day.</h4>
+                  <div
+                    class="fullbar-item w-100 cursor-pointer"
+                    onclick="location.href='#'"
+                  >
+                    <div class="container">
+                      <div class="align-items-center border-top">
+                        <div class="col-md-10">
+                          <h3 class="feed-item-heading m-0 font-weight-800">
+                            <a class="text-black" href="#">
+                              Solodev Ranked as High Performer on G2 Crowd’s
+                              Spring 2018 Web Content Management Grid
+                            </a>
+                          </h3>
+                        </div>
+                        <div class="col-md-10">
+                          <p class="m-0 text-pink text-uppercase">
+                            April 02, 2018
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </Block>
             </div>
