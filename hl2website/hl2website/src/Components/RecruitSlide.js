@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const CircleWrapper = styled.div``;
+const CircleWrapper = styled.div`
+  text-align: center;
+`;
 
 const Circle = styled.div`
   height: 85px;
   width: 85px;
   background-color: #fff;
   border-radius: 50%;
-  display: table-cell;
+  display: inline-block;
   vertical-align: middle;
-  text-align: center;
 `;
 
 export default class RecruitSlide extends Component {
