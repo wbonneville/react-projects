@@ -4,7 +4,7 @@ import image from "../images/slide2.jpg";
 import combine from "../images/combine.png";
 
 const ImgWrap = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
     url(${image});
   background-size: contain;
   opacity: 0.9;
