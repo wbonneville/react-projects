@@ -75,9 +75,7 @@ export default class Index extends Component {
         <div className="container">
           <div className="row">
             <div className="divRow">
-              <strong>
-                <span>It's great </span> to be part of the greater good.
-              </strong>
+              <strong>It's great to be part of the greater good.</strong>
               <Block className="containerBlock">
                 <div className="text-block">
                   <div
