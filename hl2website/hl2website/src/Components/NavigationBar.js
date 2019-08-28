@@ -14,6 +14,7 @@ const StyledBrand = styled(Navbar.Brand)`
   && {
     color: white;
     font-size: 22px;
+    text-align: center;
     :hover {
       color: white;
     }
@@ -23,6 +24,8 @@ const StyledBrand = styled(Navbar.Brand)`
 const StyledLink = styled(Nav.Link)`
   &&& {
     color: white;
+    text-align: center;
+    font-size: 12px;
   }
 `;
 
