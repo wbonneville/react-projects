@@ -4,8 +4,21 @@ import styled from "styled-components";
 const NewsSection = styled.section`
   font-family: "Roboto";
   margin-top: 40px;
+
+  & h2 {
+    font-size: 16px;
+  }
+
   & a {
     color: black;
+    font-size: 22px;
+  }
+
+  & hr {
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #b96835;
   }
 `;
 
@@ -15,14 +28,16 @@ export default class News extends Component {
       <NewsSection class="blog-cat mt-5 pb-5">
         <div class="container mb-5">
           <div class="text-center container-less resources-feed-heading">
+            <h2 class="row py-3 py-md-5 align-items-center border-top"></h2>
             <h1>Breencast</h1>
+            <hr></hr>
             <br />
             <h2 class="news-feed-heading h1 lead">
-              A Breencast is a regular broadcast made by Dr. Wallace Breen,
-              delivered to the populace of City 17 (and possibly other Combine
-              controlled towns and cities) via private televisions and, more
-              commonly, large video monitors mounted on walls in public places
-              such as town squares and railway stations.
+              Regular broadcast made by Dr. Wallace Breen, delivered to the
+              populace of City 17 (and possibly other Combine controlled towns
+              and cities) via private televisions and, more commonly, large
+              video monitors mounted on walls in public places such as town
+              squares and railway stations.
             </h2>
           </div>
         </div>

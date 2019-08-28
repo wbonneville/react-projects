@@ -16,7 +16,7 @@ const ImgWrap = styled.div`
     & .divRow {
       font-size: 100px;
       color: white;
-      padding-top: 115px;
+      padding-top: 150px;
       width: 100%;
       margin-left: 50px;
       text-align: center;
