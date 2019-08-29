@@ -40,8 +40,17 @@ const SectionWrapper = styled.div`
 
 const StyledHr = styled.hr`
   border-color: #b96835;
-  width: ${props => (props.primary ? "100%" : "20%")};
+  width: ${props =>
+    props.primary
+      ? "100%"
+      : "21%" && props.secondary
+      ? "30%"
+      : "21%" && props.thirdary
+      ? "15%"
+      : "21%"};
 `;
+
+// Just having fun withs props ^ ^ ^
 
 export default class NewSection extends Component {
   render() {
@@ -76,7 +85,7 @@ export default class NewSection extends Component {
           </div>
           <div className="horizontal">
             <h2>Dr. Breen</h2>
-            <StyledHr></StyledHr>
+            <StyledHr thirdary></StyledHr>
             <p>
               {" "}
               Dr. Wallace Breen is the current Earth Administrator under the
@@ -94,7 +103,7 @@ export default class NewSection extends Component {
           </div>
           <div className="horizontal">
             <h2>Working at State</h2>
-            <StyledHr></StyledHr>
+            <StyledHr secondary></StyledHr>
             <p>
               {" "}
               The Combine's collective goal is to create the Universal Union.
