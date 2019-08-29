@@ -46,6 +46,7 @@ export default class RecruitSlide extends Component {
   render() {
     return (
       <CircleWrapper>
+        <hr className="recruitHr"></hr>
         <h1>Recruiting</h1>
         <hr className="goldHr"></hr>
         <h2>
