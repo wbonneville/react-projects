@@ -24,9 +24,14 @@ const SectionWrapper = styled.div`
     text-align: center;
 
     & .horizontal {
-      width: 100px;
+      width: 200px;
       display: inline-block;
+      color: white;
     }
+  }
+
+  & hr {
+    color: #b96835;
   }
 `;
 
@@ -39,16 +44,18 @@ export default class NewSection extends Component {
           <span className="spanOne">interests</span> and
           <span className="spanTwo"> security</span> of all entities.
         </h1>
+        <br></br>
         <hr></hr>
+        <br></br>
         <div className="parent">
           <div className="horizontal">
-            <p>Yes GMAN</p>
+            <h1>Yes GMAN</h1>
           </div>
           <div className="horizontal">
-            <p>Yes GMAN</p>
+            <h1>Yes GMAN</h1>
           </div>
           <div className="horizontal">
-            <p>Yes GMAN</p>
+            <h1>Yes GMAN</h1>
           </div>
         </div>
       </SectionWrapper>
