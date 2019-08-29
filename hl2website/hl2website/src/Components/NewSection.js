@@ -11,7 +11,7 @@ const SectionWrapper = styled.div`
     padding-top: 62px;
     padding-left: 40px;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
 
     & .spanOne,
     .spanTwo {
@@ -24,10 +24,14 @@ const SectionWrapper = styled.div`
     text-align: center;
 
     & .horizontal {
-      width: 200px;
+      width: 350px;
       display: inline-block;
       color: white;
     }
+  }
+
+  & h2 {
+    font-size: 20px;
   }
 
   & hr {
@@ -49,13 +53,13 @@ export default class NewSection extends Component {
         <br></br>
         <div className="parent">
           <div className="horizontal">
-            <h1>Yes GMAN</h1>
+            <h2>Immigration</h2>
           </div>
           <div className="horizontal">
-            <h1>Yes GMAN</h1>
+            <h2>On Dr. Breen</h2>
           </div>
           <div className="horizontal">
-            <h1>Yes GMAN</h1>
+            <h2>Working at State</h2>
           </div>
         </div>
       </SectionWrapper>
