@@ -35,7 +35,8 @@ const SectionWrapper = styled.div`
   }
 
   & hr {
-    color: #b96835;
+    width: 22%;
+    border-color: #b96835;
   }
 `;
 
@@ -54,12 +55,31 @@ export default class NewSection extends Component {
         <div className="parent">
           <div className="horizontal">
             <h2>Immigration</h2>
+            <hr></hr>
+            <p>
+              {" "}
+              If you're attempting to leave, you must carefully read our policy,
+              which can be found <span>here</span>
+            </p>
           </div>
           <div className="horizontal">
-            <h2>On Dr. Breen</h2>
+            <h2>Dr. Breen</h2>
+            <hr></hr>
+            <p>
+              {" "}
+              Dr. Wallace Breen is the current Earth Administrator under the
+              Combine.
+            </p>
           </div>
           <div className="horizontal">
             <h2>Working at State</h2>
+            <hr></hr>
+            <p>
+              {" "}
+              Comprised of both allied and enslaved species, the Combine's
+              collective goal is to dominate and absorb the Multiverse into its
+              inter-dimensional empire; the Universal Union.[3]
+            </p>
           </div>
         </div>
       </SectionWrapper>
