@@ -7,43 +7,55 @@ const CircleWrapper = styled.div`
   width: 100%;
   font-family: "Roboto";
 
+  & h1 {
+    font-size: 14px;
+  }
+
   & h2 {
     padding-top: 40px;
-    font-size: 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
   }
 
   & .goldHr {
-    width: 12%;
+    width: 3%;
     margin-left: auto;
     margin-right: auto;
     border-color: #b96835;
   }
 
   & .recruitHr {
-    padding-top: 10px;
+    padding-top: 30px;
   }
 `;
 
 const Circle = styled.div`
-  display: inline-block;
-  padding-top: 70px;
+  padding-top: 30px;
+
+  & .dot {
+    margin: 0 auto;
+    width: 100px;
+  }
   & i {
-    margin-right: 60px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   & .fa-city {
-    color: black;
+    color: #b96835;
   }
   & .fa-clinic-medical {
-    color: black;
+    color: #b96835;
   }
   & .fa-address-card {
-    color: black;
+    color: #b96835;
   }
   & .fa-charging-station {
-    color: black;
+    color: #b96835;
   }
   & .fa-chalkboard-teacher {
-    color: black;
+    color: #b96835;
   }
 `;
 
@@ -52,31 +64,14 @@ export default class RecruitSlide extends Component {
     return (
       <CircleWrapper>
         <hr className="recruitHr"></hr>
-        <h1>Recruiting</h1>
-        <hr className="goldHr"></hr>
-        <h2>
-          Success breeds complacency. Complacency breeds failure. Only the
-          paranoid survive.
-        </h2>
+
+        <h2>Join us now for great benefits:</h2>
         <Circle className="dot">
-          {" "}
-          <i class="fas fa-city fa-5x"></i>
-        </Circle>
-        <Circle className="dot">
-          {" "}
-          <i class="fas fa-clinic-medical fa-5x"></i>
-        </Circle>
-        <Circle className="dot">
-          {" "}
-          <i class="far fa-address-card fa-5x"></i>
-        </Circle>
-        <Circle className="dot">
-          {" "}
-          <i class="fas fa-charging-station fa-5x"></i>
-        </Circle>
-        <Circle className="dot">
-          {" "}
-          <i class="fas fa-chalkboard-teacher fa-5x"></i>
+          <i class="fas fa-city fa-1x"></i>
+          <i class="fas fa-clinic-medical fa-1x"></i>
+          <i class="far fa-address-card fa-1x"></i>
+          <i class="fas fa-charging-station fa-1x"></i>
+          <i class="fas fa-chalkboard-teacher fa-1x"></i>
         </Circle>
       </CircleWrapper>
     );
