@@ -59,7 +59,16 @@ export default class NewSection extends Component {
             <p>
               {" "}
               If you're attempting to leave, you must carefully read our policy,
-              which can be found <span>here</span>
+              which can be found <span>here.</span>
+            </p>
+            <p>
+              <strong>Passports</strong>
+            </p>
+            <p>
+              <strong>Visas</strong>
+            </p>
+            <p>
+              <strong>Travel Warnings</strong>
             </p>
           </div>
           <div className="horizontal">
@@ -70,15 +79,31 @@ export default class NewSection extends Component {
               Dr. Wallace Breen is the current Earth Administrator under the
               Combine.
             </p>
+            <p>
+              <strong>Transcripts</strong>
+            </p>
+            <p>
+              <strong>Contact</strong>
+            </p>
+            <p>
+              <strong>Education and Culture at Citadel</strong>
+            </p>
           </div>
           <div className="horizontal">
             <h2>Working at State</h2>
             <hr></hr>
             <p>
               {" "}
-              Comprised of both allied and enslaved species, the Combine's
-              collective goal is to dominate and absorb the Multiverse into its
-              inter-dimensional empire; the Universal Union.[3]
+              The Combine's collective goal is to create the Universal Union.
+            </p>
+            <p>
+              <strong>Job Openings</strong>
+            </p>
+            <p>
+              <strong>Other Opportunities</strong>
+            </p>
+            <p>
+              <strong></strong>
             </p>
           </div>
         </div>
