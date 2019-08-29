@@ -35,9 +35,12 @@ const SectionWrapper = styled.div`
   }
 
   & hr {
-    width: 22%;
-    border-color: #b96835;
   }
+`;
+
+const StyledHr = styled.hr`
+  border-color: #b96835;
+  width: ${props => (props.primary ? "100%" : "20%")};
 `;
 
 export default class NewSection extends Component {
@@ -50,12 +53,12 @@ export default class NewSection extends Component {
           <span className="spanTwo"> security</span> of all entities.
         </h1>
         <br></br>
-        <hr></hr>
+        <StyledHr primary></StyledHr>
         <br></br>
         <div className="parent">
           <div className="horizontal">
             <h2>Immigration</h2>
-            <hr></hr>
+            <StyledHr></StyledHr>
             <p>
               {" "}
               If you're attempting to leave, you must carefully read our policy,
@@ -73,7 +76,7 @@ export default class NewSection extends Component {
           </div>
           <div className="horizontal">
             <h2>Dr. Breen</h2>
-            <hr></hr>
+            <StyledHr></StyledHr>
             <p>
               {" "}
               Dr. Wallace Breen is the current Earth Administrator under the
@@ -91,7 +94,7 @@ export default class NewSection extends Component {
           </div>
           <div className="horizontal">
             <h2>Working at State</h2>
-            <hr></hr>
+            <StyledHr></StyledHr>
             <p>
               {" "}
               The Combine's collective goal is to create the Universal Union.
@@ -102,9 +105,7 @@ export default class NewSection extends Component {
             <p>
               <strong>Other Opportunities</strong>
             </p>
-            <p>
-              <strong></strong>
-            </p>
+            <p>&nbsp;</p>
           </div>
         </div>
       </SectionWrapper>
