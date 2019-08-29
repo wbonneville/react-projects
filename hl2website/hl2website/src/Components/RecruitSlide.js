@@ -17,6 +17,11 @@ const CircleWrapper = styled.div`
     margin-left: auto;
     margin-right: auto;
     border-color: #b96835;
+  }
+
+  & .recruitHr {
+    padding-top: 10px;
+  }
 `;
 
 const Circle = styled.div`
