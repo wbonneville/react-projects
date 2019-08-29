@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const SectionWrapper = styled.section`
+// SectionWrapper is quite hacky.
+const SectionWrapper = styled.div`
   background-color: #313d52;
   width: 100%;
   height: 600px;
@@ -19,9 +20,17 @@ const SectionWrapper = styled.section`
     }
   }
 
-  & .headerOne {
-    text-align: center;
-    display: inline-block;
+  & .parent {
+    float: left;
+    clear: none;
+    width: 100%;
+
+    & .horizontal {
+      float: left;
+      display: inline-block;
+      margin-left: 13.5%;
+      margin-right: 13.5%;
+    }
   }
 `;
 
@@ -35,35 +44,16 @@ export default class NewSection extends Component {
           <span className="spanTwo"> security</span> of all entities.
         </h1>
         <hr></hr>
-        <div className="headers">
-          <div className="headerOne">
-            <h2>
-              Travel
-              <hr></hr>
-            </h2>
+        <div className="parent">
+          <div className="horizontal">
+            <p>Yes GMAN</p>
           </div>
-          <div className="headerTwo">
-            <h2>
-              Based
-              <hr></hr>
-            </h2>
+          <div className="horizontal">
+            <p>Yes GMAN</p>
           </div>
-          <div className="headerThree">
-            <h2>
-              Lettuce
-              <hr></hr>
-            </h2>
+          <div className="horizontal">
+            <p>Yes GMAN</p>
           </div>
-        </div>
-        <div>
-          <h3>One</h3>
-          <h3>Two</h3>
-          <h3>Three</h3>
-          <h3>One</h3>
-          <h3>Two</h3>
-          <h3>Three</h3>
-          <h3>One</h3>
-          <h3>Two</h3>
         </div>
       </SectionWrapper>
     );
