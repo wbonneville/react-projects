@@ -51,6 +51,7 @@ const StyledHr = styled.hr`
 `;
 
 // Just having fun withs props ^ ^ ^
+// Using classes is easier, but.. \o/
 
 export default class NewSection extends Component {
   render() {
@@ -74,13 +75,20 @@ export default class NewSection extends Component {
               which can be found <span>here.</span>
             </p>
             <p>
-              <strong>Passports</strong>
+              <strong>
+                Passports &nbsp; <i class="fas fa-long-arrow-alt-right"></i>
+              </strong>
             </p>
             <p>
-              <strong>Visas</strong>
+              <strong>
+                Visas &nbsp; <i class="fas fa-long-arrow-alt-right"></i>{" "}
+              </strong>
             </p>
             <p>
-              <strong>Travel Warnings</strong>
+              <strong>
+                Travel Warnings &nbsp;{" "}
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </strong>
             </p>
           </div>
           <div className="horizontal">
@@ -92,13 +100,20 @@ export default class NewSection extends Component {
               Combine.
             </p>
             <p>
-              <strong>Transcripts</strong>
+              <strong>
+                Transcripts &nbsp; <i class="fas fa-long-arrow-alt-right"></i>
+              </strong>
             </p>
             <p>
-              <strong>Contact</strong>
+              <strong>
+                Contact &nbsp; <i class="fas fa-long-arrow-alt-right"></i>
+              </strong>
             </p>
             <p>
-              <strong>Education and Culture at Citadel</strong>
+              <strong>
+                Education and Culture at Citadel &nbsp;{" "}
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </strong>
             </p>
           </div>
           <div className="horizontal">
@@ -109,10 +124,15 @@ export default class NewSection extends Component {
               The Combine's collective goal is to create the Universal Union.
             </p>
             <p>
-              <strong>Job Openings</strong>
+              <strong>
+                Job Openings &nbsp; <i class="fas fa-long-arrow-alt-right"></i>
+              </strong>
             </p>
             <p>
-              <strong>Other Opportunities</strong>
+              <strong>
+                Other Opportunities &nbsp;{" "}
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </strong>
             </p>
             <p>&nbsp;</p>
           </div>
