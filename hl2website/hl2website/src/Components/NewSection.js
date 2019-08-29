@@ -18,6 +18,11 @@ const SectionWrapper = styled.section`
       color: #b96835;
     }
   }
+
+  & .headerOne {
+    text-align: center;
+    display: inline-block;
+  }
 `;
 
 export default class NewSection extends Component {
@@ -30,24 +35,35 @@ export default class NewSection extends Component {
           <span className="spanTwo"> security</span> of all entities.
         </h1>
         <hr></hr>
+        <div className="headers">
+          <div className="headerOne">
+            <h2>
+              Travel
+              <hr></hr>
+            </h2>
+          </div>
+          <div className="headerTwo">
+            <h2>
+              Based
+              <hr></hr>
+            </h2>
+          </div>
+          <div className="headerThree">
+            <h2>
+              Lettuce
+              <hr></hr>
+            </h2>
+          </div>
+        </div>
         <div>
-          <h2>
-            <hr></hr>
-          </h2>
-          <h2>
-            <hr></hr>
-          </h2>
-          <h2>
-            <hr></hr>
-          </h2>
-          <h3></h3>
-          <h3></h3>
-          <h3></h3>
-          <h3></h3>
-          <h3></h3>
-          <h3></h3>
-          <h3></h3>
-          <h3></h3>
+          <h3>One</h3>
+          <h3>Two</h3>
+          <h3>Three</h3>
+          <h3>One</h3>
+          <h3>Two</h3>
+          <h3>Three</h3>
+          <h3>One</h3>
+          <h3>Two</h3>
         </div>
       </SectionWrapper>
     );
