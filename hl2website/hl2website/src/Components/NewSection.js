@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-// SectionWrapper is quite hacky.
 const SectionWrapper = styled.div`
   background-color: #313d52;
   width: 100%;
@@ -21,15 +20,12 @@ const SectionWrapper = styled.div`
   }
 
   & .parent {
-    float: left;
-    clear: none;
     width: 100%;
+    text-align: center;
 
     & .horizontal {
-      float: left;
+      width: 100px;
       display: inline-block;
-      margin-left: 13.5%;
-      margin-right: 13.5%;
     }
   }
 `;
