@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import yellow from "../images/breen.jpg";
+import soviet from "../images/soviet5.jpg";
 
 // background-color: #f4f4f4ce;
 const SlideWrapper = styled.div`
@@ -14,17 +14,17 @@ const SlideWrapper = styled.div`
 
 const SlideOne = styled.div`
   background-color: pink;
-  width: 40%;
+  width: 70%;
   height: 600px;
   font-family: "Roboto";
 `;
 
 const SlideTwo = styled.div`
   background-color: red;
-  width: 60%;
+  width: 30%;
   height: 600px;
   font-family: "Roboto";
-  background-image: url(${yellow});
+  background-image: url(${soviet});
   background-size: contain;
   opacity: 0.9;
 `;
