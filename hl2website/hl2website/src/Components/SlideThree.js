@@ -20,10 +20,9 @@ const SlideOne = styled.div`
 
 const SlideTwo = styled.div`
   width: 60%;
-  height: 500px;
+  height: 600px;
   font-family: "Roboto";
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
-    url(${soviet});
+
   background-size: contain;
   margin-bottom: -6px;
 `;
