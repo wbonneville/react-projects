@@ -6,7 +6,7 @@ import soviet from "../images/art5.jpg";
 const SlideWrapper = styled.div`
   width: 100%;
   text-align: center;
-  margin-top: -55px;
+  margin-top: -150px;
   & .slide {
     display: inline-block;
   }
@@ -20,7 +20,7 @@ const SlideOne = styled.div`
 
 const SlideTwo = styled.div`
   width: 60%;
-  height: 600px;
+  height: 500px;
   font-family: "Roboto";
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
     url(${soviet});

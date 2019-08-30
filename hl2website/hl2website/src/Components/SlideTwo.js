@@ -6,18 +6,18 @@ const ImgWrap = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
     url(${teamwork});
   background-size: contain;
-  background-repeat: no-repeat;
+
 
 
   &&& .row {
-    height: 716px;
+    height: 690px;
     text-align: center;
     margin: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    margin-bottom: 0;
+  
   }
 
   }
