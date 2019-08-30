@@ -1,10 +1,34 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { device } from "./Device";
 
 const NewsSection = styled.section`
   font-family: "Roboto";
   margin-top: 40px;
   margin-bottom: 50px;
+  @media ${device.mobileS} {
+    max-width: 320px;
+  }
+
+  @media ${device.mobileM} {
+    max-width: 375px;
+  }
+
+  @media ${device.mobileL} {
+    max-width: 425px;
+  }
+
+  @media ${device.tablet} {
+    max-width: 768px;
+  }
+
+  @media ${device.laptop} {
+    max-width: 1440px;
+  }
+
+  @media ${device.desktop} {
+    max-width: 1400px;
+  }
 
   & h2 {
     font-size: 16px;

@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import styled from "styled-components";
+import { device } from "./Device";
 
 const StyledWrap = styled(Navbar)`
   background: #f5f5f5;
@@ -8,6 +9,29 @@ const StyledWrap = styled(Navbar)`
   max-height: 40px;
   font-size: 12px;
   font-family: "Roboto";
+  @media ${device.mobileS} {
+    max-width: 320px;
+  }
+
+  @media ${device.mobileM} {
+    max-width: 375px;
+  }
+
+  @media ${device.mobileL} {
+    max-width: 425px;
+  }
+
+  @media ${device.tablet} {
+    max-width: 768px;
+  }
+
+  @media ${device.laptop} {
+    max-width: 1440px;
+  }
+
+  @media ${device.desktop} {
+    max-width: 1400px;
+  }
 `;
 
 const StyledLinks = styled(Nav.Link)`

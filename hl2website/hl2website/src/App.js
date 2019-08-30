@@ -10,6 +10,7 @@ import SlideTwo from "./Components/SlideTwo";
 import RecruitSlide from "./Components/RecruitSlide";
 import NewSection from "./Components/NewSection";
 import SlideThree from "./Components/SlideThree";
+
 function App() {
   return (
     <React.Fragment>

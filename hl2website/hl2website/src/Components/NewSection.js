@@ -1,11 +1,34 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-
+import { device } from "./Device";
 const SectionWrapper = styled.div`
   background-color: #313d52;
   width: 100%;
   height: 600px;
   font-family: "Roboto";
+  @media ${device.mobileS} {
+    max-width: 320px;
+  }
+
+  @media ${device.mobileM} {
+    max-width: 375px;
+  }
+
+  @media ${device.mobileL} {
+    max-width: 425px;
+  }
+
+  @media ${device.tablet} {
+    max-width: 768px;
+  }
+
+  @media ${device.laptop} {
+    max-width: 1440px;
+  }
+
+  @media ${device.desktop} {
+    max-width: 1400px;
+  }
 
   & h1 {
     padding-top: 62px;
