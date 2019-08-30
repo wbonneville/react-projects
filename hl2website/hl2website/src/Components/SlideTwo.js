@@ -8,6 +8,7 @@ const ImgWrap = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
 
+
   &&& .row {
     height: 716px;
     text-align: center;
