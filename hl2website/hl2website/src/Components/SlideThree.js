@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-
+// background-color: #f4f4f4ce;
 const SlideWrapper = styled.div`
-  background-color: #313d52;
-  width: 100%;
+  background-color: pink;
+  width: 40%;
   height: 600px;
   font-family: "Roboto";
 `;
