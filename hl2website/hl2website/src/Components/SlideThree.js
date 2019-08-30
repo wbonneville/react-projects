@@ -10,6 +10,6 @@ const SlideWrapper = styled.div`
 
 export default class SlideThree extends Component {
   render() {
-    return <div></div>;
+    return <SlideWrapper></SlideWrapper>;
   }
 }
