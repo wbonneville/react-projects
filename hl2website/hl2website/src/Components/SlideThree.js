@@ -46,29 +46,6 @@ const SlideTwo = styled.div`
   width: 60%;
   height: 600px;
   font-family: "Roboto";
-  @media ${device.mobileS} {
-    max-width: 320px;
-  }
-
-  @media ${device.mobileM} {
-    max-width: 375px;
-  }
-
-  @media ${device.mobileL} {
-    max-width: 425px;
-  }
-
-  @media ${device.tablet} {
-    max-width: 768px;
-  }
-
-  @media ${device.laptop} {
-    max-width: 1440px;
-  }
-
-  @media ${device.desktop} {
-    max-width: 1400px;
-  }
 
   background-size: contain;
   margin-bottom: -6px;

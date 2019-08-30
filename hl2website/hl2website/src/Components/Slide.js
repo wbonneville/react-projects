@@ -1,38 +1,12 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import image from "../images/slide2.jpg";
-import combine from "../images/combine.png";
-import { device } from "./Device";
 
 const ImgWrap = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
     url(${image});
   background-size: contain;
   opacity: 0.9;
-
-  @media ${device.mobileS} {
-    max-width: 320px;
-  }
-
-  @media ${device.mobileM} {
-    max-width: 375px;
-  }
-
-  @media ${device.mobileL} {
-    max-width: 425px;
-  }
-
-  @media ${device.tablet} {
-    max-width: 768px;
-  }
-
-  @media ${device.laptop} {
-    max-width: 1440px;
-  }
-
-  @media ${device.desktop} {
-    max-width: 1400px;
-  }
 
   & .row {
     width: 100%;

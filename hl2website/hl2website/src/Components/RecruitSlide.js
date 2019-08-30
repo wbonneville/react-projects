@@ -7,29 +7,6 @@ const CircleWrapper = styled.div`
   padding-bottom: 80px;
   width: 100%;
   font-family: "Roboto";
-  @media ${device.mobileS} {
-    max-width: 320px;
-  }
-
-  @media ${device.mobileM} {
-    max-width: 375px;
-  }
-
-  @media ${device.mobileL} {
-    max-width: 425px;
-  }
-
-  @media ${device.tablet} {
-    max-width: 768px;
-  }
-
-  @media ${device.laptop} {
-    max-width: 1440px;
-  }
-
-  @media ${device.desktop} {
-    max-width: 1400px;
-  }
 
   & h1 {
     font-size: 14px;
