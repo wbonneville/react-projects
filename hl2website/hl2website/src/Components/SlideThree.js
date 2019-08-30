@@ -1,32 +1,31 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import soviet from "../images/soviet5.jpg";
+import soviet from "../images/yellowcity.jpg";
 
 // background-color: #f4f4f4ce;
 const SlideWrapper = styled.div`
   width: 100%;
   text-align: center;
-
+  margin-top: -55px;
   & .slide {
     display: inline-block;
   }
 `;
 
 const SlideOne = styled.div`
-  background-color: pink;
-  width: 70%;
+  width: 40%;
   height: 600px;
   font-family: "Roboto";
 `;
 
 const SlideTwo = styled.div`
-  background-color: red;
-  width: 30%;
+  width: 60%;
   height: 600px;
   font-family: "Roboto";
-  background-image: url(${soviet});
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    url(${soviet});
   background-size: contain;
-  opacity: 0.9;
+  margin-bottom: -6px;
 `;
 
 export default class SlideThree extends Component {
