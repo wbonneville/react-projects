@@ -9,7 +9,7 @@ import News from "./Components/News";
 import SlideTwo from "./Components/SlideTwo";
 import RecruitSlide from "./Components/RecruitSlide";
 import NewSection from "./Components/NewSection";
-
+import SlideThree from "./Components/SlideThree";
 function App() {
   return (
     <React.Fragment>
@@ -21,6 +21,7 @@ function App() {
       <News></News>
       <RecruitSlide></RecruitSlide>
       <NewSection></NewSection>
+      <SlideThree></SlideThree>
       <SlideTwo></SlideTwo>
     </React.Fragment>
   );
