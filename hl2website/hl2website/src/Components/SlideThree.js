@@ -1,9 +1,15 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import yellow from "../images/yellow.jpg";
+
 // background-color: #f4f4f4ce;
 const SlideWrapper = styled.div`
   width: 100%;
   text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url(${yellow});
+  background-size: contain;
+  opacity: 0.9;
   & .slide {
     display: inline-block;
   }
