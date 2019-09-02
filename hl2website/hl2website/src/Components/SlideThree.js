@@ -55,7 +55,7 @@ export default class SlideThree extends Component {
   render() {
     return (
       <SlideWrapper>
-        <SlideOne className="slide"></SlideOne>
+        <SlideOne className="slide slide9"></SlideOne>
         <SlideTwo className="slide"></SlideTwo>
       </SlideWrapper>
     );
