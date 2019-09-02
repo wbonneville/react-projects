@@ -14,28 +14,22 @@ import { Grid, Row, Col } from "react-flexbox-grid";
 
 function App() {
   return (
-    <Grid fluid>
-      <Row>
-        <Col xs={12}>
-          <Official></Official>
-        </Col>
-        <Col xs={12}>
-          <NavigationBar />
-        </Col>
-        <Col xs={12}>
-          <SecondaryNavagationBar />
-        </Col>
-        <Col xs={12}>
-          <Slide> </Slide>
-          <Slogan></Slogan>
-        </Col>
-        <News></News>
-        <RecruitSlide></RecruitSlide>
-        <NewSection></NewSection>
-        <SlideThree></SlideThree>
-        <SlideTwo></SlideTwo>
-      </Row>
-    </Grid>
+    <React.Fragment>
+      <Official></Official>
+
+      <NavigationBar />
+
+      <SecondaryNavagationBar />
+
+      <Slide> </Slide>
+      <Slogan></Slogan>
+
+      <News></News>
+      <RecruitSlide></RecruitSlide>
+      <NewSection></NewSection>
+      <SlideThree></SlideThree>
+      <SlideTwo></SlideTwo>
+    </React.Fragment>
   );
 }
 

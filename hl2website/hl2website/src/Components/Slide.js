@@ -43,12 +43,15 @@ const ImgWrap = styled.div`
 const Block = styled.div`
   & .containerBlock {
     position: relative;
+    text-align: center;
   }
 
   & .text-block {
     position: absolute;
     bottom: -270px;
-    right: 500px;
+    right: 600px;
+    width: 700px;
+    text-align: center;
     background-color: white;
     color: black;
     padding-left: 20px;
