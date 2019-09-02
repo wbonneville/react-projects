@@ -27,6 +27,27 @@ const ImgWrap = styled.div`
       border-color: #b96835;
     }
   }
+
+  @media (min-width: 451px) and (max-width: 540px) {
+    .strong {
+      font-size: 45px;
+    }
+  }
+  @media (min-width: 541px) and (max-width: 800px) {
+    .strong {
+      font-size: 60px;
+    }
+  }
+  @media (min-width: 801px) and (max-width: 900px) {
+    .strong {
+      font-size: 75px;
+    }
+  }
+  @media (min-width: 901px) and (max-width: 1440px) {
+    .strong {
+      font-size: 100px;
+    }
+  }
 `;
 
 // const CombineWrap = styled.div`
@@ -81,7 +102,9 @@ export default class Index extends Component {
         <div className="container">
           <div className="row">
             <div className="divRow">
-              <strong>It's great to be part of the greater good.</strong>
+              <strong className="strong">
+                It's great to be part of the greater good.
+              </strong>
               <Block className="containerBlock">
                 <div className="text-block">
                   <div
