@@ -19,11 +19,16 @@ function App() {
         <Col xs={12}>
           <Official></Official>
         </Col>
-        <NavigationBar />
-        <SecondaryNavagationBar />
-
-        <Slide> </Slide>
-        <Slogan></Slogan>
+        <Col xs={12}>
+          <NavigationBar />
+        </Col>
+        <Col xs={12}>
+          <SecondaryNavagationBar />
+        </Col>
+        <Col xs={12}>
+          <Slide> </Slide>
+          <Slogan></Slogan>
+        </Col>
         <News></News>
         <RecruitSlide></RecruitSlide>
         <NewSection></NewSection>

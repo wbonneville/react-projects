@@ -1,7 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import styled from "styled-components";
-import { device } from "./Device";
 
 // Official Navbar Style
 const StyledWrap = styled(Navbar)`
@@ -9,29 +8,6 @@ const StyledWrap = styled(Navbar)`
   opacity: 0.99;
   font-family: "Roboto";
   max-height: 6px;
-  @media ${device.mobileS} {
-    max-width: 320px;
-  }
-
-  @media ${device.mobileM} {
-    max-width: 375px;
-  }
-
-  @media ${device.mobileL} {
-    max-width: 425px;
-  }
-
-  @media ${device.tablet} {
-    max-width: 768px;
-  }
-
-  @media ${device.laptop} {
-    max-width: 1440px;
-  }
-
-  @media ${device.desktop} {
-    max-width: 1400px;
-  }
 `;
 
 const StyledBrand = styled(Navbar.Brand)`
