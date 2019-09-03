@@ -15,6 +15,7 @@ const Container = styled.div`
   position: relative;
   text-align: center;
   color: black;
+  margin: -4rem;
 
   & .text {
     position: absolute;
@@ -25,50 +26,69 @@ const Container = styled.div`
 
   @media (max-width: 320px) {
     .text {
-      font-size: 20px;
+      font-size: 15px;
     }
   }
   @media (min-width: 451px) and (max-width: 540px) {
     .text {
-      font-size: 70px;
+      font-size: 25px;
     }
   }
   @media (min-width: 541px) and (max-width: 800px) {
     .text {
-      font-size: 100px;
+      font-size: 50px;
     }
   }
   @media (min-width: 801px) and (max-width: 900px) {
     .text {
-      font-size: 150px;
+      font-size: 75px;
     }
   }
   @media (min-width: 901px) and (max-width: 1440px) {
     .text {
-      font-size: 200px;
+      font-size: 100px;
     }
   }
 `;
 
 const ContainerTwo = styled.div`
-  height: 845px;
+  height: 345px;
   background-color: red;
+  margin: -4rem;
 `;
 
 const TestImage = styled.img`
-  height: 845px;
+  width: 100%;
 `;
 
 export default class Section extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Container>
-          <div className="text">Text!</div>
-          <TestImage src={image}></TestImage>
-        </Container>
-        <ContainerTwo></ContainerTwo>
-      </React.Fragment>
+      <Grid>
+        <Row>
+          <Col xs={4}>
+            <Container>
+              <div className="text">Text!</div>
+              <TestImage src={image}></TestImage>
+            </Container>
+            <ContainerTwo></ContainerTwo>
+          </Col>
+          <Col xs={4}>
+            <Container>
+              <div className="text">Text!</div>
+              <TestImage src={image}></TestImage>
+            </Container>
+            <ContainerTwo></ContainerTwo>
+          </Col>
+          <Col xs={4}>
+            <Container>
+              <div className="text">Text!</div>
+              <TestImage src={image}></TestImage>
+            </Container>
+            <ContainerTwo></ContainerTwo>
+          </Col>
+        </Row>
+      </Grid>
     );
   }
 }

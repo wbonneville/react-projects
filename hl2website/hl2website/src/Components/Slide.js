@@ -93,6 +93,21 @@ const Block = styled.div`
       color: black;
     }
   }
+
+  @media (max-width: 320px) {
+    .containerWith {
+      bottom: -200px;
+      right: 10px;
+      width: 300px;
+    }
+  }
+  @media (min-width: 451px) and (max-width: 540px) {
+    .containerWith {
+      bottom: -300px;
+      right: 50px;
+      width: 300px;
+    }
+  }
 `;
 
 export default class Index extends Component {
@@ -112,11 +127,11 @@ export default class Index extends Component {
                     onclick="location.href='#'"
                   >
                     <div class="container">
-                      <div>
+                      <div className="containerWith">
                         <div class="col-md-10">
                           <h3 class="feed-item-heading m-0 font-weight-800">
                             <br></br>
-                            <a class="text-black" href="#">
+                            <a class="text-black anchor" href="#">
                               Know what your situation is, hasten your
                               reformation, study with diligence, work with
                               enthusiasm, reform yourself from the inside out,
