@@ -2,27 +2,46 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const StyledNav = styled.div`
-  overflow: hidden;
+  font-family: "Futura";
 `;
 
 const StyledUl = styled.ul`
   color: white;
   display: flex;
   list-style-type: none;
-  background: gray;
+  background: rgb(46, 58, 80);
   opacity: 0.99;
   font-family: "Roboto";
+  align-items: center;
+  font-family: "Futura";
 
   & li {
-    font-size: 20px;
+    font-size: 15px;
+    margin-right: 0.2em;
     padding: 15px 5px;
   }
 
   & .special {
-    font-size: 30px;
+    font-size: 25px;
+  }
+
+  @media all and (max-width: 160px) {
+    & li {
+      font-size: 16px;
+    }
+
+    & .special {
+      font-size: 21px;
+    }
   }
 
   @media all and (max-width: 300px) {
+    flex-wrap: wrap;
+    & li {
+      flex-basis: 40%;
+    }
+  }
+  @media all and (max-width: 650px) {
     flex-wrap: wrap;
     & li {
       flex-basis: 40%;
@@ -32,24 +51,24 @@ const StyledUl = styled.ul`
 
 const StyledUlTwo = styled(StyledUl)`
   margin-top: -1rem;
-  background: blue;
+  background: #f5f5f5;
+  color: black;
 
   & li {
     margin-left: 0.5em;
     margin-right: 0.5em;
+    font-size: 12px;
+    opacity: 0.6;
   }
 
   @media all and (max-width: 300px) {
     flex-wrap: wrap;
-    align-items: center;
-
-    & li {
+    text-align:center & li {
       flex-basis: 50%;
     }
   }
 
-  @media all and (max-width: 640px) {
-    align-items: center;
+  @media all and (max-width: 650px) {
     flex-wrap: wrap;
     & li {
       flex-basis: 40%;
@@ -63,8 +82,12 @@ export default class Navbar extends Component {
       <React.Fragment>
         <StyledNav>
           <StyledUl className="container">
-            <li className="special"> City 17 Information Desk </li>
-            <li className="ml-md-auto">Civil Protection | Metropolice</li>
+            <li className="special">
+              <strong>City 17 Information Desk</strong>
+            </li>
+            <li>
+              <strong>Civil Protection | Metropolice</strong>
+            </li>
           </StyledUl>
           <StyledUlTwo className="container">
             <li> Testing option </li>
