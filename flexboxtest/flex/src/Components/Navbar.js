@@ -18,6 +18,10 @@ const StyledUl = styled.ul`
     padding: 15px 5px;
   }
 
+  & .special {
+    font-size: 30px;
+  }
+
   @media all and (max-width: 300px) {
     flex-wrap: wrap;
     & li {
@@ -35,12 +39,20 @@ const StyledUlTwo = styled(StyledUl)`
     margin-right: 0.5em;
   }
 
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 300px) {
     flex-wrap: wrap;
     align-items: center;
 
     & li {
       flex-basis: 50%;
+    }
+  }
+
+  @media all and (max-width: 640px) {
+    align-items: center;
+    flex-wrap: wrap;
+    & li {
+      flex-basis: 40%;
     }
   }
 `;
@@ -51,10 +63,8 @@ export default class Navbar extends Component {
       <React.Fragment>
         <StyledNav>
           <StyledUl className="container">
-            <li> Home </li>
-            <li> About</li>
-            <li> Good</li>
-            <li> Logout</li>
+            <li className="special"> City 17 Information Desk </li>
+            <li className="ml-md-auto">Civil Protection | Metropolice</li>
           </StyledUl>
           <StyledUlTwo className="container">
             <li> Testing option </li>
