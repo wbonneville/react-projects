@@ -26,6 +26,12 @@ const Slogan = styled.h2`
   font-size: 25px;
 `;
 
+const LatestStories = styled.div`
+  margin-top: 5rem;
+  color: white;
+  font-size: 35px;
+`;
+
 export default class Hero extends Component {
   render() {
     return (
@@ -37,6 +43,9 @@ export default class Hero extends Component {
                 <div className="col-xs-12">
                   <Welcome>Welcome.</Welcome>
                   <Slogan>It's great to part of the greater good.</Slogan>
+                  <LatestStories className="col-xs-4">
+                    Latest Stories
+                  </LatestStories>
                 </div>
               </div>
             </div>
