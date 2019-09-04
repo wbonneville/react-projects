@@ -23,13 +23,19 @@ const Welcome = styled.h1`
 
 const Slogan = styled.h2`
   color: white;
-  font-size: 25px;
+  font-size: 20px;
 `;
 
 const LatestStories = styled.div`
   margin-top: 5rem;
   color: white;
   font-size: 35px;
+`;
+
+const Stories = styled.div`
+  margin-top: 1rem;
+  color: white;
+  font-size: 15px;
 `;
 
 export default class Hero extends Component {
@@ -46,6 +52,12 @@ export default class Hero extends Component {
                   <LatestStories className="col-xs-4">
                     Latest Stories
                   </LatestStories>
+                  <Stories className="col-xs-4">
+                    <h4>
+                      <strong>Environment</strong>
+                    </h4>
+                    <p>bla bla bla</p>
+                  </Stories>
                 </div>
               </div>
             </div>
