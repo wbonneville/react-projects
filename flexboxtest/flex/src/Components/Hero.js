@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import image from "../images/teamwork.png";
 import styled from "styled-components";
+import newsimg1 from "../images/art2.jpg";
 
 const HeroWrapper = styled.div`
   font-family: "Futura";
@@ -38,6 +39,10 @@ const Stories = styled.div`
   font-size: 15px;
 `;
 
+const NewsImage = styled.img`
+  height: 60px;
+  width: 60px;
+`;
 export default class Hero extends Component {
   render() {
     return (
@@ -52,11 +57,14 @@ export default class Hero extends Component {
                   <LatestStories className="col-xs-4">
                     Latest Stories
                   </LatestStories>
+
                   <Stories className="col-xs-4">
                     <h4>
                       <strong>Environment</strong>
                     </h4>
-                    <p>bla bla bla</p>
+                    <div>
+                      <p>bla bla bla</p>
+                    </div>
                   </Stories>
                 </div>
               </div>
