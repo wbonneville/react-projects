@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const StyledNav = styled.div`
-  font-family: "Futura";
+const HeaderWrapper = styled.header`
+  background: rgb(46, 58, 80);
+  align-items: center;
+  text-align: center;
 `;
 
 const StyledUl = styled.ul`
   color: white;
   display: flex;
   list-style-type: none;
-  background: rgb(46, 58, 80);
-
   opacity: 0.99;
   font-family: "Roboto";
   align-items: center;
@@ -30,6 +30,7 @@ const StyledUl = styled.ul`
     & li {
       font-size: 14px;
       flex: 1;
+      text-align: center;
     }
 
     & .special {
@@ -52,7 +53,7 @@ const StyledUl = styled.ul`
 `;
 
 const StyledUlTwo = styled(StyledUl)`
-  margin-top: -1rem;
+  margin-top: -0.4rem;
   background: #f5f5f5;
   color: black;
 
@@ -65,7 +66,8 @@ const StyledUlTwo = styled(StyledUl)`
 
   @media all and (max-width: 300px) {
     flex-wrap: wrap;
-    text-align:center & li {
+    text-align: center;
+    & li {
       flex-basis: 50%;
     }
   }
@@ -78,12 +80,12 @@ const StyledUlTwo = styled(StyledUl)`
   }
 `;
 
-export default class Navbar extends Component {
+export default class Test extends Component {
   render() {
     return (
-      <StyledNav className="row center-xs">
-        <div className="col-xs-12">
-          <div>
+      <HeaderWrapper>
+        <div className="row center-xs">
+          <div className="col-xs-12">
             <StyledUl className="container">
               <li className="special">
                 <strong>City 17 Information Desk</strong>
@@ -93,19 +95,17 @@ export default class Navbar extends Component {
               </li>
             </StyledUl>
           </div>
-          <div className="col-xs-12">
-            <StyledUlTwo>
-              <li> Testing option </li>
-              <li> Testing option</li>
-              <li> Testing option</li>
-              <li> Testing option</li>
-              <li> Longer Testing option</li>
-              <li> Longer Testing option</li>
-              <li> Longer Testing option</li>
-            </StyledUlTwo>
-          </div>
         </div>
-      </StyledNav>
+        <StyledUlTwo>
+          <li> Testing option </li>
+          <li> Testing option</li>
+          <li> Testing option</li>
+          <li> Testing option</li>
+          <li> Longer Testing option</li>
+          <li> Longer Testing option</li>
+          <li> Longer Testing option</li>
+        </StyledUlTwo>
+      </HeaderWrapper>
     );
   }
 }

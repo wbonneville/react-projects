@@ -1,27 +1,26 @@
 import React, { Component } from "react";
-import image from "../images/img.jpg";
+import image from "../images/teamwork.png";
 import styled from "styled-components";
 
 const Image = styled.div`
   background-image: url(${image});
-  background-size: contain;
-
-  & .bike {
-    width: 400px;
-    height: 600px;
+  background-size: cover;
+  margin-top: -16px;
+  & .slide {
+    height: 690px;
   }
 `;
 
 export default class Hero extends Component {
   render() {
     return (
-      <div>
-        <div className="row">
-          <div className="col-xs-12">
-            <Image className="bike"></Image>
+      <Image>
+        <div className="row xs-center">
+          <div className="col-xs-12 ">
+            <div className="slide"></div>
           </div>
         </div>
-      </div>
+      </Image>
     );
   }
 }
