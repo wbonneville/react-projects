@@ -13,7 +13,7 @@ const Image = styled.div`
   background-size: cover;
   margin-top: -16px;
   & .slide {
-    height: 690px;
+    height: 1100px;
   }
 `;
 
@@ -35,13 +35,16 @@ const LatestStories = styled.div`
 
 const Stories = styled.div`
   margin-top: 1rem;
+  margin-left: 8rem;
   color: white;
   font-size: 15px;
+  display: flex;
 `;
 
 const NewsImage = styled.img`
-  height: 60px;
-  width: 60px;
+  height: 100px;
+  width: 100px;
+  margin-right: 1.5rem;
 `;
 export default class Hero extends Component {
   render() {
@@ -49,20 +52,50 @@ export default class Hero extends Component {
       <HeroWrapper>
         <Image>
           <div className="row">
+            {/* Column 1 */}
             <div className="col-xs-12">
               <div className="row center-xs slide">
+                {/* Column 2 */}
                 <div className="col-xs-12">
                   <Welcome>Welcome.</Welcome>
                   <Slogan>It's great to part of the greater good.</Slogan>
-                  <LatestStories className="col-xs-4">
-                    Latest Stories
+                  {/* Column 3 */}
+                  <LatestStories className="col-xs-5">
+                    <h5>Latest Stories</h5>
                   </LatestStories>
-
+                  {/* Column 4 */}
                   <Stories className="col-xs-4">
-                    <h4>
-                      <strong>Environment</strong>
-                    </h4>
+                    <NewsImage src={newsimg1}></NewsImage>
                     <div>
+                      <strong>Environment</strong>
+                      <p>bla bla bla</p>
+                    </div>
+                  </Stories>
+                  <Stories className="col-xs-4">
+                    <NewsImage src={newsimg1}></NewsImage>
+                    <div>
+                      <strong>Environment</strong>
+                      <p>bla bla bla</p>
+                    </div>
+                  </Stories>
+                  <Stories className="col-xs-4">
+                    <NewsImage src={newsimg1}></NewsImage>
+                    <div>
+                      <strong>Environment</strong>
+                      <p>bla bla bla</p>
+                    </div>
+                  </Stories>
+                  <Stories className="col-xs-4">
+                    <NewsImage src={newsimg1}></NewsImage>
+                    <div>
+                      <strong>Environment</strong>
+                      <p>bla bla bla</p>
+                    </div>
+                  </Stories>
+                  <Stories className="col-xs-4">
+                    <NewsImage src={newsimg1}></NewsImage>
+                    <div>
+                      <strong>Environment</strong>
                       <p>bla bla bla</p>
                     </div>
                   </Stories>
