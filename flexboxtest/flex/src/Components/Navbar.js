@@ -22,16 +22,17 @@ const StyledUl = styled.ul`
   }
 
   & .special {
-    font-size: 25px;
+    font-size: 24px;
   }
 
   @media all and (max-width: 160px) {
     & li {
-      font-size: 16px;
+      font-size: 14px;
+      flex: 1;
     }
 
     & .special {
-      font-size: 21px;
+      font-size: 19px;
     }
   }
 

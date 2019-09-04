@@ -1,13 +1,13 @@
 import React from "react";
-import SectionOne from "./Components/SectionOne";
-import Navbar from "./Components/Navbar";
 
+import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
 function App() {
   return (
     <React.Fragment>
       <Navbar></Navbar>
 
-      <SectionOne></SectionOne>
+      <Hero></Hero>
     </React.Fragment>
   );
 }
