@@ -85,7 +85,7 @@ export default class Hero extends Component {
                 {/* Column 2 */}
                 <div className="col-xs-12">
                   <Welcome>Welcome.</Welcome>
-                  <Slogan>It's great to part of the greater good.</Slogan>
+                  <Slogan>Lorem ipsum dorem set irom lierum.</Slogan>
                   {/* Column 3 */}
                   <div className="row center-xs middlesection">
                     <LatestStories className="col-xs-4 flexme classStories">
