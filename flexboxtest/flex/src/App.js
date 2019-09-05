@@ -8,7 +8,7 @@ import styled from "styled-components";
 // Hacky?
 
 const AppWrapper = styled.div`
-  max-width: 2000px;
+  max-width: 2500px;
   align-content: center;
   margin: auto;
 `;
