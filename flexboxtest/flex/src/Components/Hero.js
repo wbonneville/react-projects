@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import image from "../images/city1.jpeg";
 import styled from "styled-components";
 import newsimg1 from "../images/art2.jpg";
-import bignewsimg from "../images/city3.jpg";
+import bignewsimg from "../images/city2.jpg";
 
 const HeroWrapper = styled.div`
   font-family: "Futura";
@@ -12,19 +12,19 @@ const HeroWrapper = styled.div`
     color: white;
     font-size: 35px;
     margin-top: 5rem;
-   
 
     @media (max-width: 1000px) {
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        & .classStories {
-            order: 2;
-        }
-        & .classImage
-        max-width: 100%;
-     
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      & .classStories {
+        order: 2;
       }
+      & .classImage {
+        max-width: 100%;
+      }
+    }
+  }
 `;
 
 const Image = styled.div`
@@ -66,11 +66,14 @@ const NewsImage = styled.img`
   margin-right: 1.5rem;
 `;
 
+const BigNewsImgWrapper = styled.div``;
+
 const BigNewsImg = styled.img`
   align-content: center;
   height: 400px;
   max-width: 100%;
   margin-top: 3.5rem;
+  border: 1px solid white;
 `;
 
 export default class Hero extends Component {
@@ -91,12 +94,13 @@ export default class Hero extends Component {
                     <LatestStories className="col-xs-4 flexme classStories">
                       <h5>Latest Stories</h5>
                     </LatestStories>
-                    <div className="col-xs-8 flexme">
+                    <BigNewsImgWrapper className="col-xs-8">
                       <BigNewsImg
                         className="classImage"
                         src={bignewsimg}
                       ></BigNewsImg>
-                    </div>
+                      <p className="textP">Hello hello lorem</p>
+                    </BigNewsImgWrapper>
                   </div>
                   {/* Column 4 */}
                 </div>
