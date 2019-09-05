@@ -5,6 +5,18 @@ import newsimg1 from "../images/art2.jpg";
 
 const HeroWrapper = styled.div`
   font-family: "Futura";
+
+  & .middlesection {
+    display: flex;
+    align-items: center;
+
+    color: white;
+    font-size: 35px;
+    margin-top: 5rem;
+    
+    @media (max-width: 600px) {
+        flex-direction: column;
+      }
 `;
 
 const Image = styled.div`
@@ -28,7 +40,6 @@ const Slogan = styled.h2`
 `;
 
 const LatestStories = styled.div`
-  margin-top: 5rem;
   color: white;
   font-size: 35px;
 `;
@@ -46,10 +57,11 @@ const NewsImage = styled.img`
   width: 100px;
   margin-right: 1.5rem;
 `;
+
 export default class Hero extends Component {
   render() {
     return (
-      <HeroWrapper>
+      <HeroWrapper className="herowrapper">
         <Image>
           <div className="row">
             {/* Column 1 */}
@@ -60,45 +72,18 @@ export default class Hero extends Component {
                   <Welcome>Welcome.</Welcome>
                   <Slogan>It's great to part of the greater good.</Slogan>
                   {/* Column 3 */}
-                  <LatestStories className="col-xs-5">
-                    <h5>Latest Stories</h5>
-                  </LatestStories>
+                  <div className="row middlesection">
+                    <LatestStories className="col-xs-4 flexme">
+                      <h5>Latest Stories</h5>
+                    </LatestStories>
+                    <div className="col-xs-4 flexme">
+                      <h5>skittle</h5>
+                    </div>
+                    <div className="col-xs-4 flexme">
+                      <h5>skittle</h5>
+                    </div>
+                  </div>
                   {/* Column 4 */}
-                  <Stories className="col-xs-4">
-                    <NewsImage src={newsimg1}></NewsImage>
-                    <div>
-                      <strong>Environment</strong>
-                      <p>bla bla bla</p>
-                    </div>
-                  </Stories>
-                  <Stories className="col-xs-4">
-                    <NewsImage src={newsimg1}></NewsImage>
-                    <div>
-                      <strong>Environment</strong>
-                      <p>bla bla bla</p>
-                    </div>
-                  </Stories>
-                  <Stories className="col-xs-4">
-                    <NewsImage src={newsimg1}></NewsImage>
-                    <div>
-                      <strong>Environment</strong>
-                      <p>bla bla bla</p>
-                    </div>
-                  </Stories>
-                  <Stories className="col-xs-4">
-                    <NewsImage src={newsimg1}></NewsImage>
-                    <div>
-                      <strong>Environment</strong>
-                      <p>bla bla bla</p>
-                    </div>
-                  </Stories>
-                  <Stories className="col-xs-4">
-                    <NewsImage src={newsimg1}></NewsImage>
-                    <div>
-                      <strong>Environment</strong>
-                      <p>bla bla bla</p>
-                    </div>
-                  </Stories>
                 </div>
               </div>
             </div>
