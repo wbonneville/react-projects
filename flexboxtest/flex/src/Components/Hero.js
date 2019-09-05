@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import image from "../images/teamwork.png";
+import image from "../images/city1.jpeg";
 import styled from "styled-components";
 import newsimg1 from "../images/art2.jpg";
-import bignewsimg from "../images/art3.jpg";
+import bignewsimg from "../images/city3.jpg";
 
 const HeroWrapper = styled.div`
   font-family: "Futura";

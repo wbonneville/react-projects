@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const HeaderWrapper = styled.header`
-  background: rgb(46, 58, 80);
+  background: black;
   align-items: center;
   text-align: center;
 `;
