@@ -70,6 +70,7 @@ const BigNewsImgWrapper = styled.div``;
 
 const BigNewsImg = styled.div`
   background-image: url(${bignewsimg});
+  background-size: cover;
   align-content: center;
   justify-content: center;
   height: 400px;
