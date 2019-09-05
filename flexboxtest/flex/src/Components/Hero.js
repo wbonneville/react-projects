@@ -68,10 +68,12 @@ const NewsImage = styled.img`
 
 const BigNewsImgWrapper = styled.div``;
 
-const BigNewsImg = styled.img`
+const BigNewsImg = styled.div`
+  background-image: url(${bignewsimg});
   align-content: center;
+  justify-content: center;
   height: 400px;
-  max-width: 100%;
+  max-width: 80%;
   margin-top: 3.5rem;
   border: 1px solid white;
 `;
@@ -91,15 +93,13 @@ export default class Hero extends Component {
                   <Slogan>Lorem ipsum dorem set irom lierum.</Slogan>
                   {/* Column 3 */}
                   <div className="row center-xs middlesection">
-                    <LatestStories className="col-xs-4 flexme classStories">
+                    <LatestStories className="col-xs-5 flexme classStories">
                       <h5>Latest Stories</h5>
                     </LatestStories>
-                    <BigNewsImgWrapper className="col-xs-8">
-                      <BigNewsImg
-                        className="classImage"
-                        src={bignewsimg}
-                      ></BigNewsImg>
-                      <p className="textP">Hello hello lorem</p>
+                    <BigNewsImgWrapper className="col-xs-7">
+                      <BigNewsImg>
+                        <p className="textP">Hello hello lorem</p>
+                      </BigNewsImg>
                     </BigNewsImgWrapper>
                   </div>
                   {/* Column 4 */}
