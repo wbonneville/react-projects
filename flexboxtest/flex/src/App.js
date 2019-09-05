@@ -1,14 +1,24 @@
 import React from "react";
-
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Test from "./Components/Test";
+import styled from "styled-components";
+
+// Wrapping entire app in a styled component
+// Hacky?
+
+const AppWrapper = styled.div`
+  max-width: 2000px;
+  align-content: center;
+  margin: auto;
+`;
+
 function App() {
   return (
-    <React.Fragment>
+    <AppWrapper>
       <Test></Test>
       <Hero></Hero>
-    </React.Fragment>
+    </AppWrapper>
   );
 }
 

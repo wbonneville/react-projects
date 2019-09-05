@@ -12,15 +12,18 @@ const HeroWrapper = styled.div`
     color: white;
     font-size: 35px;
     margin-top: 5rem;
-    
-    @media (max-width: 800px) {
+   
+
+    @media (max-width: 1000px) {
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        & .classstories {
+        & .classStories {
             order: 2;
-            
         }
+        & .classImage
+        max-width: 100%;
+     
       }
 `;
 
@@ -85,11 +88,14 @@ export default class Hero extends Component {
                   <Slogan>It's great to part of the greater good.</Slogan>
                   {/* Column 3 */}
                   <div className="row center-xs middlesection">
-                    <LatestStories className="col-xs-4 flexme classstories">
+                    <LatestStories className="col-xs-4 flexme classStories">
                       <h5>Latest Stories</h5>
                     </LatestStories>
-                    <div className="col-xs-8 flexme classimage">
-                      <BigNewsImg src={bignewsimg}></BigNewsImg>
+                    <div className="col-xs-8 flexme">
+                      <BigNewsImg
+                        className="classImage"
+                        src={bignewsimg}
+                      ></BigNewsImg>
                     </div>
                   </div>
                   {/* Column 4 */}
