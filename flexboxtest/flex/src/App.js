@@ -9,7 +9,7 @@ import styled from "styled-components";
 
 const AppWrapper = styled.div`
   // max-width: 3000px;
-  // applying max-width to app is stricty a matter of taste
+  // applying max-width to page
   align-content: center;
   margin: auto;
 `;
