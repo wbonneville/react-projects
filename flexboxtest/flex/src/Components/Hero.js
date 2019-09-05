@@ -9,13 +9,18 @@ const HeroWrapper = styled.div`
 
   & .middlesection {
     display: flex;
-    align-items: center;
     color: white;
     font-size: 35px;
     margin-top: 5rem;
     
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        & .classstories {
+            order: 2;
+            
+        }
       }
 `;
 
@@ -58,12 +63,11 @@ const NewsImage = styled.img`
   margin-right: 1.5rem;
 `;
 
-const BigNewsImg = styled.div`
-  background-image: (${bignewsimg});
-  && .deer {
-    height: 400px;
-    width: 600px;
-  }
+const BigNewsImg = styled.img`
+  align-content: center;
+  height: 400px;
+  max-width: 100%;
+  margin-top: 3.5rem;
 `;
 
 export default class Hero extends Component {
@@ -81,12 +85,12 @@ export default class Hero extends Component {
                   <Slogan>It's great to part of the greater good.</Slogan>
                   {/* Column 3 */}
                   <div className="row center-xs middlesection">
-                    <LatestStories className="col-xs-4 flexme">
+                    <LatestStories className="col-xs-4 flexme classstories">
                       <h5>Latest Stories</h5>
                     </LatestStories>
-                    <BigNewsImg className="col-xs-8 flexme">
-                      <div className="deer"></div>
-                    </BigNewsImg>
+                    <div className="col-xs-8 flexme classimage">
+                      <BigNewsImg src={bignewsimg}></BigNewsImg>
+                    </div>
                   </div>
                   {/* Column 4 */}
                 </div>
