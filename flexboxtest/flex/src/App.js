@@ -8,7 +8,8 @@ import styled from "styled-components";
 // Hacky?
 
 const AppWrapper = styled.div`
-  max-width: 3000px;
+  // max-width: 3000px;
+  // applying max-width to app is stricty a matter of taste
   align-content: center;
   margin: auto;
 `;
