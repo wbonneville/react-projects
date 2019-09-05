@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import image from "../images/teamwork.png";
 import styled from "styled-components";
 import newsimg1 from "../images/art2.jpg";
+import bignewsimg from "../images/art3.jpg";
 
 const HeroWrapper = styled.div`
   font-family: "Futura";
@@ -9,7 +10,6 @@ const HeroWrapper = styled.div`
   & .middlesection {
     display: flex;
     align-items: center;
-
     color: white;
     font-size: 35px;
     margin-top: 5rem;
@@ -58,6 +58,14 @@ const NewsImage = styled.img`
   margin-right: 1.5rem;
 `;
 
+const BigNewsImg = styled.div`
+  background-image: (${bignewsimg});
+  && .deer {
+    height: 400px;
+    width: 600px;
+  }
+`;
+
 export default class Hero extends Component {
   render() {
     return (
@@ -72,16 +80,13 @@ export default class Hero extends Component {
                   <Welcome>Welcome.</Welcome>
                   <Slogan>It's great to part of the greater good.</Slogan>
                   {/* Column 3 */}
-                  <div className="row middlesection">
+                  <div className="row center-xs middlesection">
                     <LatestStories className="col-xs-4 flexme">
                       <h5>Latest Stories</h5>
                     </LatestStories>
-                    <div className="col-xs-4 flexme">
-                      <h5>skittle</h5>
-                    </div>
-                    <div className="col-xs-4 flexme">
-                      <h5>skittle</h5>
-                    </div>
+                    <BigNewsImg className="col-xs-8 flexme">
+                      <div className="deer"></div>
+                    </BigNewsImg>
                   </div>
                   {/* Column 4 */}
                 </div>
