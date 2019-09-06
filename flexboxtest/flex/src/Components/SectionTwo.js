@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
+import vid from "../vid/vidya.mp4";
+
 const SectionWrapper = styled.div`
   height: 800px;
   width: 100%;
@@ -24,18 +26,20 @@ const Video = styled.div``;
 export default class SectionTwo extends Component {
   render() {
     return (
-      <SectionWrapper>
-        <Watch className="row center-xs">
-          <div className="col-xs-12">
-            <h1>Work</h1>
-            <h4>
-              Let us make a double harvest: one of agricultural success and one
-              of ideological reform.
-            </h4>
-          </div>
-        </Watch>
-        <Video></Video>
-      </SectionWrapper>
+      <React.Fragment>
+        <SectionWrapper>
+          <Watch className="row center-xs">
+            <div className="col-xs-12">
+              <h1>Work</h1>
+              <h4>
+                Let us make a double harvest: one of agricultural success and
+                one of ideological reform.
+              </h4>
+            </div>
+          </Watch>
+          <Video className="row center-xs"></Video>
+        </SectionWrapper>
+      </React.Fragment>
     );
   }
 }
