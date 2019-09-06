@@ -77,6 +77,14 @@ const BigNewsImg = styled.div`
   max-width: 80%;
   margin-top: 3.5rem;
   border: 1px solid white;
+
+  & .pdiv {
+    line-height: 35rem;
+  }
+
+  @media (max-width: 1000px) {
+    width: 800px;
+  }
 `;
 
 export default class Hero extends Component {
@@ -99,7 +107,11 @@ export default class Hero extends Component {
                     </LatestStories>
                     <BigNewsImgWrapper className="col-xs-7">
                       <BigNewsImg>
-                        <p className="textP">Lorem ipsum dolor sit amet</p>
+                        <div className="row">
+                          <div className="col-xs-6 pdiv">
+                            <p>yeah</p>
+                          </div>
+                        </div>
                       </BigNewsImg>
                     </BigNewsImgWrapper>
                   </div>
