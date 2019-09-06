@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import image from "../images/city1.jpeg";
 import styled from "styled-components";
 import newsimg1 from "../images/art2.jpg";
-import bignewsimg from "../images/city2.jpg";
+import bignewsimg from "../images/city3.jpg";
 
 const HeroWrapper = styled.div`
   font-family: "Futura";
@@ -77,6 +77,7 @@ const BigNewsImg = styled.div`
   max-width: 80%;
   margin-top: 3.5rem;
   border: 1px solid white;
+  padding: 0px 0px;
 
   & .pdiv {
     line-height: 35rem;
@@ -102,17 +103,11 @@ export default class Hero extends Component {
                   <Slogan>Lorem ipsum dorem set irom lierum.</Slogan>
                   {/* Column 3 */}
                   <div className="row center-xs middlesection">
-                    <LatestStories className="col-xs-5 flexme classStories">
+                    <LatestStories className="col-xs-6 flexme classStories">
                       <h5>Latest Stories</h5>
                     </LatestStories>
-                    <BigNewsImgWrapper className="col-xs-7">
-                      <BigNewsImg>
-                        <div className="row">
-                          <div className="col-xs-6 pdiv">
-                            <p>yeah</p>
-                          </div>
-                        </div>
-                      </BigNewsImg>
+                    <BigNewsImgWrapper className="col-xs-6">
+                      <BigNewsImg></BigNewsImg>
                     </BigNewsImgWrapper>
                   </div>
                   {/* Column 4 */}
