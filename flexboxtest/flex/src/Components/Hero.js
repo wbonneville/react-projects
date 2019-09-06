@@ -6,7 +6,7 @@ import bignewsimg from "../images/city3.jpg";
 
 const HeroWrapper = styled.div`
   font-family: "Futura";
-
+  justify-content: center;
   & .middlesection {
     display: flex;
     color: white;
@@ -19,9 +19,6 @@ const HeroWrapper = styled.div`
       align-content: center;
       & .classStories {
         order: 2;
-      }
-      & .classImage {
-        max-width: 100%;
       }
     }
   }
@@ -76,7 +73,7 @@ const BigNewsImg = styled.div`
   justify-content: center;
   text-align: center;
   height: 400px;
-  width: 400px;
+  width: 500px;
   margin-top: 3.5rem;
   border: 1px solid white;
   padding: 0px 0px;
@@ -85,8 +82,8 @@ const BigNewsImg = styled.div`
     line-height: 35rem;
   }
 
-  @media (max-width: 1000px) {
-    width: 400px;
+  @media (max-width: 700px) {
+    width: 99.9999%;
   }
 `;
 
@@ -108,6 +105,7 @@ export default class Hero extends Component {
                     <LatestStories className="col-xs-6 flexme classStories">
                       <h5>Latest Stories</h5>
                     </LatestStories>
+
                     <BigNewsImgWrapper className="col-xs-6">
                       <BigNewsImg></BigNewsImg>
                     </BigNewsImgWrapper>
