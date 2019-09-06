@@ -85,7 +85,7 @@ export default class Test extends Component {
     return (
       <HeaderWrapper>
         <div className="row center-xs">
-          <div className="col-xs-12">
+          <div className="col-xs-6">
             <StyledUl className="container">
               <li className="special">
                 <strong>City 17 Information Desk</strong>
