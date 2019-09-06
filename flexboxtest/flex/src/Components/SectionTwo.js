@@ -8,6 +8,14 @@ const SectionWrapper = styled.div`
 
 export default class SectionTwo extends Component {
   render() {
-    return <SectionWrapper></SectionWrapper>;
+    return (
+      <SectionWrapper>
+        <div className="row center-xs">
+          <div className="col-xs-12">
+            <h1>Watch</h1>
+          </div>
+        </div>
+      </SectionWrapper>
+    );
   }
 }
