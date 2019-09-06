@@ -38,6 +38,7 @@ const Image = styled.div`
 `;
 
 const Welcome = styled.h1`
+  margin-top: 5rem;
   color: white;
   font-size: 75px;
 `;
@@ -73,8 +74,9 @@ const BigNewsImg = styled.div`
   background-size: cover;
   align-content: center;
   justify-content: center;
+  text-align: center;
   height: 400px;
-  max-width: 80%;
+  width: 400px;
   margin-top: 3.5rem;
   border: 1px solid white;
   padding: 0px 0px;
@@ -84,7 +86,7 @@ const BigNewsImg = styled.div`
   }
 
   @media (max-width: 1000px) {
-    width: 800px;
+    width: 400px;
   }
 `;
 
