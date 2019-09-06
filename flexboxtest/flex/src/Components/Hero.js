@@ -10,7 +10,7 @@ const HeroWrapper = styled.div`
   & .middlesection {
     display: flex;
     color: white;
-    font-size: 35px;
+    font-size: 34px;
     margin-top: 5rem;
 
     @media (max-width: 1000px) {
