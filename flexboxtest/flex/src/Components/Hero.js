@@ -7,6 +7,7 @@ import bignewsimg from "../images/city3.jpg";
 const HeroWrapper = styled.div`
   font-family: "Futura";
   justify-content: center;
+
   & .middlesection {
     display: flex;
     color: white;
