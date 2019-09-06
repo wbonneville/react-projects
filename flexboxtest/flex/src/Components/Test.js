@@ -16,6 +16,11 @@ const StyledUl = styled.ul`
   align-items: center;
   font-family: "Futura";
 
+  & h4 {
+    margin-right: 0.4em;
+    align-items: center;
+  }
+
   & li {
     font-size: 15px;
     margin-right: 0.2em;
@@ -87,12 +92,12 @@ export default class Test extends Component {
         <div className="row center-xs">
           <div className="col-xs-6">
             <StyledUl className="container">
-              <li className="special">
+              <h4 className="special">
                 <strong>City 17 Information Desk</strong>
-              </li>
-              <li>
+              </h4>
+              <h4>
                 <strong>Civil Protection | Metropolice</strong>
-              </li>
+              </h4>
             </StyledUl>
           </div>
         </div>
