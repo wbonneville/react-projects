@@ -1,8 +1,9 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
+import styled from "styled-components";
+
 import Hero from "./Components/Hero";
 import Test from "./Components/Test";
-import styled from "styled-components";
+import SectionTwo from "./Components/SectionTwo";
 
 // Wrapping entire app in a styled component
 // Hacky?
@@ -19,6 +20,7 @@ function App() {
     <AppWrapper>
       <Test></Test>
       <Hero></Hero>
+      <SectionTwo></SectionTwo>
     </AppWrapper>
   );
 }
