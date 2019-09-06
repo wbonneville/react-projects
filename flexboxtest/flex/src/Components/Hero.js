@@ -99,7 +99,7 @@ export default class Hero extends Component {
                     </LatestStories>
                     <BigNewsImgWrapper className="col-xs-7">
                       <BigNewsImg>
-                        <p className="textP">Hello hello lorem</p>
+                        <p className="textP">Lorem ipsum dolor sit amet</p>
                       </BigNewsImg>
                     </BigNewsImgWrapper>
                   </div>
