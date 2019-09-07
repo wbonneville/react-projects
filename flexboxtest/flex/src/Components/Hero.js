@@ -18,7 +18,7 @@ const HeroWrapper = styled.div`
       flex-basis: 50%;
     }
 
-    @media (max-width: 1150px) {
+    @media (max-width: 1200px) {
       flex-direction: column;
       justify-content: center;
       align-content: center;
@@ -122,7 +122,6 @@ const BigNewsImg = styled.div`
   width: 600px;
   margin-top: 3.5rem;
   border: 1px solid white;
-  padding: 0px 0px;
 
   & .pdiv {
     line-height: 35rem;
@@ -148,7 +147,7 @@ export default class Hero extends Component {
                   <Slogan>Lorem ipsum dorem set irom lierum.</Slogan>
                   {/* Column 3 */}
                   <div className="row around-xs center-xs middlesection">
-                    <LatestStories className="col-xs-12 col-lg-3 latestStories classStories">
+                    <LatestStories className="col-xs-3 latestStories classStories">
                       <h5>Latest Stories</h5>
                       <Stories className="row start-xs stories">
                         <NewsImage src={newsimg1}></NewsImage>
@@ -173,7 +172,7 @@ export default class Hero extends Component {
                       </Stories>
                     </LatestStories>
 
-                    <BigNewsImgWrapper className="col-xs-12 col-lg-9 bigNews">
+                    <BigNewsImgWrapper className="col-xs-9 bigNews">
                       <BigNewsImg></BigNewsImg>
                     </BigNewsImgWrapper>
                   </div>
