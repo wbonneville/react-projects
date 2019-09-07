@@ -27,8 +27,8 @@ const Watch = styled.div`
 const Image = styled.div`
   background-image: url(${image1});
   background-size: cover;
-  height: 500px;
-  width: 600px;
+  height: 400px;
+  width: 400px;
   margin-top: 15%;
 `;
 
@@ -44,13 +44,13 @@ export default class SectionTwo extends Component {
                 Let us make a double harvest: one of agricultural success and
                 one of ideological reform.
               </h4>
-              <div className="row">
-                <div className=" images col-xs-12 col-lg-6">
-                  <Image></Image>
-                </div>
-                <div className=" images col-xs-12 col-lg-6">
-                  <Image></Image>
-                </div>
+            </div>
+            <div className="row center-xs">
+              <div className="col-xs-12 col-lg-6">
+                <Image></Image>
+              </div>
+              <div className="col-xs-12 col-lg-6">
+                <Image></Image>
               </div>
             </div>
           </Watch>
