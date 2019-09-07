@@ -5,7 +5,7 @@ import image1 from "../images/city1.jpeg";
 
 const SectionWrapper = styled.div`
   height: 900px;
-  width: 100%;
+
   font-family: "Futura";
 
   @media (max-width: 1200px) {
@@ -33,8 +33,8 @@ const Image = styled.div`
   height: 400px;
   width: 400px;
   margin-top: 15%;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 60px;
+  margin-left: 60px;
 `;
 
 export default class SectionTwo extends Component {
@@ -50,15 +50,19 @@ export default class SectionTwo extends Component {
                 one of ideological reform.
               </h4>
             </div>
-            <ImageContainer className="row center-lg">
-              <div className="col-xs-12 col-lg-6">
-                <Image></Image>
-              </div>
-              <div className="col-xs-12 col-lg-6">
-                <Image></Image>
-              </div>
-            </ImageContainer>
           </Watch>
+          <ImageContainer className="row center-xs">
+            <div className="row">
+              <div className="col-xs-12 col-lg-6">
+                <Image></Image>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-xs-12 col-lg-6">
+                <Image></Image>
+              </div>
+            </div>
+          </ImageContainer>
         </SectionWrapper>
       </React.Fragment>
     );
