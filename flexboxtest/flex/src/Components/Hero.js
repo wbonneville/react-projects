@@ -40,7 +40,11 @@ const Image = styled.div`
   background-size: cover;
   margin-top: -16px;
   & .slide {
-    height: 1500px;
+    height: 1150px;
+  }
+
+  @media (max-width: 1100px) {
+    height: 1400px;
   }
 `;
 
