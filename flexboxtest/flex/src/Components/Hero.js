@@ -69,7 +69,7 @@ const Stories = styled.div`
 
   @media (max-width: 250px) {
     font-size: 12px;
-    width: 150px;
+    width: 350px;
   }
 
   @media (max-width: 400px) {
