@@ -43,7 +43,7 @@ const Image = styled.div`
     height: 1150px;
   }
 
-  @media (max-width: 1150px) {
+  @media (max-width: 1200px) {
     height: 1400px;
   }
 `;

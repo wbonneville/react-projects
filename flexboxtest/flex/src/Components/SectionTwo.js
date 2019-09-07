@@ -7,7 +7,8 @@ const SectionWrapper = styled.div`
   height: 900px;
   width: 100%;
   font-family: "Futura";
-  @media (max-width: 1150px) {
+
+  @media (max-width: 1200px) {
     height: 1400px;
   }
 `;
@@ -24,9 +25,7 @@ const Watch = styled.div`
   }
 `;
 
-const ImageContainer = styled.div`
-  margin: 0 100px;
-`;
+const ImageContainer = styled.div``;
 
 const Image = styled.div`
   background-image: url(${image1});
@@ -51,7 +50,7 @@ export default class SectionTwo extends Component {
                 one of ideological reform.
               </h4>
             </div>
-            <ImageContainer className="row center-xs">
+            <ImageContainer className="row center-lg">
               <div className="col-xs-12 col-lg-6">
                 <Image></Image>
               </div>
