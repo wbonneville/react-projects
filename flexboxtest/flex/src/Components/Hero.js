@@ -18,7 +18,7 @@ const HeroWrapper = styled.div`
       flex-basis: 50%;
     }
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1100px) {
       flex-direction: column;
       justify-content: center;
       align-content: center;
@@ -35,7 +35,7 @@ const Image = styled.div`
   background-size: cover;
   margin-top: -16px;
   & .slide {
-    height: 1100px;
+    height: 1500px;
   }
 `;
 
@@ -56,12 +56,16 @@ const LatestStories = styled.div`
 `;
 
 const Stories = styled.div`
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-left: 4rem;
   color: white;
   font-size: 15px;
   flex-direction: row;
   width: 500px;
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+  }
 `;
 
 const NewsImage = styled.img`
@@ -110,6 +114,20 @@ export default class Hero extends Component {
                   <div className="row around-xs center-xs middlesection">
                     <LatestStories className="col-xs-3 latestStories classStories">
                       <h5>Latest Stories</h5>
+                      <Stories className="row start-xs stories">
+                        <NewsImage src={newsimg1}></NewsImage>
+                        <div>
+                          <strong>Environment</strong>
+                          <p>bla bla bla bla? BLA BL BLA BLA</p>
+                        </div>
+                      </Stories>
+                      <Stories className="row start-xs stories">
+                        <NewsImage src={newsimg1}></NewsImage>
+                        <div>
+                          <strong>Environment</strong>
+                          <p>bla bla bla bla? BLA BL BLA BLA</p>
+                        </div>
+                      </Stories>
                       <Stories className="row start-xs stories">
                         <NewsImage src={newsimg1}></NewsImage>
                         <div>
