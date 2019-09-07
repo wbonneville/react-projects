@@ -103,11 +103,11 @@ export default class Hero extends Component {
                   <Slogan>Lorem ipsum dorem set irom lierum.</Slogan>
                   {/* Column 3 */}
                   <div className="row center-xs middlesection">
-                    <LatestStories className="col-xs-6 flexme classStories">
+                    <LatestStories className="col-xs-4 flexme classStories">
                       <h5>Latest Stories</h5>
                     </LatestStories>
 
-                    <BigNewsImgWrapper className="col-xs-6">
+                    <BigNewsImgWrapper className="col-xs-8">
                       <BigNewsImg></BigNewsImg>
                     </BigNewsImgWrapper>
                   </div>
