@@ -43,7 +43,7 @@ const Image = styled.div`
     height: 1150px;
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1150px) {
     height: 1400px;
   }
 `;
@@ -80,13 +80,14 @@ const Stories = styled.div`
     margin-left: 20px;
   }
   @media (max-width: 1100px) {
-    margin-left: 30px;
+    margin-left: 1rem;
   }
 `;
 
 const LatestStories = styled.div`
   color: white;
   font-size: 35px;
+
   @media (max-width: 250px) {
     margin-left: -10px;
     font-size: 25px;
