@@ -61,6 +61,7 @@ const Stories = styled.div`
   color: white;
   font-size: 15px;
   flex-direction: row;
+  width: 500px;
 `;
 
 const NewsImage = styled.img`
@@ -109,11 +110,11 @@ export default class Hero extends Component {
                   <div className="row around-xs center-xs middlesection">
                     <LatestStories className="col-xs-3 latestStories classStories">
                       <h5>Latest Stories</h5>
-                      <Stories className="row stories">
+                      <Stories className="row start-xs stories">
                         <NewsImage src={newsimg1}></NewsImage>
                         <div>
                           <strong>Environment</strong>
-                          <p>bla bla bla</p>
+                          <p>bla bla bla bla? BLA BL BLA BLA</p>
                         </div>
                       </Stories>
                     </LatestStories>
