@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-import vid from "../vid/vidya.mp4";
+import image1 from "../images/city1.jpeg";
 
 const SectionWrapper = styled.div`
   height: 800px;
   width: 100%;
   font-family: "Futura";
+  @media (max-width: 1150px) {
+    height: 1400px;
+  }
 `;
 
 const Watch = styled.div`
@@ -21,6 +24,14 @@ const Watch = styled.div`
   }
 `;
 
+const Image = styled.div`
+  background-image: url(${image1});
+  background-size: cover;
+  height: 500px;
+  width: 600px;
+  margin-top: 15%;
+`;
+
 export default class SectionTwo extends Component {
   render() {
     return (
@@ -33,6 +44,14 @@ export default class SectionTwo extends Component {
                 Let us make a double harvest: one of agricultural success and
                 one of ideological reform.
               </h4>
+              <div className="row">
+                <div className=" images col-xs-12 col-lg-6">
+                  <Image></Image>
+                </div>
+                <div className=" images col-xs-12 col-lg-6">
+                  <Image></Image>
+                </div>
+              </div>
             </div>
           </Watch>
         </SectionWrapper>
