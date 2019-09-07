@@ -14,6 +14,10 @@ const HeroWrapper = styled.div`
     font-size: 34px;
     margin-top: 5rem;
 
+    & .bigNews {
+      flex-basis: 50%;
+    }
+
     @media (max-width: 1000px) {
       flex-direction: column;
       justify-content: center;
@@ -103,11 +107,11 @@ export default class Hero extends Component {
                   <Slogan>Lorem ipsum dorem set irom lierum.</Slogan>
                   {/* Column 3 */}
                   <div className="row center-xs middlesection">
-                    <LatestStories className="col-xs-4 flexme classStories">
+                    <LatestStories className="col-xs-4 latestStories flexme classStories">
                       <h5>Latest Stories</h5>
                     </LatestStories>
 
-                    <BigNewsImgWrapper className="col-xs-8">
+                    <BigNewsImgWrapper className="col-xs-8 bigNews">
                       <BigNewsImg></BigNewsImg>
                     </BigNewsImgWrapper>
                   </div>
