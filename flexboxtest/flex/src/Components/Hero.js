@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import image from "../images/city1.jpeg";
 import styled from "styled-components";
-import newsimg1 from "../images/art2.jpg";
+import newsimg1 from "../images/wallhaven.jpg";
 import bignewsimg from "../images/city3.jpg";
 
 const HeroWrapper = styled.div`
@@ -148,32 +148,32 @@ export default class Hero extends Component {
                   <Slogan>Lorem ipsum dorem set irom lierum.</Slogan>
                   {/* Column 3 */}
                   <div className="row around-xs center-xs middlesection">
-                    <LatestStories className="col-xs-3 latestStories classStories">
+                    <LatestStories className="col-xs-12 col-lg-3 latestStories classStories">
                       <h5>Latest Stories</h5>
                       <Stories className="row start-xs stories">
                         <NewsImage src={newsimg1}></NewsImage>
                         <div>
-                          <strong>Environment</strong>
-                          <p>bla bla bla bla? BLA BL BLA BLA</p>
+                          <strong>Lorem</strong>
+                          <p>Lorem ipsum dolor sit amet </p>
                         </div>
                       </Stories>
                       <Stories className="row start-xs stories">
                         <NewsImage src={newsimg1}></NewsImage>
                         <div>
-                          <strong>Environment</strong>
-                          <p>bla bla bla bla? BLA BL BLA BLA</p>
+                          <strong>Ipsum</strong>
+                          <p>Lorem ipsum dolor sit amet </p>
                         </div>
                       </Stories>
                       <Stories className="row start-xs stories">
                         <NewsImage src={newsimg1}></NewsImage>
                         <div>
-                          <strong>Environment</strong>
-                          <p>bla bla bla bla? BLA BL BLA BLA</p>
+                          <strong>Dolor</strong>
+                          <p>Lorem ipsum dolor sit amet </p>
                         </div>
                       </Stories>
                     </LatestStories>
 
-                    <BigNewsImgWrapper className="col-xs-9 bigNews">
+                    <BigNewsImgWrapper className="col-xs-12 col-lg-9 bigNews">
                       <BigNewsImg></BigNewsImg>
                     </BigNewsImgWrapper>
                   </div>
