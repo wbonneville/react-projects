@@ -6,7 +6,7 @@ import image1 from "../images/city1.jpeg";
 const SectionWrapper = styled.div`
   height: 850px;
 
-  font-family: "Futura";
+  font-family: "Roboto";
 
   @media (max-width: 1025px) {
     height: 1300px;

@@ -14,7 +14,6 @@ const StyledUl = styled.ul`
   opacity: 0.99;
   font-family: "Roboto";
   align-items: center;
-  font-family: "Futura";
 
   & h4 {
     margin-right: 0.4em;

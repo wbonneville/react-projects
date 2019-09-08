@@ -5,7 +5,7 @@ import newsimg1 from "../images/wallhaven.jpg";
 import bignewsimg from "../images/city3.jpg";
 
 const HeroWrapper = styled.div`
-  font-family: "Futura";
+  font-family: "Roboto";
   justify-content: center;
 
   & .middlesection {
