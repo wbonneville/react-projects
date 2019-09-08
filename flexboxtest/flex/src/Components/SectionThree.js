@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const SectionWrapper = styled.div`
-  height: 1300px;
   width: 100%;
   font-family: "Amiri";
   background-color: #f6f6f6;
