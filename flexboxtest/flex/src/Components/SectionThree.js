@@ -26,6 +26,11 @@ const NewsPanel = styled.div`
     text-decoration: none;
     color: inherit;
   }
+
+  & .date {
+    text-transform: uppercase;
+    font-size: 16px;
+  }
 `;
 
 export default class SectionTwo extends Component {
@@ -44,7 +49,7 @@ export default class SectionTwo extends Component {
                 </p>
               </div>
               <div className="col-xs-12 col-md-2">
-                <p className="">April 02, 2018</p>
+                <p className="date">April 02, 2018</p>
               </div>
             </div>
           </NewsPanel>
