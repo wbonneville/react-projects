@@ -33,7 +33,7 @@ const NewsPanel = styled.div`
   padding-bottom: 3%;
 
   & p {
-    font-size: 23px;
+    font-size: 20px;
     text-align: left;
 
     @media (max-width: 820px) {
@@ -56,11 +56,47 @@ const NewsPanel = styled.div`
   }
 `;
 
+const BreenCast = styled.div`
+  padding-top: 10%;
+
+  & h1 {
+    font-weight: normal;
+    font-size: 50px;
+  }
+
+  & p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  & .mainHr {
+    padding-top: 2%;
+    padding-bottom: 4%;
+  }
+`;
+
 export default class SectionTwo extends Component {
   render() {
     return (
       <React.Fragment>
         <SectionWrapper>
+          <BreenCast className="row center-xs">
+            <div className="col-xs 12">
+              <h1>Breencast</h1>
+              <p>
+                Regular broadcast made by Dr. Wallace Breen, delivered to the
+                populace of City 17 (and possibly other Combine controlled towns
+                and cities) via private televisions and, more commonly, large
+                video monitors mounted on walls in public places such as town
+                squares and railway stations.
+              </p>
+              <div className="mainHr row center-xs">
+                <div className="col-xs-6">
+                  <hr className="mainStyle"></hr>
+                </div>
+              </div>
+            </div>
+          </BreenCast>
           <NewsPanel className="container">
             <div className="row center-xs">
               <div className="col-xs-12 col-md-10">
