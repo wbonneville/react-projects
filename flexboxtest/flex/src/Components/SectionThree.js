@@ -28,16 +28,16 @@ export default class SectionTwo extends Component {
           <div className="row center-xs"></div>
           <div class="container">
             <div class="row">
-              <div class="col-md-10">
-                <h3 class="feed-item-heading m-0 font-weight-800">
-                  <a class="text-black" href="#">
+              <div class=" col-xs-12 col-md-10">
+                <h3 class="">
+                  <a class="" href="#">
                     "Dear Dr. Breen. Why has the Combine seen fit to suppress
                     our reproductive cycle? Sincerely, A Concerned Citizen."
                   </a>
                 </h3>
               </div>
-              <div class="col-md-2">
-                <p class="m-0 text-pink text-uppercase">April 02, 2018</p>
+              <div class="col-md-2 col-xs-12">
+                <p class="">April 02, 2018</p>
               </div>
             </div>
           </div>

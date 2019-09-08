@@ -8,8 +8,8 @@ const SectionWrapper = styled.div`
 
   font-family: "Futura";
 
-  @media (max-width: 1200px) {
-    height: 1400px;
+  @media (max-width: 1025px) {
+    height: 1300px;
   }
 `;
 
