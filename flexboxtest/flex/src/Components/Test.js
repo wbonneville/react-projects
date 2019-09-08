@@ -12,7 +12,8 @@ const StyledUl = styled.ul`
   display: flex;
   list-style-type: none;
   opacity: 0.99;
-  font-family: "Roboto";
+  font-family: "Amiri";
+
   align-items: center;
 
   & h4 {

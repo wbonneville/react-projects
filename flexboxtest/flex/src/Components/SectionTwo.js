@@ -61,7 +61,7 @@ export default class SectionTwo extends Component {
       <React.Fragment>
         <SectionWrapper>
           <Header className="row center-xs">
-            <div className="col-xs-12">
+            <div className="col-xs-10">
               <h1>Careers</h1>
               <h4>Lorem ipsum dolor sit amet</h4>
             </div>

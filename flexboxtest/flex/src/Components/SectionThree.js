@@ -80,7 +80,7 @@ export default class SectionTwo extends Component {
       <React.Fragment>
         <SectionWrapper>
           <BreenCast className="row center-xs">
-            <div className="col-xs-12 col-lg-6">
+            <div className="col-xs-10 col-lg-6">
               <h1>Breencast</h1>
               <p>
                 Regular broadcast made by Dr. Wallace Breen, delivered to the
@@ -97,7 +97,7 @@ export default class SectionTwo extends Component {
           </BreenCast>
           <NewsPanel className="container">
             <div className="row center-xs">
-              <div className="col-xs-12 col-md-10">
+              <div className="col-xs-11 col-md-10">
                 <p className="">
                   <a className="" href="#">
                     "Dear Dr. Breen. Why has the Combine seen fit to suppress
@@ -105,7 +105,7 @@ export default class SectionTwo extends Component {
                   </a>
                 </p>
               </div>
-              <div className="col-xs-12 col-md-1">
+              <div className="col-xs-11 col-md-1">
                 <p className="date">April 02, 2018</p>
               </div>
             </div>
@@ -117,7 +117,7 @@ export default class SectionTwo extends Component {
           </div>
           <NewsPanel className="container">
             <div className="row center-xs">
-              <div className="col-xs-12 col-md-10">
+              <div className="col-xs-11 col-md-10">
                 <p className="">
                   <a className="" href="#">
                     We now have direct confirmation of a disruptor in our midst,
@@ -139,7 +139,7 @@ export default class SectionTwo extends Component {
           </div>
           <NewsPanel className="container">
             <div className="row center-xs">
-              <div className="col-xs-12 col-md-10">
+              <div className="col-xs-11 col-md-10">
                 <p className="">
                   <a className="" href="#">
                     I have been asked to say a few words to the transhuman arm
