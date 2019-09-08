@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import image from "../images/city1.jpeg";
+import image from "../images/wallhaven.jpg";
 import styled from "styled-components";
 import newsimg1 from "../images/wallhaven.jpg";
 import bignewsimg from "../images/city3.jpg";
@@ -50,9 +50,9 @@ const Image = styled.div`
 `;
 
 const Welcome = styled.h1`
-  margin-top: 5rem;
+  margin-top: 8rem;
   color: white;
-  font-size: 75px;
+  font-size: 100px;
 `;
 
 const Slogan = styled.h2`

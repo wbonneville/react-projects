@@ -89,7 +89,7 @@ export default class SectionTwo extends Component {
                 town squares and railway stations.
               </p>
               <div className="mainHr row center-xs">
-                <div className="col-xs-6">
+                <div className="col-xs-10">
                   <hr className="mainStyle"></hr>
                 </div>
               </div>
