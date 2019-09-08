@@ -2,16 +2,20 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const SectionWrapper = styled.div`
-  height: 1000px;
+  height: 1500px;
   width: 100%;
-  font-family: "EB Garamond";
+  font-family: "Amiri";
   background-color: #f6f6f6;
 
   & .mainStyle {
     border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0)
+    );
   }
 `;
 
@@ -22,17 +26,17 @@ const SectionWrapper = styled.div`
 // font-family: 'Amiri', serif;
 
 const NewsPanel = styled.div`
-  padding-top: 3%;
+  padding-top: 4%;
   padding-bottom: 3%;
 
   & p {
-    font-size: 20px;
+    font-size: 23px;
+    text-align: left;
   }
 
   & a {
     text-decoration: none;
     color: inherit;
-    text-align: center;
   }
 
   & .date {
@@ -56,13 +60,13 @@ export default class SectionTwo extends Component {
                   </a>
                 </p>
               </div>
-              <div className="col-xs-12 col-md-2">
+              <div className="col-xs-12 col-md-1">
                 <p className="date">April 02, 2018</p>
               </div>
             </div>
           </NewsPanel>
           <div className="row center-xs">
-            <div className="col-xs-11">
+            <div className="col-xs-12">
               <hr className="mainStyle"></hr>
             </div>
           </div>
@@ -78,13 +82,13 @@ export default class SectionTwo extends Component {
                   </a>
                 </p>
               </div>
-              <div className="col-xs-12 col-md-2">
+              <div className="col-xs-12 col-md-1">
                 <p className="date">April 02, 2018</p>
               </div>
             </div>
           </NewsPanel>
           <div className="row center-xs">
-            <div className="col-xs-11">
+            <div className="col-xs-12">
               <hr className="mainStyle"></hr>
             </div>
           </div>
@@ -99,13 +103,13 @@ export default class SectionTwo extends Component {
                   </a>
                 </p>
               </div>
-              <div className="col-xs-12 col-md-2">
+              <div className="col-xs-12 col-md-1">
                 <p className="date">April 02, 2018</p>
               </div>
             </div>
           </NewsPanel>
           <div className="row center-xs">
-            <div className="col-xs-11">
+            <div className="col-xs-12">
               <hr className="mainStyle"></hr>
             </div>
           </div>
@@ -122,13 +126,13 @@ export default class SectionTwo extends Component {
                   </a>
                 </p>
               </div>
-              <div className="col-xs-12 col-md-2">
+              <div className="col-xs-12 col-md-1">
                 <p className="date">April 02, 2018</p>
               </div>
             </div>
           </NewsPanel>
           <div className="row center-xs">
-            <div className="col-xs-11">
+            <div className="col-xs-12">
               <hr className="mainStyle"></hr>
             </div>
           </div>
@@ -143,13 +147,13 @@ export default class SectionTwo extends Component {
                   </a>
                 </p>
               </div>
-              <div className="col-xs-12 col-md-2">
+              <div className="col-xs-12 col-md-1">
                 <p className="date">April 02, 2018</p>
               </div>
             </div>
           </NewsPanel>
           <div className="row center-xs">
-            <div className="col-xs-11">
+            <div className="col-xs-12">
               <hr className="mainStyle"></hr>
             </div>
           </div>
