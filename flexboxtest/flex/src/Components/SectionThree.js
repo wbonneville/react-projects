@@ -66,8 +66,6 @@ const BreenCast = styled.div`
 
   & p {
     margin-top: -4%;
-    margin-left: 100px;
-    margin-right: 100px;
   }
 
   & .mainHr {
@@ -82,7 +80,7 @@ export default class SectionTwo extends Component {
       <React.Fragment>
         <SectionWrapper>
           <BreenCast className="row center-xs">
-            <div className="col-xs 12">
+            <div className="col-xs-12 col-lg-6">
               <h1>Breencast</h1>
               <p>
                 Regular broadcast made by Dr. Wallace Breen, delivered to the
