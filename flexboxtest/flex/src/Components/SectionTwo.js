@@ -4,7 +4,7 @@ import styled from "styled-components";
 import image1 from "../images/city1.jpeg";
 
 const SectionWrapper = styled.div`
-  height: 900px;
+  height: 850px;
 
   font-family: "Futura";
 
@@ -14,10 +14,10 @@ const SectionWrapper = styled.div`
 `;
 
 const Watch = styled.div`
-  margin-top: 10%;
+  margin-top: 5%;
 
   & h1 {
-    font-size: 70px;
+    font-size: 75px;
     color: #17263a;
   }
   & h4 {
