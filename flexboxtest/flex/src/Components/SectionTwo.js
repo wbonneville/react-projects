@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-import image1 from "../images/city1.jpeg";
+import image1 from "../images/factory.jpeg";
+import image2 from "../images/factory2.png";
 
 const SectionWrapper = styled.div`
-  height: 850px;
-
+  margin-top: 5%;
   font-family: "Amiri";
 
   @media (max-width: 1025px) {
@@ -13,25 +13,48 @@ const SectionWrapper = styled.div`
   }
 `;
 
-const Watch = styled.div`
-  margin-top: 5%;
-
+const Header = styled.div`
   & h1 {
     font-size: 75px;
+    font-weight: normal;
+    letter-spacing: 2px;
   }
   & h4 {
-    color: #17263a;
+    font-weight: normal;
+    margin-top: -5%;
+  }
+`;
+
+const Slogan = styled.div`
+  margin-top: 6%;
+  margin-bottom: 6%;
+  & h4 {
+    font-size: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    opacity: 0.5;
   }
 `;
 
 const ImageContainer = styled.div``;
 
-const Image = styled.div`
+const ImageOne = styled.div`
   background-image: url(${image1});
   background-size: cover;
-  height: 400px;
+  height: 350px;
   width: 400px;
-  margin-top: 15%;
+  margin-top: 30%;
+  margin-right: 60px;
+  margin-left: 60px;
+`;
+
+const ImageTwo = styled.div`
+  background-image: url(${image2});
+  background-size: cover;
+  height: 350px;
+  width: 400px;
+  margin-top: 30%;
   margin-right: 60px;
   margin-left: 60px;
 `;
@@ -41,27 +64,32 @@ export default class SectionTwo extends Component {
     return (
       <React.Fragment>
         <SectionWrapper>
-          <Watch className="row center-xs">
+          <Header className="row center-xs">
             <div className="col-xs-12">
-              <h1>Work</h1>
-              <h4>
-                Let us make a double harvest: one of agricultural success and
-                one of ideological reform.
-              </h4>
+              <h1>Careers</h1>
+              <h4>Lorem ipsum dolor sit amet</h4>
             </div>
-          </Watch>
+          </Header>
           <ImageContainer className="row center-xs">
             <div className="row">
               <div className="col-xs-12 col-lg-6">
-                <Image></Image>
+                <ImageOne></ImageOne>
               </div>
             </div>
             <div className="row">
               <div className="col-xs-12 col-lg-6">
-                <Image></Image>
+                <ImageTwo></ImageTwo>
               </div>
             </div>
           </ImageContainer>
+          <Slogan className="row center-xs">
+            <div className="col-xs-12">
+              <h4>
+                "Let us make a double harvest: one of agricultural success and
+                one of ideological reform."
+              </h4>
+            </div>
+          </Slogan>
         </SectionWrapper>
       </React.Fragment>
     );

@@ -60,12 +60,14 @@ const NewsPanel = styled.div`
 const BreenCast = styled.div`
   & h1 {
     font-weight: normal;
-    font-size: 50px;
+    font-size: 75px;
+    letter-spacing: 2px;
   }
 
   & p {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: -4%;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 
   & .mainHr {
@@ -84,10 +86,9 @@ export default class SectionTwo extends Component {
               <h1>Breencast</h1>
               <p>
                 Regular broadcast made by Dr. Wallace Breen, delivered to the
-                populace of City 17 (and possibly other Combine controlled towns
-                and cities) via private televisions and, more commonly, large
-                video monitors mounted on walls in public places such as town
-                squares and railway stations.
+                populace of City 17 via private televisions and, more commonly,
+                large video monitors mounted on walls in public places such as
+                town squares and railway stations.
               </p>
               <div className="mainHr row center-xs">
                 <div className="col-xs-6">
