@@ -28,7 +28,7 @@ export default class SectionTwo extends Component {
           <div className="row center-xs"></div>
           <div class="container">
             <div class="row">
-              <div class=" col-xs-12 col-md-10">
+              <div class="col-xs-12 col-md-10">
                 <h3 class="">
                   <a class="" href="#">
                     "Dear Dr. Breen. Why has the Combine seen fit to suppress
@@ -36,12 +36,11 @@ export default class SectionTwo extends Component {
                   </a>
                 </h3>
               </div>
-              <div class="col-md-2 col-xs-12">
+              <div class="col-xs-12 col-md-2">
                 <p class="">April 02, 2018</p>
               </div>
             </div>
           </div>
-          <div className="row center-xs"></div>
         </SectionWrapper>
       </React.Fragment>
     );
