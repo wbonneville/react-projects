@@ -7,10 +7,6 @@ import image2 from "../images/factory2.png";
 const SectionWrapper = styled.div`
   margin-top: 5%;
   font-family: "Amiri";
-
-  @media (max-width: 1025px) {
-    height: 1300px;
-  }
 `;
 
 const Header = styled.div`
@@ -83,7 +79,7 @@ export default class SectionTwo extends Component {
             </div>
           </ImageContainer>
           <Slogan className="row center-xs">
-            <div className="col-xs-12">
+            <div className="col-xs-10">
               <h4>
                 "Let us make a double harvest: one of agricultural success and
                 one of ideological reform."
