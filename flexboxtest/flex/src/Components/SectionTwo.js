@@ -6,7 +6,7 @@ import image1 from "../images/city1.jpeg";
 const SectionWrapper = styled.div`
   height: 850px;
 
-  font-family: "Roboto";
+  font-family: "Amiri";
 
   @media (max-width: 1025px) {
     height: 1300px;
@@ -18,7 +18,6 @@ const Watch = styled.div`
 
   & h1 {
     font-size: 75px;
-    color: #17263a;
   }
   & h4 {
     color: #17263a;

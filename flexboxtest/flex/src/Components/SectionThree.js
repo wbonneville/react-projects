@@ -32,6 +32,10 @@ const NewsPanel = styled.div`
   & p {
     font-size: 23px;
     text-align: left;
+
+    @media (max-width: 820px) {
+      text-align: center;
+    }
   }
 
   & a {
