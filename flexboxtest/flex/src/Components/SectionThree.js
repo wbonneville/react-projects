@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const SectionWrapper = styled.div`
-  height: 1500px;
+  height: 1300px;
   width: 100%;
   font-family: "Amiri";
   background-color: #f6f6f6;
@@ -17,6 +17,10 @@ const SectionWrapper = styled.div`
       rgba(0, 0, 0, 0)
     );
   }
+
+  /* @media (max-width: 220px) {
+    padding-bottom: 1700px;
+  } */
 `;
 
 // font-family: 'Noto Sans', sans-serif;
@@ -46,6 +50,10 @@ const NewsPanel = styled.div`
   & .date {
     text-transform: uppercase;
     font-size: 14px;
+  }
+
+  @media (max-width: 220px) {
+    padding-top: 30%;
   }
 `;
 
