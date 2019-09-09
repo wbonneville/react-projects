@@ -3,7 +3,7 @@ import styled from "styled-components";
 import image1 from "../images/slide2.jpg";
 
 const Image = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
     url(${image1});
   background-size: cover;
   height: 700px;

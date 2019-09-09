@@ -11,23 +11,20 @@ const StyledUl = styled.ul`
   color: white;
   display: flex;
   list-style-type: none;
-  opacity: 0.99;
+
   font-family: "SF-Mono";
   align-items: center;
 
-  & h4 {
-    margin-right: 0.4em;
-    align-items: center;
+  & h1 {
+    font-size: 25px;
+    font-weight: 2000;
+    margin-left: -5px;
   }
 
   & li {
     font-size: 15px;
     margin-right: 0.2em;
     padding: 15px 5px;
-  }
-
-  & .special {
-    font-size: 24px;
   }
 
   @media all and (max-width: 160px) {
@@ -89,26 +86,22 @@ export default class Test extends Component {
     return (
       <HeaderWrapper>
         <div className="row center-xs">
-          <div className="col-xs-6">
+          <div className="col-xs-12">
             <StyledUl className="container">
-              <h4 className="special">
-                <strong>City 17 Information Desk</strong>
-              </h4>
-              <h4>
-                <strong>Civil Protection | Metropolice</strong>
-              </h4>
+              <h1 className="special">City 17 Head Office</h1>
             </StyledUl>
           </div>
         </div>
+
         <StyledUlTwo>
-          <li> Testing option </li>
-          <li> Testing option</li>
-          <li> Testing option</li>
-          <li> Testing option</li>
-          <li> Longer Testing option</li>
-          <li> Longer Testing option</li>
-          <li> Longer Testing option</li>
-          <li> Longer Testing option</li>
+          <li> Citadel </li>
+          <li> Jobs and Positions</li>
+          <li> Apartments and Housing</li>
+          <li> Rationing and Credits</li>
+          <li> Administration</li>
+          <li> Benefactors</li>
+          <li> Civil Protection</li>
+          <li> Transportation</li>
         </StyledUlTwo>
       </HeaderWrapper>
     );
