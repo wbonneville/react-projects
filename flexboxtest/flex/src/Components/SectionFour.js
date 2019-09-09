@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import image1 from "../images/job.png";
+import image2 from "../images/education.png";
 
 const SectionWrapper = styled.div`
   background-color: white;
@@ -50,6 +52,26 @@ const StyledHr = styled.hr`
 
 // Just having fun withs props ^ ^ ^
 // Using classes is easier, but.. \o/
+
+const ImageOne = styled.div`
+  background-image: url(${image1});
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+  margin-top: 8rem;
+  margin-right: 8rem;
+  margin-left: 8rem;
+`;
+
+const ImageTwo = styled.div`
+  background-image: url(${image2});
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+  margin-top: 8rem;
+  margin-right: 8rem;
+  margin-left: 8rem;
+`;
 
 export default class NewSection extends Component {
   render() {
@@ -139,6 +161,18 @@ export default class NewSection extends Component {
                 <i class="fas fa-long-arrow-alt-right"></i>
               </strong>
             </p>
+          </div>
+        </div>
+        <div className="row center-xs">
+          <div className="row">
+            <div className="col-xs-12 col-lg-1">
+              <ImageOne></ImageOne>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-xs-12 col-lg-1">
+              <ImageTwo></ImageTwo>
+            </div>
           </div>
         </div>
       </SectionWrapper>

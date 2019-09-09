@@ -26,7 +26,7 @@ function App() {
       <SectionTwo></SectionTwo>
       <SectionThree></SectionThree>
       <SectionFour></SectionFour>
-      <SectionFive></SectionFive>
+      {/* <SectionFive></SectionFive> */}
     </AppWrapper>
   );
 }

@@ -24,7 +24,7 @@ const Header = styled.div`
   }
   & h4 {
     font-weight: normal;
-    margin-top: -5%;
+    margin-top: -3%;
   }
 `;
 
