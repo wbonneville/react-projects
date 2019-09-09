@@ -94,7 +94,10 @@ export default class Test extends Component {
         </div>
 
         <StyledUlTwo>
-          <li> Citadel </li>
+          <li>
+            {" "}
+            <a href="#city17"> Citadel </a>{" "}
+          </li>
           <li> Jobs and Positions</li>
           <li> Apartments and Housing</li>
           <li> Rationing and Credits</li>
