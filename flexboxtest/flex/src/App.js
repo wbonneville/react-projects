@@ -6,6 +6,7 @@ import Test from "./Components/Test";
 import SectionTwo from "./Components/SectionTwo";
 import SectionThree from "./Components/SectionThree";
 import SectionFour from "./Components/SectionFour";
+import SectionFive from "./Components/SectionFive";
 
 // Wrapping entire app in a styled component
 // Hacky?
@@ -25,6 +26,7 @@ function App() {
       <SectionTwo></SectionTwo>
       <SectionThree></SectionThree>
       <SectionFour></SectionFour>
+      <SectionFive></SectionFive>
     </AppWrapper>
   );
 }
