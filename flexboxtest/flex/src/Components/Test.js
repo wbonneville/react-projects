@@ -12,8 +12,7 @@ const StyledUl = styled.ul`
   display: flex;
   list-style-type: none;
   opacity: 0.99;
-  font-family: "Amiri";
-
+  font-family: "SF-Mono";
   align-items: center;
 
   & h4 {

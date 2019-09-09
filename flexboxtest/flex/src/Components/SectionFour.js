@@ -4,14 +4,15 @@ import styled from "styled-components";
 const SectionWrapper = styled.div`
   background-color: white;
   margin-top: -3%;
-  font-family: "Amiri";
+  font-family: "SF-Mono";
 
   & h1 {
     padding-top: 62px;
     padding-left: 40px;
     color: black;
-    font-size: 40px;
     font-weight: normal;
+    font-size: 75px;
+    letter-spacing: 2px;
 
     & .spanOne,
     .spanTwo {

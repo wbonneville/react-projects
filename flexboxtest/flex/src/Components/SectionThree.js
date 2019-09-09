@@ -4,7 +4,7 @@ import styled from "styled-components";
 const SectionWrapper = styled.div`
   padding-top: 3.5%;
   width: 100%;
-  font-family: "Amiri";
+  font-family: "SF-Mono";
   background-color: #f6f6f6;
 
   & .mainStyle {

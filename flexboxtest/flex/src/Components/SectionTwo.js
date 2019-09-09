@@ -6,7 +6,7 @@ import image2 from "../images/factory2.png";
 
 const SectionWrapper = styled.div`
   margin-top: 5%;
-  font-family: "Amiri";
+  font-family: "SF-Mono";
 `;
 
 const Header = styled.div`
