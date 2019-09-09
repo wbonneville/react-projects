@@ -57,16 +57,15 @@ export default class NewSection extends Component {
   render() {
     return (
       <SectionWrapper>
-        <h1>
-          Leading City 17's structural policies to advance the{" "}
-          <span className="spanOne">interests</span> and
-          <span className="spanTwo"> security</span> of all entities.
-        </h1>
-        <br></br>
+        <div className="row center-xs">
+          <div className="col-xs-10 col-lg-6">
+            <h1>Policies</h1>
+          </div>
+        </div>
+
         <StyledHr primary></StyledHr>
-        <br></br>
-        <div className="parent">
-          <div className="horizontal">
+        <div className="row center-xs">
+          <div className="col-xs-4">
             <h2>Immigration</h2>
             <StyledHr></StyledHr>
             <p>
@@ -91,7 +90,7 @@ export default class NewSection extends Component {
               </strong>
             </p>
           </div>
-          <div className="horizontal">
+          <div className="col-xs-4">
             <h2>Dr. Breen</h2>
             <StyledHr thirdary></StyledHr>
             <p>
@@ -116,11 +115,11 @@ export default class NewSection extends Component {
               </strong>
             </p>
           </div>
-          <div className="horizontal">
+
+          <div className="row-xs-4">
             <h2>Working at State</h2>
             <StyledHr secondary></StyledHr>
             <p>
-              {" "}
               The Combine's collective goal is to create the Universal Union.
             </p>
             <p>
@@ -134,7 +133,6 @@ export default class NewSection extends Component {
                 <i class="fas fa-long-arrow-alt-right"></i>
               </strong>
             </p>
-            <p>&nbsp;</p>
           </div>
         </div>
       </SectionWrapper>
