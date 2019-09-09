@@ -5,8 +5,8 @@ const SectionWrapper = styled.div`
   background-color: white;
   margin-top: -3%;
   font-family: "SF-Mono";
-  margin-left: 6%;
-  margin-right: 6%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 10%;
 
   & h1 {
@@ -22,7 +22,16 @@ const SectionWrapper = styled.div`
   }
 
   & h2 {
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  & h4 {
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
+    margin-top: -1%;
+    margin-bottom: 5%;
   }
 `;
 
@@ -50,6 +59,10 @@ export default class NewSection extends Component {
         <div className="row center-xs">
           <div className="col-xs-10">
             <h1>Policies</h1>
+            <h4>
+              Leading City 17's structural policies to advance the interests and
+              security of all entities.
+            </h4>
           </div>
         </div>
 

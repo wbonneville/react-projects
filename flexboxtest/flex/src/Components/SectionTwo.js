@@ -7,6 +7,13 @@ import image2 from "../images/factory2.png";
 const SectionWrapper = styled.div`
   margin-top: 5%;
   font-family: "SF-Mono";
+
+  & hr {
+    background-color: #eee;
+    border: 0 none;
+    color: #eee;
+    height: 1px;
+  }
 `;
 
 const Header = styled.div`
@@ -84,6 +91,11 @@ export default class SectionTwo extends Component {
                 "Let us make a double harvest: one of agricultural success and
                 one of ideological reform."
               </h4>
+              <div className="row center-xs">
+                <div className="col-xs-8">
+                  <hr></hr>
+                </div>
+              </div>
             </div>
           </Slogan>
         </SectionWrapper>

@@ -9,14 +9,10 @@ const SectionWrapper = styled.div`
   margin-bottom: 6%;
 
   & .mainStyle {
-    border: 0;
+    background-color: #eee;
+    border: 0 none;
+    color: #eee;
     height: 1px;
-    background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0)
-    );
   }
 
   /* @media (max-width: 220px) {
