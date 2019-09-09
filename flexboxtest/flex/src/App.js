@@ -7,6 +7,11 @@ import SectionTwo from "./Components/SectionTwo";
 import SectionThree from "./Components/SectionThree";
 import SectionFour from "./Components/SectionFour";
 import SectionFive from "./Components/SectionFive";
+
+// Jobs
+
+import Jobs from "./Components/Pages/Jobs";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Wrapping entire app in a styled component
@@ -22,11 +27,17 @@ const AppWrapper = styled.div`
 function App() {
   return (
     <AppWrapper>
-      <Test></Test>
-      <Hero></Hero>
-      <SectionTwo></SectionTwo>
-      <SectionThree></SectionThree>
-      <SectionFour></SectionFour>
+      <Router>
+        <Test></Test>
+
+        <Route path="/" exact component={Hero} />
+        <Route path="/" exact component={SectionTwo} />
+        <Route path="/" exact component={SectionThree} />
+        <Route path="/" exact component={SectionFour} />
+        <Switch>
+          <Route path="/jobs" component={Jobs} />
+        </Switch>
+      </Router>
       {/* <SectionFive></SectionFive> */}
     </AppWrapper>
   );
