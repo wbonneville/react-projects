@@ -28,9 +28,8 @@ const SectionWrapper = styled.div`
 
   & h4 {
     font-weight: normal;
-
     opacity: 0.9;
-    margin-top: -1%;
+    margin-top: -4%;
     margin-bottom: 5%;
   }
 `;
