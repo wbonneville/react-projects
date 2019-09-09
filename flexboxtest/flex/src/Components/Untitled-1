@@ -1,7 +1,0 @@
- <Stories className="col-xs-4 stories">
-                    <NewsImage src={newsimg1}></NewsImage>
-                    <div>
-                      <strong>Environment</strong>
-                      <p>bla bla bla</p>
-                    </div>
-                  </Stories>

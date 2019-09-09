@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const HeaderWrapper = styled.header`
   background: black;
@@ -94,11 +95,10 @@ export default class Test extends Component {
         </div>
 
         <StyledUlTwo>
-          <li>
-            {" "}
-            <a href="#city17"> Citadel </a>{" "}
-          </li>
-          <li> Jobs and Positions</li>
+          <li>Citadel</li>
+          <Link to="/jobs">
+            <li> Jobs and Positions</li>
+          </Link>
           <li> Apartments and Housing</li>
           <li> Rationing and Credits</li>
           <li> Administration</li>
