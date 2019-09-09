@@ -88,8 +88,8 @@ export default class SectionTwo extends Component {
           <Slogan className="row center-xs">
             <div className="col-xs-10">
               <h4>
-                "Let us make a double harvest: one of agricultural success and
-                one of ideological reform."
+                "Let us make a double harvest: one of industrial success and one
+                of ideological reform."
               </h4>
               <div className="row center-xs">
                 <div className="col-xs-8">
