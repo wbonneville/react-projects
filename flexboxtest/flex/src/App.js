@@ -7,6 +7,7 @@ import SectionTwo from "./Components/SectionTwo";
 import SectionThree from "./Components/SectionThree";
 import SectionFour from "./Components/SectionFour";
 import SectionFive from "./Components/SectionFive";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Wrapping entire app in a styled component
 // Hacky?
