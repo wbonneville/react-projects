@@ -5,6 +5,9 @@ const SectionWrapper = styled.div`
   background-color: white;
   margin-top: -3%;
   font-family: "SF-Mono";
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 10%;
 
   & h1 {
     color: black;
@@ -21,9 +24,6 @@ const SectionWrapper = styled.div`
   & h2 {
     font-size: 20px;
   }
-
-  & hr {
-  }
 `;
 
 const StyledHr = styled.hr`
@@ -36,6 +36,8 @@ const StyledHr = styled.hr`
       : "21%" && props.thirdary
       ? "15%"
       : "21%"};
+
+  margin-bottom: ${props => (props.primary ? "5%" : "")};
 `;
 
 // Just having fun withs props ^ ^ ^

@@ -6,6 +6,7 @@ const SectionWrapper = styled.div`
   width: 100%;
   font-family: "SF-Mono";
   background-color: #f6f6f6;
+  margin-bottom: 6%;
 
   & .mainStyle {
     border: 0;
