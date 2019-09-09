@@ -197,11 +197,6 @@ export default class SectionTwo extends Component {
               </div>
             </div>
           </NewsPanel>
-          <div className="row center-xs">
-            <div className="col-xs-12">
-              <hr className="mainStyle"></hr>
-            </div>
-          </div>
         </SectionWrapper>
       </React.Fragment>
     );

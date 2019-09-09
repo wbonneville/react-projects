@@ -1,21 +1,21 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { device } from "./Device";
+
 const SectionWrapper = styled.div`
-  background-color: #313d52;
-  width: 100%;
-  height: 600px;
-  font-family: "Roboto";
+  background-color: white;
+  margin-top: -3%;
+  font-family: "Amiri";
 
   & h1 {
     padding-top: 62px;
     padding-left: 40px;
-    color: white;
+    color: black;
     font-size: 40px;
+    font-weight: normal;
 
     & .spanOne,
     .spanTwo {
-      color: #b96835;
+      color: black;
     }
   }
 
@@ -26,7 +26,7 @@ const SectionWrapper = styled.div`
     & .horizontal {
       width: 350px;
       display: inline-block;
-      color: white;
+      color: black;
     }
   }
 
@@ -39,7 +39,7 @@ const SectionWrapper = styled.div`
 `;
 
 const StyledHr = styled.hr`
-  border-color: #b96835;
+  border-color: #fff;
   width: ${props =>
     props.primary
       ? "100%"
