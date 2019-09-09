@@ -7,8 +7,6 @@ const SectionWrapper = styled.div`
   font-family: "SF-Mono";
 
   & h1 {
-    padding-top: 62px;
-    padding-left: 40px;
     color: black;
     font-weight: normal;
     font-size: 75px;
@@ -16,17 +14,6 @@ const SectionWrapper = styled.div`
 
     & .spanOne,
     .spanTwo {
-      color: black;
-    }
-  }
-
-  & .parent {
-    width: 100%;
-    text-align: center;
-
-    & .horizontal {
-      width: 350px;
-      display: inline-block;
       color: black;
     }
   }
@@ -59,14 +46,14 @@ export default class NewSection extends Component {
     return (
       <SectionWrapper>
         <div className="row center-xs">
-          <div className="col-xs-10 col-lg-6">
+          <div className="col-xs-10">
             <h1>Policies</h1>
           </div>
         </div>
 
         <StyledHr primary></StyledHr>
         <div className="row center-xs">
-          <div className="col-xs-4">
+          <div className="col-xs-10 col-lg-4">
             <h2>Immigration</h2>
             <StyledHr></StyledHr>
             <p>
@@ -91,7 +78,7 @@ export default class NewSection extends Component {
               </strong>
             </p>
           </div>
-          <div className="col-xs-4">
+          <div className="col-xs-10 col-lg-4">
             <h2>Dr. Breen</h2>
             <StyledHr thirdary></StyledHr>
             <p>
@@ -117,7 +104,7 @@ export default class NewSection extends Component {
             </p>
           </div>
 
-          <div className="row-xs-4">
+          <div className="row-xs-10 col-lg-4">
             <h2>Working at State</h2>
             <StyledHr secondary></StyledHr>
             <p>
