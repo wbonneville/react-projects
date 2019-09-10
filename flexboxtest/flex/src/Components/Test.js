@@ -29,6 +29,9 @@ font-family: 'Cinzel', serif; */
     letter-spacing: 1.5px;
     font-weight: 3000;
     font-family: "Questrial";
+
+    & span {
+    }
   }
 
   & li {
@@ -115,7 +118,9 @@ export default class Test extends Component {
             <StyledUl className="container">
               {/* <i class="fas fa-city mao"></i> */}
 
-              <h1 className="special">City 17</h1>
+              <h1 className="special">
+                City <span className="span">17</span>
+              </h1>
             </StyledUl>
           </div>
         </div>
