@@ -111,29 +111,23 @@ export default class Test extends Component {
             <StyledLink to="/jobs"> Jobs and Positions</StyledLink>
           </li>
           <li>
-            {" "}
             <StyledLink to="/apartments">Apartments and Housing</StyledLink>
           </li>
           <li>
-            {" "}
             <StyledLink to="/rationingandcredits">
               Rationing and Credits
             </StyledLink>
           </li>
           <li>
-            {" "}
             <StyledLink to="/administration">Administration</StyledLink>
           </li>
           <li>
-            {" "}
             <StyledLink to="/benefactors">Benefactors</StyledLink>
           </li>
           <li>
-            {" "}
             <StyledLink to="/civilprotection">Civil Protection</StyledLink>
           </li>
           <li>
-            {" "}
             <StyledLink to="/transportation">Transportation</StyledLink>
           </li>
         </StyledUlTwo>
