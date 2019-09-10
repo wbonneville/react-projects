@@ -29,7 +29,6 @@ function App() {
     <AppWrapper>
       <Router>
         <Test></Test>
-
         <Route path="/" exact component={Hero} />
         <Route path="/" exact component={SectionTwo} />
         <Route path="/" exact component={SectionThree} />

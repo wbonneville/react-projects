@@ -26,6 +26,8 @@ const StyledUl = styled.ul`
     font-size: 15px;
     margin-right: 0.2em;
     padding: 15px 5px;
+    text-decoration: none;
+    color: black;
   }
 
   @media all and (max-width: 160px) {
@@ -82,6 +84,11 @@ const StyledUlTwo = styled(StyledUl)`
   }
 `;
 
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: black;
+`;
+
 export default class Test extends Component {
   render() {
     return (
@@ -95,10 +102,12 @@ export default class Test extends Component {
         </div>
 
         <StyledUlTwo>
-          <li>Citadel</li>
-          <Link to="/jobs">
-            <li> Jobs and Positions</li>
-          </Link>
+          <li>
+            <StyledLink to="/">Home</StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/jobs"> Jobs and Positions</StyledLink>
+          </li>
           <li> Apartments and Housing</li>
           <li> Rationing and Credits</li>
           <li> Administration</li>
