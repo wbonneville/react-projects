@@ -87,8 +87,9 @@ const Stories = styled.div`
 
 const LatestStories = styled.div`
   color: white;
-  font-size: 35px;
-
+  font-size: 40px;
+  font-family: "Questrial";
+  font-weight: 2000;
   @media (max-width: 250px) {
     margin-left: -10px;
     font-size: 25px;
@@ -98,6 +99,8 @@ const NewsImage = styled.img`
   height: 100px;
   width: 100px;
   margin-right: 1.5rem;
+  border: 1px solid white;
+
   @media (max-width: 400px) {
     height: 75px;
     width: 75px;
@@ -122,7 +125,6 @@ const BigNewsImg = styled.div`
   height: 400px;
   width: 600px;
   margin-top: 3.5rem;
-  border: 1px solid white;
 
   & .pdiv {
     line-height: 35rem;
