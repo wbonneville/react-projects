@@ -59,7 +59,6 @@ const StyledUl = styled.ul`
 const StyledUlTwo = styled(StyledUl)`
   margin-top: -0.4rem;
   background: #f5f5f5;
-  color: black;
 
   & li {
     margin-left: 0.5em;
@@ -87,6 +86,9 @@ const StyledUlTwo = styled(StyledUl)`
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: black;
+  &:hover {
+    color: grey;
+  }
 `;
 
 export default class Test extends Component {
@@ -108,12 +110,32 @@ export default class Test extends Component {
           <li>
             <StyledLink to="/jobs"> Jobs and Positions</StyledLink>
           </li>
-          <li> Apartments and Housing</li>
-          <li> Rationing and Credits</li>
-          <li> Administration</li>
-          <li> Benefactors</li>
-          <li> Civil Protection</li>
-          <li> Transportation</li>
+          <li>
+            {" "}
+            <StyledLink to="/apartments">Apartments and Housing</StyledLink>
+          </li>
+          <li>
+            {" "}
+            <StyledLink to="/rationingandcredits">
+              Rationing and Credits
+            </StyledLink>
+          </li>
+          <li>
+            {" "}
+            <StyledLink to="/administration">Administration</StyledLink>
+          </li>
+          <li>
+            {" "}
+            <StyledLink to="/benefactors">Benefactors</StyledLink>
+          </li>
+          <li>
+            {" "}
+            <StyledLink to="/civilprotection">Civil Protection</StyledLink>
+          </li>
+          <li>
+            {" "}
+            <StyledLink to="/transportation">Transportation</StyledLink>
+          </li>
         </StyledUlTwo>
       </HeaderWrapper>
     );
