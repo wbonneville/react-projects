@@ -87,9 +87,12 @@ const Stories = styled.div`
 
 const LatestStories = styled.div`
   color: white;
-  font-size: 40px;
-  font-family: "Questrial";
-  font-weight: 2000;
+
+  & h5 {
+    text-transform: uppercase;
+    font-weight: 2000;
+    font-size: 30px;
+  }
   @media (max-width: 250px) {
     margin-left: -10px;
     font-size: 25px;
