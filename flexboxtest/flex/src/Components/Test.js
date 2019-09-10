@@ -58,8 +58,7 @@ const StyledUl = styled.ul`
 
 const StyledUlTwo = styled(StyledUl)`
   margin-top: -0.4rem;
-  background: #f5f5f5;
-
+  background: #f6f6f6;
   & li {
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -98,7 +97,7 @@ export default class Test extends Component {
         <div className="row center-xs">
           <div className="col-xs-12">
             <StyledUl className="container">
-              <h1 className="special">City 17 Head Office</h1>
+              <h1 className="special">City 17</h1>
             </StyledUl>
           </div>
         </div>
