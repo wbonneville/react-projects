@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const HeaderWrapper = styled.header`
-  background: black;
+  background-color: black;
   align-items: center;
   text-align: center;
 `;
@@ -13,13 +13,22 @@ const StyledUl = styled.ul`
   display: flex;
   list-style-type: none;
 
-  font-family: "SF-Mono";
   align-items: center;
 
+  /* font-family: 'Playfair Display', serif;
+font-family: 'Heebo', sans-serif;
+font-family: 'Saira Extra Condensed', sans-serif;
+font-family: 'Questrial', sans-serif;
+font-family: 'Maven Pro', sans-serif;
+font-family: 'Cinzel', serif; */
+
   & h1 {
-    font-size: 25px;
-    font-weight: 2000;
+    font-size: 30px;
     margin-left: -5px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 3000;
+    font-family: "Questrial";
   }
 
   & li {
@@ -27,7 +36,11 @@ const StyledUl = styled.ul`
     margin-right: 0.2em;
     padding: 15px 5px;
     text-decoration: none;
-    color: black;
+  }
+
+  & .mao {
+    font-size: 20px;
+    margin-right: 1rem;
   }
 
   @media all and (max-width: 160px) {
@@ -57,12 +70,15 @@ const StyledUl = styled.ul`
 `;
 
 const StyledUlTwo = styled(StyledUl)`
+  background-color: white;
+
   margin-top: -0.4rem;
-  background: #f6f6f6;
   & li {
     margin-left: 0.5em;
     margin-right: 0.5em;
-    font-size: 12px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
     opacity: 0.6;
   }
 
@@ -97,6 +113,8 @@ export default class Test extends Component {
         <div className="row center-xs">
           <div className="col-xs-12">
             <StyledUl className="container">
+              {/* <i class="fas fa-city mao"></i> */}
+
               <h1 className="special">City 17</h1>
             </StyledUl>
           </div>
@@ -104,30 +122,45 @@ export default class Test extends Component {
 
         <StyledUlTwo>
           <li>
-            <StyledLink to="/">Home</StyledLink>
-          </li>
-          <li>
-            <StyledLink to="/jobs"> Jobs and Positions</StyledLink>
-          </li>
-          <li>
-            <StyledLink to="/apartments">Apartments and Housing</StyledLink>
-          </li>
-          <li>
-            <StyledLink to="/rationingandcredits">
-              Rationing and Credits
+            <StyledLink to="/">
+              Home &nbsp;<i class="fas fa-angle-down"></i>
             </StyledLink>
           </li>
           <li>
-            <StyledLink to="/administration">Administration</StyledLink>
+            <StyledLink to="/jobs">
+              {" "}
+              Jobs and Positions &nbsp;<i class="fas fa-angle-down"></i>
+            </StyledLink>
           </li>
           <li>
-            <StyledLink to="/benefactors">Benefactors</StyledLink>
+            <StyledLink to="/apartments">
+              Apartments and Housing &nbsp;<i class="fas fa-angle-down"></i>
+            </StyledLink>
           </li>
           <li>
-            <StyledLink to="/civilprotection">Civil Protection</StyledLink>
+            <StyledLink to="/rationingandcredits">
+              Rationing and Credits &nbsp;<i class="fas fa-angle-down"></i>
+            </StyledLink>
           </li>
           <li>
-            <StyledLink to="/transportation">Transportation</StyledLink>
+            <StyledLink to="/administration">
+              Administration &nbsp;<i class="fas fa-angle-down"></i>
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/benefactors">
+              Benefactors &nbsp;<i class="fas fa-angle-down"></i>
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/civilprotection">
+              Civil Protection &nbsp;<i class="fas fa-angle-down"></i>
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/transportation">
+              Transportation &nbsp;<i class="fas fa-angle-down"></i>
+            </StyledLink>
           </li>
         </StyledUlTwo>
       </HeaderWrapper>

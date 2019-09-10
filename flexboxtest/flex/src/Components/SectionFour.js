@@ -34,6 +34,10 @@ const SectionWrapper = styled.div`
     margin-top: -4%;
     margin-bottom: 5%;
   }
+
+  & p {
+    font-size: 15px;
+  }
 `;
 
 const StyledHr = styled.hr`

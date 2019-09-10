@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import image from "../images/wallhaven.jpg";
 import styled from "styled-components";
 import newsimg1 from "../images/wallhaven.jpg";
-import bignewsimg from "../images/city3.jpg";
+import bignewsimg from "../images/art5.jpg";
 
 const HeroWrapper = styled.div`
   font-family: "SF-Mono";

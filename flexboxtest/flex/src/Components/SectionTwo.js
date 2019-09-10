@@ -50,6 +50,7 @@ const ImageOne = styled.div`
   margin-top: 30%;
   margin-right: 60px;
   margin-left: 60px;
+  box-shadow: 7px 7px 5px grey;
 `;
 
 const ImageTwo = styled.div`
@@ -60,6 +61,7 @@ const ImageTwo = styled.div`
   margin-top: 30%;
   margin-right: 60px;
   margin-left: 60px;
+  box-shadow: 7px 7px 5px grey;
 `;
 
 export default class SectionTwo extends Component {
