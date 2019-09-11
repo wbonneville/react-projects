@@ -5,7 +5,7 @@ import image2 from "../../images/breen.jpg";
 import image3 from "../../images/job.png";
 import image4 from "../../images/soviet.jpg";
 
-// Section 1 Styles
+// SECTION 1 STYLES
 
 const SectionWrapper = styled.div`
   padding: 40px;
@@ -39,7 +39,7 @@ const JobsInfo = styled.div`
   }
 `;
 
-// Section 2 Styles
+// SECTION 2 STYLES
 
 const JobsSectionTwo = styled.div``;
 
@@ -99,6 +99,8 @@ export default class Jobs extends Component {
   render() {
     return (
       <SectionWrapper>
+        {/* SECTION ONE  */}
+
         <JobsSectionOne className="row start-xs">
           <JobsHeader className="col-xs-12 col-sm-6">
             <h2>Jobs and Positions</h2>
@@ -115,6 +117,8 @@ export default class Jobs extends Component {
             <hr></hr>
           </div>
         </JobsSectionOne>
+
+        {/* SECTION TWO */}
 
         <JobsSectionTwo>
           <Featured className="row start-xs">
@@ -138,6 +142,8 @@ export default class Jobs extends Component {
             </div>
           </FeaturedJob>
         </JobsSectionTwo>
+
+        {/* SECTION THREE */}
 
         <SectionThree className="row">
           <div className="col-xs-3">
