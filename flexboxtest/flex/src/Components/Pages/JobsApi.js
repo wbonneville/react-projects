@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
+const Api = styled.div``;
+
 export default class TestApi extends Component {
   constructor(props) {
     super(props);
@@ -28,13 +30,13 @@ export default class TestApi extends Component {
       return <div>loading..</div>;
     } else {
       return (
-        <div>
+        <Api className="row">
           {items.map(item => (
-            <h4 key={item.id}>
-              Name: {item.name} | Email: {item.email}
-            </h4>
+            <div className="col-xs-6">
+              Name: {item.name} | Email: {item.email} |
+            </div>
           ))}
-        </div>
+        </Api>
       );
     }
   }
