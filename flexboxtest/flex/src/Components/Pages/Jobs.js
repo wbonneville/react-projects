@@ -109,13 +109,23 @@ const Slogan = styled.div`
   & h1 {
     color: white;
     font-weight: 100;
-    font-size: 50px;
+    font-size: 60px;
+    margin-left: 5rem;
   }
 
-  & span {
+  & h2 {
+    color: white;
+    font-weight: 100;
+    font-size: 35px;
+    padding: 10px;
+
+    & span {
+      font-weight: 400;
+    }
+  }
+
+  & .box {
     border: 1px solid white;
-    padding: 6px;
-    color: purple;
   }
 `;
 
@@ -219,11 +229,14 @@ export default class Jobs extends Component {
         {/* SECTION 4 */}
 
         <SectionFour>
-          <Slogan className="row center-xs">
-            <div className="col-xs-12">
-              <h1>
-                We <span>always</span> want to know what you're thinking.{" "}
-              </h1>
+          <Slogan className="row">
+            <div className="box col-xs-4 ">
+              <h2>
+                What matters in <span>Artificial Intelligence</span> right now?
+              </h2>
+            </div>
+            <div className="col-xs-6">
+              <h1>We always want to know what you're thinking.</h1>
             </div>
           </Slogan>
         </SectionFour>
