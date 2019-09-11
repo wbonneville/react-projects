@@ -9,6 +9,13 @@ import image4 from "../../images/soviet.jpg";
 
 const SectionWrapper = styled.div`
   padding: 40px;
+
+  & hr {
+    height: 1px;
+    background-color: black;
+    color: black;
+    border: 0 none;
+  }
 `;
 
 const JobsSectionOne = styled.div`
@@ -138,7 +145,11 @@ const Message = styled.div`
     font-size: 25px;
   }
 
-  & .thick {
+  & .thickHr {
+    height: 2px;
+    background-color: black;
+    color: black;
+    border: 0 none;
   }
 `;
 
@@ -259,9 +270,9 @@ export default class Jobs extends Component {
         <SectionFive>
           <LatestJobs className="row">
             <Message className="col-xs-12">
-              <hr className="thick"></hr>
+              <hr className="thickHr"></hr>
               <h2>Latest from Job Board</h2>
-              <hr></hr>
+              <hr className="standardHr"></hr>
             </Message>
           </LatestJobs>
         </SectionFive>
