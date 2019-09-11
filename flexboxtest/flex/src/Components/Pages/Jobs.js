@@ -47,6 +47,21 @@ const ImageOne = styled.div`
   height: 350px;
   width: 600px;
 `;
+
+const Featured = styled.div`
+  color: purple;
+`;
+
+const FeaturedJob = styled.div`
+  & h1 {
+    font-size: 40px;
+  }
+
+  & h4 {
+    font-size: 18px;
+    font-weight: 100;
+  }
+`;
 export default class Jobs extends Component {
   render() {
     return (
@@ -69,11 +84,11 @@ export default class Jobs extends Component {
         </JobsSectionOne>
 
         <JobsSectionTwo>
-          <div className="row start-xs">
+          <Featured className="row start-xs">
             <div className="col-xs-12">Featured</div>
-          </div>
+          </Featured>
 
-          <div className="row start-xs">
+          <FeaturedJob className="row start-xs">
             <div className="col-xs-4 col-lg-6">
               <h1>
                 Facebook is making its own AI deepfakes to head off a
@@ -88,7 +103,7 @@ export default class Jobs extends Component {
             <div className="col-xs-12 col-lg-6">
               <ImageOne></ImageOne>
             </div>
-          </div>
+          </FeaturedJob>
         </JobsSectionTwo>
       </React.Fragment>
     );
