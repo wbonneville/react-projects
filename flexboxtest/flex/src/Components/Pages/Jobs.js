@@ -254,12 +254,12 @@ export default class Jobs extends Component {
 
         <SectionFour>
           <Slogan className="row">
-            <div className="box col-xs-4 ">
+            <div className="box col-xs-12 col-sm-4 ">
               <h2>
                 What matters in <span>Artificial Intelligence</span> right now?
               </h2>
             </div>
-            <div className="col-xs-6">
+            <div className=" col-xs-12 col-sm-6">
               <h1>We always want to know what you're thinking.</h1>
             </div>
           </Slogan>
