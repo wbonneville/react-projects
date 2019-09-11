@@ -128,43 +128,43 @@ export default class Test extends Component {
         <StyledUlTwo>
           <li>
             <StyledLink to="/">
-              Home &nbsp;<i class="fas fa-angle-down"></i>
+              Home &nbsp;<i className="fas fa-angle-down"></i>
             </StyledLink>
           </li>
           <li>
             <StyledLink to="/jobs">
               {" "}
-              Jobs and Positions &nbsp;<i class="fas fa-angle-down"></i>
+              Jobs and Positions &nbsp;<i className="fas fa-angle-down"></i>
             </StyledLink>
           </li>
           <li>
             <StyledLink to="/apartments">
-              Apartments and Housing &nbsp;<i class="fas fa-angle-down"></i>
+              Apartments and Housing &nbsp;<i className="fas fa-angle-down"></i>
             </StyledLink>
           </li>
           <li>
             <StyledLink to="/rationingandcredits">
-              Rationing and Credits &nbsp;<i class="fas fa-angle-down"></i>
+              Rationing and Credits &nbsp;<i className="fas fa-angle-down"></i>
             </StyledLink>
           </li>
           <li>
             <StyledLink to="/administration">
-              Administration &nbsp;<i class="fas fa-angle-down"></i>
+              Administration &nbsp;<i className="fas fa-angle-down"></i>
             </StyledLink>
           </li>
           <li>
             <StyledLink to="/benefactors">
-              Benefactors &nbsp;<i class="fas fa-angle-down"></i>
+              Benefactors &nbsp;<i className="fas fa-angle-down"></i>
             </StyledLink>
           </li>
           <li>
             <StyledLink to="/civilprotection">
-              Civil Protection &nbsp;<i class="fas fa-angle-down"></i>
+              Civil Protection &nbsp;<i className="fas fa-angle-down"></i>
             </StyledLink>
           </li>
           <li>
             <StyledLink to="/transportation">
-              Transportation &nbsp;<i class="fas fa-angle-down"></i>
+              Transportation &nbsp;<i className="fas fa-angle-down"></i>
             </StyledLink>
           </li>
         </StyledUlTwo>
