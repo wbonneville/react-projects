@@ -28,13 +28,11 @@ export default class TestApi extends Component {
     } else {
       return (
         <div>
-          <ul>
-            {items.map(item => (
-              <li key={item.id}>
-                Name: {item.name} | Email: {item.email}
-              </li>
-            ))}
-          </ul>
+          {items.map(item => (
+            <h4 key={item.id}>
+              Name: {item.name} | Email: {item.email}
+            </h4>
+          ))}
         </div>
       );
     }

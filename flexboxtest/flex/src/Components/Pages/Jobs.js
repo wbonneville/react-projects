@@ -154,6 +154,12 @@ const Message = styled.div`
   }
 `;
 
+const ApiWrapper = styled.div`
+  & h4 {
+    font-size: 16px;
+  }
+`;
+
 export default class Jobs extends Component {
   render() {
     return (
@@ -277,7 +283,9 @@ export default class Jobs extends Component {
             </Message>
           </LatestJobs>
         </SectionFive>
-        <TestApi></TestApi>
+        <ApiWrapper>
+          <TestApi></TestApi>
+        </ApiWrapper>
       </SectionWrapper>
     );
   }
