@@ -32,7 +32,7 @@ export default class TestApi extends Component {
       return (
         <Api className="row">
           {items.map(item => (
-            <div className="col-xs-6">
+            <div key={item.id} className="col-xs-6">
               Name: {item.name} | Email: {item.email} |
             </div>
           ))}

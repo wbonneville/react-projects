@@ -6,7 +6,7 @@ import Test from "./Components/Test";
 import SectionTwo from "./Components/SectionTwo";
 import SectionThree from "./Components/SectionThree";
 import SectionFour from "./Components/SectionFour";
-import SectionFive from "./Components/SectionFive";
+// import SectionFive from "./Components/SectionFive";
 
 // Jobs
 

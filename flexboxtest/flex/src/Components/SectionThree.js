@@ -96,7 +96,7 @@ export default class SectionTwo extends Component {
             <div className="row center-xs">
               <div className="col-xs-11 col-md-10">
                 <p className="">
-                  <a className="" href="#">
+                  <a>
                     "Dear Dr. Breen. Why has the Combine seen fit to suppress
                     our reproductive cycle? Sincerely, A Concerned Citizen."
                   </a>
@@ -116,7 +116,7 @@ export default class SectionTwo extends Component {
             <div className="row center-xs">
               <div className="col-xs-11 col-md-10">
                 <p className="">
-                  <a className="" href="#">
+                  <a>
                     We now have direct confirmation of a disruptor in our midst,
                     one who has acquired an almost messianic reputation in the
                     minds of certain citizens. His figure is synonymous with the
@@ -138,7 +138,7 @@ export default class SectionTwo extends Component {
             <div className="row center-xs">
               <div className="col-xs-11 col-md-10">
                 <p className="">
-                  <a className="" href="#">
+                  <a>
                     I have been asked to say a few words to the transhuman arm
                     of Sector Seventeen Overwatch, concerning recent successes
                     in containing members of the resistance Science Team.
@@ -159,7 +159,7 @@ export default class SectionTwo extends Component {
             <div className="row center-xs">
               <div className="col-xs-12 col-md-10">
                 <p className="">
-                  <a className="" href="#">
+                  <a>
                     In order to be true to our nature, and our destiny, we must
                     aspire to greater things. We have outgrown our cradle. It is
                     futile to cry for mother's milk, when our true sustenance
@@ -182,7 +182,7 @@ export default class SectionTwo extends Component {
             <div className="row center-xs">
               <div className="col-xs-12 col-md-10">
                 <p className="">
-                  <a className="" href="#">
+                  <a>
                     Adrian Shephard returns thanks to the Vortigaunts, in a
                     gambit to use him to buy Gordon Freeman time to find Wallace
                     Breen and keep his Overwatch pursuers at bay.
