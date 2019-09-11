@@ -33,15 +33,11 @@ const NewsPanel = styled.div`
   & p {
     font-size: 20px;
     text-align: left;
+    font-weight: 100;
 
     @media (max-width: 820px) {
       text-align: center;
     }
-  }
-
-  & a {
-    text-decoration: none;
-    color: inherit;
   }
 
   & .date {
@@ -96,10 +92,8 @@ export default class SectionTwo extends Component {
             <div className="row center-xs">
               <div className="col-xs-11 col-md-10">
                 <p className="">
-                  <a>
-                    "Dear Dr. Breen. Why has the Combine seen fit to suppress
-                    our reproductive cycle? Sincerely, A Concerned Citizen."
-                  </a>
+                  "Dear Dr. Breen. Why has the Combine seen fit to suppress our
+                  reproductive cycle? Sincerely, A Concerned Citizen."
                 </p>
               </div>
               <div className="col-xs-11 col-md-1">
@@ -116,12 +110,10 @@ export default class SectionTwo extends Component {
             <div className="row center-xs">
               <div className="col-xs-11 col-md-10">
                 <p className="">
-                  <a>
-                    We now have direct confirmation of a disruptor in our midst,
-                    one who has acquired an almost messianic reputation in the
-                    minds of certain citizens. His figure is synonymous with the
-                    darkest urges of instinct, ignorance and decay.
-                  </a>
+                  We now have direct confirmation of a disruptor in our midst,
+                  one who has acquired an almost messianic reputation in the
+                  minds of certain citizens. His figure is synonymous with the
+                  darkest urges of instinct, ignorance and decay.
                 </p>
               </div>
               <div className="col-xs-12 col-md-1">
@@ -138,11 +130,9 @@ export default class SectionTwo extends Component {
             <div className="row center-xs">
               <div className="col-xs-11 col-md-10">
                 <p className="">
-                  <a>
-                    I have been asked to say a few words to the transhuman arm
-                    of Sector Seventeen Overwatch, concerning recent successes
-                    in containing members of the resistance Science Team.
-                  </a>
+                  I have been asked to say a few words to the transhuman arm of
+                  Sector Seventeen Overwatch, concerning recent successes in
+                  containing members of the resistance Science Team.
                 </p>
               </div>
               <div className="col-xs-12 col-md-1">
@@ -159,13 +149,11 @@ export default class SectionTwo extends Component {
             <div className="row center-xs">
               <div className="col-xs-12 col-md-10">
                 <p className="">
-                  <a>
-                    In order to be true to our nature, and our destiny, we must
-                    aspire to greater things. We have outgrown our cradle. It is
-                    futile to cry for mother's milk, when our true sustenance
-                    awaits us among the stars. And only the universal union that
-                    small minds call 'The Combine' can carry us there.
-                  </a>
+                  In order to be true to our nature, and our destiny, we must
+                  aspire to greater things. We have outgrown our cradle. It is
+                  futile to cry for mother's milk, when our true sustenance
+                  awaits us among the stars. And only the universal union that
+                  small minds call 'The Combine' can carry us there.
                 </p>
               </div>
               <div className="col-xs-12 col-md-1">
@@ -182,11 +170,9 @@ export default class SectionTwo extends Component {
             <div className="row center-xs">
               <div className="col-xs-12 col-md-10">
                 <p className="">
-                  <a>
-                    Adrian Shephard returns thanks to the Vortigaunts, in a
-                    gambit to use him to buy Gordon Freeman time to find Wallace
-                    Breen and keep his Overwatch pursuers at bay.
-                  </a>
+                  Adrian Shephard returns thanks to the Vortigaunts, in a gambit
+                  to use him to buy Gordon Freeman time to find Wallace Breen
+                  and keep his Overwatch pursuers at bay.
                 </p>
               </div>
               <div className="col-xs-12 col-md-1">
