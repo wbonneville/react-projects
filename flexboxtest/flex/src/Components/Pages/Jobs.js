@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import image1 from "../../images/factory.jpeg";
+import image2 from "../../images/breen.jpg";
+import image3 from "../../images/job.png";
+import image4 from "../../images/soviet.jpg";
 
 // Section 1 Styles
 
@@ -72,6 +75,26 @@ const FeaturedJob = styled.div`
 const SectionThree = styled.div`
   margin-top: 2%;
 `;
+
+const FeaturedImageOne = styled.div`
+  margin-top: 5rem;
+  background-image: url(${image1});
+  background-size: cover;
+  height: 100px;
+  width: 200px;
+`;
+
+const FeaturedImageTwo = styled(FeaturedImageOne)`
+  background-image: url(${image2});
+`;
+
+const FeaturedImageThree = styled(FeaturedImageOne)`
+  background-image: url(${image3});
+`;
+
+const FeaturedImageFour = styled(FeaturedImageOne)`
+  background-image: url(${image4});
+`;
 export default class Jobs extends Component {
   render() {
     return (
@@ -119,15 +142,47 @@ export default class Jobs extends Component {
         <SectionThree className="row">
           <div className="col-xs-3">
             <hr></hr>
+            <Featured className="row start-xs">
+              <div className="col-xs-12">Featured</div>
+            </Featured>
+            <h3>
+              AI thinks this flood photo is a toilet. Fixing that could improve
+              disaster response.
+            </h3>
+            <FeaturedImageOne></FeaturedImageOne>
           </div>
           <div className="col-xs-3">
             <hr></hr>
+            <Featured className="row start-xs">
+              <div className="col-xs-12">Featured</div>
+            </Featured>
+            <h3>
+              OpenAI has released the largest version yet of its
+              fake-news-spewing AI
+            </h3>
+            <FeaturedImageTwo></FeaturedImageTwo>
           </div>
           <div className="col-xs-3">
             <hr></hr>
+            <Featured className="row start-xs">
+              <div className="col-xs-12">Featured</div>
+            </Featured>
+            <h3>
+              The world’s top deepfake artist is wrestling with the monster he
+              created
+            </h3>
+            <FeaturedImageThree></FeaturedImageThree>
           </div>
           <div className="col-xs-3">
             <hr></hr>
+            <Featured className="row start-xs">
+              <div className="col-xs-12">Featured</div>
+            </Featured>
+            <h3>
+              Having mastered Space Invaders, chess, and Go, AI tackles video
+              soccer
+            </h3>
+            <FeaturedImageFour></FeaturedImageFour>
           </div>
         </SectionThree>
       </SectionWrapper>
