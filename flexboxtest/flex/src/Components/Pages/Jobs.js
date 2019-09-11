@@ -102,6 +102,10 @@ const SectionFour = styled.div`
   margin-top: 6%;
   margin-bottom: 6%;
   background: black;
+  padding: 50px;
+`;
+
+const Slogan = styled.div`
   & h1 {
     color: white;
     font-weight: 100;
@@ -214,12 +218,14 @@ export default class Jobs extends Component {
 
         {/* SECTION 4 */}
 
-        <SectionFour className="row center-xs">
-          <div className="col-xs-12">
-            <h1>
-              We <span>always</span> want to know what you're thinking.{" "}
-            </h1>
-          </div>
+        <SectionFour>
+          <Slogan className="row center-xs">
+            <div className="col-xs-12">
+              <h1>
+                We <span>always</span> want to know what you're thinking.{" "}
+              </h1>
+            </div>
+          </Slogan>
         </SectionFour>
       </SectionWrapper>
     );
