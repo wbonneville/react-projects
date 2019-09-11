@@ -129,6 +129,16 @@ const Slogan = styled.div`
   }
 `;
 
+// SECTION 5 STYLES
+
+const SectionFive = styled.div``;
+const LatestJobs = styled.div``;
+const Message = styled.div`
+  & h2 {
+    font-size: 25px;
+  }
+`;
+
 export default class Jobs extends Component {
   render() {
     return (
@@ -240,6 +250,18 @@ export default class Jobs extends Component {
             </div>
           </Slogan>
         </SectionFour>
+
+        {/* SECTION 5 */}
+
+        <SectionFive>
+          <LatestJobs className="row">
+            <Message className="col-xs-12">
+              <hr></hr>
+              <h2>Latest from Job Board</h2>
+              <hr></hr>
+            </Message>
+          </LatestJobs>
+        </SectionFive>
       </SectionWrapper>
     );
   }
