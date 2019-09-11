@@ -44,8 +44,8 @@ const JobsSectionTwo = styled.div`
 const ImageOne = styled.div`
   background-image: url(${image1});
   background-size: cover;
-  height: 300px;
-  width: 350px;
+  height: 350px;
+  width: 600px;
 `;
 export default class Jobs extends Component {
   render() {
@@ -74,23 +74,19 @@ export default class Jobs extends Component {
           </div>
 
           <div className="row start-xs">
-            <div className="col-xs-4">
+            <div className="col-xs-4 col-lg-6">
               <h1>
                 Facebook is making its own AI deepfakes to head off a
                 disinformation disaster
               </h1>
-            </div>
-            <div className="col-xs-12 col-lg-8">
-              <ImageOne></ImageOne>
-            </div>
-          </div>
-
-          <div className="row start-xs">
-            <div className="col-xs-6 col-lg-6">
               <h4>
                 The CTO of Facebook says videos forged using AI will be used
                 maliciously on its platforms before long.
               </h4>
+            </div>
+
+            <div className="col-xs-12 col-lg-6">
+              <ImageOne></ImageOne>
             </div>
           </div>
         </JobsSectionTwo>
