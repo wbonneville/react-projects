@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import image1 from "../../images/factory.jpeg";
 
-// Job Section One
+// Section One Styles
 
 const JobsSectionOne = styled.div`
   margin-left: 2em;
@@ -34,7 +34,7 @@ const JobsInfo = styled.div`
   }
 `;
 
-// Job Section Two
+// Section Two Styles
 
 const JobsSectionTwo = styled.div`
   margin-left: 2em;
@@ -67,22 +67,30 @@ export default class Jobs extends Component {
             <hr></hr>
           </div>
         </JobsSectionOne>
+
         <JobsSectionTwo>
           <div className="row start-xs">
             <div className="col-xs-12">Featured</div>
           </div>
 
           <div className="row start-xs">
-            <div className="col-xs-12">
-              Facebook is making its own AI deepfakes to head off a
-              disinformation disaster
+            <div className="col-xs-4">
+              <h1>
+                Facebook is making its own AI deepfakes to head off a
+                disinformation disaster
+              </h1>
             </div>
-            <div className="col-xs-6 col-lg-6">
-              The CTO of Facebook says videos forged using AI will be used
-              maliciously on its platforms before long.
-            </div>
-            <div className="col-xs-12 col-lg-6">
+            <div className="col-xs-12 col-lg-8">
               <ImageOne></ImageOne>
+            </div>
+          </div>
+
+          <div className="row start-xs">
+            <div className="col-xs-6 col-lg-6">
+              <h4>
+                The CTO of Facebook says videos forged using AI will be used
+                maliciously on its platforms before long.
+              </h4>
             </div>
           </div>
         </JobsSectionTwo>
