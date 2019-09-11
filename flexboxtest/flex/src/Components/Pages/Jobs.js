@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import image1 from "../../images/factory.jpeg";
+
+// Job Section One
 
 const JobsSectionOne = styled.div`
   margin-left: 2em;
@@ -31,6 +34,19 @@ const JobsInfo = styled.div`
   }
 `;
 
+// Job Section Two
+
+const JobsSectionTwo = styled.div`
+  margin-left: 2em;
+  margin-right: 2em;
+`;
+
+const ImageOne = styled.div`
+  background-image: url(${image1});
+  background-size: cover;
+  height: 300px;
+  width: 350px;
+`;
 export default class Jobs extends Component {
   render() {
     return (
@@ -51,18 +67,22 @@ export default class Jobs extends Component {
             <hr></hr>
           </div>
         </JobsSectionOne>
-        <div className="row start-xs">
-          <div className="col-xs-12">Featured</div>
-        </div>
         <JobsSectionTwo>
+          <div className="row start-xs">
+            <div className="col-xs-12">Featured</div>
+          </div>
+
           <div className="row start-xs">
             <div className="col-xs-12">
               Facebook is making its own AI deepfakes to head off a
               disinformation disaster
             </div>
-            <div className="col-xs-6">
+            <div className="col-xs-6 col-lg-6">
               The CTO of Facebook says videos forged using AI will be used
               maliciously on its platforms before long.
+            </div>
+            <div className="col-xs-12 col-lg-6">
+              <ImageOne></ImageOne>
             </div>
           </div>
         </JobsSectionTwo>
