@@ -12,6 +12,7 @@ const JobsWrapper = styled.div`
 const JobsHeader = styled.div`
   & h2 {
     font-size: 32px;
+    font-weight: 700;
   }
 
   @media (max-width: 800px) {
@@ -25,7 +26,8 @@ const JobsInfo = styled.div`
     margin-top: 1.9em;
     font-size: 17px;
     text-align: left;
-    font-weight: normal;
+    font-weight: 100;
+    color: #595858;
   }
 `;
 
@@ -35,9 +37,7 @@ export default class Jobs extends Component {
       <React.Fragment>
         <JobsWrapper className="row start-xs">
           <JobsHeader className="col-xs-12 col-sm-6">
-            <h2>
-              <strong>Jobs and Positions</strong>
-            </h2>
+            <h2>Jobs and Positions</h2>
           </JobsHeader>
           <JobsInfo className="col-xs-12 col-sm-6">
             <h3>
