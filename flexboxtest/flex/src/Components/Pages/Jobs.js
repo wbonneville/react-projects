@@ -4,9 +4,11 @@ import image1 from "../../images/factory.jpeg";
 
 // Section One Styles
 
+const SectionWrapper = styled.div`
+  padding: 40px;
+`;
+
 const JobsSectionOne = styled.div`
-  margin-left: 2em;
-  margin-right: 2em;
   @media (max-width: 400px) {
     flex-direction: column;
   }
@@ -36,36 +38,38 @@ const JobsInfo = styled.div`
 
 // Section Two Styles
 
-const JobsSectionTwo = styled.div`
-  margin-left: 2em;
-  margin-right: 2em;
-`;
+const JobsSectionTwo = styled.div``;
 
 const ImageOne = styled.div`
   background-image: url(${image1});
   background-size: cover;
   height: 350px;
-  width: 600px;
+  width: 585px;
 `;
 
 const Featured = styled.div`
+  margin-top: 1%;
+
+  font-weight: 500;
   color: purple;
 `;
 
 const FeaturedJob = styled.div`
   & h1 {
     font-size: 40px;
+    margin-top: 2%;
   }
 
   & h4 {
     font-size: 18px;
     font-weight: 100;
+    width: 80%;
   }
 `;
 export default class Jobs extends Component {
   render() {
     return (
-      <React.Fragment>
+      <SectionWrapper>
         <JobsSectionOne className="row start-xs">
           <JobsHeader className="col-xs-12 col-sm-6">
             <h2>Jobs and Positions</h2>
@@ -89,7 +93,7 @@ export default class Jobs extends Component {
           </Featured>
 
           <FeaturedJob className="row start-xs">
-            <div className="col-xs-4 col-lg-6">
+            <div className="col-xs-12 col-lg-6">
               <h1>
                 Facebook is making its own AI deepfakes to head off a
                 disinformation disaster
@@ -105,7 +109,7 @@ export default class Jobs extends Component {
             </div>
           </FeaturedJob>
         </JobsSectionTwo>
-      </React.Fragment>
+      </SectionWrapper>
     );
   }
 }
