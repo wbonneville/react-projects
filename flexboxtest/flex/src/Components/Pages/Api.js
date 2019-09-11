@@ -1,36 +1,42 @@
 import React, { Component } from "react";
 
-export default class Background extends Component {
-  constructor() {
-    super();
+export default class Epic extends Component {
+  constructor(props) {
+    super(props);
     this.state = {
-      pictures: []
+      items: [],
+      isLoaded: false
     };
   }
 
   componentDidMount() {
-    fetch("https://randomuser.me/api/?results=5")
-      .then(results => {
-        return results.json();
-      })
-      .then(data => {
-        let pictures = data.results.map(pic => {
-          return (
-            <div key={pic.results}>
-              <img src={pic.picture.medium} />
-            </div>
-          );
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then(response => response.json())
+      .then(json => {
+        this.setState({
+          isLoaded: true,
+          items: json
         });
-        this.setState({ pictures: pictures });
-        console.log("state", this.state.pictures);
       });
   }
 
   render() {
-    return (
-      <div className="container2">
-        <div className="container1">{this.state.pictures}</div>
-      </div>
-    );
+    var { isLoaded, items } = this.state;
+
+    if (!isLoaded) {
+      return <div>loading..</div>;
+    } else {
+      return (
+        <div>
+          <ul>
+            {items.map(item => (
+              <li key={item.id}>
+                Name: {item.name} | Email: {item.email}
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+    }
   }
 }
