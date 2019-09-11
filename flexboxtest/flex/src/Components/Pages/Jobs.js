@@ -146,7 +146,7 @@ export default class Jobs extends Component {
         {/* SECTION THREE */}
 
         <SectionThree className="row">
-          <div className="col-xs-3">
+          <div className="col-xs-12 col-lg-3">
             <hr></hr>
             <Featured className="row start-xs">
               <div className="col-xs-12">Featured</div>
@@ -157,7 +157,7 @@ export default class Jobs extends Component {
             </h3>
             <FeaturedImageOne></FeaturedImageOne>
           </div>
-          <div className="col-xs-3">
+          <div className="col-xs-12 col-lg-3">
             <hr></hr>
             <Featured className="row start-xs">
               <div className="col-xs-12">Featured</div>
@@ -168,7 +168,7 @@ export default class Jobs extends Component {
             </h3>
             <FeaturedImageTwo></FeaturedImageTwo>
           </div>
-          <div className="col-xs-3">
+          <div className="col-xs-12 col-lg-3">
             <hr></hr>
             <Featured className="row start-xs">
               <div className="col-xs-12">Featured</div>
@@ -179,7 +179,7 @@ export default class Jobs extends Component {
             </h3>
             <FeaturedImageThree></FeaturedImageThree>
           </div>
-          <div className="col-xs-3">
+          <div className="col-xs-12 col-lg-3">
             <hr></hr>
             <Featured className="row start-xs">
               <div className="col-xs-12">Featured</div>
