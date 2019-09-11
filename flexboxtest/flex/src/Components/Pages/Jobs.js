@@ -80,8 +80,8 @@ const FeaturedImageOne = styled.div`
   margin-top: 5rem;
   background-image: url(${image1});
   background-size: cover;
-  height: 100px;
-  width: 200px;
+  height: 150px;
+  width: 275px;
 `;
 
 const FeaturedImageTwo = styled(FeaturedImageOne)`
@@ -95,6 +95,26 @@ const FeaturedImageThree = styled(FeaturedImageOne)`
 const FeaturedImageFour = styled(FeaturedImageOne)`
   background-image: url(${image4});
 `;
+
+// SECTION 4 STYLES
+
+const SectionFour = styled.div`
+  margin-top: 6%;
+  margin-bottom: 6%;
+  background: black;
+  & h1 {
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+  }
+
+  & span {
+    border: 1px solid white;
+    padding: 6px;
+    color: purple;
+  }
+`;
+
 export default class Jobs extends Component {
   render() {
     return (
@@ -191,6 +211,16 @@ export default class Jobs extends Component {
             <FeaturedImageFour></FeaturedImageFour>
           </div>
         </SectionThree>
+
+        {/* SECTION 4 */}
+
+        <SectionFour className="row center-xs">
+          <div className="col-xs-12">
+            <h1>
+              We <span>always</span> want to know what you're thinking.{" "}
+            </h1>
+          </div>
+        </SectionFour>
       </SectionWrapper>
     );
   }
