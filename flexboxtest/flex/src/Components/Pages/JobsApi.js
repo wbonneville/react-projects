@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class Epic extends Component {
+export default class TestApi extends Component {
   constructor(props) {
     super(props);
     this.state = {
