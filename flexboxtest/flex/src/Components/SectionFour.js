@@ -104,18 +104,19 @@ export default class NewSection extends Component {
             <p>
               <strong>
                 &nbsp; Passports &nbsp;{" "}
-                <i class="fas fa-long-arrow-alt-right"></i>
+                <i className="fas fa-long-arrow-alt-right"></i>
               </strong>
             </p>
             <p>
               <strong>
-                &nbsp; Visas &nbsp; <i class="fas fa-long-arrow-alt-right"></i>{" "}
+                &nbsp; Visas &nbsp;{" "}
+                <i className="fas fa-long-arrow-alt-right"></i>{" "}
               </strong>
             </p>
             <p>
               <strong>
                 &nbsp; Travel Warnings &nbsp;{" "}
-                <i class="fas fa-long-arrow-alt-right"></i>
+                <i className="fas fa-long-arrow-alt-right"></i>
               </strong>
             </p>
           </div>
@@ -130,19 +131,19 @@ export default class NewSection extends Component {
             <p>
               <strong>
                 &nbsp; Transcripts &nbsp;{" "}
-                <i class="fas fa-long-arrow-alt-right"></i>
+                <i className="fas fa-long-arrow-alt-right"></i>
               </strong>
             </p>
             <p>
               <strong>
                 &nbsp; Contact &nbsp;{" "}
-                <i class="fas fa-long-arrow-alt-right"></i>
+                <i className="fas fa-long-arrow-alt-right"></i>
               </strong>
             </p>
             <p>
               <strong>
                 &nbsp; Education and Culture at Citadel &nbsp;{" "}
-                <i class="fas fa-long-arrow-alt-right"></i>
+                <i className="fas fa-long-arrow-alt-right"></i>
               </strong>
             </p>
           </div>
@@ -156,13 +157,13 @@ export default class NewSection extends Component {
             <p>
               <strong>
                 &nbsp; Job Openings &nbsp;{" "}
-                <i class="fas fa-long-arrow-alt-right"></i>
+                <i className="fas fa-long-arrow-alt-right"></i>
               </strong>
             </p>
             <p>
               <strong>
                 &nbsp; Other Opportunities &nbsp;{" "}
-                <i class="fas fa-long-arrow-alt-right"></i>
+                <i className="fas fa-long-arrow-alt-right"></i>
               </strong>
             </p>
           </div>
