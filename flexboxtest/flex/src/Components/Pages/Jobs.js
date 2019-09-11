@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import image1 from "../../images/factory.jpeg";
 
-// Section One Styles
+// Section 1 Styles
 
 const SectionWrapper = styled.div`
   padding: 40px;
@@ -36,7 +36,7 @@ const JobsInfo = styled.div`
   }
 `;
 
-// Section Two Styles
+// Section 2 Styles
 
 const JobsSectionTwo = styled.div``;
 
@@ -65,6 +65,12 @@ const FeaturedJob = styled.div`
     font-weight: 100;
     width: 80%;
   }
+`;
+
+// Section 3 Styles
+
+const SectionThree = styled.div`
+  margin-top: 2%;
 `;
 export default class Jobs extends Component {
   render() {
@@ -109,6 +115,21 @@ export default class Jobs extends Component {
             </div>
           </FeaturedJob>
         </JobsSectionTwo>
+
+        <SectionThree className="row">
+          <div className="col-xs-3">
+            <hr></hr>
+          </div>
+          <div className="col-xs-3">
+            <hr></hr>
+          </div>
+          <div className="col-xs-3">
+            <hr></hr>
+          </div>
+          <div className="col-xs-3">
+            <hr></hr>
+          </div>
+        </SectionThree>
       </SectionWrapper>
     );
   }
