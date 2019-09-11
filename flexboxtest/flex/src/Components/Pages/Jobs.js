@@ -137,6 +137,9 @@ const Message = styled.div`
   & h2 {
     font-size: 25px;
   }
+
+  & .thick {
+  }
 `;
 
 export default class Jobs extends Component {
@@ -256,7 +259,7 @@ export default class Jobs extends Component {
         <SectionFive>
           <LatestJobs className="row">
             <Message className="col-xs-12">
-              <hr></hr>
+              <hr className="thick"></hr>
               <h2>Latest from Job Board</h2>
               <hr></hr>
             </Message>
