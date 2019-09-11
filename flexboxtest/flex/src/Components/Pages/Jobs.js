@@ -154,11 +154,7 @@ const Message = styled.div`
   }
 `;
 
-const ApiWrapper = styled.div`
-  & h4 {
-    font-size: 16px;
-  }
-`;
+const ApiWrapper = styled.div``;
 
 export default class Jobs extends Component {
   render() {
