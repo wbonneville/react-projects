@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const JobsWrapper = styled.div`
+const JobsSectionOne = styled.div`
   margin-left: 2em;
   margin-right: 2em;
   @media (max-width: 400px) {
@@ -35,7 +35,7 @@ export default class Jobs extends Component {
   render() {
     return (
       <React.Fragment>
-        <JobsWrapper className="row start-xs">
+        <JobsSectionOne className="row start-xs">
           <JobsHeader className="col-xs-12 col-sm-6">
             <h2>Jobs and Positions</h2>
           </JobsHeader>
@@ -50,7 +50,22 @@ export default class Jobs extends Component {
           <div className="col-xs-12">
             <hr></hr>
           </div>
-        </JobsWrapper>
+        </JobsSectionOne>
+        <div className="row start-xs">
+          <div className="col-xs-12">Featured</div>
+        </div>
+        <JobsSectionTwo>
+          <div className="row start-xs">
+            <div className="col-xs-12">
+              Facebook is making its own AI deepfakes to head off a
+              disinformation disaster
+            </div>
+            <div className="col-xs-6">
+              The CTO of Facebook says videos forged using AI will be used
+              maliciously on its platforms before long.
+            </div>
+          </div>
+        </JobsSectionTwo>
       </React.Fragment>
     );
   }
