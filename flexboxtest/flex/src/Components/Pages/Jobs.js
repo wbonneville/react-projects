@@ -4,6 +4,7 @@ import image1 from "../../images/factory.jpeg";
 import image2 from "../../images/breen.jpg";
 import image3 from "../../images/job.png";
 import image4 from "../../images/soviet.jpg";
+import Background from "./Api";
 
 // SECTION 1 STYLES
 
@@ -276,6 +277,7 @@ export default class Jobs extends Component {
             </Message>
           </LatestJobs>
         </SectionFive>
+        <Background></Background>
       </SectionWrapper>
     );
   }
