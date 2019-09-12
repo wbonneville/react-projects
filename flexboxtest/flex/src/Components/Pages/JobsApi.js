@@ -7,8 +7,8 @@ const Api = styled.div`
 
   & h2 {
     font-family: "SF-Mono";
-    font-size: 24px;
-    font-weight: 200;
+    font-size: 22px;
+    font-weight: 520;
   }
 
   & h4 {
@@ -56,7 +56,8 @@ export default class TestApi extends Component {
                 <h2>{item.name}</h2>
                 <p>
                   {" "}
-                  {item.address.city} {item.address.geo.lat}{" "}
+                  {item.address.city} {item.address.geo.lat},{" "}
+                  {item.address.suite}{" "}
                 </p>
               </div>
             </React.Fragment>

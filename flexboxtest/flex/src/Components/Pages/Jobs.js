@@ -156,6 +156,7 @@ const Message = styled.div`
 
 const ApiWrapper = styled.div`
   padding: 0px;
+  font-size: 12px;
 `;
 
 export default class Jobs extends Component {
