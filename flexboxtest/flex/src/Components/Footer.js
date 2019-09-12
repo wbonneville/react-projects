@@ -8,6 +8,10 @@ const FooterWrapper = styled.div`
   color: white;
 `;
 
+const ListWrapper = styled.div`
+  padding-right: 20%;
+`;
+
 export default class Footer extends Component {
   render() {
     return (
@@ -25,25 +29,43 @@ export default class Footer extends Component {
             <h2>Browse International Editions</h2>
           </div>
         </div>
-        <div className="row">
-          <div className="col-xs-2">
-            <h4>yee</h4>
+        <ListWrapper className="row">
+          <div className="col-xs-3">
+            <h4>Lists</h4>
+            <hr></hr>
+            <p>10 Breakthrough Technologies</p>
+            <p>35 Innovators Under 35</p>
+            <p>50 Smartest Companies</p>
           </div>
-          <div className="col-xs-2">
-            <h4>yee</h4>
+          <div className="col-xs-3">
+            <h4>More</h4>
+            <hr></hr>
+            <p>Business Lab podcast</p>
+            <p>Custom content</p>
           </div>
-          <div className="col-xs-2">
-            <h4>yee</h4>
+          <div className="col-xs-3">
+            <h4>Company</h4>
+            <hr></hr>
+            <p>About us</p>
+            <p>Advertise with us</p>
+            <p>Careers</p>
+            <p>Insights</p>
+            <p>International editions</p>
           </div>
-          <div className="col-xs-2">
-            <h4>yee</h4>
+          <div className="col-xs-3">
+            <h4>Policies</h4>
+            <hr></hr>
+            <p>About us</p>
+            <p>Advertise with us</p>
+            <p>Careers</p>
+            <p>Insights</p>
+            <p>International editions</p>
           </div>
-          <div className="col-xs-2">
-            <h4>yee</h4>
+        </ListWrapper>
+        <div className="row bottom-xs">
+          <div className="col-xs-12">
+            <h4>yeah</h4>
           </div>
-        </div>
-        <div className="row">
-          <div className="col-xs-12"></div>
         </div>
       </FooterWrapper>
     );
