@@ -32,25 +32,25 @@ export default class Footer extends Component {
               through authoritative, influential, and trustworthy journalism.
             </p>
           </div>
-          <div className="col-xs-2">
+          <div className=" col-xs-4 col-lg-2">
             <h2>Browse International Editions</h2>
           </div>
         </div>
         <ListWrapper className="row">
-          <div className="col-xs-3">
+          <div className=" col-xs-8 col-md-3">
             <h4>Lists</h4>
             <hr></hr>
             <p>10 Breakthrough Technologies</p>
             <p>35 Innovators Under 35</p>
             <p>50 Smartest Companies</p>
           </div>
-          <div className="col-xs-3">
+          <div className=" col-xs-8 col-md-3">
             <h4>More</h4>
             <hr></hr>
             <p>Business Lab podcast</p>
             <p>Custom content</p>
           </div>
-          <div className="col-xs-3">
+          <div className=" col-xs-8 col-md-3">
             <h4>Company</h4>
             <hr></hr>
             <p>About us</p>
@@ -59,7 +59,7 @@ export default class Footer extends Component {
             <p>Insights</p>
             <p>International editions</p>
           </div>
-          <div className="col-xs-3">
+          <div className=" col-xs-8 col-md-3">
             <h4>Policies</h4>
             <hr></hr>
             <p>About us</p>
