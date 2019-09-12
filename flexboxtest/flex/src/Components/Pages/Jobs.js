@@ -118,7 +118,7 @@ const Slogan = styled.div`
     color: white;
     font-weight: 100;
     font-size: 60px;
-    margin-left: 5rem;
+    margin-left: 5.5rem;
   }
 
   & h2 {
@@ -265,7 +265,7 @@ export default class Jobs extends Component {
                 What matters in <span>Artificial Intelligence</span> right now?
               </h2>
             </div>
-            <div className=" col-xs-12 col-sm-6">
+            <div className=" col-xs-12 col-sm-8">
               <h1>We always want to know what you're thinking.</h1>
             </div>
           </Slogan>

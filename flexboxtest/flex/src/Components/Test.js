@@ -23,12 +23,12 @@ font-family: 'Maven Pro', sans-serif;
 font-family: 'Cinzel', serif; */
 
   & h1 {
-    font-size: 30px;
+    font-size: 34px;
     margin-left: -5px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    font-weight: 3000;
-    font-family: "Questrial";
+    font-weight: 900;
+    font-family: "Heebo";
 
     & span {
     }

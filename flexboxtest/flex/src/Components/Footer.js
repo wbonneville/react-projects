@@ -12,6 +12,13 @@ const ListWrapper = styled.div`
   padding-right: 20%;
 `;
 
+const TradeMark = styled.div`
+  margin-bottom: -2.5rem;
+  & h4 {
+    font-weight: 100;
+  }
+`;
+
 export default class Footer extends Component {
   render() {
     return (
@@ -62,11 +69,11 @@ export default class Footer extends Component {
             <p>International editions</p>
           </div>
         </ListWrapper>
-        <div className="row bottom-xs">
+        <TradeMark className="row bottom-xs">
           <div className="col-xs-12">
-            <h4>yeah</h4>
+            <h4>MIT Technology Review © 2019 v.|eiπ|</h4>
           </div>
-        </div>
+        </TradeMark>
       </FooterWrapper>
     );
   }
