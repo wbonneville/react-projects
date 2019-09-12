@@ -6,6 +6,7 @@ import Test from "./Components/Test";
 import SectionTwo from "./Components/SectionTwo";
 import SectionThree from "./Components/SectionThree";
 import SectionFour from "./Components/SectionFour";
+import Footer from "./Components/Footer";
 // import SectionFive from "./Components/SectionFive";
 
 // Jobs
@@ -36,6 +37,7 @@ function App() {
         <Switch>
           <Route path="/jobs" component={Jobs} />
         </Switch>
+        <Footer></Footer>
       </Router>
       {/* <SectionFive></SectionFive> */}
     </AppWrapper>

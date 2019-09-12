@@ -51,7 +51,7 @@ export default class TestApi extends Component {
         <Api className="row">
           {items.map(item => (
             <React.Fragment>
-              <div key={item.id} className="col-xs-6">
+              <div key={item.id} className="col-xs-6 vr">
                 <h4>Featured</h4>
                 <h2>{item.name}</h2>
                 <p>
