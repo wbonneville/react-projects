@@ -7,7 +7,7 @@ const Api = styled.div`
 
   & h2 {
     font-family: "SF-Mono";
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 520;
   }
 
