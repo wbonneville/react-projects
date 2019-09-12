@@ -1,7 +1,24 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import image1 from "../../images/factory.jpeg";
 
-const Api = styled.div``;
+const Api = styled.div`
+  margin-top: 2%;
+
+  & h3 {
+    font-family: "SF-Mono";
+    font-size: 18px;
+    font-weight: 100;
+  }
+`;
+
+const Image = styled.div`
+  margin-top: 5rem;
+  background-image: url(${image1});
+  background-size: cover;
+  height: 150px;
+  width: 275px;
+`;
 
 export default class TestApi extends Component {
   constructor(props) {
@@ -32,12 +49,21 @@ export default class TestApi extends Component {
       return (
         <Api className="row">
           {items.map(item => (
-            <div key={item.id} className="col-xs-6">
-              Name: {item.name} | Email: {item.email} |
-            </div>
+            <React.Fragment>
+              <div key={item.id} className="col-xs-6">
+                <h3>Name: {item.name}</h3>
+              </div>
+              <div className="col-xs-6">
+                <Image></Image>
+              </div>
+            </React.Fragment>
           ))}
         </Api>
       );
     }
   }
 }
+
+// | {item.address.street} | {item.address.suite} |
+//               {item.address.city} | {item.address.zipcode}|{" "}
+//               {item.address.geo.lat}
