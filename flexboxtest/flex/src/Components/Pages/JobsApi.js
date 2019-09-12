@@ -5,19 +5,21 @@ import image1 from "../../images/factory.jpeg";
 const Api = styled.div`
   margin-top: 2%;
 
-  & h3 {
+  & h2 {
     font-family: "SF-Mono";
-    font-size: 18px;
-    font-weight: 100;
+    font-size: 24px;
+    font-weight: 200;
   }
-`;
 
-const Image = styled.div`
-  margin-top: 5rem;
-  background-image: url(${image1});
-  background-size: cover;
-  height: 150px;
-  width: 275px;
+  & h4 {
+    color: purple;
+    font-size: 14px;
+  }
+
+  & p {
+    font-weight: 400;
+    font-size: 14px;
+  }
 `;
 
 export default class TestApi extends Component {
@@ -42,7 +44,6 @@ export default class TestApi extends Component {
 
   render() {
     var { isLoaded, items } = this.state;
-
     if (!isLoaded) {
       return <div>loading..</div>;
     } else {
@@ -51,10 +52,12 @@ export default class TestApi extends Component {
           {items.map(item => (
             <React.Fragment>
               <div key={item.id} className="col-xs-6">
-                <h3>Name: {item.name}</h3>
-              </div>
-              <div className="col-xs-6">
-                <Image></Image>
+                <h4>Featured</h4>
+                <h2>{item.name}</h2>
+                <p>
+                  {" "}
+                  {item.address.city} {item.address.geo.lat}{" "}
+                </p>
               </div>
             </React.Fragment>
           ))}
