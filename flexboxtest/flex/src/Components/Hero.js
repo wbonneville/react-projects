@@ -30,15 +30,41 @@ const Left = styled.div`
   }
 `;
 
+const Right = styled.div`
+  & h1 {
+    font-size: 45px;
+    font-weight: 800;
+  }
+
+  & h4 {
+    font-size: 18px;
+    text-align: left;
+  }
+`;
+
 const Image = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
     url(${image});
   background-size: cover;
-  height: 450px;
+  height: 350px;
 `;
 
-const Right = styled.div``;
+const ImageTwo = styled.div`
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url(${image});
+  background-size: cover;
+  height: 350px;
+  margin-top: 2%;
+`;
 
+const Panel = styled.div`
+  background-color: black;
+  color: white;
+  margin-top: -5%;
+  & h1 {
+    font-size: 45px;
+  }
+`;
 export default class Hero extends Component {
   render() {
     return (
@@ -57,6 +83,11 @@ export default class Hero extends Component {
           </Left>
           <Right className="col-xs-5">
             <h1>Content</h1>
+            <ImageTwo></ImageTwo>
+            <h4></h4>
+            <Panel className="col-xs-12">
+              <h1>Lorem Ipsum</h1>
+            </Panel>
           </Right>
         </HeroRow>
       </HeroWrapper>

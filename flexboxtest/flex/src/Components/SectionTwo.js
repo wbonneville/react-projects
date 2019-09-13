@@ -73,39 +73,6 @@ const HeaderThree = styled.div`
   }
 `;
 
-// const Slogan = styled.div`
-//   margin-top: 6%;
-//   margin-bottom: 6%;
-//   & h4 {
-//     font-size: 10px;
-//     font-weight: normal;
-//     text-transform: uppercase;
-//     letter-spacing: 3px;
-//     opacity: 0.5;
-//   }
-// `;
-
-// const ImageContainer = styled.div``;
-
-// const ImageOne = styled.div`
-//   background-image: url(${image1});
-//   background-size: cover;
-//   height: 350px;
-//   width: 400px;
-//   margin-top: 30%;
-
-//   box-shadow: 7px 7px 5px grey;
-// `;
-
-// const ImageTwo = styled.div`
-//   background-image: url(${image2});
-//   background-size: cover;
-//   height: 350px;
-//   width: 400px;
-
-//   box-shadow: 7px 7px 5px grey;
-// `;
-
 export default class SectionTwo extends Component {
   render() {
     return (
@@ -113,13 +80,13 @@ export default class SectionTwo extends Component {
         <SectionWrapper>
           <Header className="row">
             <Text className="col-xs-7">
-              <h1>Get Hired</h1>
+              <h1>Lorem Ipsum</h1>
               <h4>Lorem ipsum dolor sit amet</h4>
             </Text>
           </Header>
           <HeaderTwo className="row">
             <TextTwo className="col-xs-7">
-              <h1>Get Hired</h1>
+              <h1>Lorem Ipsum</h1>
               <h4>Lorem ipsum dolor sit amet</h4>
             </TextTwo>
           </HeaderTwo>
