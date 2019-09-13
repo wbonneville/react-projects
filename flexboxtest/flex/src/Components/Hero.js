@@ -56,7 +56,7 @@ export default class Hero extends Component {
             <Image></Image>
           </Left>
           <Right className="col-xs-5">
-            <h1>Here</h1>
+            <h1>Content</h1>
           </Right>
         </HeroRow>
       </HeroWrapper>
