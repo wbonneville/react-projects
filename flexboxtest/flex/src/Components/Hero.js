@@ -132,10 +132,15 @@ const OneCol = styled.div`
   height: 800px;
   color: white;
   background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url(${image});
 `;
 const TwoCol = styled.div`
   height: 800px;
+  color: white;
   background-color: #f6f6f6;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url(${image});
 `;
 export default class Hero extends Component {
   render() {
