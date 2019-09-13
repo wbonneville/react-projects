@@ -3,9 +3,10 @@ import styled from "styled-components";
 
 const SectionWrapper = styled.div`
   padding-top: 3.5%;
-  width: 100%;
-  font-family: "SF-Mono";
-  background-color: #f6f6f6;
+
+  padding-left: 7%;
+  padding-right: 7%;
+  background-color: white;
   margin-bottom: 6%;
 
   & .mainStyle {
@@ -52,13 +53,15 @@ const NewsPanel = styled.div`
 
 const BreenCast = styled.div`
   & h1 {
-    font-weight: normal;
-    font-size: 75px;
-    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 85px;
+    letter-spacing: 3px;
   }
 
   & p {
-    margin-top: -6%;
+    margin-top: -4%;
+    font-weight: 100;
+    font-size: 20px;
   }
 
   & .mainHr {
@@ -73,7 +76,7 @@ export default class SectionTwo extends Component {
       <React.Fragment>
         <SectionWrapper>
           <BreenCast className="row center-xs">
-            <div className="col-xs-10 col-lg-6">
+            <div className="col-xs-10 col-lg-8">
               <h1>Breencast</h1>
               <p>
                 Regular broadcast made by Dr. Wallace Breen, delivered to the

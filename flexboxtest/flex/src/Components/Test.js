@@ -73,8 +73,7 @@ font-family: 'Cinzel', serif; */
 `;
 
 const StyledUlTwo = styled(StyledUl)`
-  background-color: white;
-
+  background-color: #f6f6f6;
   margin-top: -0.4rem;
   margin-bottom: 1px;
 

@@ -6,16 +6,16 @@ import image2 from "../images/education.png";
 const SectionWrapper = styled.div`
   background-color: white;
   margin-top: -3%;
-  font-family: "SF-Mono";
+
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 10%;
 
   & h1 {
     color: black;
-    font-weight: normal;
-    font-size: 75px;
-    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 85px;
+    letter-spacing: 3px;
 
     & .spanOne,
     .spanTwo {
@@ -25,18 +25,23 @@ const SectionWrapper = styled.div`
 
   & h2 {
     font-size: 24px;
-    font-weight: normal;
+    font-weight: 100;
   }
 
   & h4 {
-    font-weight: normal;
-    opacity: 0.9;
-    margin-top: -4%;
-    margin-bottom: 5%;
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: -3%;
+    margin-bottom: 4%;
   }
 
   & p {
     font-size: 15px;
+  }
+
+  & .goodP {
+    font-weight: 500;
+    padding-top: 3%;
   }
 `;
 
@@ -101,23 +106,17 @@ export default class NewSection extends Component {
               If you're attempting to leave, you must carefully read our policy,
               which can be found <span>here.</span>
             </p>
-            <p>
-              <strong>
-                &nbsp; Passports &nbsp;{" "}
-                <i className="fas fa-long-arrow-alt-right"></i>
-              </strong>
+            <p className="goodP">
+              &nbsp; Passports &nbsp;{" "}
+              <i className="fas fa-long-arrow-alt-right"></i>
             </p>
-            <p>
-              <strong>
-                &nbsp; Visas &nbsp;{" "}
-                <i className="fas fa-long-arrow-alt-right"></i>{" "}
-              </strong>
+            <p className="goodP">
+              &nbsp; Visas &nbsp;{" "}
+              <i className="fas fa-long-arrow-alt-right"></i>{" "}
             </p>
-            <p>
-              <strong>
-                &nbsp; Travel Warnings &nbsp;{" "}
-                <i className="fas fa-long-arrow-alt-right"></i>
-              </strong>
+            <p className="goodP">
+              &nbsp; Travel Warnings &nbsp;{" "}
+              <i className="fas fa-long-arrow-alt-right"></i>
             </p>
           </div>
           <div className="col-xs-10 col-lg-4">
@@ -128,23 +127,17 @@ export default class NewSection extends Component {
               Dr. Wallace Breen is the current Earth Administrator under the
               Combine.
             </p>
-            <p>
-              <strong>
-                &nbsp; Transcripts &nbsp;{" "}
-                <i className="fas fa-long-arrow-alt-right"></i>
-              </strong>
+            <p className="goodP">
+              &nbsp; Transcripts &nbsp;{" "}
+              <i className="fas fa-long-arrow-alt-right"></i>
             </p>
-            <p>
-              <strong>
-                &nbsp; Contact &nbsp;{" "}
-                <i className="fas fa-long-arrow-alt-right"></i>
-              </strong>
+            <p className="goodP">
+              &nbsp; Contact &nbsp;{" "}
+              <i className="fas fa-long-arrow-alt-right"></i>
             </p>
-            <p>
-              <strong>
-                &nbsp; Education and Culture at Citadel &nbsp;{" "}
-                <i className="fas fa-long-arrow-alt-right"></i>
-              </strong>
+            <p className="goodP">
+              &nbsp; Education and Culture at Citadel &nbsp;{" "}
+              <i className="fas fa-long-arrow-alt-right"></i>
             </p>
           </div>
 
@@ -154,17 +147,13 @@ export default class NewSection extends Component {
             <p>
               The Combine's collective goal is to create the Universal Union.
             </p>
-            <p>
-              <strong>
-                &nbsp; Job Openings &nbsp;{" "}
-                <i className="fas fa-long-arrow-alt-right"></i>
-              </strong>
+            <p className="goodP">
+              &nbsp; Job Openings &nbsp;{" "}
+              <i className="fas fa-long-arrow-alt-right"></i>
             </p>
-            <p>
-              <strong>
-                &nbsp; Other Opportunities &nbsp;{" "}
-                <i className="fas fa-long-arrow-alt-right"></i>
-              </strong>
+            <p className="goodP">
+              &nbsp; Other Opportunities &nbsp;{" "}
+              <i className="fas fa-long-arrow-alt-right"></i>
             </p>
           </div>
         </div>

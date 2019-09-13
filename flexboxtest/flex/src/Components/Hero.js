@@ -6,7 +6,6 @@ const HeroWrapper = styled.div`
   padding-left: 7%;
   padding-right: 7%;
   padding-top: 4%;
-  background-color: #f6f6f6;
 `;
 
 const HeroRow = styled.div``;
@@ -97,6 +96,47 @@ const Header = styled.div`
     font-size: 20px;
   }
 `;
+
+const SectionFour = styled.div`
+  margin-top: 6%;
+  margin-bottom: 6%;
+  background: black;
+  padding: 50px;
+`;
+
+const Slogan = styled.div`
+  & h1 {
+    color: white;
+    font-weight: 100;
+    font-size: 60px;
+    margin-left: 5.5rem;
+  }
+
+  & h2 {
+    color: white;
+    font-weight: 100;
+    font-size: 35px;
+    padding: 10px;
+
+    & span {
+      font-weight: 400;
+    }
+  }
+
+  & .box {
+    border: 1px solid white;
+  }
+`;
+
+const OneCol = styled.div`
+  height: 800px;
+  color: white;
+  background-color: black;
+`;
+const TwoCol = styled.div`
+  height: 800px;
+  background-color: #f6f6f6;
+`;
 export default class Hero extends Component {
   render() {
     return (
@@ -131,12 +171,26 @@ export default class Hero extends Component {
             </PanelWrapper>
           </Right>
         </HeroRow>
-        <Header className="row center-xs">
-          <Text className="col-xs-12">
-            <h1>Lorem Ipsum</h1>
-            <h4>Lorem ipsum dolor sit amet</h4>
-          </Text>
-        </Header>
+        <SectionFour>
+          <Slogan className="row">
+            <div className="box col-xs-12 col-sm-4 ">
+              <h2>
+                What matters in <span>Artificial Intelligence</span> right now?
+              </h2>
+            </div>
+            <div className=" col-xs-12 col-sm-8">
+              <h1>We always want to know what you're thinking.</h1>
+            </div>
+          </Slogan>
+        </SectionFour>
+        <div className="row center-xs">
+          <OneCol className="col-xs-6">
+            <h1>One</h1>
+          </OneCol>
+          <TwoCol className="col-xs-6">
+            <h1>Two</h1>
+          </TwoCol>
+        </div>
       </HeroWrapper>
     );
   }
