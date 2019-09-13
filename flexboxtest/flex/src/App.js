@@ -7,7 +7,7 @@ import Test from "./Components/Test";
 import SectionThree from "./Components/SectionThree";
 import SectionFour from "./Components/SectionFour";
 import Footer from "./Components/Footer";
-// import SectionFive from "./Components/SectionFive";
+import SectionFive from "./Components/SectionFive";
 
 // Jobs
 
@@ -19,8 +19,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // Hacky?
 
 const AppWrapper = styled.div`
-  // max-width: 3000px;
-  // applying max-width to page
+  max-width: 3000px;
+
   align-content: center;
   overflow-x: hidden;
 `;
@@ -33,13 +33,13 @@ function App() {
         <Route path="/" exact component={Hero} />
         {/* <Route path="/" exact component={SectionTwo} /> */}
         <Route path="/" exact component={SectionThree} />
-        <Route path="/" exact component={SectionFour} />
+        {/* <Route path="/" exact component={SectionFour} /> */}
         <Switch>
           <Route path="/jobs" component={Jobs} />
+          <Route path="/" exact component={SectionFive} />
         </Switch>
         <Footer></Footer>
       </Router>
-      {/* <SectionFive></SectionFive> */}
     </AppWrapper>
   );
 }

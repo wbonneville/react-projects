@@ -30,7 +30,7 @@ const SectionWrapper = styled.div`
 
   & h4 {
     font-weight: 100;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: -3%;
     margin-bottom: 4%;
   }
@@ -93,7 +93,7 @@ const ImageThree = styled.div`
 const ImageFour = styled.div`
   background-image: url(${image4});
   background-size: cover;
-  height: 600px;
+  height: 700px;
   margin-top: 5%;
   margin-bottom: 5%;
 `;
@@ -107,14 +107,10 @@ export default class NewSection extends Component {
             <ImageThree></ImageThree>
           </div>
         </div>
+
         <div className="row center-xs">
-          <div className="col-xs-11">
-            <ImageFour></ImageFour>
-          </div>
-        </div>
-        <div className="row center-xs">
-          <div className="col-xs-10">
-            <h1>Policies</h1>
+          <div className="col-xs-6">
+            <h1>Policy</h1>
             <h4>
               Leading City 17's structural policies to advance the interests and
               security of all entities.
