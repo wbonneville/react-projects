@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import image from "../images/wallhaven.jpg";
+import image2 from "../images/yellowcity.jpg";
 
 const HeroWrapper = styled.div`
   padding-left: 7%;
@@ -50,7 +51,7 @@ const Image = styled.div`
 
 const ImageTwo = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
-    url(${image});
+    url(${image2});
   background-size: cover;
   height: 350px;
   margin-top: 2%;
@@ -139,8 +140,8 @@ const TwoCol = styled.div`
   height: 800px;
   color: white;
   background-color: #f6f6f6;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
-    url(${image});
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(${image2});
 `;
 export default class Hero extends Component {
   render() {
