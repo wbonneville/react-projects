@@ -76,6 +76,8 @@ const StyledUlTwo = styled(StyledUl)`
   background-color: white;
 
   margin-top: -0.4rem;
+  margin-bottom: 1px;
+
   & li {
     margin-left: 0.5em;
     margin-right: 0.5em;

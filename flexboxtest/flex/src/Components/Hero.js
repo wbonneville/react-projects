@@ -3,8 +3,8 @@ import styled from "styled-components";
 import image from "../images/wallhaven.jpg";
 
 const HeroWrapper = styled.div`
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 7%;
+  padding-right: 7%;
   padding-top: 4%;
   background-color: #f6f6f6;
 `;
@@ -46,7 +46,7 @@ const Image = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
     url(${image});
   background-size: cover;
-  height: 350px;
+  height: 420px;
 `;
 
 const ImageTwo = styled.div`
@@ -55,14 +55,46 @@ const ImageTwo = styled.div`
   background-size: cover;
   height: 350px;
   margin-top: 2%;
+  margin-left: 4%;
+`;
+
+const PanelWrapper = styled.div`
+  margin: 4%;
 `;
 
 const Panel = styled.div`
   background-color: black;
   color: white;
-  margin-top: -5%;
+
+  padding-bottom: 2%;
   & h1 {
     font-size: 45px;
+    padding-top: 3%;
+  }
+  & h2 {
+    margin-top: -10px;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: left;
+    padding: 5px;
+  }
+`;
+
+const Text = styled.div`
+  background-color: black;
+`;
+
+const Header = styled.div`
+  color: white;
+  margin: 4%;
+  & h1 {
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+  & h4 {
+    font-weight: 200;
+    font-size: 20px;
   }
 `;
 export default class Hero extends Component {
@@ -84,12 +116,27 @@ export default class Hero extends Component {
           <Right className="col-xs-5">
             <h1>Content</h1>
             <ImageTwo></ImageTwo>
-            <h4></h4>
-            <Panel className="col-xs-12">
-              <h1>Lorem Ipsum</h1>
-            </Panel>
+            <PanelWrapper className="row">
+              <Panel className="col-xs-12">
+                <h1>Lorem Ipsum</h1>
+                <h2>
+                  so much lorem ipsum, so much lorem ipsum, so much lorem ipsum,
+                  so much lorem ipsum, so much lorem ipsum, so much lorem ipsum,
+                  wow, so much lorem ipsum, so much lorem ipsumso much lorem
+                  ipsumso much lorem ipsum, so much lorem ipsumso much lorem
+                  ipsumso much lorem ipsumso much lorem ipsumso much lorem
+                  ipsumso much lorem ipsum{" "}
+                </h2>
+              </Panel>
+            </PanelWrapper>
           </Right>
         </HeroRow>
+        <Header className="row center-xs">
+          <Text className="col-xs-12">
+            <h1>Lorem Ipsum</h1>
+            <h4>Lorem ipsum dolor sit amet</h4>
+          </Text>
+        </Header>
       </HeroWrapper>
     );
   }
