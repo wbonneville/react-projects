@@ -21,7 +21,7 @@ const TableWrapper = styled.div`
     font-size: 32px;
     font-weight: 100;
     text-transform: uppercase;
-    color: darkgray;
+    color: black;
     margin-bottom: 15%;
   }
 
@@ -34,8 +34,9 @@ const DivTwo = styled.div`
   background-color: #ff6666;
   color: white;
   padding-bottom: 10%;
+  padding-top: 10%;
   & h1 {
-    font-size: 100px;
+    font-size: 120px;
   }
 
   & h4 {
@@ -59,22 +60,25 @@ export default class Housing extends Component {
             <h1>
               <i className="icon far fa-clone fa-6x"></i>
             </h1>
-            <h2> Dr. Breen </h2>
+            <h2> Service </h2>
+            <hr></hr>
           </div>
           <div className="col-xs-4">
             <h1>
               <i className="icon fab fa-cloudversify fa-6x"></i>
             </h1>
-            <h2>Combine</h2>
+            <h2>Regulation</h2>
+            <hr></hr>
           </div>
           <div className="col-xs-4">
             <h1>
               <i className=" icon fas fa-code-branch fa-6x"></i>
             </h1>
-            <h2>Citadel</h2>
+            <h2>Reductionism</h2>
+            <hr></hr>
           </div>
         </TableWrapper>
-        <DivTwo className="row center-xs middle-xs">
+        <DivTwo className="row center-xs">
           <div className="col-xs-12">
             <h1>Welcome.</h1>
             <div className="row center-xs">
