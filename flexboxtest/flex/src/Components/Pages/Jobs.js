@@ -26,9 +26,9 @@ const JobsSectionOne = styled.div`
 `;
 
 const JobsHeader = styled.div`
-  & h2 {
-    font-size: 32px;
+  & h1 {
     font-weight: 700;
+    font-size: 46px;
   }
 
   @media (max-width: 800px) {
@@ -167,7 +167,7 @@ export default class Jobs extends Component {
 
         <JobsSectionOne className="row start-xs">
           <JobsHeader className="col-xs-12 col-sm-6">
-            <h2>Jobs and Positions</h2>
+            <h1>Jobs and Positions</h1>
           </JobsHeader>
           <JobsInfo className="col-xs-12 col-sm-6">
             <h3>
