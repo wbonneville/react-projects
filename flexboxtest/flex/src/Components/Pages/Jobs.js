@@ -171,10 +171,12 @@ export default class Jobs extends Component {
           </JobsHeader>
           <JobsInfo className="col-xs-12 col-sm-6">
             <h3>
-              What is AI? It's the quest to build machines that can reason,
-              learn, and act intelligently, and it has barely begun. We cover
-              the latest advances in machine learning, neural networks, and
-              robots.
+              "We should thank Our Benefactors for giving us respite from this
+              overpowering force. They have thrown a switch and exorcised our
+              demons in a single stroke. They have given us the strength we
+              never could have summoned to overcome this compulsion. They have
+              given us purpose. They have turned our eyes toward the stars." -
+              Wallace Breen
             </h3>
           </JobsInfo>
           <div className="col-xs-12">
@@ -192,12 +194,12 @@ export default class Jobs extends Component {
           <FeaturedJob className="row start-xs">
             <div className="col-xs-12 col-lg-6">
               <h1>
-                Facebook is making its own AI deepfakes to head off a
+                The Citadel is making its own AI deepfakes to head off a
                 disinformation disaster
               </h1>
               <h4>
-                The CTO of Facebook says videos forged using AI will be used
-                maliciously on its platforms before long.
+                Mr. Breen says videos forged using AI will be used maliciously
+                on its platforms before long.
               </h4>
             </div>
 
@@ -216,8 +218,8 @@ export default class Jobs extends Component {
               <div className="col-xs-12">Featured</div>
             </Featured>
             <h3>
-              AI thinks this flood photo is a toilet. Fixing that could improve
-              disaster response.
+              Citizen reminder: inaction is conspiracy. Report counter-behavior
+              to a Civil Protection team immediately.
             </h3>
             <FeaturedImageOne></FeaturedImageOne>
           </div>
@@ -227,8 +229,8 @@ export default class Jobs extends Component {
               <div className="col-xs-12">Featured</div>
             </Featured>
             <h3>
-              OpenAI has released the largest version yet of its
-              fake-news-spewing AI
+              Citizen notice: Failure to cooperate will result in permanent
+              off-world relocation. Status: malignant.
             </h3>
             <FeaturedImageTwo></FeaturedImageTwo>
           </div>
@@ -238,8 +240,8 @@ export default class Jobs extends Component {
               <div className="col-xs-12">Featured</div>
             </Featured>
             <h3>
-              The world’s top deepfake artist is wrestling with the monster he
-              created
+              Overwatch acknowleges critical exogen breach. Airwatch
+              augmentation force dispatched and inbound.
             </h3>
             <FeaturedImageThree></FeaturedImageThree>
           </div>
@@ -249,8 +251,8 @@ export default class Jobs extends Component {
               <div className="col-xs-12">Featured</div>
             </Featured>
             <h3>
-              Having mastered Space Invaders, chess, and Go, AI tackles video
-              soccer
+              Stabilization Team: failure to treat identified local outbreak
+              will force team recall and recycle.
             </h3>
             <FeaturedImageFour></FeaturedImageFour>
           </div>
@@ -262,7 +264,8 @@ export default class Jobs extends Component {
           <Slogan className="row">
             <div className="box col-xs-12 col-sm-4 ">
               <h2>
-                What matters in <span>Artificial Intelligence</span> right now?
+                What matters in <span>Technological Advancements</span> right
+                now?
               </h2>
             </div>
             <div className=" col-xs-12 col-sm-8">
