@@ -15,16 +15,48 @@ const Div = styled.div`
   }
 `;
 
+const TableWrapper = styled.div`
+  & h2 {
+    margin-top: 15%;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  & .icon {
+    color: #ff6666;
+  }
+`;
+
 export default class Housing extends Component {
   render() {
     return (
       <React.Fragment>
         <Div className="row start-xs">
-          <div className=" col-xs-6     col-sm-10">
+          <div className=" col-xs-12">
             <h1>Rationing and Credits</h1>
             <h4>September 16th, 2019</h4>
           </div>
         </Div>
+        <TableWrapper className="row center-xs">
+          <div className="col-xs-4">
+            <h1>
+              <i className="icon far fa-clone fa-6x"></i>
+            </h1>
+            <h2> Dr. Breen </h2>
+          </div>
+          <div className="col-xs-4">
+            <h1>
+              <i className="icon fab fa-cloudversify fa-6x"></i>
+            </h1>
+            <h2>Combine</h2>
+          </div>
+          <div className="col-xs-4">
+            <h1>
+              <i className=" icon fas fa-code-branch fa-6x"></i>
+            </h1>
+            <h2>Citadel</h2>
+          </div>
+        </TableWrapper>
       </React.Fragment>
     );
   }
