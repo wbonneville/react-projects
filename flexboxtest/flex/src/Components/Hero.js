@@ -48,7 +48,7 @@ const Image = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
     url(${image});
   background-size: cover;
-  height: 420px;
+  height: 479px;
 `;
 
 const ImageTwo = styled.div`
@@ -78,7 +78,7 @@ const Panel = styled.div`
     font-size: 18px;
     font-weight: 100;
     text-align: left;
-    padding: 5px;
+    padding: 20px;
   }
 `;
 
@@ -105,15 +105,15 @@ const SectionFour = styled.div`
   margin-bottom: 6%;
   background: black;
   padding: 50px;
+  margin-left: -0.7%;
 `;
 
 const Slogan = styled.div`
-  width: 100%;
   & h1 {
     color: white;
     font-weight: 100;
     font-size: 60px;
-    margin-left: 5.5rem;
+    margin-left: 4.5rem;
   }
 
   & h2 {
@@ -130,6 +130,10 @@ const Slogan = styled.div`
   & .box {
     border: 1px solid white;
   }
+`;
+
+const Slides = styled.div`
+  margin-right: 0.4px;
 `;
 
 const OneCol = styled.div`
@@ -161,7 +165,7 @@ export default class Hero extends Component {
     return (
       <HeroWrapper>
         <HeroRow className="row center-xs">
-          <Left className="col-xs-7">
+          <Left className="col-xs-12 col-md-7">
             <h1>
               MIT’s “disqualified” donors aren’t necessarily banned from
               donating, says Media Lab whistleblower
@@ -172,9 +176,9 @@ export default class Hero extends Component {
             </h4>
             <Image></Image>
           </Left>
-          <Right className="col-xs-5">
+          <Right className=" col-xs-12 col-md-5">
             <Box>
-              <h1>Content</h1>
+              <h1>Reviews</h1>
             </Box>
 
             <ImageTwo></ImageTwo>
@@ -192,7 +196,7 @@ export default class Hero extends Component {
           </Right>
         </HeroRow>
         <SectionFour>
-          <Slogan className="row">
+          <Slogan className="row center-xs">
             <div className="box col-xs-12 col-sm-4 ">
               <h2>
                 What matters in <span>Technological Advancements</span> right
@@ -204,14 +208,14 @@ export default class Hero extends Component {
             </div>
           </Slogan>
         </SectionFour>
-        <div className="row center-xs">
+        <Slides className="row center-xs">
           <OneCol className="col-xs-6">
             <h1>One</h1>
           </OneCol>
           <TwoCol className="col-xs-6">
             <h1>Two</h1>
           </TwoCol>
-        </div>
+        </Slides>
       </HeroWrapper>
     );
   }
