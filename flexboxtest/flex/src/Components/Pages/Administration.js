@@ -30,6 +30,20 @@ const TableWrapper = styled.div`
   }
 `;
 
+const DivTwo = styled.div`
+  background-color: #ff6666;
+  color: white;
+  padding-bottom: 10%;
+  & h1 {
+    font-size: 100px;
+  }
+
+  & h4 {
+    font-weight: 100;
+    font-size: 40px;
+  }
+`;
+
 export default class Housing extends Component {
   render() {
     return (
@@ -60,6 +74,28 @@ export default class Housing extends Component {
             <h2>Citadel</h2>
           </div>
         </TableWrapper>
+        <DivTwo className="row center-xs middle-xs">
+          <div className="col-xs-12">
+            <h1>Welcome.</h1>
+            <div className="row center-xs">
+              <div className="col-xs-8">
+                <h4>
+                  {" "}
+                  <h4>
+                    Welcome! Welcome to City 17. You have chosen, or have been
+                    chosen, to relocate to one of our finest remaining urban
+                    centers. I thought so much of City 17 that I elected to
+                    establish my administration here, in the citadel so
+                    thoughtfully provided by our benefactors. I've been proud to
+                    call City 17 my home. And so, whether you are here to stay,
+                    or passing through on your journey to parts unknown, welcome
+                    to City 17. It's safer here.
+                  </h4>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </DivTwo>
       </React.Fragment>
     );
   }
