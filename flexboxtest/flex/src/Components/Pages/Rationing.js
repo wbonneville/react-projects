@@ -16,6 +16,13 @@ const Div = styled.div`
 const SignUp = styled.div`
   background-color: #005bdd;
   color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: left;
+
+  & .sign {
+    margin-right: 1rem;
+  }
 `;
 
 const InputForm = styled.div`
@@ -32,6 +39,9 @@ const Input = styled.input`
   font-size: 30px;
   font-weight: 200;
 `;
+
+const Fa = styled.div``;
+
 export default class Housing extends Component {
   render() {
     return (
@@ -90,18 +100,16 @@ export default class Housing extends Component {
           </div>
         </Div>
         <SignUp className="row center-xs">
-          <div className="col-xs-6">
-            <h1>
-              <i class="fas fa-forward fa-6x"></i>
-            </h1>
-          </div>
-          <InputForm className="col-xs-6">
+          <h1 className="sign">
+            <i className="fas fa-forward fa-6x"></i>
+          </h1>
+
+          <InputForm className="col-xs-4">
             <h1>fwd:Current Rations</h1>
             <h2>
               Your guide to rationing and credits in the age of technology
             </h2>
             <h4>Delivered Every Morning</h4>
-
             <Input
               type="email"
               name="email"
