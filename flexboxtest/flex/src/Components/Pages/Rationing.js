@@ -5,11 +5,13 @@ const Div = styled.div`
   font-size: 23px;
   margin-left: 7%;
   margin-right: 7%;
-  margin-top: 4%;
+  margin-top: 1%;
+  margin-bottom: 5%;
 
   & h4 {
     font-weight: 100;
     margin-top: -2%;
+    width: 90%;
   }
 `;
 
@@ -27,12 +29,25 @@ const SignUp = styled.div`
 
 const InputForm = styled.div`
   & h1 {
-    font-size: 54px;
+    font-size: 45px;
+    width: 90%;
+  }
+
+  & h2 {
+    width: 55%;
+  }
+
+  & p {
+    width: 90%;
+  }
+
+  & .agree {
+    font-size: 12px;
   }
 `;
 
 const Input = styled.input`
-  width: 78%;
+  width: 90%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -40,7 +55,17 @@ const Input = styled.input`
   font-weight: 200;
 `;
 
-const Fa = styled.div``;
+const Button = styled.button`
+  background-color: #005bdd;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 90%;
+`;
 
 export default class Housing extends Component {
   render() {
@@ -104,10 +129,12 @@ export default class Housing extends Component {
             <i className="fas fa-forward fa-6x"></i>
           </h1>
 
-          <InputForm className="col-xs-4">
+          <InputForm className="col-xs-5">
             <h1>fwd:Current Rations</h1>
             <h2>
-              Your guide to rationing and credits in the age of technology
+              <i>
+                Your guide to rationing and credits in the age of technology
+              </i>
             </h2>
             <h4>Delivered Every Morning</h4>
             <Input
@@ -121,6 +148,12 @@ export default class Housing extends Component {
               {" "}
               Please also let me know about other MIT Technology Review
               initiatives and events.
+            </p>
+            <Button type="button">Sign up for free</Button>
+            <p className="agree">
+              By signing up you agree to receive email newsletters and
+              notifications from MIT Technology Review. You can change your
+              preferences at any time. View our Privacy Policy for more detail.
             </p>
           </InputForm>
         </SignUp>

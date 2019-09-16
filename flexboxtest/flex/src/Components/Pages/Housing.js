@@ -6,6 +6,7 @@ const Div = styled.div`
   margin-left: 7%;
   margin-right: 7%;
   margin-top: 4%;
+  margin-bottom: 5%;
 
   & h4 {
     font-weight: 100;
