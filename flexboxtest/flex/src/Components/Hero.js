@@ -27,12 +27,13 @@ const Left = styled.div`
     font-size: 20px;
     font-weight: 300;
     padding: 2%;
+    margin-top: -2rem;
   }
 `;
 
 const Right = styled.div`
   & h1 {
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 800;
   }
 
@@ -154,8 +155,8 @@ export default class Hero extends Component {
               donating, says Media Lab whistleblower
             </h1>
             <h4>
-              Signe Swenson, who leaked details about the lab’s relationship
-              with Jeffrey Epstein, explains how its funding works.
+              Dr. Kleiner, who leaked details about the lab’s relationship with
+              Black Mesa, explains how its funding works.
             </h4>
             <Image></Image>
           </Left>
@@ -181,7 +182,8 @@ export default class Hero extends Component {
           <Slogan className="row">
             <div className="box col-xs-12 col-sm-4 ">
               <h2>
-                What matters in <span>Artificial Intelligence</span> right now?
+                What matters in <span>Technological Advancements</span> right
+                now?
               </h2>
             </div>
             <div className=" col-xs-12 col-sm-8">
