@@ -4,9 +4,9 @@ import image from "../images/wallhaven.jpg";
 import image2 from "../images/yellowcity.jpg";
 
 const HeroWrapper = styled.div`
-  padding-left: 7%;
-  padding-right: 7%;
-  padding-top: 4%;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 4%;
 `;
 
 const HeroRow = styled.div``;
@@ -15,6 +15,7 @@ const Left = styled.div`
   background-color: black;
   color: white;
   padding: 0 0;
+
   & h1 {
     font-size: 45px;
     text-align: left;
@@ -55,7 +56,6 @@ const ImageTwo = styled.div`
     url(${image2});
   background-size: cover;
   height: 350px;
-  margin-top: 2%;
   margin-left: 4%;
 `;
 
@@ -66,6 +66,7 @@ const PanelWrapper = styled.div`
 const Panel = styled.div`
   background-color: black;
   color: white;
+  margin-left: 4%;
 
   padding-bottom: 2%;
   & h1 {
@@ -107,6 +108,7 @@ const SectionFour = styled.div`
 `;
 
 const Slogan = styled.div`
+  width: 100%;
   & h1 {
     color: white;
     font-weight: 100;
@@ -144,6 +146,16 @@ const TwoCol = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
     url(${image2});
 `;
+
+const Box = styled.div`
+  color: white;
+  background-color: black;
+  margin-left: 4%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  margin-bottom: 6%;
+`;
+
 export default class Hero extends Component {
   render() {
     return (
@@ -151,8 +163,8 @@ export default class Hero extends Component {
         <HeroRow className="row center-xs">
           <Left className="col-xs-7">
             <h1>
-              ’s “disqualified” donors aren’t necessarily banned from donating,
-              says Media Lab whistleblower
+              MIT’s “disqualified” donors aren’t necessarily banned from
+              donating, says Media Lab whistleblower
             </h1>
             <h4>
               Dr. Kleiner, who leaked details about the lab’s relationship with
@@ -161,21 +173,22 @@ export default class Hero extends Component {
             <Image></Image>
           </Left>
           <Right className="col-xs-5">
-            <h1>Content</h1>
+            <Box>
+              <h1>Content</h1>
+            </Box>
+
             <ImageTwo></ImageTwo>
-            <PanelWrapper className="row">
-              <Panel className="col-xs-12">
-                <h1>Lorem Ipsum</h1>
-                <h2>
-                  so much lorem ipsum, so much lorem ipsum, so much lorem ipsum,
-                  so much lorem ipsum, so much lorem ipsum, so much lorem ipsum,
-                  wow, so much lorem ipsum, so much lorem ipsumso much lorem
-                  ipsumso much lorem ipsum, so much lorem ipsumso much lorem
-                  ipsumso much lorem ipsumso much lorem ipsumso much lorem
-                  ipsumso much lorem ipsum{" "}
-                </h2>
-              </Panel>
-            </PanelWrapper>
+            <Panel className="col-xs-12">
+              <h1>Lorem Ipsum</h1>
+              <h2>
+                so much lorem ipsum, so much lorem ipsum, so much lorem ipsum,
+                so much lorem ipsum, so much lorem ipsum, so much lorem ipsum,
+                wow, so much lorem ipsum, so much lorem ipsumso much lorem
+                ipsumso much lorem ipsum, so much lorem ipsumso much lorem
+                ipsumso much lorem ipsumso much lorem ipsumso much lorem ipsumso
+                much lorem ipsum{" "}
+              </h2>
+            </Panel>
           </Right>
         </HeroRow>
         <SectionFour>
