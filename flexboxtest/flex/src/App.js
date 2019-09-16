@@ -13,7 +13,7 @@ import SectionFive from "./Components/SectionFive";
 
 import Jobs from "./Components/Pages/Jobs";
 import Housing from "./Components/Pages/Housing";
-
+import Rationing from "./Components/Pages/Rationing";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Wrapping entire app in a styled component
@@ -38,6 +38,7 @@ function App() {
         <Switch>
           <Route path="/jobs" component={Jobs} />
           <Route path="/housing" component={Housing} />
+          <Route path="/rationingandcredits" component={Rationing} />
           <Route path="/" exact component={SectionFive} />
         </Switch>
         <Footer></Footer>
