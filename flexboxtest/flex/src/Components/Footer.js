@@ -29,7 +29,7 @@ export default class Footer extends Component {
             <p>
               The mission of City 17 Advancement Reviewis to bring about
               better-informed and more conscious decisions about life and law
-              through authoritative, influential, and trustworthy journalism.
+              through authoritative, influential, and trustworthy regulations.
             </p>
           </div>
           <div className=" col-xs-4 col-lg-2">
