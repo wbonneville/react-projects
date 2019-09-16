@@ -77,7 +77,7 @@ export default class SectionTwo extends Component {
         <SectionWrapper>
           <BreenCast className="row center-xs">
             <div className="col-xs-10 col-lg-8">
-              <h1>Breencast</h1>
+              <h1>Newscast</h1>
               <p>
                 Regular broadcast made by Dr. Wallace Breen, delivered to the
                 populace of City 17 via private televisions and, more commonly,

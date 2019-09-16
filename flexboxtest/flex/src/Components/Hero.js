@@ -151,8 +151,8 @@ export default class Hero extends Component {
         <HeroRow className="row center-xs">
           <Left className="col-xs-7">
             <h1>
-              MIT’s “disqualified” donors aren’t necessarily banned from
-              donating, says Media Lab whistleblower
+              ’s “disqualified” donors aren’t necessarily banned from donating,
+              says Media Lab whistleblower
             </h1>
             <h4>
               Dr. Kleiner, who leaked details about the lab’s relationship with
