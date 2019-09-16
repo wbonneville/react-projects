@@ -18,8 +18,11 @@ const Div = styled.div`
 const TableWrapper = styled.div`
   & h2 {
     margin-top: 15%;
-    font-size: 24px;
-    font-weight: 300;
+    font-size: 32px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: darkgray;
+    margin-bottom: 15%;
   }
 
   & .icon {
@@ -33,7 +36,7 @@ export default class Housing extends Component {
       <React.Fragment>
         <Div className="row start-xs">
           <div className=" col-xs-12">
-            <h1>Rationing and Credits</h1>
+            <h1>Administration</h1>
             <h4>September 16th, 2019</h4>
           </div>
         </Div>
