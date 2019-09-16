@@ -139,7 +139,7 @@ export default class Test extends Component {
             </StyledLink>
           </li>
           <li>
-            <StyledLink to="/apartments">
+            <StyledLink to="/housing">
               Apartments and Housing &nbsp;<i className="fas fa-angle-down"></i>
             </StyledLink>
           </li>

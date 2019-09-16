@@ -9,9 +9,10 @@ import SectionFour from "./Components/SectionFour";
 import Footer from "./Components/Footer";
 import SectionFive from "./Components/SectionFive";
 
-// Jobs
+// Pages
 
 import Jobs from "./Components/Pages/Jobs";
+import Housing from "./Components/Pages/Housing";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -36,6 +37,7 @@ function App() {
         {/* <Route path="/" exact component={SectionFour} /> */}
         <Switch>
           <Route path="/jobs" component={Jobs} />
+          <Route path="/housing" component={Housing} />
           <Route path="/" exact component={SectionFive} />
         </Switch>
         <Footer></Footer>
