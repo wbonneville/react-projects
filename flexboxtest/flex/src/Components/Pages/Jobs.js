@@ -62,7 +62,7 @@ const Featured = styled.div`
   margin-top: 1%;
 
   font-weight: 500;
-  color: purple;
+  color: #ff6666;
 `;
 
 const FeaturedJob = styled.div`

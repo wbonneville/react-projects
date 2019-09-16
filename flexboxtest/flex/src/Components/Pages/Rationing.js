@@ -5,7 +5,7 @@ const Div = styled.div`
   font-size: 23px;
   margin-left: 7%;
   margin-right: 7%;
-  margin-top: 1%;
+  margin-top: 4%;
   margin-bottom: 5%;
 
   & h4 {
@@ -16,7 +16,7 @@ const Div = styled.div`
 `;
 
 const SignUp = styled.div`
-  background-color: #005bdd;
+  background-color: #ff6666;
   color: white;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -56,7 +56,7 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  background-color: #005bdd;
+  background-color: #ff6666;
   border: 2px solid white;
   color: white;
   padding: 15px 32px;

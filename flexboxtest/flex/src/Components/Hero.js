@@ -153,11 +153,16 @@ const TwoCol = styled.div`
 
 const Box = styled.div`
   color: white;
-  background-color: black;
+  background-color: #ff6666;
   margin-left: 4%;
   padding-bottom: 1%;
   padding-top: 1%;
   margin-bottom: 6%;
+
+  & h1 {
+    font-size: 35px;
+    font-weight: 900;
+  }
 `;
 
 export default class Hero extends Component {
@@ -178,7 +183,7 @@ export default class Hero extends Component {
           </Left>
           <Right className=" col-xs-12 col-md-5">
             <Box>
-              <h1>Reviews</h1>
+              <h1>Media</h1>
             </Box>
 
             <ImageTwo></ImageTwo>

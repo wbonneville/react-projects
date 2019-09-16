@@ -12,7 +12,7 @@ const Api = styled.div`
   }
 
   & h4 {
-    color: purple;
+    color: #ff6666;
     font-size: 14px;
   }
 
