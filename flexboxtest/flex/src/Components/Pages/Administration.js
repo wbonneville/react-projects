@@ -89,6 +89,8 @@ const SectionTwo = styled.div`
     font-weight: 100;
     font-size: 24px;
     padding-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
   }
 `;
 
@@ -190,12 +192,12 @@ export default class Housing extends Component {
         <SectionTwo className="row center-xs">
           <div className="col-xs-12">
             <h1>
-              Deepfakes could anonymize people in videos while keeping their
-              personality
+              Work without laying down conditions, without expecting reward.
             </h1>
             <h4>
-              An important quantum algorithm may actually be a property of
-              nature
+              We should thank our benefactors for giving us respite from this
+              overpowering force. They have thrown a switch and exorcised our
+              demons in a single stroke.
             </h4>
             <div className="row center-xs">
               <div className="col-xs-6">
