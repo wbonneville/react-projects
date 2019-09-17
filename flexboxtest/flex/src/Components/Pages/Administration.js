@@ -80,7 +80,7 @@ const SectionTwo = styled.div`
 
   & h1 {
     color: #ff6666;
-    font-size: 60px;
+    font-size: 75px;
     font-weight: 800;
   }
 
