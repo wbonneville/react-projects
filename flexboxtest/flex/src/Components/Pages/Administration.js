@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import image1 from "../../images/half1.jpg";
-import image2 from "../../images/half3.png";
+import image2 from "../../images/testing4.jpg";
 
 const Div = styled.div`
   font-size: 23px;
@@ -87,7 +87,7 @@ const SectionTwo = styled.div`
   & h4 {
     color: #ff6666;
     font-weight: 100;
-    font-size: 24px;
+    font-size: 32px;
     padding-bottom: 10%;
     margin-right: 10%;
     margin-left: 10%;
@@ -98,16 +98,22 @@ const Image = styled.div`
   background-image: url(${image1});
   background-size: cover;
   height: 650px;
-  margin-left: -1rem;
-  margin-right: -1rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+
+  & h1 {
+    font-size: 150px;
+    color: white;
+    font-weight: 800;
+  }
 `;
 
 const ImageTwo = styled.div`
   background-image: url(${image2});
   background-size: cover;
   height: 650px;
-  margin-left: -1rem;
-  margin-right: -1rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
 `;
 
 export default class Housing extends Component {
@@ -195,13 +201,12 @@ export default class Housing extends Component {
               Work without laying down conditions, without expecting reward.
             </h1>
             <h4>
-              We should thank our benefactors for giving us respite from this
-              overpowering force. They have thrown a switch and exorcised our
-              demons in a single stroke.
+              Let us make a double harvest, one of labor and one of ideological
+              reform.
             </h4>
             <div className="row center-xs">
               <div className="col-xs-6">
-                <Image></Image>
+                <Image className="row"></Image>
               </div>
               <div className="col-xs-6">
                 <ImageTwo></ImageTwo>
