@@ -15,6 +15,7 @@ import Jobs from "./Components/Pages/Jobs";
 import Housing from "./Components/Pages/Housing";
 import Rationing from "./Components/Pages/Rationing";
 import Administration from "./Components/Pages/Administration";
+import Benefactors from "./Components/Pages/Benefactors";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Wrapping entire app in a styled component
@@ -41,6 +42,7 @@ function App() {
           <Route path="/housing" component={Housing} />
           <Route path="/rationingandcredits" component={Rationing} />
           <Route path="/administration" component={Administration} />
+          <Route path="/benefactors" component={Benefactors} />
           <Route path="/" exact component={SectionFive} />
         </Switch>
         <Footer></Footer>
