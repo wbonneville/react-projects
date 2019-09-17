@@ -133,6 +133,11 @@ export default class Test extends Component {
             </StyledLink>
           </li>
           <li>
+            <StyledLink to="/administration">
+              Administration &nbsp;<i className="fas fa-angle-down"></i>
+            </StyledLink>
+          </li>
+          <li>
             <StyledLink to="/jobs">
               {" "}
               Jobs and Positions &nbsp;<i className="fas fa-angle-down"></i>
@@ -148,11 +153,7 @@ export default class Test extends Component {
               Rationing and Credits &nbsp;<i className="fas fa-angle-down"></i>
             </StyledLink>
           </li>
-          <li>
-            <StyledLink to="/administration">
-              Administration &nbsp;<i className="fas fa-angle-down"></i>
-            </StyledLink>
-          </li>
+
           <li>
             <StyledLink to="/benefactors">
               Benefactors &nbsp;<i className="fas fa-angle-down"></i>
