@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import image from "../../images/wallhaven.jpg";
+import image1 from "../../images/half1.jpg";
+import image2 from "../../images/half3.png";
 
 const Div = styled.div`
   font-size: 23px;
@@ -79,23 +80,32 @@ const SectionTwo = styled.div`
 
   & h1 {
     color: #ff6666;
-    font-size: 45px;
+    font-size: 60px;
     font-weight: 800;
   }
 
   & h4 {
     color: #ff6666;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 24px;
     padding-bottom: 10%;
   }
 `;
 
 const Image = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
-    url(${image});
+  background-image: url(${image1});
   background-size: cover;
-  height: 500px;
+  height: 650px;
+  margin-left: -1rem;
+  margin-right: -1rem;
+`;
+
+const ImageTwo = styled.div`
+  background-image: url(${image2});
+  background-size: cover;
+  height: 650px;
+  margin-left: -1rem;
+  margin-right: -1rem;
 `;
 
 export default class Housing extends Component {
@@ -178,7 +188,7 @@ export default class Housing extends Component {
           </div>
         </TableWrapper>
         <SectionTwo className="row center-xs">
-          <div className="col-xs-8">
+          <div className="col-xs-12">
             <h1>
               Deepfakes could anonymize people in videos while keeping their
               personality
@@ -192,8 +202,7 @@ export default class Housing extends Component {
                 <Image></Image>
               </div>
               <div className="col-xs-6">
-                {" "}
-                <Image></Image>
+                <ImageTwo></ImageTwo>
               </div>
             </div>
           </div>
