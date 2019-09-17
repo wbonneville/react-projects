@@ -13,7 +13,6 @@ const Div = styled.div`
     margin-top: -2%;
   }
 `;
-
 export default class Housing extends Component {
   render() {
     return (
