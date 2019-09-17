@@ -56,7 +56,27 @@ const DivTwo = styled.div`
   }
 `;
 
-const Speeches = styled.div``;
+const Speeches = styled.div`
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 4%;
+  margin-bottom: 5%;
+  text-align: left;
+  & h1 {
+    font-size: 35px;
+  }
+  & h4 {
+    font-weight: 100;
+    margin-top: -2%;
+    width: 90%;
+  }
+`;
+
+const TitleDiv = styled.div`
+  margin-left: 7%;
+  margin-right: 7%;
+  font-size: 20px;
+`;
 
 export default class Housing extends Component {
   render() {
@@ -137,60 +157,6 @@ export default class Housing extends Component {
             </div>
           </div>
         </TableWrapper>
-        <div className="row center-xs">
-          <div className="col-xs-12">
-            <h1>Administrative Transcripts</h1>
-          </div>
-        </div>
-        <Speeches className="row center-xs">
-          <div className="col-xs-6">
-            <h1>Speech #1</h1>
-            <p>
-              Let me read a letter I recently received. "Dear Dr. Breen. Why has
-              the Combine seen fit to suppress our reproductive cycle?
-              Sincerely, A Concerned Citizen." Thank you for writing, Concerned.
-              Of course, your question touches on one of the most basic
-              biological impulses, with all its associated hopes and fears for
-              the future of the species. I also detect some unspoken questions.
-              Do our benefactors really know what's best for us? What gives them
-              the right to make this kind of decision for mankind? Will they
-              ever deactivate the suppression field and let us breed again?
-              Allow me to address the anxieties underlying your concerns, rather
-              than try to answer every possible question you might have left
-              unvoiced. First, let us consider the fact that for the first time
-              ever, as a species, immortality is in our reach. This simple fact
-              has far-reaching implications. It requires radical rethinking and
-              revision of our genetic imperatives. It also requires planning and
-              forethought that run in direct opposition to our neural pre-sets.
-              I find it helpful at times like these to remind myself that our
-              true enemy is Instinct. Instinct was our mother when we were an
-              infant species. Instinct coddled us and kept us safe in those
-              hardscrabble years when we hardened our sticks and cooked our
-              first meals above a meager fire and started at the shadows that
-              leapt upon the cavern's walls. But inseparable from Instinct is
-              its dark twin, Superstition. Instinct is inextricably bound to
-              unreasoning impulses, and today we clearly see its true nature.
-              Instinct has just become aware of its irrelevance, and like a
-              cornered beast, it will not go down without a bloody fight.
-              Instinct would inflict a fatal injury on our species. Instinct
-              creates its own oppressors, and bids us rise up against them.
-              Instinct tells us that the unknown is a threat, rather than an
-              opportunity. Instinct slyly and covertly compels us away from
-              change and progress. Instinct, therefore, must be expunged. It
-              must be fought tooth and nail, beginning with the basest of human
-              urges: The urge to reproduce. We should thank our benefactors for
-              giving us respite from this overpowering force. They have thrown a
-              switch and exorcised our demons in a single stroke. They have
-              given us the strength we never could have summoned to overcome
-              this compulsion. They have given us purpose. They have turned our
-              eyes toward the stars. Let me assure you that the suppressing
-              field will be shut off on the day that we have mastered
-              ourselves...the day we can prove we no longer need it. And that
-              day of transformation, I have it on good authority, is close at
-              hand.
-            </p>
-          </div>
-        </Speeches>
       </React.Fragment>
     );
   }
