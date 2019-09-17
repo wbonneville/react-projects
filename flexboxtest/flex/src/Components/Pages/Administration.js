@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import image from "../../images/wallhaven.jpg";
 
 const Div = styled.div`
   font-size: 23px;
@@ -72,10 +73,29 @@ const Speeches = styled.div`
   }
 `;
 
-const TitleDiv = styled.div`
-  margin-left: 7%;
-  margin-right: 7%;
-  font-size: 20px;
+const SectionTwo = styled.div`
+  background-color: #f6f6f6;
+  padding-top: 10%;
+
+  & h1 {
+    color: #ff6666;
+    font-size: 45px;
+    font-weight: 800;
+  }
+
+  & h4 {
+    color: #ff6666;
+    font-weight: 100;
+    font-size: 20px;
+    padding-bottom: 10%;
+  }
+`;
+
+const Image = styled.div`
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url(${image});
+  background-size: cover;
+  height: 500px;
 `;
 
 export default class Housing extends Component {
@@ -157,6 +177,27 @@ export default class Housing extends Component {
             </div>
           </div>
         </TableWrapper>
+        <SectionTwo className="row center-xs">
+          <div className="col-xs-8">
+            <h1>
+              Deepfakes could anonymize people in videos while keeping their
+              personality
+            </h1>
+            <h4>
+              An important quantum algorithm may actually be a property of
+              nature
+            </h4>
+            <div className="row center-xs">
+              <div className="col-xs-6">
+                <Image></Image>
+              </div>
+              <div className="col-xs-6">
+                {" "}
+                <Image></Image>
+              </div>
+            </div>
+          </div>
+        </SectionTwo>
       </React.Fragment>
     );
   }
