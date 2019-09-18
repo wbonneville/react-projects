@@ -48,10 +48,16 @@ const Div = styled.div`
 `;
 
 const Breaker = styled.div`
-  background-color: #ff6666;
+  background-color: #272727;
   height: 200px;
   margin-top: 6%;
   margin-bottom: 6%;
+
+  & h1 {
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
+  }
 `;
 
 const People = styled.div``;
@@ -76,12 +82,23 @@ const Anon = styled.div`
 
 const PeopleInfoOne = styled.div`
   margin-bottom: 5%;
+
+  & h1 {
+    font-size: 20px;
+    font-weight: 100;
+    color: #272727;
+  }
 `;
 
 const PeopleInfoTwo = styled.div`
   padding-bottom: 5%;
   margin-right: 12rem;
   margin-left: 12rem;
+  & h1 {
+    font-size: 20px;
+    font-weight: 100;
+    color: #272727;
+  }
 `;
 
 export default class Transportation extends Component {
@@ -187,7 +204,9 @@ export default class Transportation extends Component {
               </p>
             </div>
           </Div>
-          <Breaker className="row"></Breaker>
+          <Breaker className="row center-xs middle-xs">
+            <h1> Transportation Committee</h1>
+          </Breaker>
 
           <People className="row center-xs">
             <Person className="col-xs-3">
@@ -206,16 +225,16 @@ export default class Transportation extends Component {
           </People>
           <PeopleInfoOne className="row center-xs">
             <div className="col-xs-3">
-              <h1>Yeah</h1>
+              <h1>Artois Somerset</h1>
             </div>
             <div className="col-xs-3">
-              <h1>Yeah</h1>
+              <h1>Morocco Exeter</h1>
             </div>
             <div className="col-xs-3">
-              <h1>Yeah</h1>
+              <h1>Ratcliffe Troilus</h1>
             </div>
             <div className="col-xs-3">
-              <h1>Yeah</h1>
+              <h1>Egeon Catling</h1>
             </div>
           </PeopleInfoOne>
           <PeopleTwo className="row center-xs">
@@ -231,13 +250,13 @@ export default class Transportation extends Component {
           </PeopleTwo>
           <PeopleInfoTwo className="row center-xs">
             <div className="col-xs-4">
-              <h1>Yeah</h1>
+              <h1>Dumaine Brutus</h1>
             </div>
             <div className="col-xs-4">
-              <h1>Yeah</h1>
+              <h1>Quince Basho</h1>
             </div>
             <div className="col-xs-4">
-              <h1>Yeah</h1>
+              <h1>Antonio Rivers</h1>
             </div>
           </PeopleInfoTwo>
         </Container>
