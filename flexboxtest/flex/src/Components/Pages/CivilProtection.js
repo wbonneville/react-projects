@@ -108,97 +108,41 @@ export default class Housing extends Component {
             for self-insurance too.
           </p>
 
-          <h1>We've Been Given Tools</h1>
+          <h1>Managing AI</h1>
           <h4>September 16th, 2019</h4>
           <p>
-            AI can automate conversations, detect emotions, recognize objects,
-            target advertising, and adapt its use to changing conditions and
-            situations. In 2021, it could replace part of the workforce, freeing
-            up humans for other activities. Most important, many will predict
-            the gradual inevitability of having machines do our jobs. Large and
-            experienced data scientists, who tend to have senior management
-            backing, will probably be early beneficiaries of AI-driven change.
-            Then there will be farmers, salespeople, lawyers, analysts, and
-            journalists who can use automation for routine tasks while
-            outsourcing work that requires creativity. Likewise, many retail
-            employees — it would appear even the supermarket cashier — will need
-            a new role. At the current stage of development, scientists are not
-            aware of the resulting effects on the labor markets. The goal is to
-            stay ahead of them, or, at least, to keep a good sense of the
-            situation. This kind of uncertainty about the consequences of
-            algorithmic change is a hallmark of life in new technologies. The
-            researchers and entrepreneurs involved are forced to make
-            assumptions about whether they can influence the future state of AI
-            at their level, and they have a fiduciary duty to tell it like it
-            is.
+            Our Civil Protection person, myself, and his team have been having
+            this discussion a lot lately, and people are interested, especially
+            with the recent construction of the security cams across Towns and
+            the new defense installations, for example: Shouldn’t we use new
+            technologies, like artificial intelligence, to help our people, and
+            not to control them?
             <br></br>
             <br></br>
-            That’s an unusual situation in human enterprises. It’s now obvious
-            to anyone who has ever followed emerging trends in human cultures
-            that uprisings such as the French Revolution, the American
-            Revolution, the Russian Revolution, the Russian Revolution, and the
-            Chinese Revolution were not the result of information and technology
-            that simply revealed previously undisclosed truths to the populace.
+            In other words, AI wants to say, “Hello! All the people of this
+            country are our problem. Could we stop them from harming each
+            other?” As a civil protection manager you have a clear
+            responsibility to ensure safety. I believe that it would make sense
+            to look at AI for civil protection against major emergencies in
+            order to adapt the system and build a stronger relationship with our
+            public, perhaps including an AI CPO, perhaps a GP, maybe even an AI
+            central command center where we can deploy our resources more
+            efficiently and effectively.
             <br></br>
             <br></br>
-            Instead, massive upheaval resulted from people seeing that things
-            had changed — and needed to change. This is what’s called “social
-            unrest.” The Oxford Econometric Model (OEM) is a major and
-            sophisticated (for now) scholarly research tool that most economists
-            use to help make predictions about what will happen in the future.
-            It arrives at the useful conclusion that within a decades,
-            automation of routine jobs will make large numbers of workers move
-            from the job market into unskilled service jobs — also, and
-            unsurprisingly, far less desirable. It assumes that the workers in
-            the service jobs have similar skills and that the economy will grow
-            in these high-skilled “creative” occupations. It also indicates that
-            with the ongoing expansion of robotics and AI, there is a distinct
-            possibility that the labor market will become saturated with this
-            new type of service occupation — essentially robot jobs.
-          </p>
-          <h1>AI and the Combine</h1>
-          <h4>September 1st, 2019</h4>
-          <p>
-            I think those who say the Internet will take over all economic and
-            governmental functions miss a crucial point. While City 17 has
-            succeeded in creating software that’s more intelligent than humans,
-            it’s not necessarily adapting to the age in which humans live. Human
-            intelligence, at least our working intelligence, must include
-            natural speech and body language, and while some programming and
-            coding might have improved over time, what’s called the “human
-            element” remains.
-            <br></br>
-            <br></br>
-            That’s a part of the challenge the next wave of artificial
-            intelligence will face. Because humans have no engine of choice to
-            inform them of what’s going on, they rely on biases and gut instinct
-            to guide their decision-making. Unfortunately, this leaves humanity
-            vulnerable to woefully inaccurate decisions, indiscriminate bias,
-            and silly decisions. So far, AI can’t replace the sensibility and
-            intuition of human decision-makers — but some research suggests it
-            can make less reasoned decisions, based on implicit bias and
-            stereotypes that reflect human nature.
-            <br></br>
-            <br></br>
-            In March 2018, three researchers, led by Micah Sifry, published
-            research about systems in China that seemed to consistently endorse
-            results that were inconsistent with what the participants had said.
-            The study was a naturalistic experiment, meant to illustrate the
-            problems inherent in artificial intelligence. If we cannot make
-            intelligent systems that develop without bias, we can’t make
-            intelligent systems that act in the public interest. We are racing
-            toward a horizon of real AI technology that could have a dramatic
-            impact on the world. AI has the power to revolutionize everything
-            from the economy to society. The impact of AI could be like the IT
-            revolution.
-            <br></br>
-            <br></br>
-            Just as it revolutionized the economy by providing more efficient
-            ways to run machines, so can it change government operations by
-            providing more efficient ways to govern. The problem is, the time to
-            get smart is before “humans are too dumb to use it.” It’s not about
-            machines replacing humans. It’s about machines making better
-            choices.
+            These ideas have been drawn up for the first time, with the help of
+            ECITiap. We will try to find the best way to optimize our workforce
+            to meet the new demands that are coming. I think that it is very
+            important to know that, at this stage, we do not know yet how or
+            whether to use AI, whether we will have a central command center
+            with AI or only automatically detecting fires and floods, or an AI
+            following the instructions of any of our government ministers, or
+            anything else. We really need to open up new possibilities for all
+            our civil protection work, without trying to control people. As a
+            manager, it is important to know all our human resources and see how
+            we can best organize them to achieve the objectives. This will allow
+            us to increase efficiency and enhance safety and to improve how we
+            deal with people and communities.
           </p>
         </div>
       </Div>
