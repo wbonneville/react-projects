@@ -108,7 +108,7 @@ export default class Housing extends Component {
             for self-insurance too.
           </p>
 
-          <h1>Managing AI</h1>
+          <h1>Managing AI and Using Safety</h1>
           <h4>September 16th, 2019</h4>
           <p>
             Our Civil Protection person, myself, and his team have been having
