@@ -46,6 +46,14 @@ const Div = styled.div`
   }
 `;
 
+const Breaker = styled.div`
+  background-color: white;
+  height: 200px;
+  border: 2px solid #272727;
+`;
+
+const SectionTwo = styled.div``;
+
 export default class Transportation extends Component {
   render() {
     return (
@@ -144,6 +152,12 @@ export default class Transportation extends Component {
             </p>
           </div>
         </Div>
+        <Breaker className="row"></Breaker>
+        <SectionTwo>
+          <div className="row">
+            <div className="col-xs-12">People</div>
+          </div>
+        </SectionTwo>
       </Container>
     );
   }
