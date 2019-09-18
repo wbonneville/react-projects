@@ -88,6 +88,11 @@ const PeopleInfoOne = styled.div`
     font-weight: 100;
     color: #272727;
   }
+  & h4 {
+    font-size: 15px;
+    font-weight: 100;
+    color: #272727;
+  }
 `;
 
 const PeopleInfoTwo = styled.div`
@@ -96,6 +101,11 @@ const PeopleInfoTwo = styled.div`
   margin-left: 12rem;
   & h1 {
     font-size: 20px;
+    font-weight: 100;
+    color: #272727;
+  }
+  & h4 {
+    font-size: 15px;
     font-weight: 100;
     color: #272727;
   }
@@ -226,15 +236,24 @@ export default class Transportation extends Component {
           <PeopleInfoOne className="row center-xs">
             <div className="col-xs-3">
               <h1>Artois Somerset</h1>
+              <h4>EVP of R&D and Chief Product Officer, G-Wave</h4>
             </div>
             <div className="col-xs-3">
               <h1>Morocco Exeter</h1>
+              <h4>President, RSA</h4>
             </div>
             <div className="col-xs-3">
               <h1>Ratcliffe Troilus</h1>
+              <h4>
+                Senior Director of Product Management, Compute & MS
+                Infrastructure, Citadel Cloud
+              </h4>
             </div>
             <div className="col-xs-3">
               <h1>Egeon Catling</h1>
+              <h4>
+                Corporate Vice President and Head of Advanced Research, CCP
+              </h4>
             </div>
           </PeopleInfoOne>
           <PeopleTwo className="row center-xs">
@@ -251,12 +270,17 @@ export default class Transportation extends Component {
           <PeopleInfoTwo className="row center-xs">
             <div className="col-xs-4">
               <h1>Dumaine Brutus</h1>
+              <h4>CEO and Cofounder, Citadel Cloud Technologies</h4>
             </div>
             <div className="col-xs-4">
               <h1>Quince Basho</h1>
+              <h4>
+                Principal Investigator, Engineering Quantum Systems Group, MIT
+              </h4>
             </div>
             <div className="col-xs-4">
               <h1>Antonio Rivers</h1>
+              <h4>Research Scientist, City 17 Heights National Laboratory</h4>
             </div>
           </PeopleInfoTwo>
         </Container>

@@ -144,8 +144,8 @@ export default class Test extends Component {
             </StyledLink>
           </li>
           <li>
-            <StyledLink to="/housing">
-              Apartments and Housing &nbsp;<i className="fas fa-angle-down"></i>
+            <StyledLink to="/transportation">
+              Transportation &nbsp;<i className="fas fa-angle-down"></i>
             </StyledLink>
           </li>
           <li>
@@ -153,7 +153,11 @@ export default class Test extends Component {
               Rationing and Credits &nbsp;<i className="fas fa-angle-down"></i>
             </StyledLink>
           </li>
-
+          <li>
+            <StyledLink to="/housing">
+              Apartments and Housing &nbsp;<i className="fas fa-angle-down"></i>
+            </StyledLink>
+          </li>
           <li>
             <StyledLink to="/benefactors">
               Benefactors &nbsp;<i className="fas fa-angle-down"></i>
@@ -162,11 +166,6 @@ export default class Test extends Component {
           <li>
             <StyledLink to="/civilprotection">
               Civil Protection &nbsp;<i className="fas fa-angle-down"></i>
-            </StyledLink>
-          </li>
-          <li>
-            <StyledLink to="/transportation">
-              Transportation &nbsp;<i className="fas fa-angle-down"></i>
             </StyledLink>
           </li>
         </StyledUlTwo>
