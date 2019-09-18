@@ -1,8 +1,16 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import gif from "../../images/city2.jpg";
+import anon from "../../images/anon.png";
 const Container = styled.div`
   background-color: #e9e9e9;
+`;
+
+const Anon = styled.div`
+  background-image: url(${anon});
+  background-size: cover;
+  height: 300px;
+  border-radius: 50%;
 `;
 
 const Gif = styled.div`
@@ -49,7 +57,6 @@ const Div = styled.div`
 const Breaker = styled.div`
   background-color: white;
   height: 200px;
-  border: 2px solid #272727;
 `;
 
 const SectionTwo = styled.div``;
@@ -156,6 +163,11 @@ export default class Transportation extends Component {
         <SectionTwo>
           <div className="row">
             <div className="col-xs-12">People</div>
+          </div>
+          <div className="row center-xs">
+            <div className="col-xs-3">
+              <Anon></Anon>
+            </div>
           </div>
         </SectionTwo>
       </Container>
