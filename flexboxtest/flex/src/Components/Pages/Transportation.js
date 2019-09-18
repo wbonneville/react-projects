@@ -9,7 +9,8 @@ const Container = styled.div`
 const Anon = styled.div`
   background-image: url(${anon});
   background-size: cover;
-  height: 300px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
 `;
 
@@ -165,6 +166,26 @@ export default class Transportation extends Component {
             <div className="col-xs-12">People</div>
           </div>
           <div className="row center-xs">
+            <div className="col-xs-3">
+              <Anon></Anon>
+            </div>
+            <div className="col-xs-3">
+              <Anon></Anon>
+            </div>
+            <div className="col-xs-3">
+              <Anon></Anon>
+            </div>
+            <div className="col-xs-3">
+              <Anon></Anon>
+            </div>
+          </div>
+          <div className="row center-xs">
+            <div className="col-xs-3">
+              <Anon></Anon>
+            </div>
+            <div className="col-xs-3">
+              <Anon></Anon>
+            </div>
             <div className="col-xs-3">
               <Anon></Anon>
             </div>
