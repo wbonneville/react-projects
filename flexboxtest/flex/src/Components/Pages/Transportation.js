@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import gif from "../../images/city2.jpg";
+import gif from "../../images/download.gif";
 import anon from "../../images/anon.png";
 const Container = styled.div`
   background-color: #e9e9e9;
@@ -56,7 +56,10 @@ const Breaker = styled.div`
 
 const People = styled.div``;
 
-const PeopleTwo = styled.div``;
+const PeopleTwo = styled.div`
+  margin-right: 12rem;
+  margin-left: 12rem;
+`;
 
 const Person = styled.div`
   display: flex;
@@ -77,6 +80,8 @@ const PeopleInfoOne = styled.div`
 
 const PeopleInfoTwo = styled.div`
   padding-bottom: 5%;
+  margin-right: 12rem;
+  margin-left: 12rem;
 `;
 
 export default class Transportation extends Component {
