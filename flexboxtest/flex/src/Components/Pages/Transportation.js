@@ -6,27 +6,6 @@ const Container = styled.div`
   background-color: #e9e9e9;
 `;
 
-const People = styled.div`
-  margin-bottom: 6%;
-`;
-
-const PeopleTwo = styled.div`
-  margin-bottom: 6%;
-`;
-
-const Person = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-const Anon = styled.div`
-  background-image: url(${anon});
-  background-size: cover;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  background-color: white;
-`;
-
 const Gif = styled.div`
   background-image: url(${gif});
   background-size: cover;
@@ -73,6 +52,31 @@ const Breaker = styled.div`
   height: 200px;
   margin-top: 6%;
   margin-bottom: 6%;
+`;
+
+const People = styled.div``;
+
+const PeopleTwo = styled.div``;
+
+const Person = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+const Anon = styled.div`
+  background-image: url(${anon});
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: white;
+`;
+
+const PeopleInfoOne = styled.div`
+  margin-bottom: 5%;
+`;
+
+const PeopleInfoTwo = styled.div`
+  padding-bottom: 5%;
 `;
 
 export default class Transportation extends Component {
@@ -179,10 +183,12 @@ export default class Transportation extends Component {
             </div>
           </Div>
           <Breaker className="row"></Breaker>
+
           <People className="row center-xs">
             <Person className="col-xs-3">
               <Anon></Anon>
             </Person>
+
             <Person className="col-xs-3">
               <Anon></Anon>
             </Person>
@@ -193,6 +199,20 @@ export default class Transportation extends Component {
               <Anon></Anon>
             </Person>
           </People>
+          <PeopleInfoOne className="row center-xs">
+            <div className="col-xs-3">
+              <h1>Yeah</h1>
+            </div>
+            <div className="col-xs-3">
+              <h1>Yeah</h1>
+            </div>
+            <div className="col-xs-3">
+              <h1>Yeah</h1>
+            </div>
+            <div className="col-xs-3">
+              <h1>Yeah</h1>
+            </div>
+          </PeopleInfoOne>
           <PeopleTwo className="row center-xs">
             <Person className="col-xs-4">
               <Anon></Anon>
@@ -204,6 +224,17 @@ export default class Transportation extends Component {
               <Anon></Anon>
             </Person>
           </PeopleTwo>
+          <PeopleInfoTwo className="row center-xs">
+            <div className="col-xs-4">
+              <h1>Yeah</h1>
+            </div>
+            <div className="col-xs-4">
+              <h1>Yeah</h1>
+            </div>
+            <div className="col-xs-4">
+              <h1>Yeah</h1>
+            </div>
+          </PeopleInfoTwo>
         </Container>
       </React.Fragment>
     );
