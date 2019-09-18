@@ -150,22 +150,24 @@ export default class Test extends Component {
           </li>
           <li>
             <StyledLink to="/rationingandcredits">
-              Rationing and Credits &nbsp;<i className="fas fa-angle-down"></i>
+              On Rationing and Credits &nbsp;
+              <i className="fas fa-angle-down"></i>
             </StyledLink>
           </li>
           <li>
             <StyledLink to="/housing">
-              Apartments and Housing &nbsp;<i className="fas fa-angle-down"></i>
+              On Apartments and Housing &nbsp;
+              <i className="fas fa-angle-down"></i>
             </StyledLink>
           </li>
           <li>
             <StyledLink to="/benefactors">
-              Benefactors &nbsp;<i className="fas fa-angle-down"></i>
+              On Benefactors &nbsp;<i className="fas fa-angle-down"></i>
             </StyledLink>
           </li>
           <li>
             <StyledLink to="/civilprotection">
-              Civil Protection &nbsp;<i className="fas fa-angle-down"></i>
+              On Civil Protection &nbsp;<i className="fas fa-angle-down"></i>
             </StyledLink>
           </li>
         </StyledUlTwo>

@@ -27,110 +27,87 @@ export default class Housing extends Component {
         <div className="col-xs-10">
           <h1 className="bigh1">Messages from our Benefactors</h1>
 
-          <h1>City Data and Philosophy</h1>
+          <h1>On Civil Protection</h1>
 
           <h4>September 16th, 2019</h4>
           <p>
-            We’ve checked out your predictions for this year’s City Data
-            Portfolio survey, and of course we’ve mixed our own predictions with
-            theirs. Some were bad. Things are looking up in the world of data,
-            in fact. The annual survey has traditionally forecast where economic
-            growth, population growth, job creation and the like are headed. And
-            while this year we predict “roughly flat GDP growth,” and some of
-            the population growth is “under-estimating the rate of increase,”
-            we’re expecting population increases of more than 2 percent. This is
-            likely to result in many new people, jobs and startups in City 17.
-            We’ve added new questions about top concerns to make it more
-            interactive this year, and just a sampling: Will home prices reach
-            or exceed the all-time high of $113,625, adjusted for inflation?
-            Will you expect the median price of a home to reach or exceed the
-            all-time high of $135,000? Will jobs be described as “steady” or
-            “dynamic”? Will the unemployment rate be described as “unusually
-            low” or “unexpectedly high”? Will business owners be described as
-            “lucky” or “job creators”? Remember to check back in August. We’ll
-            have a comprehensive economic forecast for the entire area of City
-            17, and if we’re correct, this will be the best forecast in five
-            years!
+            Some people think that artificial intelligence, particularly machine
+            learning, has the potential to solve major problems such as
+            unemployment, as well as to save lives, with health care, medical
+            imaging, even traffic safety. Algorithms will spare us from a great
+            many decisions that would otherwise have to be made. In addition,
+            all sorts of things, from politics to social policy, will be made
+            more efficient by artificial intelligence. But the downside of AI is
+            even bigger: In addition to shrinking available jobs, AI will
+            probably increase inequality in many countries, and enrich the
+            already wealthy at the expense of the rest of us.
+            <br></br>
+            <br></br>
+            It is a question, then, about whether certain types of AI will work
+            well, whether they should work well, and how to prevent them from
+            working well. One way to do that is to think about AI from the
+            perspective of a great many people: the fully developed human mind.
+            Let’s take a couple of cases. In the first case, there is a
+            self-driving car. In the second case, there is a direct assault on
+            the human brain, and probably other kinds of technology that make
+            physical things too expensive to use for the same purpose. Based on
+            the past century of experience with things like driverless cars,
+            machines will learn more and more sophisticated functions. The
+            brain, then, has a huge head start in knowing what types of tasks
+            are valuable and what types are not, and in figuring out the best
+            way to carry out those tasks — the well-suited, efficient way.
+            <br></br>
+            <br></br>
+            The future of this industry is going to be determined by human
+            competency. We can think about what we do well: It’s not work that
+            we simply decide to do — it’s work that requires specific skills and
+            abilities, like reading, like reading, like reading, like reading. A
+            fully developed human mind, the type that the new generation of
+            machines should be trying to emulate, can understand this
+            relationship, and so may be able to tell the difference between
+            expensive and cheap task types, and between tasks and things. In the
+            case of self-driving cars, they could copy the intuitive and
+            systematic structure of a fully developed human mind.
+            <br></br>
+            <br></br>
+            But they might not, since, as they learn to perform tasks, they
+            might develop error rates that are too high, or too low, for their
+            purely robotic intelligence to pick up — perhaps in large part
+            because of the nature of the tasks they are trying to do. This could
+            have serious consequences. We might ask ourselves whether such a
+            situation will be tolerable. Human beings, in many ways, and
+            especially in terms of personal health care, have long lived with
+            serious health problems, sometimes life-threatening ones. Could we
+            live that way if we relied only on machines for everything? In some
+            cases, we probably could, but it would be sad. There are, however,
+            situations in which human competency is of less use to machines,
+            because even the human brain is not absolutely flawless. For
+            example, we can only identify trouble with the eye very well if we
+            have good vision.
+            <br></br>
+            <br></br>
+            There is a huge gulf between what robots can do and what the human
+            mind can do, for any number of reasons. That leads to a second
+            problem, which I’ll call “distortions.” In the world of science
+            fiction, these can be deadly, often reducing whole populations to
+            disaster. In other cases, they are more prosaic — like the use of AI
+            by dictators to suppress political movements. I’m not really worried
+            about the development of distorting devices. Distortions happen in
+            any human or machine context, but at the moment only governments and
+            journalists are interested in developing them, because that’s where
+            their sources of data are. But it’s an open question whether there
+            is as yet nothing terribly distorting about digital technologies.
+            And once again, much of the world will be closely watching the US.
+            <br></br>
+            <br></br>
+            The US is a major researcher and developer of AI — but we are not
+            quite there yet, so we don’t have the experience of living with
+            distortions. So when, some day, those distortions appear, they could
+            show us how dangerous — or how useful — distorting technology can
+            be. In other words, we need to be watchful, but there should be room
+            for self-insurance too.
           </p>
-          <p>
-            This is the 26th article in a series exploring how AI, robotics, and
-            emerging technology will influence virtually every aspect of
-            society. Each article is from a list that appeared recently in the
-            magazine Mythic. At first glance, Philosophy appears to be a rather
-            trivial discipline. Philosophy is not, in fact, entirely trivial.
-            <br></br>
-            <br></br>
-            Philosophy seems to be so easy to understand and so transcendent in
-            its importance that we take it for granted. And, to be fair, given
-            that humanity is plagued by many social and moral problems in each
-            generation, we could perhaps blame an imagined collapse of
-            intellectual complexity on a loss of consciousness or
-            self-knowledge. Nevertheless, to consider Philosophy a mere subset
-            of philosophy is to render it wholly moribund. The philosophical
-            schism of the first half of the 20th century largely divided its
-            practitioners into two camps. What became known as the “Protestant
-            Movement” espoused a broadly philosophical and humane view of human
-            nature, while the movements to be associated with Karl Marx, Joseph
-            Stalin, and Mao Zedong, sometimes collectively called “the Communist
-            Movement,” mostly espoused an anti-humanist and darkly inquisitive
-            idea of humanity.
-            <br></br>
-            <br></br>
-            In order to evaluate the wisdom of these predictions, it is helpful
-            to recognize that ideological ideologies are adept at dissipating
-            new information. To truly grasp how simple or complicated the
-            presuppositions and opinions of each group were, it is necessary to
-            consider a diverse array of methods used to measure their
-            effectiveness, which can be summarized by a putatively unified
-            ideology being defined by topsy-turvy ideas. The basic idea is, the
-            higher up in a society one starts to go with one’s conceptual
-            system, the less pure and individual they become. Ultimately,
-            philosophy is a philosophical philosophy. This means that it is to
-            the good of society to have as many people engaged in it as
-            possible. Any good that the Soviet Union could have claimed to do
-            led not only to economic and cultural progress, but also to the
-            wholesale extermination of nearly 70 million citizens. In the
-            absence of the ideology of communism or atheism, in the absence of
-            the economics, business, and other specific domains that have been
-            integrated into communism, the opposite of science happens.
-            <br></br>
-            <br></br>
-            Science comes to be characterized by anthropocentric moral
-            grandiosity and pessimism, triumphalism and arrogance, and
-            uniformity and monoculture. In the absence of philosophy, society
-            will come to be characterized by mechanistic socialization and
-            formalization, elitism and centralization, irreligion and atheism,
-            religious fanatics and atheistic priests, robot revolutionaries and
-            totalitarianism. It is entirely possible that, given the current
-            political and economic rhetoric, it is largely unfathomable that
-            under the banner of socialism, science has its most interesting
-            phase.
-            <br></br>
-            <br></br>
-            The challenge before us is to develop empirically demonstrable
-            philosophies. AI, robotics, and emerging technology is like watching
-            your fingernails start to grow. Few ideologies can last for very
-            long under the strain that is placed upon them by rapidly evolving
-            technology. Through trial and error, philosophy can, just might, be
-            propelled into fresh life. Eventually, philosophy may again lose its
-            place in the public eye. But, it should be noted, philosophy is no
-            enemy of the majority. It is not everything, and it is not something
-            else. Without such a philosophy, the majority may lose its sanity
-            and become wretches and then wretches on. The challenge before us is
-            to develop empirically demonstrable philosophies that can guide us
-            through an increasingly difficult future, whether through
-            philosophical clarity or similar artistic beautifications of
-            humankind’s ability to reason and learn.
-            <br></br>
-            <br></br>
-            If philosophy fails to stand the test of time, it is entirely
-            plausible that this fact will ultimately lead to the exclusion of
-            philosophical disciplines and, finally, the absolute extinction of
-            philosophy. Philosophy is a terrible thing to contemplate. And while
-            such thought creates a hardship, it may be required to protect the
-            soul and free-thinkers from over-arching ideologies that have
-            co-opted their minds.
-          </p>
+
           <h1>We've Been Given Tools</h1>
           <h4>September 16th, 2019</h4>
           <p>
