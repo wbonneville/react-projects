@@ -6,9 +6,13 @@ const Container = styled.div`
   background-color: #e9e9e9;
 `;
 
-const People = styled.div``;
+const People = styled.div`
+  margin-bottom: 6%;
+`;
 
-const PeopleTwo = styled.div``;
+const PeopleTwo = styled.div`
+  margin-bottom: 6%;
+`;
 
 const Person = styled.div`
   display: flex;
@@ -20,6 +24,7 @@ const Anon = styled.div`
   height: 200px;
   width: 200px;
   border-radius: 50%;
+  background-color: white;
 `;
 
 const Gif = styled.div`
@@ -64,8 +69,10 @@ const Div = styled.div`
 `;
 
 const Breaker = styled.div`
-  background-color: white;
+  background-color: #ff6666;
   height: 200px;
+  margin-top: 6%;
+  margin-bottom: 6%;
 `;
 
 export default class Transportation extends Component {
@@ -172,32 +179,32 @@ export default class Transportation extends Component {
             </div>
           </Div>
           <Breaker className="row"></Breaker>
+          <People className="row center-xs">
+            <Person className="col-xs-3">
+              <Anon></Anon>
+            </Person>
+            <Person className="col-xs-3">
+              <Anon></Anon>
+            </Person>
+            <Person className="col-xs-3">
+              <Anon></Anon>
+            </Person>
+            <Person className="col-xs-3">
+              <Anon></Anon>
+            </Person>
+          </People>
+          <PeopleTwo className="row center-xs">
+            <Person className="col-xs-4">
+              <Anon></Anon>
+            </Person>
+            <Person className="col-xs-4">
+              <Anon></Anon>
+            </Person>
+            <Person className="col-xs-4">
+              <Anon></Anon>
+            </Person>
+          </PeopleTwo>
         </Container>
-        <People className="row center-xs">
-          <Person className="col-xs-3">
-            <Anon></Anon>
-          </Person>
-          <Person className="col-xs-3">
-            <Anon></Anon>
-          </Person>
-          <Person className="col-xs-3">
-            <Anon></Anon>
-          </Person>
-          <Person className="col-xs-3">
-            <Anon></Anon>
-          </Person>
-        </People>
-        <PeopleTwo className="row center-xs">
-          <Person className="col-xs-4">
-            <Anon></Anon>
-          </Person>
-          <Person className="col-xs-4">
-            <Anon></Anon>
-          </Person>
-          <Person className="col-xs-4">
-            <Anon></Anon>
-          </Person>
-        </PeopleTwo>
       </React.Fragment>
     );
   }
