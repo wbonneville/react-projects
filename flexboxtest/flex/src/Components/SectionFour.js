@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import image1 from "../images/factory.jpeg";
 import image2 from "../images/factory2.png";
-import image3 from "../images/qab.png";
-import image4 from "../images/splash.jpg";
+// import image3 from "../images/qab.png";
+// import image4 from "../images/splash.jpg";
 
 const SectionWrapper = styled.div`
   background-color: white;
@@ -82,30 +82,28 @@ const ImageTwo = styled.div`
   margin-left: 8rem;
 `;
 
-const ImageThree = styled.div`
-  background-image: url(${image3});
-  background-size: cover;
-  height: 150px;
-  margin-top: 10%;
-  margin-bottom: 10%;
-`;
+// const ImageThree = styled.div`
+//   background-image: url(${image3});
+//   background-size: cover;
+//   height: 150px;
+//   margin-top: 10%;
+//   margin-bottom: 10%;
+// `;
 
-const ImageFour = styled.div`
-  background-image: url(${image4});
-  background-size: cover;
-  height: 700px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-`;
+// const ImageFour = styled.div`
+//   background-image: url(${image4});
+//   background-size: cover;
+//   height: 700px;
+//   margin-top: 5%;
+//   margin-bottom: 5%;
+// `;
 
 export default class NewSection extends Component {
   render() {
     return (
       <SectionWrapper>
         <div className="row center-xs">
-          <div className="col-xs-11">
-            <ImageThree></ImageThree>
-          </div>
+          <div className="col-xs-11">{/* <ImageThree></ImageThree> */}</div>
         </div>
 
         <div className="row center-xs">

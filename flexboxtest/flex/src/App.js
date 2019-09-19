@@ -1,11 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-
 import Hero from "./Components/Hero";
-import Test from "./Components/Test";
-// import SectionTwo from "./Components/SectionTwo";
+import Navbar from "./Components/Navbar";
 import SectionThree from "./Components/SectionThree";
-import SectionFour from "./Components/SectionFour";
 import Footer from "./Components/Footer";
 import SectionFive from "./Components/SectionFive";
 
@@ -21,11 +18,8 @@ import Transportation from "./Components/Pages/Transportation";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Wrapping entire app in a styled component
-// Hacky?
-
 const AppWrapper = styled.div`
   max-width: 3000px;
-
   overflow-x: hidden;
 `;
 
@@ -33,11 +27,9 @@ function App() {
   return (
     <AppWrapper>
       <Router>
-        <Test></Test>
+        <Navbar></Navbar>
         <Route path="/" exact component={Hero} />
-        {/* <Route path="/" exact component={SectionTwo} /> */}
         <Route path="/" exact component={SectionThree} />
-        {/* <Route path="/" exact component={SectionFour} /> */}
         <Switch>
           <Route path="/jobs" component={Jobs} />
           <Route path="/housing" component={Housing} />

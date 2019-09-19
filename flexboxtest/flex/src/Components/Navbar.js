@@ -1,35 +1,56 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-const StyledNav = styled.div`
-  font-family: "Futura";
+const HeaderWrapper = styled.header`
+  background-color: black;
+  align-items: center;
+  text-align: center;
 `;
 
 const StyledUl = styled.ul`
   color: white;
   display: flex;
   list-style-type: none;
-  background: rgb(46, 58, 80);
 
-  opacity: 0.99;
-  font-family: "Roboto";
   align-items: center;
-  font-family: "Futura";
+
+  /* font-family: 'Playfair Display', serif;
+font-family: 'Heebo', sans-serif;
+font-family: 'Saira Extra Condensed', sans-serif;
+font-family: 'Questrial', sans-serif;
+font-family: 'Maven Pro', sans-serif;
+font-family: 'Cinzel', serif; */
+
+  & h1 {
+    font-size: 34px;
+    margin-left: -5px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 900;
+    font-family: "Heebo";
+
+    & span {
+    }
+  }
 
   & li {
     font-size: 15px;
     margin-right: 0.2em;
     padding: 15px 5px;
+    text-decoration: none;
   }
 
-  & .special {
-    font-size: 24px;
+  & .mao {
+    font-size: 20px;
+    margin-right: 1rem;
   }
 
   @media all and (max-width: 160px) {
     & li {
       font-size: 14px;
       flex: 1;
+      text-align: center;
     }
 
     & .special {
@@ -52,20 +73,23 @@ const StyledUl = styled.ul`
 `;
 
 const StyledUlTwo = styled(StyledUl)`
-  margin-top: -1rem;
-  background: #f5f5f5;
-  color: black;
+  background-color: #f6f6f6;
+  margin-top: -0.4rem;
+  margin-bottom: 1px;
 
   & li {
     margin-left: 0.5em;
     margin-right: 0.5em;
-    font-size: 12px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
     opacity: 0.6;
   }
 
   @media all and (max-width: 300px) {
     flex-wrap: wrap;
-    text-align:center & li {
+    text-align: center;
+    & li {
       flex-basis: 50%;
     }
   }
@@ -78,34 +102,79 @@ const StyledUlTwo = styled(StyledUl)`
   }
 `;
 
-export default class Navbar extends Component {
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: grey;
+  }
+  &:active {
+    color: green;
+  }
+`;
+
+export default class Test extends Component {
   render() {
     return (
-      <StyledNav className="row center-xs">
-        <div className="col-xs-12">
-          <div>
+      <HeaderWrapper>
+        <div className="row center-xs">
+          <div className="col-xs-12">
             <StyledUl className="container">
-              <li className="special">
-                <strong>City 17 Information Desk</strong>
-              </li>
-              <li>
-                <strong>Civil Protection | Metropolice</strong>
-              </li>
+              {/* <i class="fas fa-city mao"></i> */}
+
+              <h1 className="special">
+                City <span className="span">17</span>
+              </h1>
             </StyledUl>
           </div>
-          <div className="col-xs-12">
-            <StyledUlTwo>
-              <li> Testing option </li>
-              <li> Testing option</li>
-              <li> Testing option</li>
-              <li> Testing option</li>
-              <li> Longer Testing option</li>
-              <li> Longer Testing option</li>
-              <li> Longer Testing option</li>
-            </StyledUlTwo>
-          </div>
         </div>
-      </StyledNav>
+
+        <StyledUlTwo>
+          <li>
+            <StyledLink to="/">
+              Home &nbsp;<i className="fas fa-angle-down"></i>
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/administration">
+              Administration &nbsp;<i className="fas fa-angle-down"></i>
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/jobs">
+              {" "}
+              Jobs and Positions &nbsp;<i className="fas fa-angle-down"></i>
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/transportation">
+              Transportation &nbsp;<i className="fas fa-angle-down"></i>
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/rationingandcredits">
+              On Rationing and Credits &nbsp;
+              <i className="fas fa-angle-down"></i>
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/housing">
+              On Apartments and Housing &nbsp;
+              <i className="fas fa-angle-down"></i>
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/benefactors">
+              On Benefactors &nbsp;<i className="fas fa-angle-down"></i>
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/civilprotection">
+              On Civil Protection &nbsp;<i className="fas fa-angle-down"></i>
+            </StyledLink>
+          </li>
+        </StyledUlTwo>
+      </HeaderWrapper>
     );
   }
 }
