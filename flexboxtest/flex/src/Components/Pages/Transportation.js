@@ -79,6 +79,9 @@ const Anon = styled.div`
   width: 200px;
   border-radius: 50%;
   background-color: white;
+  &:hover {
+    opacity: 0.7;
+  }
 `;
 
 const PeopleInfoOne = styled.div`

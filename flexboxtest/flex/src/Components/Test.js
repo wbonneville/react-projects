@@ -108,6 +108,9 @@ const StyledLink = styled(Link)`
   &:hover {
     color: grey;
   }
+  &:active {
+    color: green;
+  }
 `;
 
 export default class Test extends Component {

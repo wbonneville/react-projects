@@ -143,6 +143,9 @@ const OneCol = styled.div`
   background-color: black;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
     url(${image});
+  &:hover {
+    opacity: 0.95;
+  }
 `;
 const TwoCol = styled.div`
   height: 800px;
@@ -150,6 +153,9 @@ const TwoCol = styled.div`
   background-color: #f6f6f6;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
     url(${image2});
+  &:hover {
+    opacity: 0.95;
+  }
 `;
 
 const Box = styled.div`
