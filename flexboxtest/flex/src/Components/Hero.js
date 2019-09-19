@@ -57,6 +57,7 @@ const ImageTwo = styled.div`
   background-size: cover;
   height: 350px;
   margin-left: 4%;
+  box-shadow: 4px 4px 4px #ccc;
 `;
 
 const PanelWrapper = styled.div`

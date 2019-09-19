@@ -54,6 +54,7 @@ const JobsSectionTwo = styled.div``;
 const ImageOne = styled.div`
   background-image: url(${image1});
   background-size: cover;
+
   height: 350px;
   width: 585px;
 `;
@@ -90,6 +91,7 @@ const FeaturedImageOne = styled.div`
   background-size: cover;
   height: 150px;
   width: 275px;
+  box-shadow: 3px 3px 3px #ccc;
 `;
 
 const FeaturedImageTwo = styled(FeaturedImageOne)`

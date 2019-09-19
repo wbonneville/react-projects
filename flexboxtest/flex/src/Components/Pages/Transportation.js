@@ -17,7 +17,7 @@ const Gif = styled.div`
     margin-right: 7%;
     font-size: 60px;
     font-weight: 800;
-    text-shadow: 2px 2px 1px #000;
+    /* text-shadow: 2px 2px 1px #000; */
   }
 
   & h4 {

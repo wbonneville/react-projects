@@ -26,7 +26,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 const AppWrapper = styled.div`
   max-width: 3000px;
 
-  align-content: center;
   overflow-x: hidden;
 `;
 

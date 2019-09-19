@@ -77,7 +77,7 @@ const Speeches = styled.div`
 
 const SectionTwo = styled.div`
   background-color: #f6f6f6;
-  padding-top: 10%;
+  padding-top: 8%;
 
   & h1 {
     color: #ff6666;
