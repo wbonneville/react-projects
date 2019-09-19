@@ -41,6 +41,11 @@ const TableWrapper = styled.div`
   &&& .topHr {
     margin-top: -2rem;
   }
+
+  @media (min-width: 150px) and (max-width: 249px) {
+    i {
+    }
+  }
 `;
 
 const DivTwo = styled.div`
@@ -56,6 +61,34 @@ const DivTwo = styled.div`
   & h4 {
     font-weight: 100;
     font-size: 40px;
+  }
+
+  @media (min-width: 150px) and (max-width: 249px) {
+    h1 {
+      font-size: 30px;
+    }
+
+    h4 {
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: 250px) and (max-width: 380px) {
+    h1 {
+      font-size: 60px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 381px) and (max-width: 600px) {
+    h1 {
+      font-size: 90px;
+    }
+    h4 {
+      font-size: 24px;
+    }
   }
 `;
 
@@ -92,6 +125,33 @@ const SectionTwo = styled.div`
     padding-bottom: 10%;
     margin-right: 10%;
     margin-left: 10%;
+  }
+  @media (min-width: 150px) and (max-width: 249px) {
+    h1 {
+      font-size: 20px;
+    }
+
+    h4 {
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: 250px) and (max-width: 380px) {
+    h1 {
+      font-size: 30px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 381px) and (max-width: 600px) {
+    h1 {
+      font-size: 40px;
+    }
+    h4 {
+      font-size: 24px;
+    }
   }
 `;
 
@@ -133,24 +193,21 @@ export default class Housing extends Component {
             <div className="row center-xs">
               <div className="col-xs-8">
                 <h4>
-                  {" "}
-                  <h4>
-                    Welcome! Welcome to City 17. You have chosen, or have been
-                    chosen, to relocate to one of our finest remaining urban
-                    centers. I thought so much of City 17 that I elected to
-                    establish my administration here, in the citadel so
-                    thoughtfully provided by our benefactors. I've been proud to
-                    call City 17 my home. And so, whether you are here to stay,
-                    or passing through on your journey to parts unknown, welcome
-                    to City 17. It's safer here.
-                  </h4>
+                  Welcome! Welcome to City 17. You have chosen, or have been
+                  chosen, to relocate to one of our finest remaining urban
+                  centers. I thought so much of City 17 that I elected to
+                  establish my administration here, in the citadel so
+                  thoughtfully provided by our benefactors. I've been proud to
+                  call City 17 my home. And so, whether you are here to stay, or
+                  passing through on your journey to parts unknown, welcome to
+                  City 17. It's safer here.
                 </h4>
               </div>
             </div>
           </div>
         </DivTwo>
         <TableWrapper className="row center-xs">
-          <div className="col-xs-12 col-md-4">
+          <div className="col-xs-10 col-md-4">
             <h1>
               <i className="icon far fa-clone fa-6x"></i>
             </h1>
