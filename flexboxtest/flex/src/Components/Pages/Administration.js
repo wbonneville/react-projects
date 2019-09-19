@@ -50,6 +50,7 @@ const DivTwo = styled.div`
   padding-top: 10%;
   & h1 {
     font-size: 120px;
+    text-shadow: 2px 2px 2px #000;
   }
 
   & h4 {
