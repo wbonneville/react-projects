@@ -143,8 +143,14 @@ const OneCol = styled.div`
   background-color: black;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
     url(${image});
-  &:hover {
-    opacity: 0.95;
+
+  & h1 {
+    font-size: 400px;
+    text-shadow: 5px 5px 5px #000;
+    z-index: 10;
+    margin-top: 10%;
+    transform: rotate(70deg);
+    font-weight: 800;
   }
 `;
 const TwoCol = styled.div`
@@ -153,8 +159,16 @@ const TwoCol = styled.div`
   background-color: #f6f6f6;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
     url(${image2});
-  &:hover {
-    opacity: 0.95;
+
+  & h1 {
+    font-size: 700px;
+    font-weight: 800;
+
+    text-shadow: 8px 8px 8px #000;
+    z-index: -1;
+    color: #f8f8f8;
+    transform: rotate(70deg);
+    margin-top: 10%;
   }
 `;
 
@@ -222,10 +236,10 @@ export default class Hero extends Component {
         </SectionFour>
         <Slides className="row center-xs">
           <OneCol className="col-xs-6">
-            <h1>One</h1>
+            <h1>City</h1>
           </OneCol>
           <TwoCol className="col-xs-6">
-            <h1>Two</h1>
+            <h1>17</h1>
           </TwoCol>
         </Slides>
       </HeroWrapper>
