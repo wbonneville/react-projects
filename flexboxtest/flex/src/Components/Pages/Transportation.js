@@ -121,7 +121,7 @@ export default class Transportation extends Component {
       <React.Fragment>
         <Container>
           <Gif className="row middle-xs">
-            <div className="col-xs-8">
+            <div className=" col-xs-12 col-md-8">
               {" "}
               <h1>Transportation, but not as you know it.</h1>
               <h4>

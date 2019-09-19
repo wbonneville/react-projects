@@ -72,7 +72,7 @@ export default class Housing extends Component {
     return (
       <React.Fragment>
         <Div className="row start-xs">
-          <div className=" col-xs-6     col-sm-10">
+          <div className=" col-xs-12">
             <h1>Rationing and Credits</h1>
             <h4>September 16th, 2019</h4>
             <p>

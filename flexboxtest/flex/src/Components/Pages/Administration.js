@@ -150,7 +150,7 @@ export default class Housing extends Component {
           </div>
         </DivTwo>
         <TableWrapper className="row center-xs">
-          <div className="col-xs-4">
+          <div className="col-xs-12 col-md-4">
             <h1>
               <i className="icon far fa-clone fa-6x"></i>
             </h1>
@@ -165,7 +165,7 @@ export default class Housing extends Component {
               </div>
             </div>
           </div>
-          <div className="col-xs-4">
+          <div className="col-xs-12 col-md-4">
             <h1>
               <i className="icon fab fa-cloudversify fa-6x"></i>
             </h1>
@@ -180,7 +180,7 @@ export default class Housing extends Component {
               </div>
             </div>
           </div>
-          <div className="col-xs-4">
+          <div className="col-xs-12 col-md-4">
             <h1>
               <i className=" icon fas fa-code-branch fa-6x"></i>
             </h1>
@@ -197,7 +197,7 @@ export default class Housing extends Component {
           </div>
         </TableWrapper>
         <SectionTwo className="row center-xs">
-          <div className="col-xs-12">
+          <div className="col-xs-10 col-md-12">
             <h1>
               Work without laying down conditions, without expecting reward.
             </h1>
