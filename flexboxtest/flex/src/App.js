@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Hero from "./Components/Hero";
+import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import SectionThree from "./Components/SectionThree";
 import Footer from "./Components/Footer";
@@ -28,7 +28,7 @@ function App() {
     <AppWrapper>
       <Router>
         <Navbar></Navbar>
-        <Route path="/" exact component={Hero} />
+        <Route path="/" exact component={Home} />
         <Route path="/" exact component={SectionThree} />
         <Switch>
           <Route path="/jobs" component={Jobs} />
