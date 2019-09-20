@@ -14,6 +14,19 @@ const SectionFour = styled.div`
   background: #301d20;
   padding: 50px;
   margin-left: -0.7%;
+  & h1 {
+    font-size: 350px;
+    text-shadow: 5px 5px 5px #000;
+    /* transform: rotate(70deg); */
+    font-weight: 800;
+  }
+
+  & h1 {
+    font-size: 350px;
+    text-shadow: 5px 5px 5px #000;
+    /* transform: rotate(70deg); */
+    font-weight: 800;
+  }
 `;
 
 const Slogan = styled.div`
@@ -38,6 +51,17 @@ const Slogan = styled.div`
 
   & .box {
     border: 1px solid white;
+  }
+
+  @media (min-width: 150px) and (max-width: 249px) {
+    h2 {
+      font-size: 15px;
+      padding: -15px;
+    }
+
+    h4 {
+      font-size: 15px;
+    }
   }
 `;
 

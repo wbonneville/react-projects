@@ -123,7 +123,7 @@ export default class Test extends Component {
               <h1 className="special">
                 City <span className="span">17</span>
               </h1>
-              <i class="fas fa-city mao "></i>
+              <i className="fas fa-city mao "></i>
             </StyledUl>
           </div>
         </div>
