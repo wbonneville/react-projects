@@ -146,14 +146,14 @@ export default class Housing extends Component {
             <p>Please complete this required field.</p>
             <p>
               {" "}
-              Please also let me know about other MIT Technology Review
-              initiatives and events.
+              Please also let me know about other rationing initiatives and
+              events.
             </p>
             <Button type="button">Sign up for free</Button>
             <p className="agree">
               By signing up you agree to receive email newsletters and
-              notifications from MIT Technology Review. You can change your
-              preferences at any time. View our Privacy Policy for more detail.
+              notifications from Citadel. You can change your preferences at any
+              time. View our Privacy Policy for more detail.
             </p>
           </InputForm>
         </SignUp>

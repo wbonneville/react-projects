@@ -215,9 +215,9 @@ export default class Housing extends Component {
               <div className="col-xs-4">
                 {" "}
                 <hr className="topHr"></hr>
-                <h4>Ipsum lorem </h4>
-                <h4>Ipsum lorem </h4>
-                <h4>Ipsum lorem </h4>
+                <h4>Utility </h4>
+                <h4>Aid </h4>
+                <h4>Supply</h4>
               </div>
             </div>
           </div>
@@ -230,9 +230,9 @@ export default class Housing extends Component {
               <div className="col-xs-4">
                 {" "}
                 <hr className="topHr"></hr>
-                <h4>Ipsum lorem </h4>
-                <h4>Ipsum lorem </h4>
-                <h4>Ipsum lorem </h4>
+                <h4>Governance </h4>
+                <h4>Management </h4>
+                <h4>More </h4>
               </div>
             </div>
           </div>
@@ -245,9 +245,9 @@ export default class Housing extends Component {
               <div className="col-xs-4">
                 {" "}
                 <hr className="topHr"></hr>
-                <h4>Ipsum lorem </h4>
-                <h4>Ipsum lorem </h4>
-                <h4>Ipsum lorem </h4>
+                <h4>Devaluation </h4>
+                <h4>Discounts </h4>
+                <h4>Subdual </h4>
               </div>
             </div>
           </div>

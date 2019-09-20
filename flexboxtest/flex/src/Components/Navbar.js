@@ -42,8 +42,8 @@ font-family: 'Cinzel', serif; */
   }
 
   & .mao {
-    font-size: 20px;
-    margin-right: 1rem;
+    margin-left: 2%;
+    font-size: 30px;
   }
 
   @media all and (max-width: 160px) {
@@ -120,11 +120,10 @@ export default class Test extends Component {
         <div className="row center-xs">
           <div className="col-xs-12">
             <StyledUl className="container">
-              {/* <i class="fas fa-city mao"></i> */}
-
               <h1 className="special">
                 City <span className="span">17</span>
               </h1>
+              <i class="fas fa-city mao "></i>
             </StyledUl>
           </div>
         </div>
