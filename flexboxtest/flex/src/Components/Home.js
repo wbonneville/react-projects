@@ -8,98 +8,6 @@ const HeroWrapper = styled.div`
   margin-top: 0;
 `;
 
-const HeroRow = styled.div``;
-
-const Left = styled.div`
-  background-color: black;
-  color: white;
-  padding: 0 0;
-
-  & h1 {
-    font-size: 45px;
-    text-align: left;
-    font-weight: 800;
-    padding: 2%;
-  }
-
-  & h4 {
-    text-align: left;
-    font-size: 20px;
-    font-weight: 300;
-    padding: 2%;
-    margin-top: -2rem;
-  }
-`;
-
-const Right = styled.div`
-  & h1 {
-    font-size: 35px;
-    font-weight: 800;
-  }
-
-  & h4 {
-    font-size: 18px;
-    text-align: left;
-  }
-`;
-
-const Image = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
-    url(${image});
-  background-size: cover;
-  height: 479px;
-`;
-
-const ImageTwo = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
-    url(${image2});
-  background-size: cover;
-  height: 350px;
-  margin-left: 4%;
-  box-shadow: 4px 4px 4px #ccc;
-`;
-
-const PanelWrapper = styled.div`
-  margin: 4%;
-`;
-
-const Panel = styled.div`
-  background-color: black;
-  color: white;
-  margin-left: 4%;
-
-  padding-bottom: 2%;
-  & h1 {
-    font-size: 45px;
-    padding-top: 3%;
-  }
-  & h2 {
-    margin-top: -10px;
-    font-size: 18px;
-    font-weight: 100;
-    text-align: left;
-    padding: 20px;
-  }
-`;
-
-const Text = styled.div`
-  background-color: black;
-`;
-
-const Header = styled.div`
-  color: white;
-  margin: 4%;
-  & h1 {
-    font-size: 60px;
-    font-weight: 800;
-    letter-spacing: 2px;
-  }
-  & h4 {
-    font-weight: 200;
-    font-size: 20px;
-  }
-`;
-
 const SectionFour = styled.div`
   margin-top: 0;
   margin-bottom: 6%;
@@ -241,22 +149,8 @@ const Button = styled.button`
 `;
 
 const WhiteBlock = styled.div`
-  height: 100px;
-  background-image: linear-gradient(
-    to top,
-    #d9d9d9,
-    #d9d9d9,
-    #d9d9d9,
-    #d9d9d9,
-    #d9d9d9,
-    #dbdbdb,
-    #dcdcdc,
-    #dedede,
-    #e1e1e1,
-    #e5e5e5,
-    #e8e8e8,
-    #ececec
-  );
+  height: 1px;
+  background-color: white;
 `;
 export default class Hero extends Component {
   render() {

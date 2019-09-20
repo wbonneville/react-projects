@@ -189,18 +189,17 @@ export default class Housing extends Component {
         </Div>
         <DivTwo className="row center-xs">
           <div className="col-xs-12">
-            <h1>Welcome.</h1>
+            <h1>Admin</h1>
             <div className="row center-xs">
               <div className="col-xs-8">
                 <h4>
-                  Welcome! Welcome to City 17. You have chosen, or have been
-                  chosen, to relocate to one of our finest remaining urban
-                  centers. I thought so much of City 17 that I elected to
-                  establish my administration here, in the citadel so
-                  thoughtfully provided by our benefactors. I've been proud to
-                  call City 17 my home. And so, whether you are here to stay, or
-                  passing through on your journey to parts unknown, welcome to
-                  City 17. It's safer here.
+                  Let me remind all citizens of the dangers of magical thinking.
+                  We have scarcely begun to climb from the dark pit of our
+                  species' evolution. Let us not slide backward into oblivion,
+                  just as we have finally begun to see the light. If you see
+                  this so-called Free Man, report him. Civic deeds do not go
+                  unrewarded. And contrariwise, complicity with his cause will
+                  not go unpunished. Be wise. Be safe. Be aware.
                 </h4>
               </div>
             </div>
