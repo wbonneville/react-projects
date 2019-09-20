@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import image1 from "../../images/factory.jpeg";
+import image1 from "../../images/factoryworker.jpeg";
 import image2 from "../../images/breen.jpg";
 import image3 from "../../images/job.png";
 import image4 from "../../images/soviet.jpg";
+import image5 from "../../images/factory.jpeg";
+
 import TestApi from "./JobsApi";
 
 // SECTION 1 STYLES
@@ -52,7 +54,7 @@ const JobsInfo = styled.div`
 const JobsSectionTwo = styled.div``;
 
 const ImageOne = styled.div`
-  background-image: url(${image1});
+  background-image: url(${image5});
   background-size: cover;
 
   height: 350px;

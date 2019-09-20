@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import image from "../images/wallhaven.jpg";
-import image2 from "../images/yellowcity.jpg";
-import bannergif from "../images/gif3.gif";
 
 const HeroWrapper = styled.div`
   margin-top: 0;
