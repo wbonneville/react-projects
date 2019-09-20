@@ -2,11 +2,10 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import image from "../images/wallhaven.jpg";
 import image2 from "../images/yellowcity.jpg";
+import bannergif from "../images/gif3.gif";
 
 const HeroWrapper = styled.div`
-  margin-left: 7%;
-  margin-right: 7%;
-  margin-top: 4%;
+  margin-top: 0;
 `;
 
 const HeroRow = styled.div``;
@@ -133,42 +132,30 @@ const Slogan = styled.div`
   }
 `;
 
-const Slides = styled.div`
-  margin-right: 0.4px;
-`;
+const Slides = styled.div``;
 
 const OneCol = styled.div`
-  height: 800px;
   color: white;
-  background-color: black;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
-    url(${image});
+  background-color: #ff6666;
 
   & h1 {
-    font-size: 400px;
+    font-size: 350px;
     text-shadow: 5px 5px 5px #000;
-    z-index: 10;
-    margin-top: 10%;
-    transform: rotate(70deg);
+    /* transform: rotate(70deg); */
     font-weight: 800;
   }
 `;
 const TwoCol = styled.div`
-  height: 800px;
   color: white;
-  background-color: #f6f6f6;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
-    url(${image2});
+  background-color: #ff6666;
 
   & h1 {
-    font-size: 700px;
+    font-size: 350px;
     font-weight: 800;
-
     text-shadow: 8px 8px 8px #000;
-    z-index: -1;
+
     color: #f8f8f8;
-    transform: rotate(70deg);
-    margin-top: 10%;
+    /* transform: rotate(70deg); */
   }
 `;
 
@@ -186,41 +173,123 @@ const Box = styled.div`
   }
 `;
 
+// const BannerGif = styled.div`
+//   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+//     url(${bannergif});
+//   background-size: cover;
+//   height: 920px;
+//   width: 100%;
+
+//   & .city {
+//     color: white;
+//     font-size: 400px;
+//     text-shadow: 5px 5px 5px #000;
+//     z-index: 10;
+//     margin-top: 10%;
+//     transform: rotate(70deg);
+//     font-weight: 800;
+//   }
+//   & .seventeen {
+//     font-size: 700px;
+//     font-weight: 800;
+
+//     text-shadow: 8px 8px 8px #000;
+//     z-index: -1;
+//     color: #f8f8f8;
+//     transform: rotate(70deg);
+//     margin-top: 10%;
+//   }
+// `;
+
+const DivTwo = styled.div`
+  background-image: linear-gradient(
+    to top,
+    #555555,
+    #505050,
+    #4a4a4a,
+    #454545,
+    #404040,
+    #393939,
+    #333333,
+    #2c2c2c,
+    #232323,
+    #191919,
+    #101010,
+    #000000
+  );
+  color: white;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  & h1 {
+    font-size: 140px;
+    text-shadow: 2px 2px 2px #000;
+  }
+
+  & h4 {
+    font-weight: 100;
+    font-size: 40px;
+  }
+
+  @media (min-width: 150px) and (max-width: 249px) {
+    h1 {
+      font-size: 30px;
+    }
+
+    h4 {
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: 250px) and (max-width: 380px) {
+    h1 {
+      font-size: 60px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 381px) and (max-width: 600px) {
+    h1 {
+      font-size: 90px;
+    }
+    h4 {
+      font-size: 24px;
+    }
+  }
+`;
+
 export default class Hero extends Component {
   render() {
     return (
       <HeroWrapper>
-        <HeroRow className="row center-xs">
-          <Left className="col-xs-12 col-md-7">
-            <h1>
-              MIT’s “disqualified” donors aren’t necessarily banned from
-              donating, says Media Lab whistleblower
-            </h1>
-            <h4>
-              Dr. Kleiner, who leaked details about the lab’s relationship with
-              Black Mesa, explains how its funding works.
-            </h4>
-            <Image></Image>
-          </Left>
-          <Right className=" col-xs-12 col-md-5">
-            <Box>
-              <h1>Media</h1>
-            </Box>
-
-            <ImageTwo></ImageTwo>
-            <Panel className="col-xs-12">
-              <h1>Lorem Ipsum</h1>
-              <h2>
-                so much lorem ipsum, so much lorem ipsum, so much lorem ipsum,
-                so much lorem ipsum, so much lorem ipsum, so much lorem ipsum,
-                wow, so much lorem ipsum, so much lorem ipsumso much lorem
-                ipsumso much lorem ipsum, so much lorem ipsumso much lorem
-                ipsumso much lorem ipsumso much lorem ipsumso much lorem ipsumso
-                much lorem ipsum{" "}
-              </h2>
-            </Panel>
-          </Right>
-        </HeroRow>
+        <Slides className="row center-xs">
+          <OneCol className="col-xs-7">
+            <h1>City</h1>
+          </OneCol>
+          <TwoCol className="col-xs-5">
+            <h1>17</h1>
+          </TwoCol>
+        </Slides>
+        <DivTwo className="row center-xs">
+          <div className="col-xs-12">
+            <h1>Welcome.</h1>
+            <div className="row center-xs">
+              <div className="col-xs-8">
+                <h4>
+                  Welcome! Welcome to City 17. You have chosen, or have been
+                  chosen, to relocate to one of our finest remaining urban
+                  centers. I thought so much of City 17 that I elected to
+                  establish my administration here, in the citadel so
+                  thoughtfully provided by our benefactors. I've been proud to
+                  call City 17 my home. And so, whether you are here to stay, or
+                  passing through on your journey to parts unknown, welcome to
+                  City 17. It's safer here.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </DivTwo>
         <SectionFour>
           <Slogan className="row center-xs">
             <div className="box col-xs-12 col-sm-4 ">
@@ -234,14 +303,6 @@ export default class Hero extends Component {
             </div>
           </Slogan>
         </SectionFour>
-        <Slides className="row center-xs">
-          <OneCol className="col-xs-6">
-            <h1>City</h1>
-          </OneCol>
-          <TwoCol className="col-xs-6">
-            <h1>17</h1>
-          </TwoCol>
-        </Slides>
       </HeroWrapper>
     );
   }
