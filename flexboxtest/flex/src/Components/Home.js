@@ -103,7 +103,7 @@ const Header = styled.div`
 const SectionFour = styled.div`
   margin-top: 0;
   margin-bottom: 6%;
-  background: black;
+  background: #301d20;
   padding: 50px;
   margin-left: -0.7%;
 `;
@@ -160,64 +160,8 @@ const TwoCol = styled.div`
   }
 `;
 
-const Box = styled.div`
-  color: white;
-  background-color: #ff6666;
-  margin-left: 4%;
-  padding-bottom: 1%;
-  padding-top: 1%;
-  margin-bottom: 6%;
-
-  & h1 {
-    font-size: 35px;
-    font-weight: 900;
-  }
-`;
-
-// const BannerGif = styled.div`
-//   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
-//     url(${bannergif});
-//   background-size: cover;
-//   height: 920px;
-//   width: 100%;
-
-//   & .city {
-//     color: white;
-//     font-size: 400px;
-//     text-shadow: 5px 5px 5px #000;
-//     z-index: 10;
-//     margin-top: 10%;
-//     transform: rotate(70deg);
-//     font-weight: 800;
-//   }
-//   & .seventeen {
-//     font-size: 700px;
-//     font-weight: 800;
-
-//     text-shadow: 8px 8px 8px #000;
-//     z-index: -1;
-//     color: #f8f8f8;
-//     transform: rotate(70deg);
-//     margin-top: 10%;
-//   }
-// `;
-
 const DivTwo = styled.div`
-  background-image: linear-gradient(
-    to top,
-    #555555,
-    #505050,
-    #4a4a4a,
-    #454545,
-    #404040,
-    #393939,
-    #333333,
-    #2c2c2c,
-    #232323,
-    #191919,
-    #101010,
-    #000000
-  );
+  background-color: #a27279;
   color: white;
   padding-bottom: 10%;
   padding-top: 10%;
@@ -285,7 +229,7 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  background-color: black;
+  background-color: #301d20;
   border: 2px solid white;
   color: white;
   padding: 15px 32px;
@@ -296,6 +240,24 @@ const Button = styled.button`
   width: 90%;
 `;
 
+const WhiteBlock = styled.div`
+  height: 100px;
+  background-image: linear-gradient(
+    to top,
+    #d9d9d9,
+    #d9d9d9,
+    #d9d9d9,
+    #d9d9d9,
+    #d9d9d9,
+    #dbdbdb,
+    #dcdcdc,
+    #dedede,
+    #e1e1e1,
+    #e5e5e5,
+    #e8e8e8,
+    #ececec
+  );
+`;
 export default class Hero extends Component {
   render() {
     return (
@@ -308,6 +270,11 @@ export default class Hero extends Component {
             <h1>17</h1>
           </TwoCol>
         </Slides>
+        <div className="row">
+          <div className="col-xs-12">
+            <WhiteBlock></WhiteBlock>
+          </div>
+        </div>
         <DivTwo className="row center-xs">
           <div className="col-xs-12">
             <h1>Welcome.</h1>
@@ -327,9 +294,14 @@ export default class Hero extends Component {
             </div>
           </div>
         </DivTwo>
+        <div className="row">
+          <div className="col-xs-12">
+            <WhiteBlock></WhiteBlock>
+          </div>
+        </div>
         <SectionFour>
           <Slogan className="row center-xs">
-            <div className="box col-xs-12 col-sm-6 ">
+            <div className="box col-xs-12 col-sm-6   ">
               <h2>
                 What matters in our <span>Urban Centers</span> right now?
               </h2>
