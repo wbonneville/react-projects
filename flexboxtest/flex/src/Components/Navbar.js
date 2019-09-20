@@ -42,7 +42,7 @@ font-family: 'Cinzel', serif; */
   }
 
   & .mao {
-    margin-left: 2%;
+    margin-left: 1%;
     font-size: 30px;
   }
 

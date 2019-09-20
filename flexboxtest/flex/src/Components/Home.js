@@ -53,6 +53,23 @@ const OneCol = styled.div`
     /* transform: rotate(70deg); */
     font-weight: 800;
   }
+
+  @media (min-width: 150px) and (max-width: 249px) {
+    h1 {
+      font-size: 75px;
+    }
+  }
+
+  @media (min-width: 250px) and (max-width: 449px) {
+    h1 {
+      font-size: 150px;
+    }
+  }
+  @media (min-width: 450px) and (max-width: 700px) {
+    h1 {
+      font-size: 200px;
+    }
+  }
 `;
 const TwoCol = styled.div`
   color: white;
@@ -65,6 +82,29 @@ const TwoCol = styled.div`
 
     color: #f8f8f8;
     /* transform: rotate(70deg); */
+  }
+  & h1 {
+    font-size: 350px;
+    text-shadow: 5px 5px 5px #000;
+    /* transform: rotate(70deg); */
+    font-weight: 800;
+  }
+
+  @media (min-width: 150px) and (max-width: 249px) {
+    h1 {
+      font-size: 75px;
+    }
+  }
+
+  @media (min-width: 250px) and (max-width: 449px) {
+    h1 {
+      font-size: 150px;
+    }
+  }
+  @media (min-width: 450px) and (max-width: 700px) {
+    h1 {
+      font-size: 200px;
+    }
   }
 `;
 
@@ -149,24 +189,33 @@ const Button = styled.button`
 `;
 
 const WhiteBlock = styled.div`
-  height: 1px;
   background-color: white;
+
+  & h1 {
+    font-size: 10px;
+    opacity: 0.2;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
 `;
 export default class Hero extends Component {
   render() {
     return (
       <HeroWrapper>
         <Slides className="row center-xs">
-          <OneCol className="col-xs-7">
+          <OneCol className=" col-xs-12 col-md-7">
             <h1>City</h1>
           </OneCol>
-          <TwoCol className="col-xs-5">
+          <TwoCol className="col-xs-12 col-md-5">
             <h1>17</h1>
           </TwoCol>
         </Slides>
-        <div className="row">
+        <div className="row center-xs">
           <div className="col-xs-12">
-            <WhiteBlock></WhiteBlock>
+            <WhiteBlock>
+              <h1>Building a Harmonious Future</h1>
+            </WhiteBlock>
           </div>
         </div>
         <DivTwo className="row center-xs">
@@ -188,9 +237,11 @@ export default class Hero extends Component {
             </div>
           </div>
         </DivTwo>
-        <div className="row">
+        <div className="row center-xs">
           <div className="col-xs-12">
-            <WhiteBlock></WhiteBlock>
+            <WhiteBlock>
+              <h1>Driving Reform</h1>
+            </WhiteBlock>
           </div>
         </div>
         <SectionFour>
