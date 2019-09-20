@@ -101,7 +101,7 @@ const Header = styled.div`
 `;
 
 const SectionFour = styled.div`
-  margin-top: 6%;
+  margin-top: 0;
   margin-bottom: 6%;
   background: black;
   padding: 50px;
@@ -109,6 +109,7 @@ const SectionFour = styled.div`
 `;
 
 const Slogan = styled.div`
+  padding-top: 5rem;
   & h1 {
     color: white;
     font-weight: 100;
@@ -119,7 +120,7 @@ const Slogan = styled.div`
   & h2 {
     color: white;
     font-weight: 100;
-    font-size: 35px;
+    font-size: 70px;
     padding: 10px;
 
     & span {
@@ -259,6 +260,42 @@ const DivTwo = styled.div`
   }
 `;
 
+const SignUp = styled.div`
+  color: white;
+  padding-top: 10%;
+  padding-bottom: 5%;
+`;
+
+const InputForm = styled.div`
+  & h1 {
+    font-size: 50px;
+  }
+
+  & .agree {
+    font-size: 12px;
+  }
+`;
+
+const Input = styled.input`
+  padding: 12px 20px;
+  box-sizing: border-box;
+  font-size: 30px;
+  font-weight: 200;
+  width: 78%;
+`;
+
+const Button = styled.button`
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 90%;
+`;
+
 export default class Hero extends Component {
   render() {
     return (
@@ -292,16 +329,39 @@ export default class Hero extends Component {
         </DivTwo>
         <SectionFour>
           <Slogan className="row center-xs">
-            <div className="box col-xs-12 col-sm-4 ">
+            <div className="box col-xs-12 col-sm-6 ">
               <h2>
-                What matters in <span>Technological Advancements</span> right
-                now?
+                What matters in our <span>Urban Centers</span> right now?
               </h2>
             </div>
-            <div className=" col-xs-12 col-sm-8">
-              <h1>We always want to know what you're thinking.</h1>
-            </div>
           </Slogan>
+          <SignUp className="row center-xs">
+            <InputForm className="col-xs-12 col-sm-6">
+              <h1>fwd:Citadel</h1>
+              <h2>
+                <i>Your guide to the latest in the age of prosperity</i>
+              </h2>
+              <h4>Delivered Every Morning</h4>
+              <Input
+                type="email"
+                name="email"
+                id="email_input"
+                placeholder="Enter your email, get a newsletter"
+              ></Input>
+              <p>Please complete this required field.</p>
+              <p>
+                {" "}
+                Please also let me know about other Citadel initiatives and
+                events.
+              </p>
+              <Button type="button">Sign up for free</Button>
+              <p className="agree">
+                By signing up you agree to receive email newsletters and
+                notifications from Citadel. You can change your preferences at
+                any time. View our Privacy Policy for more detail.
+              </p>
+            </InputForm>
+          </SignUp>
         </SectionFour>
       </HeroWrapper>
     );

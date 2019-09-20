@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const SectionWrapper = styled.div`
   padding-top: 3.5%;
-
   padding-left: 7%;
   padding-right: 7%;
   background-color: white;
@@ -32,7 +31,7 @@ const NewsPanel = styled.div`
   padding-bottom: 3%;
 
   & p {
-    font-size: 20px;
+    font-size: 30px;
     text-align: left;
     font-weight: 100;
 
@@ -54,7 +53,7 @@ const NewsPanel = styled.div`
 const BreenCast = styled.div`
   & h1 {
     font-weight: 800;
-    font-size: 85px;
+    font-size: 100px;
     letter-spacing: 3px;
   }
 
@@ -99,7 +98,7 @@ export default class SectionTwo extends Component {
                   reproductive cycle? Sincerely, A Concerned Citizen."
                 </p>
               </div>
-              <div className="col-xs-11 col-md-1">
+              <div className="divdate col-xs-11 col-md-2">
                 <p className="date">April 02, 2018</p>
               </div>
             </div>
@@ -119,7 +118,7 @@ export default class SectionTwo extends Component {
                   darkest urges of instinct, ignorance and decay.
                 </p>
               </div>
-              <div className="col-xs-12 col-md-1">
+              <div className="col-xs-12 col-md-2">
                 <p className="date">April 02, 2018</p>
               </div>
             </div>
@@ -138,7 +137,7 @@ export default class SectionTwo extends Component {
                   containing members of the resistance Science Team.
                 </p>
               </div>
-              <div className="col-xs-12 col-md-1">
+              <div className="col-xs-12 col-md-2">
                 <p className="date">April 02, 2018</p>
               </div>
             </div>
@@ -159,7 +158,7 @@ export default class SectionTwo extends Component {
                   small minds call 'The Combine' can carry us there.
                 </p>
               </div>
-              <div className="col-xs-12 col-md-1">
+              <div className="col-xs-12 col-md-2">
                 <p className="date">April 02, 2018</p>
               </div>
             </div>
@@ -178,7 +177,7 @@ export default class SectionTwo extends Component {
                   and keep his Overwatch pursuers at bay.
                 </p>
               </div>
-              <div className="col-xs-12 col-md-1">
+              <div className="col-xs-12 col-md-2">
                 <p className="date">April 02, 2018</p>
               </div>
             </div>
