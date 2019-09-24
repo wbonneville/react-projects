@@ -1,23 +1,23 @@
 import React from "react";
-import Character from "./Character";
 import BasicStats from "./BasicStats";
-
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import FinalSubmit from "./FinalSubmit";
 import "./App.css";
-import styled from "styled-components";
+
+// import styled from "styled-components";
 
 function App() {
   return (
-    <div className="App">
-      {" "}
-      {/* <Character
-        name="Zeli"
-        age="303"
-        transformation="ongoing and consistent"
-        initialStatus="critical"
-        initialAge={1}
-      /> */}
-      <BasicStats />
-    </div>
+    <React.Fragment>
+      <div>
+        <Router>
+          <Route path="/" exact component={BasicStats} />
+          <Switch>
+            <Route path="/finalsubmit" component={FinalSubmit} />
+          </Switch>
+        </Router>
+      </div>
+    </React.Fragment>
   );
 }
 
