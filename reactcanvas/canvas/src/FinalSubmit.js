@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 export default class FinalSubmit extends Component {
   render() {
     return (
       <div>
-        {this.props.name} {this.props.age}
+        <h1>{this.props.name}</h1>
+        <h2>{this.props.age}</h2>
+        <Link to="/">Back to input</Link>
       </div>
     );
   }

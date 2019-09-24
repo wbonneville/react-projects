@@ -24,12 +24,18 @@ class App extends React.Component {
 
   componentWillUpdate(nextProps, nextState) {
     localStorage.setItem("age", JSON.stringify(nextState.age));
+    localStorage.setItem("name", JSON.stringify(nextState.name));
   }
 
   componentWillMount() {
     localStorage.getItem("age") &&
       this.setState({
         age: JSON.parse(localStorage.getItem("age"))
+      });
+
+    localStorage.getItem("name") &&
+      this.setState({
+        name: JSON.parse(localStorage.getItem("name"))
       });
   }
 
