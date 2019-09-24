@@ -23,6 +23,8 @@ export default class BasicStats extends Component {
   }
 
   handleSubmit(event) {
+    this.props.updateName(this.state.namevalue);
+    this.props.history.push("/finalsubmit");
     event.preventDefault();
   }
 
@@ -47,13 +49,16 @@ export default class BasicStats extends Component {
                 onChange={this.handleAgeChange}
               />
             </label>
-            <input type="submit" value="Submit" />
+            <input
+              type="submit"
+              value="Click me"
+              onClick={this.handleSubmit}
+            ></input>
           </form>
         </div>
         <div>
           <h1>{this.state.namevalue}</h1>
           <h1>{this.state.agevalue}</h1>
-          <Link to="/finalsubmit">Click me to go to Final Submit Page!</Link>
         </div>
       </React.Fragment>
     );

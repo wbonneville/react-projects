@@ -1,11 +1,11 @@
 import React, { Component } from "react";
+import BasicStats from "./BasicStats";
 
 export default class FinalSubmit extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
-    return (
-      <div>
-        <h1>Yay!</h1>
-      </div>
-    );
+    return <div>{this.props.name}</div>;
   }
 }
