@@ -21,7 +21,7 @@ export default class BasicStats extends Component {
     });
   }
 
-  handleSubmit(event) {
+  handleSubmits(event) {
     event.preventDefault();
   }
 
