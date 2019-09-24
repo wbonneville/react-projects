@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class BasicStats extends Component {
   constructor(props) {
@@ -61,6 +62,7 @@ export default class BasicStats extends Component {
           <h1>{this.state.namevalue}</h1>
           <h1>{this.state.agevalue}</h1>
         </div>
+        <Link to="/finalsubmit">Back to final submit page</Link>
       </React.Fragment>
     );
   }
