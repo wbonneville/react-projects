@@ -1,6 +1,6 @@
 import React from "react";
 import BasicStats from "./BasicStats";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import FinalSubmit from "./FinalSubmit";
 import "./App.css";
 
@@ -8,7 +8,8 @@ import "./App.css";
 
 class App extends React.Component {
   state = {
-    name: "crackerjack"
+    name: "",
+    age: ""
   };
 
   updateName = name => {
@@ -16,13 +17,33 @@ class App extends React.Component {
     this.setState({ name });
   };
 
+  updateAge = age => {
+    console.log(age);
+    this.setState({ age });
+  };
+
+  componentWillUpdate(nextProps, nextState) {
+    localStorage.setItem("age", JSON.stringify(nextState.age));
+  }
+
+  componentWillMount() {
+    localStorage.getItem("age") &&
+      this.setState({
+        age: JSON.parse(localStorage.getItem("age"))
+      });
+  }
+
   render() {
     const ConnectedBasicStats = props => (
-      <BasicStats updateName={this.updateName} {...props} />
+      <BasicStats
+        updateName={this.updateName}
+        updateAge={this.updateAge}
+        {...props}
+      />
     );
 
-    const ConnectedFinalSubmit = props => (
-      <FinalSubmit name={this.state.name} {...props} />
+    const ConnectedFinalSubmit = () => (
+      <FinalSubmit name={this.state.name} age={this.state.age} />
     );
 
     return (
@@ -31,6 +52,7 @@ class App extends React.Component {
         <Route
           path="/finalsubmit"
           name={this.state.name}
+          age={this.state.age}
           component={ConnectedFinalSubmit}
         />
       </Router>

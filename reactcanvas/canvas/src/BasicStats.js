@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 export default class BasicStats extends Component {
   constructor(props) {
@@ -24,6 +23,8 @@ export default class BasicStats extends Component {
 
   handleSubmit(event) {
     this.props.updateName(this.state.namevalue);
+    this.props.updateAge(this.state.agevalue);
+
     this.props.history.push("/finalsubmit");
     event.preventDefault();
   }
