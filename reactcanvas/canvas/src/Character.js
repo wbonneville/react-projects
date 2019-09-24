@@ -17,7 +17,7 @@ export default class Character extends Component {
 
   onChangeStatus() {
     this.setState({
-      status: (this.state.status = "not critical")
+      status: "not critical"
     });
   }
 
