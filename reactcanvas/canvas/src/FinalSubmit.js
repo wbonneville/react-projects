@@ -6,6 +6,7 @@ export default class FinalSubmit extends Component {
       <div>
         <h1>{this.props.name}</h1>
         <h2>{this.props.age}</h2>
+        <h2>{this.props.race}</h2>
         <Link to="/">Back to input</Link>
       </div>
     );

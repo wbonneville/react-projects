@@ -40,6 +40,7 @@ export default class BasicStats extends Component {
   handleSubmit(event) {
     this.props.updateName(this.state.namevalue);
     this.props.updateAge(this.state.agevalue);
+    this.props.updateRace(this.state.racevalue);
 
     this.props.history.push("/finalsubmit");
     event.preventDefault();
@@ -90,6 +91,8 @@ export default class BasicStats extends Component {
           <div>
             <h1>{this.state.namevalue}</h1>
             <h1>{this.state.agevalue}</h1>
+            <h1>{this.state.racevalue}</h1>
+
             <Link to="/finalsubmit">Back to final submit page</Link>
           </div>
         </div>

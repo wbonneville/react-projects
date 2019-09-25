@@ -6,10 +6,15 @@ import "./App.css";
 
 // import styled from "styled-components";
 
+// Add to state
+// Add update callback function
+// update connected components
+
 class App extends React.Component {
   state = {
     name: "",
-    age: ""
+    age: "",
+    race: ""
   };
 
   updateName = name => {
@@ -22,9 +27,14 @@ class App extends React.Component {
     this.setState({ age });
   };
 
+  updateRace = race => {
+    this.setState({ race });
+  };
+
   componentWillUpdate(nextProps, nextState) {
     localStorage.setItem("age", JSON.stringify(nextState.age));
     localStorage.setItem("name", JSON.stringify(nextState.name));
+    localStorage.setItem("race", JSON.stringify(nextState.race));
   }
 
   componentWillMount() {
@@ -37,6 +47,11 @@ class App extends React.Component {
       this.setState({
         name: JSON.parse(localStorage.getItem("name"))
       });
+
+    localStorage.getItem("race") &&
+      this.setState({
+        race: JSON.parse(localStorage.getItem("race"))
+      });
   }
 
   render() {
@@ -44,12 +59,17 @@ class App extends React.Component {
       <BasicStats
         updateName={this.updateName}
         updateAge={this.updateAge}
+        updateRace={this.updateRace}
         {...props}
       />
     );
 
     const ConnectedFinalSubmit = () => (
-      <FinalSubmit name={this.state.name} age={this.state.age} />
+      <FinalSubmit
+        name={this.state.name}
+        age={this.state.age}
+        race={this.state.race}
+      />
     );
 
     return (
@@ -59,6 +79,7 @@ class App extends React.Component {
           path="/finalsubmit"
           name={this.state.name}
           age={this.state.age}
+          race={this.state.race}
           component={ConnectedFinalSubmit}
         />
       </Router>
