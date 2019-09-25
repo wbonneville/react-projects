@@ -49,6 +49,15 @@ const LinkDiv = styled.div`
   margin-bottom: 5%;
 `;
 
+const Title = styled.div`
+  & h1 {
+    font-size: 100px;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: 200;
+  }
+`;
+
 export default class BasicStats extends Component {
   constructor(props) {
     super(props);
@@ -102,6 +111,11 @@ export default class BasicStats extends Component {
   render() {
     return (
       <React.Fragment>
+        <Title className="row center-xs">
+          <div className="col-xs-12">
+            <h1>Create a Character</h1>
+          </div>
+        </Title>
         <FormWrapper className="row center-xs">
           <div className="col-xs-12">
             <form onSubmit={this.handleSubmit}>
