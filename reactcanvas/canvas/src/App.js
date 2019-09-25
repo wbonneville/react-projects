@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import FinalSubmit from "./FinalSubmit";
 import "./App.css";
 
-// import styled from "styled-components";
-
 // Add to state
 // Add update callback function
 // update connected components
