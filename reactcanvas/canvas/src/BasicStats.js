@@ -4,11 +4,14 @@ import { Link } from "react-router-dom";
 export default class BasicStats extends Component {
   constructor(props) {
     super(props);
-    this.state = { namevalue: "", agevalue: "" };
+    this.state = { namevalue: "", agevalue: "", racevalue: "" };
     this.handleNameChange = this.handleNameChange.bind(this);
     this.handleAgeChange = this.handleAgeChange.bind(this);
+    this.handleRaceChange = this.handleRaceChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+
+  // TYPE IN NAME TO CHANGE
 
   handleNameChange(event) {
     this.setState({
@@ -16,11 +19,23 @@ export default class BasicStats extends Component {
     });
   }
 
+  // TYPE IN AGE TO CHANGE
+
   handleAgeChange(event) {
     this.setState({
       agevalue: event.target.value
     });
   }
+
+  // TYPE IN RACE TO CHANGE
+
+  handleRaceChange(event) {
+    this.setState({
+      racevalue: event.target.value
+    });
+  }
+
+  // HANDLE SUBMIT
 
   handleSubmit(event) {
     this.props.updateName(this.state.namevalue);
@@ -29,6 +44,11 @@ export default class BasicStats extends Component {
     this.props.history.push("/finalsubmit");
     event.preventDefault();
   }
+
+  // Add label
+  // Add event listener
+  // Add to state
+  // Bind
 
   render() {
     return (
@@ -52,6 +72,14 @@ export default class BasicStats extends Component {
                   onChange={this.handleAgeChange}
                 />
               </label>
+              <label>
+                Race:
+                <input
+                  type="text"
+                  racevalue={this.state.racevalue}
+                  onChange={this.handleRaceChange}
+                />
+              </label>
               <input
                 type="submit"
                 value="Click me"
@@ -62,9 +90,9 @@ export default class BasicStats extends Component {
           <div>
             <h1>{this.state.namevalue}</h1>
             <h1>{this.state.agevalue}</h1>
+            <Link to="/finalsubmit">Back to final submit page</Link>
           </div>
         </div>
-        <Link to="/finalsubmit">Back to final submit page</Link>
       </React.Fragment>
     );
   }
