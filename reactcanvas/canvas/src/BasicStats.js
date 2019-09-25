@@ -33,34 +33,36 @@ export default class BasicStats extends Component {
   render() {
     return (
       <React.Fragment>
-        <div>
-          <form onSubmit={this.handleSubmit}>
-            <label>
-              Name:
+        <div className="row center-xs">
+          <div className="col-xs-12 ">
+            <form onSubmit={this.handleSubmit}>
+              <label>
+                Name:
+                <input
+                  type="text"
+                  namevalue={this.state.namevalue}
+                  onChange={this.handleNameChange}
+                />
+              </label>
+              <label>
+                Age:
+                <input
+                  type="text"
+                  agevalue={this.state.agevalue}
+                  onChange={this.handleAgeChange}
+                />
+              </label>
               <input
-                type="text"
-                namevalue={this.state.namevalue}
-                onChange={this.handleNameChange}
-              />
-            </label>
-            <label>
-              Age:
-              <input
-                type="text"
-                agevalue={this.state.agevalue}
-                onChange={this.handleAgeChange}
-              />
-            </label>
-            <input
-              type="submit"
-              value="Click me"
-              onClick={this.handleSubmit}
-            ></input>
-          </form>
-        </div>
-        <div>
-          <h1>{this.state.namevalue}</h1>
-          <h1>{this.state.agevalue}</h1>
+                type="submit"
+                value="Click me"
+                onClick={this.handleSubmit}
+              ></input>
+            </form>
+          </div>
+          <div>
+            <h1>{this.state.namevalue}</h1>
+            <h1>{this.state.agevalue}</h1>
+          </div>
         </div>
         <Link to="/finalsubmit">Back to final submit page</Link>
       </React.Fragment>
