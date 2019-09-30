@@ -4,7 +4,7 @@ import { combineReducers } from "redux";
 
 const allReducers = combineReducers({
   counter: counterReducer,
-  isCool: isCoolReducer
+  iscool: isCoolReducer
 });
 
 export default allReducers;
