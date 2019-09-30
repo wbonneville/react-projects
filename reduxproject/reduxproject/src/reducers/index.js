@@ -1,10 +1,10 @@
-import counterReducer from "./counter";
-import isCoolReducer from "./isCool";
+import waterCargo from "../marketplace/water.reducer";
+import userCredits from "../user/credits.reducer";
 import { combineReducers } from "redux";
 
 const allReducers = combineReducers({
-  counter: counterReducer,
-  iscool: isCoolReducer
+  water: waterCargo,
+  usercredits: userCredits
 });
 
 export default allReducers;
