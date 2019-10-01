@@ -1,11 +1,19 @@
 import React from "react";
-import "./App.css";
+import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
+
+import System from "./systems/systems";
+import MiniMap from "./systems/miniMap";
 
 import { addwater } from "./marketplace/water.action"; //actions
 import { sellwater } from "./marketplace/water.action";
 import { addCredits } from "./user/credits.action";
 
+const Wrapper = styled.div``;
+const MiniMapWrapper = styled.div`
+  background-color: #f6f6f6;
+  margin-top: 2%;
+`;
 function App() {
   // reducers
   const water = useSelector(state => state.water);
@@ -20,14 +28,22 @@ function App() {
     dispatch(sellwater());
   };
 
+  /* {water === 40 ? <h3> show </h3> : ""} */
+
   return (
-    <div className="App">
-      {/* {water === 40 ? <h3>yes is cool</h3> : ""} */}
-      <p>Cash: {usercredits} cr.</p>
-      <button>{water}</button>
-      <button onClick={() => dispatch(addwater())}>Take Free Water</button>
-      <button onClick={sellAll}>Sell all the water</button>
-    </div>
+    <Wrapper className="row center-xs">
+      <div className="col-xs-12">
+        <System></System>
+        <p>Cash: {usercredits} cr.</p>
+        <button>{water}</button>
+        <button onClick={() => dispatch(addwater())}>Take Free Water</button>
+        <button onClick={sellAll}>Sell all the water</button>
+      </div>
+
+      <MiniMapWrapper className="row center-xs">
+        <MiniMap className="col-xs-12"></MiniMap>
+      </MiniMapWrapper>
+    </Wrapper>
   );
 }
 
