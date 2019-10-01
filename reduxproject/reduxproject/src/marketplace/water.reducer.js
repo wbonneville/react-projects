@@ -4,7 +4,7 @@ const waterCargo = (state = 20, action) => {
       return state + 20;
     case "LOSEWATER":
       return state - 1;
-    case "SELLALL":
+    case "SELLWATER":
       return state - state;
     default:
       return state;

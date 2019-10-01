@@ -3,17 +3,21 @@ import "./App.css";
 import { useSelector, useDispatch } from "react-redux";
 
 import { addwater } from "./marketplace/water.action"; //actions
-import { sellall } from "./marketplace/water.action";
+import { sellwater } from "./marketplace/water.action";
 import { addCredits } from "./user/credits.action";
 
 function App() {
-  const water = useSelector(state => state.water); // reducers
+  // reducers
+  const water = useSelector(state => state.water);
   const usercredits = useSelector(state => state.usercredits);
 
-  const dispatch = useDispatch(); // Dispatch uses actions
+  // Dispatch
+  const dispatch = useDispatch();
+
+  // function multiplies water * 2 and adds amount to credits
   const sellAll = () => {
     dispatch(addCredits(water * 2));
-    dispatch(sellall());
+    dispatch(sellwater());
   };
 
   return (

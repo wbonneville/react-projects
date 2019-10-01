@@ -10,8 +10,8 @@ export const losewater = () => {
   };
 };
 
-export const sellall = () => {
+export const sellwater = () => {
   return {
-    type: "SELLALL"
+    type: "SELLWATER"
   };
 };
