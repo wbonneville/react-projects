@@ -3,3 +3,10 @@ export const credits = () => {
     type: "CREDITS"
   };
 };
+
+export const addCredits = (amount = 0) => {
+  return {
+    type: "ADDCREDITS",
+    amount
+  };
+};
