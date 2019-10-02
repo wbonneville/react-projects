@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-
-// import { useSelector, useDispatch } from "react-redux";
+import ReactDOM from "react-dom";
 
 import {
   systemName,
@@ -22,6 +21,14 @@ import {
   systemMachines,
   systemRobots
 } from "./systemsData";
+
+// import { useSelector, useDispatch } from "react-redux";
+
+const Canvas = styled.canvas`
+  background-color: #f6f6f6;
+  width: 400px;
+  height: 200px;
+`;
 
 const Wrapper = styled.div`
   & ul {
@@ -50,7 +57,11 @@ const Wrapper = styled.div`
 
 // Each planet must have its own state...
 
-export default class targetSystem extends Component {
+export default class TargetSystem extends Component {
+  componentDidMount() {
+    this.generatePlanets();
+  }
+
   planets = {
     one: {
       name: systemName[Math.floor(Math.random() * systemName.length)],
@@ -80,31 +91,31 @@ export default class targetSystem extends Component {
     }
   };
 
+  generatePlanets = () => {
+    const ctx = this.refs.canvas.getContext("2d");
+    ctx.beginPath();
+    for (var i = 0; i < 3; i++) {
+      const x = Math.floor(Math.random() * this.refs.canvas.width);
+      const y = Math.floor(Math.random() * this.refs.canvas.height);
+      ctx.moveTo(x, y);
+
+      ctx.arc(x, y, 3, 0, Math.PI * 2);
+    }
+    ctx.fillStyle = "green";
+    ctx.fill();
+  };
+
   render() {
     return (
       <Wrapper>
         <h1>System</h1>
         <h2>{this.planets.one.name} </h2>
 
-        <ul>
-          <li>Size: {this.planets.one.size}</li>
-          <li>Tech: {this.planets.one.tech}</li>
-          <li>Government: {this.planets.one.government}</li>
-          <li>Resources: {this.planets.one.resource}</li>
-          <li>Police: {this.planets.one.police}</li>
-          <li>Pirates: {this.planets.one.pirates}</li>
-        </ul>
-        <p>Water: {this.marketplaces.one.water}</p>
-        <p>Furs: {this.marketplaces.one.furs}</p>
-        <p>Food: {this.marketplaces.one.food}</p>
-        <p>Ore: {this.marketplaces.one.ore}</p>
-        <p>Games: {this.marketplaces.one.games}</p>
-        <p>Firearms: {this.marketplaces.one.firearms}</p>
-        <p>Medicine: {this.marketplaces.one.medicine}</p>
-        <p>Narcotics: {this.marketplaces.one.narcotics}</p>
-        <p>Machines: {this.marketplaces.one.machines}</p>
-        <p>Robots: {this.marketplaces.one.robots}</p>
+        <h3>Galactic Chart</h3>
+        <Canvas ref="canvas" width={800} height={400}></Canvas>
       </Wrapper>
     );
   }
 }
+
+ReactDOM.render(<TargetSystem />, document.getElementById("root"));

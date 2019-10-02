@@ -1,0 +1,19 @@
+
+        {/* <ul>
+          <li>Size: {this.planets.one.size}</li>
+          <li>Tech: {this.planets.one.tech}</li>
+          <li>Government: {this.planets.one.government}</li>
+          <li>Resources: {this.planets.one.resource}</li>
+          <li>Police: {this.planets.one.police}</li>
+          <li>Pirates: {this.planets.one.pirates}</li>
+        </ul>
+        <p>Water: {this.marketplaces.one.water}</p>
+        <p>Furs: {this.marketplaces.one.furs}</p>
+        <p>Food: {this.marketplaces.one.food}</p>
+        <p>Ore: {this.marketplaces.one.ore}</p>
+        <p>Games: {this.marketplaces.one.games}</p>
+        <p>Firearms: {this.marketplaces.one.firearms}</p>
+        <p>Medicine: {this.marketplaces.one.medicine}</p>
+        <p>Narcotics: {this.marketplaces.one.narcotics}</p>
+        <p>Machines: {this.marketplaces.one.machines}</p>
+        <p>Robots: {this.marketplaces.one.robots}</p> */}

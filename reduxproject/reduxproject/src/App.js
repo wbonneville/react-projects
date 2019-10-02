@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import System from "./systems/systems";
 // import MiniMap from "./systems/miniMap";
-import Map from "./systems/map";
+// import Map from "./systems/map";
 
 import { addwater } from "./user/cargo.action"; //actions
 import { sellwater } from "./user/cargo.action";
@@ -19,9 +19,10 @@ const MiniMapWrapper = styled.div`
   margin-bottom: 2%;
 `;
 
-const GalacticChartTitle = styled.div`
-  margin-top: 2%;
-`;
+// const GalacticChartTitle = styled.div`
+//   margin-top: 2%;
+// `;
+
 function App() {
   // reducers
   const userwater = useSelector(state => state.userwater);
@@ -56,15 +57,13 @@ function App() {
         <button onClick={sellAllFurs}>Sell all the furs</button>
         <button onClick={sellAllWater}>Sell all the water</button>
       </div>
+
       <div className="col-xs-12">
         <System></System>
       </div>
 
-      <GalacticChartTitle className="col-xs-12">
-        <h3>Galactic Chart</h3>
-      </GalacticChartTitle>
       <MiniMapWrapper className="row center-xs">
-        <Map className="col-xs-12"></Map>
+        {/* <Map className="col-xs-12"></Map> */}
       </MiniMapWrapper>
     </Wrapper>
   );

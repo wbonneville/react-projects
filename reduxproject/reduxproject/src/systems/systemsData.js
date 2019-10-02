@@ -1,4 +1,6 @@
-import React from "react";
+// function randomRange(min, max) {
+//   return Math.random() * (max - min) + min;
+// }
 
 export const systemName = ["Radeon", "Kreet", "Mouhti", "Jujere", "Kisopunn"];
 export const systemSize = [

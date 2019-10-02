@@ -1,3 +1,5 @@
+// USER WATER
+
 const waterCargo = (state = 20, action) => {
   switch (action.type) {
     case "ADDWATER":

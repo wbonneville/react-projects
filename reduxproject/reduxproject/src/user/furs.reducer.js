@@ -1,3 +1,5 @@
+// USER FUR
+
 const fursCargo = (state = 30, action) => {
   switch (action.type) {
     case "ADDFURS":
