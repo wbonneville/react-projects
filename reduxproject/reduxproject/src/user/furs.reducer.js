@@ -1,12 +1,12 @@
-const waterCargo = (state = 20, action) => {
+const fursCargo = (state = 30, action) => {
   switch (action.type) {
-    case "ADDWATER":
+    case "ADDFURS":
       return state + 20;
-    case "SELLWATER":
+    case "SELLFURS":
       return state - state;
     default:
       return state;
   }
 };
 
-export default waterCargo;
+export default fursCargo;

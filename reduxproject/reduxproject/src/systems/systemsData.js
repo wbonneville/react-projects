@@ -39,5 +39,5 @@ export const systemGames = [40];
 export const systemFirearms = [40];
 export const systemMedicine = [40];
 export const systemMachines = [40];
-export const systemNarcotics = [40];
+export const systemNarcotics = [50];
 export const systemRobots = [40];

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+
 // import { useSelector, useDispatch } from "react-redux";
 
 import {
@@ -84,6 +85,7 @@ export default class targetSystem extends Component {
       <Wrapper>
         <h1>System</h1>
         <h2>{this.planets.one.name} </h2>
+
         <ul>
           <li>Size: {this.planets.one.size}</li>
           <li>Tech: {this.planets.one.tech}</li>
