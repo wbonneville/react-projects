@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import System from "./systems/systems";
 import MiniMap from "./systems/miniMap";
+import Map from "./systems/map";
 
 import { addwater } from "./marketplace/water.action"; //actions
 import { sellwater } from "./marketplace/water.action";
@@ -41,7 +42,7 @@ function App() {
       </div>
 
       <MiniMapWrapper className="row center-xs">
-        <MiniMap className="col-xs-12"></MiniMap>
+        <Map className="col-xs-12"></Map>
       </MiniMapWrapper>
     </Wrapper>
   );
