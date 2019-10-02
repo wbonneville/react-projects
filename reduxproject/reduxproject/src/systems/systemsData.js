@@ -22,3 +22,16 @@ export const systemGovernment = [
 export const systemResource = ["Nothing special", "Plethora of iron", "Oil"];
 export const systemPolice = ["A Few", "Moderate", "Abundance"];
 export const systemPirates = ["A Few", "Moderate", "Abundance"];
+
+// marketplace goods
+
+export const systemWater = [40];
+export const systemFurs = [40];
+export const systemFood = [40];
+export const systemOre = [40];
+export const systemGames = [40];
+export const systemFirearms = [40];
+export const systemMedicine = [40];
+export const systemMachines = [40];
+export const systemNarcotics = [40];
+export const systemRobots = [40];

@@ -14,6 +14,11 @@ const Wrapper = styled.div``;
 const MiniMapWrapper = styled.div`
   background-color: #f6f6f6;
   margin-top: 2%;
+  margin-bottom: 2%;
+`;
+
+const GalacticChartTitle = styled.div`
+  margin-top: 2%;
 `;
 function App() {
   // reducers
@@ -40,7 +45,9 @@ function App() {
         <button onClick={() => dispatch(addwater())}>Take Free Water</button>
         <button onClick={sellAll}>Sell all the water</button>
       </div>
-
+      <GalacticChartTitle className="col-xs-12">
+        <h3>Galactic Chart</h3>
+      </GalacticChartTitle>
       <MiniMapWrapper className="row center-xs">
         <Map className="col-xs-12"></Map>
       </MiniMapWrapper>

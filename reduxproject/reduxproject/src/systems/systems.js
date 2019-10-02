@@ -8,7 +8,17 @@ import {
   systemGovernment,
   systemResource,
   systemPolice,
-  systemPirates
+  systemPirates,
+  systemWater,
+  systemFurs,
+  systemFood,
+  systemOre,
+  systemGames,
+  systemFirearms,
+  systemMedicine,
+  systemNarcotics,
+  systemMachines,
+  systemRobots
 } from "./systemsData";
 
 const Wrapper = styled.div`
@@ -47,6 +57,22 @@ export default class targetSystem extends Component {
       pirates: systemPirates[Math.floor(Math.random() * systemPirates.length)]
     }
   };
+
+  marketplaces = {
+    one: {
+      water: systemWater[0],
+      furs: systemFurs[0],
+      food: systemFood,
+      ore: systemOre,
+      games: systemGames,
+      firearms: systemFirearms,
+      medicine: systemMedicine,
+      narcotics: systemNarcotics,
+      machines: systemMachines,
+      robots: systemRobots
+    }
+  };
+
   render() {
     return (
       <Wrapper>
@@ -60,6 +86,17 @@ export default class targetSystem extends Component {
           <li>Police: {this.planets.one.police}</li>
           <li>Pirates: {this.planets.one.pirates}</li>
         </ul>
+
+        <p>Water: {this.marketplaces.one.water}</p>
+        <p>Furs: {this.marketplaces.one.furs}</p>
+        <p>Food: {this.marketplaces.one.food}</p>
+        <p>Ore: {this.marketplaces.one.ore}</p>
+        <p>Games: {this.marketplaces.one.games}</p>
+        <p>Firearms: {this.marketplaces.one.firearms}</p>
+        <p>Medicine: {this.marketplaces.one.medicine}</p>
+        <p>Narcotics: {this.marketplaces.one.narcotics}</p>
+        <p>Machines: {this.marketplaces.one.machines}</p>
+        <p>Robots: {this.marketplaces.one.robots}</p>
       </Wrapper>
     );
   }

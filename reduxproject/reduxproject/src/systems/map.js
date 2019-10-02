@@ -26,7 +26,11 @@ export default class CanvasComponent extends React.Component {
     ctx.fill();
   }
   render() {
-    return <Canvas ref="canvas" width={800} height={400}></Canvas>;
+    return (
+      <div>
+        <Canvas ref="canvas" width={800} height={400}></Canvas>
+      </div>
+    );
   }
 }
 
