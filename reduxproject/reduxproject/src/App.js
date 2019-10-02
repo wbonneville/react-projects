@@ -3,11 +3,11 @@ import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 
 import System from "./systems/systems";
-import MiniMap from "./systems/miniMap";
+// import MiniMap from "./systems/miniMap";
 import Map from "./systems/map";
 
-import { addwater } from "./marketplace/water.action"; //actions
-import { sellwater } from "./marketplace/water.action";
+import { addwater } from "./user/water.action"; //actions
+import { sellwater } from "./user/water.action";
 import { addCredits } from "./user/credits.action";
 
 const Wrapper = styled.div``;
@@ -22,7 +22,7 @@ const GalacticChartTitle = styled.div`
 `;
 function App() {
   // reducers
-  const water = useSelector(state => state.water);
+  const userwater = useSelector(state => state.userwater);
   const usercredits = useSelector(state => state.usercredits);
 
   // Dispatch
@@ -30,7 +30,7 @@ function App() {
 
   // function multiplies water * 2 and adds amount to credits
   const sellAll = () => {
-    dispatch(addCredits(water * 2));
+    dispatch(addCredits(userwater * 2));
     dispatch(sellwater());
   };
 
@@ -39,12 +39,17 @@ function App() {
   return (
     <Wrapper className="row center-xs">
       <div className="col-xs-12">
-        <System></System>
+        <p>Water: {userwater}</p>
         <p>Cash: {usercredits} cr.</p>
-        <button>{water}</button>
+
+        <button>{userwater}</button>
         <button onClick={() => dispatch(addwater())}>Take Free Water</button>
         <button onClick={sellAll}>Sell all the water</button>
       </div>
+      <div className="col-xs-12">
+        <System></System>
+      </div>
+
       <GalacticChartTitle className="col-xs-12">
         <h3>Galactic Chart</h3>
       </GalacticChartTitle>

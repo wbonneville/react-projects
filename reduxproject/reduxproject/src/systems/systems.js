@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+// import { useSelector, useDispatch } from "react-redux";
 
 import {
   systemName,
@@ -43,6 +44,11 @@ const Wrapper = styled.div`
 
 // How can I render planet one?
 
+// How to save all constants in one object and how to access it?
+// How to assign DATA from OBJECT to ITEM in ARRAY?
+
+// Each planet must have its own state...
+
 export default class targetSystem extends Component {
   planets = {
     one: {
@@ -60,8 +66,8 @@ export default class targetSystem extends Component {
 
   marketplaces = {
     one: {
-      water: systemWater[0],
-      furs: systemFurs[0],
+      water: systemWater,
+      furs: systemFurs,
       food: systemFood,
       ore: systemOre,
       games: systemGames,
@@ -86,7 +92,6 @@ export default class targetSystem extends Component {
           <li>Police: {this.planets.one.police}</li>
           <li>Pirates: {this.planets.one.pirates}</li>
         </ul>
-
         <p>Water: {this.marketplaces.one.water}</p>
         <p>Furs: {this.marketplaces.one.furs}</p>
         <p>Food: {this.marketplaces.one.food}</p>

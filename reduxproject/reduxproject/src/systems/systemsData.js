@@ -1,3 +1,5 @@
+import React from "react";
+
 export const systemName = ["Radeon", "Kreet", "Mouhti", "Jujere", "Kisopunn"];
 export const systemSize = [
   "Very Small",
@@ -24,6 +26,10 @@ export const systemPolice = ["A Few", "Moderate", "Abundance"];
 export const systemPirates = ["A Few", "Moderate", "Abundance"];
 
 // marketplace goods
+
+// function MarketPlace() {
+//   const water = useSelector(state => state.water);
+// }
 
 export const systemWater = [40];
 export const systemFurs = [40];

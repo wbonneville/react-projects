@@ -12,3 +12,6 @@ const waterCargo = (state = 20, action) => {
 };
 
 export default waterCargo;
+
+// Is this users water?
+// Yes

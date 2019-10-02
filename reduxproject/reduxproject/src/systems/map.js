@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
+import targetSystem from "./systems";
 
 const Canvas = styled.canvas`
   background-color: #f6f6f6;

@@ -1,9 +1,9 @@
-import waterCargo from "../marketplace/water.reducer";
+import waterCargo from "../user/water.reducer";
 import userCredits from "../user/credits.reducer";
 import { combineReducers } from "redux";
 
 const allReducers = combineReducers({
-  water: waterCargo,
+  userwater: waterCargo,
   usercredits: userCredits
 });
 
