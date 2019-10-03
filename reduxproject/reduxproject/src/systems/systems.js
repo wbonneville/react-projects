@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import ReactDOM from "react-dom";
-// import { useSelector, useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 // actions
 
-// import { createSystem } from "../systems/system.action";
+import { createSystem } from "../systems/system.action";
 
 // reducers
 
@@ -16,17 +16,17 @@ import {
   systemGovernment,
   systemResource,
   systemPolice,
-  systemPirates,
-  systemWater,
-  systemFurs,
-  systemFood,
-  systemOre,
-  systemGames,
-  systemFirearms,
-  systemMedicine,
-  systemNarcotics,
-  systemMachines,
-  systemRobots
+  systemPirates
+  // systemWater,
+  // systemFurs,
+  // systemFood,
+  // systemOre,
+  // systemGames,
+  // systemFirearms,
+  // systemMedicine,
+  // systemNarcotics,
+  // systemMachines,
+  // systemRobots
 } from "./systemsData";
 
 const Canvas = styled.canvas`
@@ -47,69 +47,76 @@ const Wrapper = styled.div`
 
 const shortid = require("shortid");
 
-const planets = {
-  one: {
-    name: systemName[Math.floor(Math.random() * systemName.length)],
-    size: systemSize[Math.floor(Math.random() * systemSize.length)],
-    tech: systemTechLevel[Math.floor(Math.random() * systemTechLevel.length)],
-    government:
-      systemGovernment[Math.floor(Math.random() * systemGovernment.length)],
-    resource: systemResource[Math.floor(Math.random() * systemResource.length)],
-    police: systemPolice[Math.floor(Math.random() * systemPolice.length)],
-    pirates: systemPirates[Math.floor(Math.random() * systemPirates.length)]
-  }
-};
+// const marketplaces = {
+//   one: {
+//     water: systemWater,
+//     furs: systemFurs,
+//     food: systemFood,
+//     ore: systemOre,
+//     games: systemGames,
+//     firearms: systemFirearms,
+//     medicine: systemMedicine,
+//     narcotics: systemNarcotics,
+//     machines: systemMachines,
+//     robots: systemRobots
+//   }
+// };
 
-const marketplaces = {
-  one: {
-    water: systemWater,
-    furs: systemFurs,
-    food: systemFood,
-    ore: systemOre,
-    games: systemGames,
-    firearms: systemFirearms,
-    medicine: systemMedicine,
-    narcotics: systemNarcotics,
-    machines: systemMachines,
-    robots: systemRobots
-  }
-};
-
-// How to assign DATA from OBJECT to ITEM in ARRAY?
+// DISPATCH
 
 export default class TargetSystem extends Component {
-  componentDidMount() {
-    this.generatePlanets();
-  }
+  // componentDidMount() {
+  //   this.generatePlanets();
+  // }
 
   generateSystem = () => {
-    shortid.generate();
-    const planetData = Object.values(planets);
-    const marketplacesData = Object.values(marketplaces);
-    console.log(shortid.generate());
-    console.log(planetData);
-    console.log(marketplacesData);
+    const planetId = shortid.generate();
+    const dispatch = useDispatch();
+
+    const planetData = {
+      x: Math.floor(Math.random() * this.refs.canvas.width),
+      y: Math.floor(Math.random() * this.refs.canvas.height),
+      name: systemName[Math.floor(Math.random() * systemName.length)],
+      size: systemSize[Math.floor(Math.random() * systemSize.length)],
+      tech: systemTechLevel[Math.floor(Math.random() * systemTechLevel.length)],
+      government:
+        systemGovernment[Math.floor(Math.random() * systemGovernment.length)],
+      resource:
+        systemResource[Math.floor(Math.random() * systemResource.length)],
+      police: systemPolice[Math.floor(Math.random() * systemPolice.length)],
+      pirates: systemPirates[Math.floor(Math.random() * systemPirates.length)]
+    };
+
+    dispatch(createSystem(planetId, planetData));
+
+    // const marketplacesData = Object.values(marketplaces);
   };
 
-  generatePlanets = () => {
+  renderPlanets = () => {
     // GENERATE PLANET
 
-    // const systemData = useSelector(state => state.systems);
-
+    const systems = useSelector(state => state.systems);
     const ctx = this.refs.canvas.getContext("2d");
-    ctx.beginPath();
-    // var names = [];
-    for (var i = 0; i < 3; i++) {
-      const x = Math.floor(Math.random() * this.refs.canvas.width);
-      const y = Math.floor(Math.random() * this.refs.canvas.height);
-      // names[i] = systemName[Math.floor(Math.random() * systemName.length)];
-      ctx.moveTo(x, y);
-      // console.log(names);
-      ctx.arc(x, y, 3, 0, Math.PI * 2);
-    }
-    ctx.fillStyle = "green";
-    ctx.fill();
-    this.generateSystem();
+
+    Object.keys(systems).forEach(systemId => {
+      const system = systems[systemId];
+      const x = system.x;
+      const y = system.y;
+
+      // do stuff with x and y
+      ctx.beginPath();
+      for (var i = 0; i < 3; i++) {
+        ctx.moveTo(x, y);
+        ctx.arc(x, y, 3, 0, Math.PI * 2);
+        this.generateSystem();
+      }
+      ctx.fillStyle = "green";
+      ctx.fill();
+    });
+  };
+
+  init = () => {
+    this.renderPlanets();
   };
 
   render() {

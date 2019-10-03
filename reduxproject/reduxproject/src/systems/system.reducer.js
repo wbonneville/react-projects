@@ -1,7 +1,7 @@
-const systemGeneration = (state = 0, action) => {
+const systemGeneration = (state = {}, action) => {
   switch (action.type) {
     case "CREATE_SYSTEM":
-      return state;
+      return { ...state, [action.planetId]: action.planetData };
     default:
       return state;
   }

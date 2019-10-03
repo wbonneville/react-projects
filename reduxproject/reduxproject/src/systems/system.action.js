@@ -1,5 +1,7 @@
-export const createSystem = () => {
+export function createSystem(planetId, planetData) {
   return {
-    type: "CREATE_SYSTEM"
+    type: "CREATE_SYSTEM",
+    planetId,
+    planetData
   };
-};
+}
