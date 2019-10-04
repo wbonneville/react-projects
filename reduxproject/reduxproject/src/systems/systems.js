@@ -105,7 +105,7 @@ export default class TargetSystem extends Component {
 
       // do stuff with x and y
       ctx.beginPath();
-      for (var i = 0; i < 3; i++) {
+      for (var i = 0; i < 10; i++) {
         ctx.moveTo(x, y);
         ctx.arc(x, y, 3, 0, Math.PI * 2);
         this.generateSystem();

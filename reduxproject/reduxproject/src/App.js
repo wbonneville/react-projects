@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
-import { useEffect } from "react";
-import generateSystem from "./systems";
+// import { useEffect } from "react";
+// import generateSystem from "./systems.js";
 
 import System from "./systems/systems";
 // import MiniMap from "./systems/miniMap";
