@@ -1,16 +1,14 @@
-import { useDispatch } from "react-redux";
-import { createPlanet } from "./redux/planet.action";
-
 const shortid = require("shortid");
 
-function generatePlanets() {
-  dispatch(createPlanet(planetId, planetData));
+function generatePlanet() {
   const planetId = shortid.generate();
-  const dispatch = useDispatch();
+  // const marketData = {};
   const planetData = {
-    x: Math.floor(Math.random() * this.refs.canvas.width),
-    y: Math.floor(Math.random() * this.refs.canvas.height)
+    x: Math.random(),
+    y: Math.random()
   };
+
+  return { planetId, planetData };
 }
 
-export default generatePlanets;
+export default generatePlanet;
