@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
-
+// farts
+import { selectPlanet } from "./redux/selectPlanet.action";
 import { createPlanet } from "./redux/planet.action";
 import generatePlanet from "./map";
 
@@ -21,7 +22,7 @@ function App() {
   // called when app is rendered
   useEffect(() => {
     // loop creates x instances of planets
-    for (var i = 0; i < 300; i++) {
+    for (var i = 0; i < 200; i++) {
       const { planetId, planetData } = generatePlanet();
       // dispatches action to bring data into the store
       dispatch(createPlanet(planetId, planetData));
@@ -33,6 +34,9 @@ function App() {
 
   // this is the hook that selects planets data from state
   const planets = useSelector(state => state.planets);
+  const selectedPlanet = useSelector(state => state.selectedPlanet);
+  const selectedPlanetData = selectedPlanet[planetId];
+  console.log(selectedPlanetData);
 
   useEffect(() => {
     // provides context for the canvas to draw things
@@ -44,21 +48,66 @@ function App() {
       const planet = planets[planetId];
 
       // set variables to random number on canvas
+
       const x = planet.x * canvas.current.width;
       const y = planet.y * canvas.current.height;
 
       // draw planet
       ctx.beginPath();
       ctx.moveTo(x, y);
-      ctx.arc(x, y, 3, 0, Math.PI * 2);
-      ctx.fillStyle = "green";
+      ctx.ellipse(x, y, 4, 4, 0, 0, Math.PI * 2);
+      // if selected planet is equal to the current planet ID
+      if (selectedPlanet == planetId) {
+        ctx.fillStyle = "blue";
+      } else {
+        ctx.fillStyle = "green";
+      }
+
       ctx.fill();
     });
   });
 
+  /* selectedPlanet: abc
+   *
+   * foo
+   * bar
+   * if (abc)
+   * qef
+   *
+   */
+
+  const handleCanvasClick = event => {
+    const mouseX = event.pageX;
+    const mouseY = event.pageY;
+    const canvasX = canvas.current.offsetLeft;
+    const canvasY = canvas.current.offsetTop;
+    const x = (mouseX - canvasX) * 2;
+    const y = (mouseY - canvasY) * 2;
+    Object.keys(planets).forEach(planetId => {
+      // get planet data
+      const planet = planets[planetId];
+      const planetX = planet.x * canvas.current.width;
+      const planetY = planet.y * canvas.current.height;
+
+      const deltaX = Math.abs(x - planetX);
+      const deltaY = Math.abs(y - planetY);
+
+      if (deltaX < 4 && deltaY < 4) {
+        // dispatch planet selection action with our planet ID
+        dispatch(selectPlanet(planetId));
+      }
+    });
+  };
+
   return (
     <div className="App">
-      <Canvas ref={canvas} width={800} height={400} />
+      <Canvas
+        onClick={handleCanvasClick}
+        ref={canvas}
+        width={800}
+        height={400}
+      />
+      <h1></h1>
     </div>
   );
 }
