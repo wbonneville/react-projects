@@ -35,9 +35,13 @@ function App() {
   // this is the hook that selects planets data from state
   const planets = useSelector(state => state.planets);
   const selectedPlanet = useSelector(state => state.selectedPlanet);
-  const selectedPlanetData = selectedPlanet[planetId];
+
+  // i want the clicked planets DATA to be console logged
+  const selectedPlanetData = planets[selectedPlanet];
+
   console.log(selectedPlanetData);
 
+  console.log(selectedPlanet);
   useEffect(() => {
     // provides context for the canvas to draw things
     const ctx = canvas.current.getContext("2d");
@@ -57,7 +61,7 @@ function App() {
       ctx.moveTo(x, y);
       ctx.ellipse(x, y, 4, 4, 0, 0, Math.PI * 2);
       // if selected planet is equal to the current planet ID
-      if (selectedPlanet == planetId) {
+      if (selectedPlanet === planetId) {
         ctx.fillStyle = "blue";
       } else {
         ctx.fillStyle = "green";
@@ -101,13 +105,15 @@ function App() {
 
   return (
     <div className="App">
+      <h1>{selectedPlanet}</h1>
+      {selectedPlanetData && <h1>X: {selectedPlanetData.x}</h1>}
+      {selectedPlanetData && <h1>Y: {selectedPlanetData.y}</h1>}
       <Canvas
         onClick={handleCanvasClick}
         ref={canvas}
         width={800}
         height={400}
       />
-      <h1></h1>
     </div>
   );
 }
