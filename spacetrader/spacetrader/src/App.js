@@ -30,15 +30,12 @@ function App() {
   useEffect(() => {
     // loop creates x instances of planets
     for (var i = 0; i < 200; i++) {
-      const { planetId, planetData, marketData, techLevel } = generatePlanet();
+      const { planetId, planetData, marketData } = generatePlanet();
       // dispatches action to bring data into the store
       dispatch(createPlanet(planetId, planetData));
 
       // dispatches action to bring market data into the store
       dispatch(createMarket(planetId, marketData));
-
-      // dispatches action to bring tech level data into the store
-      // dispatch(createTechLevels(planetId, techLevel));
     }
   }, [true]);
 
