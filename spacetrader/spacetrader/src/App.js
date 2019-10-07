@@ -113,6 +113,8 @@ function App() {
       <h1>{selectedPlanet}</h1>
       {selectedPlanetData && <h1>X: {selectedPlanetData.x}</h1>}
       {selectedPlanetData && <h1>Y: {selectedPlanetData.y}</h1>}
+      {selectedMarketData && <h1>Market: {selectedMarketData.bob}</h1>}
+
       <Canvas
         onClick={handleCanvasClick}
         ref={canvas}
