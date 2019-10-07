@@ -2,10 +2,15 @@ import React, { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
 
+// data
+
+import { TECH_LEVELS } from "./planetData";
+
 // actions
 import { selectPlanet } from "./redux/selectPlanet.action";
 import { createPlanet } from "./redux/planet.action";
 import { createMarket } from "./redux/market.action";
+// import { createTechLevels } from "./redux/techLevels.action";
 import generatePlanet from "./map";
 
 const Canvas = styled.canvas`
@@ -25,12 +30,15 @@ function App() {
   useEffect(() => {
     // loop creates x instances of planets
     for (var i = 0; i < 200; i++) {
-      const { planetId, planetData, marketData } = generatePlanet();
+      const { planetId, planetData, marketData, techLevel } = generatePlanet();
       // dispatches action to bring data into the store
       dispatch(createPlanet(planetId, planetData));
 
       // dispatches action to bring market data into the store
       dispatch(createMarket(planetId, marketData));
+
+      // dispatches action to bring tech level data into the store
+      // dispatch(createTechLevels(planetId, techLevel));
     }
   }, [true]);
 
@@ -43,10 +51,6 @@ function App() {
   const selectedPlanetData = planets[selectedPlanet];
   const selectedMarketData = markets[selectedPlanet];
 
-  console.log(selectedMarketData);
-  console.log(selectedPlanetData);
-
-  console.log(selectedPlanet);
   useEffect(() => {
     // provides context for the canvas to draw things
     const ctx = canvas.current.getContext("2d");
@@ -95,7 +99,6 @@ function App() {
     Object.keys(planets).forEach(planetId => {
       // get planet data
       const planet = planets[planetId];
-
       const planetX = planet.x * canvas.current.width;
       const planetY = planet.y * canvas.current.height;
       const deltaX = Math.abs(x - planetX);
@@ -108,13 +111,25 @@ function App() {
     });
   };
 
+  // if (selectedPlanetData) {
+  //   console.log(
+  //     selectedPlanetData,
+  //     techLevels,
+  //     selectedPlanetData.techLevel,
+  //     techLevels[selectedPlanetData.techLevel]
+  //   );
+  // }
+
   return (
     <div className="App">
       <h1>{selectedPlanet}</h1>
       {selectedPlanetData && <h1>X: {selectedPlanetData.x}</h1>}
       {selectedPlanetData && <h1>Y: {selectedPlanetData.y}</h1>}
       {selectedMarketData && <h1>Market: {selectedMarketData.bob}</h1>}
-      <h1>das</h1> <h1>das</h1>
+      {selectedPlanetData && (
+        <h1>Tech Level: {TECH_LEVELS[selectedPlanetData.techLevel]}</h1>
+      )}
+
       <Canvas
         onClick={handleCanvasClick}
         ref={canvas}
