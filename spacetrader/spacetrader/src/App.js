@@ -119,9 +119,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>{selectedPlanet}</h1>
-      {selectedPlanetData && <h1>X: {selectedPlanetData.x}</h1>}
-      {selectedPlanetData && <h1>Y: {selectedPlanetData.y}</h1>}
+      {selectedPlanet && <h1>Planet ID: {selectedPlanet}</h1>}
+      {selectedPlanetData && <h1>X-Coordinate: {selectedPlanetData.x}</h1>}
+      {selectedPlanetData && <h1>Y-Coordinate: {selectedPlanetData.y}</h1>}
       {selectedMarketData && <h1>Market: {selectedMarketData.bob}</h1>}
       {selectedPlanetData && (
         <h1>Tech Level: {TECH_LEVELS[selectedPlanetData.techLevel]}</h1>
