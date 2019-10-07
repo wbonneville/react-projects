@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
-// farts
+
+// actions
 import { selectPlanet } from "./redux/selectPlanet.action";
 import { createPlanet } from "./redux/planet.action";
+import { createMarket } from "./redux/market.action";
 import generatePlanet from "./map";
 
 const Canvas = styled.canvas`
@@ -23,22 +25,25 @@ function App() {
   useEffect(() => {
     // loop creates x instances of planets
     for (var i = 0; i < 200; i++) {
-      const { planetId, planetData } = generatePlanet();
+      const { planetId, planetData, marketData } = generatePlanet();
       // dispatches action to bring data into the store
       dispatch(createPlanet(planetId, planetData));
 
-      // dispatches action to bring market data into thes tore
-      // dispatch(createMarket(planetId, marketData));
+      // dispatches action to bring market data into the store
+      dispatch(createMarket(planetId, marketData));
     }
   }, [true]);
 
   // this is the hook that selects planets data from state
   const planets = useSelector(state => state.planets);
+  const markets = useSelector(state => state.markets);
   const selectedPlanet = useSelector(state => state.selectedPlanet);
 
   // i want the clicked planets DATA to be console logged
   const selectedPlanetData = planets[selectedPlanet];
+  const selectedMarketData = markets[selectedPlanet];
 
+  console.log(selectedMarketData);
   console.log(selectedPlanetData);
 
   console.log(selectedPlanet);
@@ -90,9 +95,9 @@ function App() {
     Object.keys(planets).forEach(planetId => {
       // get planet data
       const planet = planets[planetId];
+
       const planetX = planet.x * canvas.current.width;
       const planetY = planet.y * canvas.current.height;
-
       const deltaX = Math.abs(x - planetX);
       const deltaY = Math.abs(y - planetY);
 
