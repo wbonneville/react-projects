@@ -10,21 +10,46 @@ export const TECH_LEVELS = [
 ];
 
 export const POLITICAL_SYSTEMS = {
-  Anarchy: "Anarchy",
-  CapitalistState: "Capitalist State",
-  CommunistState: "Communist State",
-  Confederacy: "Confederacy",
-  CorporateState: "Corporate State",
-  CybeneticState: "Cybenetic State",
-  Democracy: "Democracy",
-  Dictatorship: "Dictatorship",
-  FascistState: "Fascist State",
-  FeudalState: "Feudal State",
-  MilitaryState: "Military State",
-  Monarchy: "Monarchy",
-  PacifistState: "Pacifist State",
-  SocialistState: "Socialist State",
-  StateOfSatori: "State of Satori",
-  Technocracy: "Technocracy",
-  Theocracy: "Theocracy"
+  anarchy: "Anarchy",
+  capitalistState: "Capitalist State",
+  communistState: "Communist State",
+  confederacy: "Confederacy",
+  corporateState: "Corporate State",
+  cybeneticState: "Cybenetic State",
+  democracy: "Democracy",
+  dictatorship: "Dictatorship",
+  fascistState: "Fascist State",
+  feudalState: "Feudal State",
+  militaryState: "Military State",
+  monarchy: "Monarchy",
+  pacifistState: "Pacifist State",
+  socialistState: "Socialist State",
+  stateOfSatori: "State of Satori",
+  technocracy: "Technocracy",
+  theocracy: "Theocracy"
+};
+
+export function randomRange(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+export const RESOURCE_DEFINITIONS = {
+  narcotics: {
+    min: 1,
+    max: 5,
+    politicalSystem: {
+      communism: 1,
+      monarchy: 0.5
+    },
+    techLevel: 8
+  },
+  water: {
+    min: 10,
+    max: 20,
+    politicalSystem: {
+      communism: 1,
+      monarchy: 3
+    },
+    techLevel: 1
+  }
 };

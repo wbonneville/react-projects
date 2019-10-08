@@ -5,13 +5,14 @@ import styled from "styled-components";
 // data
 
 import { TECH_LEVELS } from "./planetData";
+import { RESOURCE_DEFINITIONS } from "./planetData";
 
 // actions
 import { selectPlanet } from "./redux/selectPlanet.action";
 import { createPlanet } from "./redux/planet.action";
 import { createMarket } from "./redux/market.action";
 // import { createTechLevels } from "./redux/techLevels.action";
-import generatePlanet from "./map";
+import generatePlanet from "./generatePlanet";
 
 const Canvas = styled.canvas`
   background-color: #f6f6f6;
@@ -122,9 +123,11 @@ function App() {
       {selectedPlanet && <h1>Planet ID: {selectedPlanet}</h1>}
       {selectedPlanetData && <h1>X-Coordinate: {selectedPlanetData.x}</h1>}
       {selectedPlanetData && <h1>Y-Coordinate: {selectedPlanetData.y}</h1>}
-      {selectedMarketData && <h1>Market: {selectedMarketData.bob}</h1>}
       {selectedPlanetData && (
         <h1>Tech Level: {TECH_LEVELS[selectedPlanetData.techLevel]}</h1>
+      )}
+      {selectedMarketData && (
+        <h1>Market: {RESOURCE_DEFINITIONS[selectedMarketData.actualAmount]}</h1>
       )}
 
       <Canvas
