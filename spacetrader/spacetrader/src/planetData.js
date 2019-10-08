@@ -34,6 +34,69 @@ export function randomRange(min, max) {
 }
 
 export const RESOURCE_DEFINITIONS = {
+  water: {
+    min: 10,
+    max: 20,
+    politicalSystem: {
+      communism: 1,
+      monarchy: 3
+    },
+    techLevel: 1
+  },
+  furs: {
+    min: 10,
+    max: 20,
+    politicalSystem: {
+      communism: 1,
+      monarchy: 3
+    },
+    techLevel: 1
+  },
+  food: {
+    min: 10,
+    max: 20,
+    politicalSystem: {
+      communism: 1,
+      monarchy: 3
+    },
+    techLevel: 1
+  },
+  ore: {
+    min: 10,
+    max: 20,
+    politicalSystem: {
+      communism: 1,
+      monarchy: 3
+    },
+    techLevel: 1
+  },
+  games: {
+    min: 10,
+    max: 20,
+    politicalSystem: {
+      communism: 1,
+      monarchy: 3
+    },
+    techLevel: 1
+  },
+  firearms: {
+    min: 10,
+    max: 20,
+    politicalSystem: {
+      communism: 1,
+      monarchy: 3
+    },
+    techLevel: 1
+  },
+  machines: {
+    min: 10,
+    max: 20,
+    politicalSystem: {
+      communism: 1,
+      monarchy: 3
+    },
+    techLevel: 1
+  },
   narcotics: {
     min: 1,
     max: 5,
@@ -43,13 +106,13 @@ export const RESOURCE_DEFINITIONS = {
     },
     techLevel: 8
   },
-  water: {
-    min: 10,
-    max: 20,
+  robots: {
+    min: 1,
+    max: 5,
     politicalSystem: {
       communism: 1,
-      monarchy: 3
+      monarchy: 0.5
     },
-    techLevel: 1
+    techLevel: 8
   }
 };
