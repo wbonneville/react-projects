@@ -136,9 +136,9 @@ function App() {
       {selectedMarketData && (
         <h1>
           Market:{" "}
-          {Object.keys(selectedMarketData).map(water => (
+          {Object.keys(selectedMarketData).map(key => (
             <div>
-              {water}: {selectedMarketData[water]}
+              {key}: {selectedMarketData[key]}
             </div>
           ))}
         </h1>
