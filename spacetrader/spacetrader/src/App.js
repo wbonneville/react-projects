@@ -6,6 +6,7 @@ import styled from "styled-components";
 
 import { TECH_LEVELS } from "./planetData";
 import { RESOURCE_DEFINITIONS } from "./planetData";
+import { POLITICAL_SYSTEMS } from "./planetData";
 
 // actions
 import { selectPlanet } from "./redux/selectPlanet.action";
@@ -126,8 +127,21 @@ function App() {
       {selectedPlanetData && (
         <h1>Tech Level: {TECH_LEVELS[selectedPlanetData.techLevel]}</h1>
       )}
+      {selectedPlanetData && (
+        <h1>
+          Political System:{" "}
+          {POLITICAL_SYSTEMS[selectedPlanetData.politicalSystem]}
+        </h1>
+      )}
       {selectedMarketData && (
-        <h1>Market: {RESOURCE_DEFINITIONS[selectedMarketData.actualAmount]}</h1>
+        <h1>
+          Market:{" "}
+          {Object.keys(selectedMarketData).map(water => (
+            <div>
+              {water}: {selectedMarketData[water]}
+            </div>
+          ))}
+        </h1>
       )}
 
       <Canvas
