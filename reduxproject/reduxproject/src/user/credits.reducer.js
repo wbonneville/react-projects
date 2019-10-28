@@ -7,6 +7,6 @@ const usercredits = (state = 1000, action) => {
     default:
       return state;
   }
-};
+};  
 
 export default usercredits;
