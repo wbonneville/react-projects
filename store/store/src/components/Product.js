@@ -23,14 +23,18 @@ export default class Product extends Component {
               onClick={() => {
                 console.log('added to the cart');
               }}
-            />
-            {inCart ? (
-              <p className="text-capitalize mb-0" disabled>
-                in cart
-              </p>
-            ) : (
-              <i className="fas fa-cart-plus"></i>
-            )}
+            >
+              {inCart ? (
+                <p className="text-capitalize mb-0" disabled>
+                  in cart
+                </p>
+              ) : (
+                <i className="fas fa-cart-plus"></i>
+              )}
+            </button>
+          </div>
+          <div className="card-footer d-flex justify-content-between">
+            <p className="align-self-center mb-0"></p>
           </div>
         </div>
       </ProductWrapper>
