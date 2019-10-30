@@ -4,15 +4,20 @@ const ProductContext = React.createContext();
 // Provider
 // Consumer
 
+// set the initial state
 class ProductProvider extends Component {
   state = {
     products: [],
     detailProduct,
   };
 
+  // render the products
   componentDidMount() {
     this.setProducts();
   }
+
+  // loop through each product and get all of the information
+  // set state to the list of products
   setProducts = () => {
     let tempProducts = [];
     storeProducts.forEach(item => {
@@ -23,12 +28,29 @@ class ProductProvider extends Component {
       });
     });
   };
-  handleDetail = () => {
-    console.log('Hello from detail');
+
+  // if clicked id === id, display id's product
+
+  getItem = id => {
+    const product = this.state.products.find(item => item.id === id);
+    return product;
   };
+
+  // display the clicked id's detail. d
+
+  handleDetail = id => {
+    const product = this.getItem(id);
+    this.setState(() => {
+      return { detailProduct: product };
+    });
+  };
+
+  // add item to cart
+
   addToCart = id => {
     console.log(`Hello from add to cart. id is ${id}`);
   };
+
   render() {
     return (
       <ProductContext.Provider
