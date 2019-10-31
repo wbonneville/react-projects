@@ -68,10 +68,20 @@ class ProductProvider extends Component {
     );
   };
 
+  // when function is clicked, modal is opened. modalOpen is true
+
   openModal = id => {
     const product = this.getItem(id);
     this.setState(() => {
       return { modalProduct: product, modalOpen: true };
+    });
+  };
+
+  // user closes the modal. modalOpen is false
+
+  closeModal = () => {
+    this.setState(() => {
+      return { modalOpen: false };
     });
   };
 
@@ -82,6 +92,8 @@ class ProductProvider extends Component {
           ...this.state,
           handleDetail: this.handleDetail,
           addToCart: this.addToCart,
+          openModal: this.openModal,
+          closeModal: this.closeModal,
         }}
       >
         {this.props.children}
