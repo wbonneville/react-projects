@@ -30,14 +30,14 @@ class ProductProvider extends Component {
     });
   };
 
-  // if clicked id === id, display id's product
+  // get the id of the item that is clicked
 
   getItem = id => {
     const product = this.state.products.find(item => item.id === id);
     return product;
   };
 
-  // display the clicked id's detail. d
+  // display the clicked id's detail.
 
   handleDetail = id => {
     const product = this.getItem(id);
