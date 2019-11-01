@@ -97,18 +97,28 @@ class ProductProvider extends Component {
   };
 
   removeItem = id => {
+    // set temp products array = to current products
     let tempProducts = [...this.state.products];
+    // set cart = to current items in cart
     let tempCart = [...this.state.cart];
+    // filter through the cart and find the clicked ID
     tempCart = tempCart.filter(item => item.id !== id);
+    // select the clicked ID
     const index = tempProducts.indexOf(this.getItem(id));
+    // removedProduct = the selected ID
     let removedProduct = tempProducts[index];
+    // set selected ID in cart = to false
     removedProduct.inCart = false;
+    // set the official count of the item to 0
     removedProduct.count = 0;
+    // remove the items addition to the total from the total
     removedProduct.total = 0;
 
+    // cart and products = cart and products - removed item
     this.setState(
       () => {
         return {
+          // return the state with altered arrays
           cart: [...tempCart],
           products: [...tempProducts],
         };
@@ -125,7 +135,9 @@ class ProductProvider extends Component {
         return { cart: [] };
       },
       () => {
+        // set the products again
         this.setProducts();
+        // re-calculate the new totals
         this.addTotals();
       },
     );
