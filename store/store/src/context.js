@@ -17,18 +17,25 @@ class ProductProvider extends Component {
     cartTotal: 0,
   };
 
-  // render the products
+  // set the products
+
   componentDidMount() {
     this.setProducts();
   }
 
+  // >>> METHOD HANDLERS <<<
+
   // loop through each product and get all of the information
   // set state to the list of products
   setProducts = () => {
+    // let tempProducts = empty array
     let tempProducts = [];
+    // loop through store products and add them to temp products and get each item
     storeProducts.forEach(item => {
       const singleItem = { ...item };
+      // all products/items put into tempProducts
       tempProducts = [...tempProducts, singleItem];
+      // update state by setting originally empty products array to the fresh list of products
       this.setState(() => {
         return { products: tempProducts };
       });
@@ -37,6 +44,8 @@ class ProductProvider extends Component {
 
   // get the id of the item that is clicked
 
+  // returns the value of the first element in the provided array that satisfies the provided testing function.
+  // in this case, item with ID that matches clicked ID is returned
   getItem = id => {
     const product = this.state.products.find(item => item.id === id);
     return product;
