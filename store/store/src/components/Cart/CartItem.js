@@ -1,5 +1,8 @@
 import React from 'react';
 
+// component displays id, title, img, price, total and count
+// component has increment, decrement, removeItem handlers
+
 export default function CartItem({ item, value }) {
   const { id, title, img, price, total, count } = item;
   const { increment, decrement, removeItem } = value;

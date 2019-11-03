@@ -13,6 +13,8 @@ export default class Default extends Component {
             <h3>
               the requested URL{' '}
               <span className="text-danger">
+                {/* get location prop from react router */}
+                {/* user sees what the nonexistence page they mistyped displayed in the span */}
                 {this.props.location.pathname}
               </span>{' '}
               was not found

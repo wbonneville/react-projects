@@ -1,5 +1,7 @@
 import React from 'react';
 
+// component display item title
+
 export default function Title({ name, title }) {
   return (
     <div className="row">

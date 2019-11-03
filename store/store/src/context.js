@@ -11,6 +11,7 @@ class ProductProvider extends Component {
     detailProduct,
     cart: [],
     modalOpen: false,
+    // detailProduct is an pre-made object for rendering
     modalProduct: detailProduct,
     cartSubTotal: 0,
     cartTax: 0,

@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Product from './Product';
 import Title from './Title';
 import { ProductConsumer } from '../context';
+
+// component displays all of the products in the products array for the user to see and maybe even click on
+
 export default class ProductList extends Component {
   render() {
     return (

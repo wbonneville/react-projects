@@ -12,12 +12,15 @@ export default class Cart extends Component {
       <section>
         <ProductConsumer>
           {value => {
+            // destructuring
+            // cart = items in the cart
             const { cart } = value;
             if (cart.length > 0) {
               return (
                 <React.Fragment>
                   <Title name="your" title="cart" />
                   <CartColumns />
+                  {/* cart list component renders each of products */}
                   <CartList value={value} />
                   <CartTotals value={value} history={this.props.history} />
                 </React.Fragment>

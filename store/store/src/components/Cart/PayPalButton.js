@@ -45,6 +45,7 @@ export default class MyApp extends React.Component {
         env={env}
         client={client}
         currency={currency}
+        // cart total
         total={this.props.total}
         onError={onError}
         onSuccess={onSuccess}
