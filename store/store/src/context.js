@@ -43,7 +43,6 @@ class ProductProvider extends Component {
   };
 
   // get the id of the item that is clicked
-
   // returns the value of the first element in the provided array that satisfies the provided testing function.
   // in this case, item with ID that matches clicked ID is returned
   getItem = id => {
@@ -52,36 +51,49 @@ class ProductProvider extends Component {
   };
 
   // display the clicked id's detail.
-
+  // detail product object recieves selected ID's data
   handleDetail = id => {
+    // set product = to selected ID (getItem(selectedIdHere))
     const product = this.getItem(id);
+    // set detailProducts state = to selected product
     this.setState(() => {
       return { detailProduct: product };
     });
   };
 
-  // add item to cart
+  // add selected item to cart array
 
   addToCart = id => {
+    // tempProducts = to all products
     let tempProducts = [...this.state.products];
+    // gets the specific index of the selected ID within the array of products
     const index = tempProducts.indexOf(this.getItem(id));
+    // set product = to the specific index of the selected ID
     const product = tempProducts[index];
+    // set selected ID inCart
     product.inCart = true;
+    // add one of this item
     product.count = 1;
+    // get the items price
     const price = product.price;
+    // set the total according to the price
     product.total = price;
+    // set the state of products array to list of products
+    // update cart array by adding the new product which is defined above
     this.setState(
       () => {
         return { products: tempProducts, cart: [...this.state.cart, product] };
       },
+      // update the total of the cart (takes into account all items) with the newly added item
+      // addTotals() is a method handler defined on line 201
       () => {
         this.addTotals();
       },
     );
   };
 
-  // when function is clicked, modal is opened. modalOpen is true
-
+  // modal displays info about the product
+  // when function is clicked, modalOpen is set to true
   openModal = id => {
     const product = this.getItem(id);
     this.setState(() => {
