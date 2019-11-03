@@ -95,55 +95,72 @@ class ProductProvider extends Component {
   // modal displays info about the product
   // when function is clicked, modalOpen is set to true
   openModal = id => {
+    // product set = to selected item
     const product = this.getItem(id);
+
     this.setState(() => {
       return { modalProduct: product, modalOpen: true };
+      // state of modalProduct set = true
+      // display the data of selected ID
     });
   };
 
   // user closes the modal. modalOpen is false
-
+  // modalOpen can be set to false using a click handler in a button
   closeModal = () => {
     this.setState(() => {
       return { modalOpen: false };
     });
   };
 
+  // while in cart, add another of the same selected item
   increment = id => {
+    // tempCart set = to all items currently in the cart
     let tempCart = [...this.state.cart];
+    // get selected products
     const selectedProduct = tempCart.find(item => item.id === id);
+    // get the index of the product
     const index = tempCart.indexOf(selectedProduct);
+    // set const product = to selected product
     const product = tempCart[index];
-
+    // increment product by one
     product.count += 1;
+    // product total = count of product multiplied by price of the product
     product.total = product.count * product.price;
 
+    // set state of cart to the new, fresh cart
     this.setState(
       () => {
         return { cart: [...tempCart] };
       },
+      // recalculate the totals with same addTotals() method
       () => {
         this.addTotals();
       },
     );
   };
 
+  // first five lines have same logic as increment handler
   decrement = id => {
     let tempCart = [...this.state.cart];
     const selectedProduct = tempCart.find(item => item.id === id);
-
     const index = tempCart.indexOf(selectedProduct);
     const product = tempCart[index];
     product.count = product.count - 1;
 
+    // don't display the item anymore if the user decreases the count to zero
     if (product.count === 0) {
+      // item is removed
       this.removeItem(id);
     } else {
+      // if item is not removed, set the total to the count of the product multiplied by the price
       product.total = product.count * product.price;
+      // set state to new altered cart
       this.setState(
         () => {
           return { cart: [...tempCart] };
         },
+        // recalculate the totals
         () => {
           this.addTotals();
         },
@@ -178,12 +195,14 @@ class ProductProvider extends Component {
           products: [...tempProducts],
         };
       },
+      // recalculate the totals
       () => {
         this.addTotals();
       },
     );
   };
 
+  // clear the cart
   clearCart = id => {
     this.setState(
       () => {
@@ -198,12 +217,19 @@ class ProductProvider extends Component {
     );
   };
 
+  // add totals handler
   addTotals = () => {
+    // original subtotal = 0
     let subTotal = 0;
+    // loop through all items in cart and set subtotal equal to subtotal plus item total
     this.state.cart.map(item => (subTotal += item.total));
+    // set tax = subTotal multiplied by 10 percent
     const tempTax = subTotal * 0.1;
+    // round off the sum of the tax to a more suitable renderable number
     const tax = parseFloat(tempTax.toFixed(2));
+    // now the total = to subTotal + tax
     const total = subTotal + tax;
+    // update the cartsSubTotal = to new subTotal, cartTax to new tax, and cartTotal to new total
     this.setState(() => {
       return { cartSubTotal: subTotal, cartTax: tax, cartTotal: total };
     });
@@ -211,6 +237,7 @@ class ProductProvider extends Component {
 
   render() {
     return (
+      // add all these methods to the provider
       <ProductContext.Provider
         value={{
           ...this.state,
@@ -224,12 +251,14 @@ class ProductProvider extends Component {
           clearCart: this.clearCart,
         }}
       >
+        {/* add all children */}
         {this.props.children}
       </ProductContext.Provider>
     );
   }
 }
 
+// consumer provides access to the information
 const ProductConsumer = ProductContext.Consumer;
 
 export { ProductProvider, ProductConsumer };
