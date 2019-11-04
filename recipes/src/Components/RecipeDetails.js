@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { recipe } from "../tempDetails";
+import React, { Component } from 'react';
+import { recipe } from '../tempDetails';
 export default class RecipeDetails extends Component {
   //   constructor(props) {
   //     super(props);
@@ -26,7 +26,7 @@ export default class RecipeDetails extends Component {
   //   }
 
   state = {
-    recipe: recipe
+    recipe: recipe,
   };
 
   async componentDidMount() {
@@ -39,7 +39,7 @@ export default class RecipeDetails extends Component {
         (state, props) => {
           return { recipe: jsonData.recipe };
         },
-        () => {}
+        () => {},
       );
     } catch (error) {
       console.log(error);
@@ -53,7 +53,7 @@ export default class RecipeDetails extends Component {
       publisher_url,
       source_url,
       title,
-      ingredients
+      ingredients,
     } = this.state.recipe;
 
     const { handleIndex } = this.props;

@@ -1,13 +1,14 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 export default class Recipe extends Component {
   render() {
+    // display props
     const {
       image_url,
       title,
       source_url,
       publisher,
-      recipe_id
+      recipe_id,
     } = this.props.recipe;
     const { handleDetails } = this.props;
     return (
@@ -17,7 +18,7 @@ export default class Recipe extends Component {
             <img
               src={image_url}
               className="img-card-top"
-              style={{ height: "14rem" }}
+              style={{ height: '14rem' }}
               alt="recipe"
             />
             <div className="card-body text-capitalize">
@@ -30,6 +31,9 @@ export default class Recipe extends Component {
               <button
                 type="button"
                 className="btn btn-primary text-capitalize"
+                // recipes page has case/index of 1
+                // details page has case/index of 0
+                // display index 0
                 onClick={() => handleDetails(0, recipe_id)}
               >
                 Details
