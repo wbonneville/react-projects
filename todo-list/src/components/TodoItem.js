@@ -1,6 +1,7 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 export default class TodoItem extends Component {
+  // get props
   render() {
     const { title, handleDelete, handleEdit } = this.props;
     return (

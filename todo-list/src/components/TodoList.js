@@ -1,8 +1,9 @@
-import React, { Component } from "react";
-import TodoItem from "./TodoItem";
+import React, { Component } from 'react';
+import TodoItem from './TodoItem';
 
 export default class TodoList extends Component {
   render() {
+    // destructuring to get props
     const { items, clearList, handleDelete, handleEdit } = this.props;
     return (
       <ul className="list-group my-5">
@@ -12,9 +13,13 @@ export default class TodoList extends Component {
         {items.map(item => {
           return (
             <TodoItem
+              // give item key
               key={item.id}
+              // display title prop
               title={item.title}
+              // get delete prop
               handleDelete={() => handleDelete(item.id)}
+              // get edit prop
               handleEdit={() => handleEdit(item.id)}
             />
           );
