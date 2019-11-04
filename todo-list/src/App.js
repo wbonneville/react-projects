@@ -9,33 +9,41 @@ import './App.css';
 // set state
 class App extends React.Component {
   state = {
+    // items array is originally empty
     items: [],
+    // give special ID to each item
     id: uuid(),
+    // set item equal to empty string
     item: ' ',
+    // editItem is originally set to false
     editItem: false,
   };
 
   // set state of item to whatever user typed in
   handleChange = e => {
     this.setState({
+      // set item string = to what user types
       item: e.target.value,
     });
   };
 
   // get rid of all the items
   clearList = e => {
+    // clear the list by clearing items array
     this.setState({
       items: [],
     });
   };
 
-  // prevent reloading
+  // prevent page reloading by preventing default
   handleSubmit = e => {
     e.preventDefault();
 
     // new item is set originally blank and given a fresh ID
     const newItem = {
+      // create a new ID for new item
       id: this.state.id,
+      // titles state set what user types
       title: this.state.item,
     };
 
@@ -44,6 +52,7 @@ class App extends React.Component {
 
     // set the state of application to current items
     this.setState({
+      // set items array = to items + new (updated) items
       items: updatedItems,
       item: '',
       id: uuid(),
@@ -83,7 +92,7 @@ class App extends React.Component {
         <div className="row">
           <div className="col-10 mx-auto col-md-8 mt-4">
             <h3 className="text-capitalize text-center">todo input</h3>
-
+            {/* set input props */}
             <TodoInput
               item={this.state.item}
               handleChange={this.handleChange}
@@ -92,6 +101,7 @@ class App extends React.Component {
             />
           </div>
         </div>
+        {/* set list props */}
         <TodoList
           items={this.state.items}
           clearList={this.clearList}
